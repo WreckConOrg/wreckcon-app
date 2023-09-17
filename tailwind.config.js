@@ -9,7 +9,8 @@ module.exports = {
     },
     extend: {
       screens: {
-        '3xl' : '1650px'
+        '3xl' : '1650px',
+        '4xl' : '2500px'
       },
       backgroundImage: {
         'tape': "url('./assets/tape.png')",
