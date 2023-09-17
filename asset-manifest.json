@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wreckcon-app/static/css/main.00325f43.css",
-    "main.js": "/wreckcon-app/static/js/main.248f431e.js",
+    "main.js": "/wreckcon-app/static/js/main.e775b97f.js",
     "static/js/787.28692217.chunk.js": "/wreckcon-app/static/js/787.28692217.chunk.js",
     "static/media/Inter-Bold.ttf": "/wreckcon-app/static/media/Inter-Bold.88fa7ae373b07b41ecce.ttf",
     "static/media/Inter-Regular.ttf": "/wreckcon-app/static/media/Inter-Regular.e89cb19905e7db5591b0.ttf",
@@ -11,11 +11,11 @@
     "static/media/coolvetica_rg-webfont.woff2": "/wreckcon-app/static/media/coolvetica_rg-webfont.87588e630d6040514256.woff2",
     "index.html": "/wreckcon-app/index.html",
     "main.00325f43.css.map": "/wreckcon-app/static/css/main.00325f43.css.map",
-    "main.248f431e.js.map": "/wreckcon-app/static/js/main.248f431e.js.map",
+    "main.e775b97f.js.map": "/wreckcon-app/static/js/main.e775b97f.js.map",
     "787.28692217.chunk.js.map": "/wreckcon-app/static/js/787.28692217.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.00325f43.css",
-    "static/js/main.248f431e.js"
+    "static/js/main.e775b97f.js"
   ]
 }
