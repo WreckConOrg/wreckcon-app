@@ -1,44 +1,52 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { useCountdown } from "../hooks/countdownTimes";
 
-export const Home = (): JSX.Element => {
+interface HomeProps {
+    phraseUsed: string;
+}
 
-    const phrases = [
-        "100% organic.",
-        "the second best convention by Georgia Tech students.",
-        "coming to movie theatres near YOU.",
-        "NOT a construction company.",
-        "trying really hard we swear.",
-        "run by students, for students (and everyone else).",
-        "for the people.",
-        "totally, completely free.",
-        "definitely NOT a money laundering scheme.",
-        "funny on twitter @conwreck."
-    ]
+export const Home = (props: HomeProps): JSX.Element => {
 
-    const phraseUsed = phrases[Math.floor(Math.random() * phrases.length)]
+    const CONDATE = new Date("March 2, 2024 10:00:00").getTime()
+    const [days, hours, minutes] = useCountdown(CONDATE)
 
   return (
-    <div className="h-screen bg-[#2e2f31] overflow-hidden">
-        <div className="bg-darktape bg-contain bg-repeat-x rotate-[-47.11deg] overflow-hidden
-                        w-[6000px] h-[10vw] translate-x-[-1700px]"/>
-        <div className="bg-tape bg-contain bg-repeat-x rotate-[18.55deg] overflow-hidden 
-                        w-[4000px] h-[10vw] translate-x-[-1100px]" />
-        <div className="translate-x-[70px] translate-y-[0px] leading-[4em]">
-            <span className="font-coolvetica text-[#ffc42d] text-[9vw]">
-                Wreck
-            </span>
-            <span className="font-coolvetica text-white text-[9vw]">
-                Con
-            </span>
-            <br/>
-            <span className="font-interbold text-[45px] font-bold text-white">
-                00:00:00 • 3/2/24
-            </span>
-            <br/>
-            <div className="font-inter text-[35px] text-white w-[600px] leading-snug">
-                {"Wreckcon is " + phraseUsed}
+    <div>
+        <div className="h-screen bg-[#2e2f31] overflow-hidden">
+            <div className="bg-darktape bg-contain bg-repeat-x rotate-[-47.11deg] overflow-hidden
+                            w-[6000px] h-[10vw] translate-x-[-1700px]
+                            3xl:translate-x-[-43vw] 3xl:translate-y-[-20vw]
+                            4xl:translate-x-[-2vw]"/>
+            <div className="bg-tape bg-contain bg-repeat-x rotate-[18.55deg] overflow-hidden 
+                            w-[6000px] h-[10vw] translate-x-[-2200px]
+                            3xl:translate-x-[-55vw] 3xl:translate-y-[12vw]
+                            4xl:translate-x-[-10vw]" />
+            <div className="translate-x-[6vw] translate-y-[-1vw] leading-[4vw]">
+                <span className="font-coolvetica text-[#ffc42d] text-[8vw]">
+                    Wreck
+                </span>
+                <span className="font-coolvetica text-white text-[8vw]">
+                    Con
+                </span>
+                <br/>
+                <span className="font-interbold text-[3vw] font-bold text-white">
+                    {days}:{hours}:{minutes} • 3/2/24
+                </span>
+                <br/>
+                <div className="font-inter text-[2.3vw] text-white w-[40vw] leading-snug">
+                    {"Wreckcon is " + props.phraseUsed}
+                </div>
+            </div>
+            <div className="bg-[#D9D9D9] absolute left-[6vw] top-[82vh] w-fit h-[4vw] flex items-center justify-center">
+                <Link to={'/about'} className="font-inter font-bold text-[#2e2f31] text-[2vw] mx-[3vw]">
+                    About WreckCon
+                </Link> 
             </div>
         </div>
+        {/* <div className="bg-[#2e2f31] flex flex-row items-center justify-center h-[7vw] font-coolvetica text-white text-[3vw]">
+            About WreckCon
+        </div> */}
     </div>
   );
 };
