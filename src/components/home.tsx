@@ -9,7 +9,7 @@ interface HomeProps {
 export const Home = (props: HomeProps): JSX.Element => {
 
     const CONDATE = new Date("March 2, 2024 10:00:00").getTime()
-    const [days, hours, minutes] = useCountdown(CONDATE)
+    const [days, hours, minutes, seconds] = useCountdown(CONDATE)
 
   return (
     <div>
@@ -31,7 +31,7 @@ export const Home = (props: HomeProps): JSX.Element => {
                 </span>
                 <br/>
                 <span className="font-interbold text-[3vw] font-bold text-white">
-                    {days}:{hours}:{minutes} • 3/2/24
+                    {days}:{hours}:{minutes}:{seconds} • 3/2/24
                 </span>
                 <br/>
                 <div className="font-inter text-[2.3vw] text-white w-[40vw] leading-snug">
@@ -44,9 +44,6 @@ export const Home = (props: HomeProps): JSX.Element => {
                 </Link> 
             </div>
         </div>
-        {/* <div className="bg-[#2e2f31] flex flex-row items-center justify-center h-[7vw] font-coolvetica text-white text-[3vw]">
-            About WreckCon
-        </div> */}
     </div>
   );
 };
