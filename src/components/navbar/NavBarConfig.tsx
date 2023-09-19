@@ -1,12 +1,10 @@
-import { NavBarProps } from "./navbar"
 import { NavBarItemEnum, NavBarItemProps } from "./NavBarItem"
 
-export const NAVBARCONFIG: NavBarProps = {
-    items: [
+export const NAVBARCONFIG: NavBarItemProps[] = [
         {
             itemEnum: NavBarItemEnum.ABOUT,
             url: "\\about",
-            displayText: "about",
+            displayText: "about test",
         },
         {
             itemEnum: NavBarItemEnum.GET_INVOLVED,
@@ -24,6 +22,5 @@ export const NAVBARCONFIG: NavBarProps = {
             displayText: "sponser us!",
         },
 
-    ],
-    selectedItem: NavBarItemEnum.HOME
-}
+    ]
+

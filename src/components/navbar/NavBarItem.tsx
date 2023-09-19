@@ -1,5 +1,6 @@
 import React from "react";
 import classNames from "classnames";
+import { Link } from "react-router-dom";
 
 export enum NavBarItemEnum {
     HOME,
@@ -16,7 +17,6 @@ export interface NavBarItemProps {
     selected?: boolean;
 }
 
-import { Link } from "react-router-dom";
 export const NavBarItem = (props: NavBarItemProps) => {
     return (
         <div>
