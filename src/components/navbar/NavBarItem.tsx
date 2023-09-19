@@ -23,8 +23,8 @@ export const NavBarItem = (props: NavBarItemProps) => {
             <Link 
             to={props.url} 
             className={classNames( 
-                "font-inter font-thin text-[2vw] ml-[7vw]",
-                { "text-wc-yellow": props.selected},
+                "font-inter font-thin text-[2vw] ml-[7vw] ",
+                {"text-[#FFC42D]": props.selected},
                 {"text-white": !props.selected}
             )}>
                 {props.displayText}

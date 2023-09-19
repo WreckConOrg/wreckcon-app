@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}"
@@ -31,10 +34,16 @@ module.exports = {
         interbold: ["inter-bold", "sans-serif"]
       }
      },
-     colors: {
-      'wc-yellow' : '[#FFC42D]',
-      'wc=gray' : '[#2e2f31]',
-     }
+    //  colors: {
+    //   yellow : {
+    //     DEFAULT: '#FFC42D',
+    //   },
+    //   gray : {
+    //     DEFAULT :'#2e2f31',
+    //   },
+    //   white: colors.white,
+    //   black: colors.black,
+    //  }
   },
   plugins: [],
 }

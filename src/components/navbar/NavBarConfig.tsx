@@ -3,22 +3,22 @@ import { NavBarItemEnum, NavBarItemProps } from "./NavBarItem"
 export const NAVBARCONFIG: NavBarItemProps[] = [
         {
             itemEnum: NavBarItemEnum.ABOUT,
-            url: "\\about",
-            displayText: "about test",
+            url: "/about",
+            displayText: "about",
         },
         {
             itemEnum: NavBarItemEnum.GET_INVOLVED,
-            url: "\\about",
+            url: "/about",
             displayText: "get involved!",
         },
         {
             itemEnum: NavBarItemEnum.SOCIALS,
-            url: "\\about",
+            url: "/about",
             displayText: "socials",
         },
         {
             itemEnum: NavBarItemEnum.SPONSER_US,
-            url: "\\about",
+            url: "/about",
             displayText: "sponser us!",
         },
 
