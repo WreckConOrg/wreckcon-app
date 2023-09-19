@@ -31,6 +31,10 @@ module.exports = {
         interbold: ["inter-bold", "sans-serif"]
       }
      },
+     colors: {
+      'wc-yellow' : '[#FFC42D]',
+      'wc=gray' : '[#2e2f31]',
+     }
   },
   plugins: [],
 }

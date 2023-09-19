@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useCountdown } from "../hooks/countdownTimes";
+import { useCountdown } from "../../hooks/countdownTimes";
 
 interface HomeProps {
     phraseUsed: string;
