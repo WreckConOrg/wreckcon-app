@@ -1,13 +1,17 @@
 import React from "react";
-import Navbar from "./navbar";
 import ClubLogo from "./clublogo";
-import boardgames from './../assets/board games logo.png'
-import sga from './../assets/sga logo.png'
+import boardgames from './../../assets/club_logos/board games logo.png'
+import sga from './../../assets/club_logos/sga logo.png'
+import { Navbar } from "../../components/navbar/NavBar";
+import { NAVBARCONFIG } from "../../components/navbar/NavBarConfig";
+import { NavBarItemEnum } from "../../components/navbar/NavBarItem";
 
 export const About = (): JSX.Element => {
     return (
         <div className="h-fill bg-[#2e2f31]">
-            <Navbar about={true} involved={false} socials={false} sponsor={false}/>
+            <Navbar 
+            items={NAVBARCONFIG} 
+            selectedItem={NavBarItemEnum.ABOUT}/>
             <div className="flex flex-row items-center justify-center h-[6vw] font-coolvetica text-white text-[4vw]">
                 About WreckCon
             </div>
