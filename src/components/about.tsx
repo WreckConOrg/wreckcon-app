@@ -25,8 +25,8 @@ export const About = (): JSX.Element => {
                 </div>
             </div>
             <div className="flex items-center justify-center h-fit space-x-[4vw]">
-                <ClubLogo logo={boardgames} clubTitle='VGDev' clubText='This is VGDEV. I love this club. This is my favorite club. I love clubbing!'/>
-                <ClubLogo logo={sga} clubTitle='Board Games' clubText='I LOVE BOARD GAMING GAMING GAMING GAMING GAMING GAMING GAMING GAMIN!'/>
+                <ClubLogo logo={boardgames} clubLink='https://www.derivative-calculator.net/' clubTitle='VGDev' clubText='This is VGDEV. I love this club. This is my favorite club. I love clubbing!'/>
+                <ClubLogo logo={sga} clubLink='https://github.com/WreckConOrg/wreckcon-app' clubTitle='Board Games' clubText='I LOVE BOARD GAMING GAMING GAMING GAMING GAMING GAMING GAMING GAMIN!'/>
             </div>
         </div>
 
