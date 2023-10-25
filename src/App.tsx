@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import {Home} from './pages/home/home'
 import {About} from './pages/about/about'
+import { Sponsor } from './pages/sponsor/sponsor';
 import {
   Routes,
   Route,
@@ -31,6 +32,7 @@ const phrase = phrases[Math.floor(Math.random() * phrases.length)]
     <Routes>
       <Route path='/wreckcon-app' element={<Home phraseUsed={phrase} />}/>
       <Route path='/about' element={<About />}/>
+      <Route path='/sponsor-us' element={<Sponsor />}/>
     </Routes>
   );
 }

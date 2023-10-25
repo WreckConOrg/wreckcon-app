@@ -8,18 +8,23 @@ export const NAVBARCONFIG: NavBarItemProps[] = [
         },
         {
             itemEnum: NavBarItemEnum.GET_INVOLVED,
-            url: "/about",
-            displayText: "get involved!",
+            url: "/get-involved",
+            displayText: "get involved",
         },
         {
-            itemEnum: NavBarItemEnum.SOCIALS,
-            url: "/about",
-            displayText: "socials",
+            itemEnum: NavBarItemEnum.DISCORD,
+            url: "https://discord.gg/BY2hTWjz4s",
+            displayText: "discord",
         },
         {
-            itemEnum: NavBarItemEnum.SPONSER_US,
-            url: "/about",
-            displayText: "sponser us!",
+            itemEnum: NavBarItemEnum.BIGCARTEL,
+            url: "https://wreckcon.bigcartel.com/",
+            displayText: "bigcartel",
+        },
+        {
+            itemEnum: NavBarItemEnum.SPONSOR_US,
+            url: "/sponsor-us",
+            displayText: "sponsor us!",
         },
 
     ]

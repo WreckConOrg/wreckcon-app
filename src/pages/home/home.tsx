@@ -15,7 +15,7 @@ export const Home = (props: HomeProps): JSX.Element => {
     <div>
         <div className="h-screen bg-[#2e2f31] overflow-hidden">
             <div className="bg-darktape bg-contain bg-repeat-x rotate-[-47.11deg] overflow-hidden
-                            w-[6000px] h-[10vw] translate-x-[-1700px]
+                            w-[6000px] h-[10vw] translate-x-[-1540px]
                             3xl:translate-x-[-43vw] 3xl:translate-y-[-20vw]
                             4xl:translate-x-[-2vw]"/>
             <div className="bg-tape bg-contain bg-repeat-x rotate-[18.55deg] overflow-hidden 
@@ -35,14 +35,19 @@ export const Home = (props: HomeProps): JSX.Element => {
                 </span>
                 <br/>
                 <div className="font-inter text-[2.3vw] text-white w-[40vw] leading-snug">
-                    {"Wreckcon is " + props.phraseUsed}
+                    {"WreckCon is " + props.phraseUsed + '.'}
                 </div>
             </div>
-            <div className="bg-[#D9D9D9] absolute left-[6vw] top-[82vh] w-fit h-[4vw] flex items-center justify-center">
-                <Link to={'/about'} className="font-inter font-bold text-[#2e2f31] text-[2vw] mx-[3vw]">
+            <Link className="bg-[#D9D9D9] absolute left-[20vw] top-[82vh] w-fit h-[4vw] flex items-center justify-center" to={'/about'}>
+                <div className="font-inter font-bold text-[#2e2f31] text-[2vw] mx-[3vw]">
                     About WreckCon
-                </Link> 
-            </div>
+                </div> 
+            </Link>
+            <Link className="bg-[#FFC42D] absolute left-[6vw] top-[82vh] w-fit h-[4vw] flex items-center justify-center" to={'https://gatech.universitytickets.com/w/event.aspx?id=2002'}>
+                <div className="font-inter font-bold text-[#2e2f31] text-[2vw] mx-[3vw] ">
+                    Tickets
+                </div> 
+            </Link>
         </div>
     </div>
   );
