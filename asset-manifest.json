@@ -1,8 +1,14 @@
 {
   "files": {
-    "main.css": "/wreckcon-app/static/css/main.77d4f44b.css",
-    "main.js": "/wreckcon-app/static/js/main.e0e9d133.js",
+    "main.css": "/wreckcon-app/static/css/main.b5e4dead.css",
+    "main.js": "/wreckcon-app/static/js/main.47829473.js",
     "static/js/787.28692217.chunk.js": "/wreckcon-app/static/js/787.28692217.chunk.js",
+    "static/media/5.jpg": "/wreckcon-app/static/media/5.b9915d094086051536cf.jpg",
+    "static/media/2.jpg": "/wreckcon-app/static/media/2.57f306130cf70426b912.jpg",
+    "static/media/3.jpg": "/wreckcon-app/static/media/3.532753203c5c0345d150.jpg",
+    "static/media/4.jpg": "/wreckcon-app/static/media/4.8f4da2f1c94f9b55f9c9.jpg",
+    "static/media/6.jpg": "/wreckcon-app/static/media/6.d21432f3724f89f484b0.jpg",
+    "static/media/1.jpg": "/wreckcon-app/static/media/1.6c286ed7da8125f76e61.jpg",
     "static/media/Inter-Bold.ttf": "/wreckcon-app/static/media/Inter-Bold.88fa7ae373b07b41ecce.ttf",
     "static/media/Inter-Regular.ttf": "/wreckcon-app/static/media/Inter-Regular.e89cb19905e7db5591b0.ttf",
     "static/media/sga logo.png": "/wreckcon-app/static/media/sga logo.19620709688b3c370665.png",
@@ -12,12 +18,12 @@
     "static/media/tape.png": "/wreckcon-app/static/media/tape.23e75ed8c84cfddf4617.png",
     "static/media/coolvetica_rg-webfont.woff2": "/wreckcon-app/static/media/coolvetica_rg-webfont.87588e630d6040514256.woff2",
     "index.html": "/wreckcon-app/index.html",
-    "main.77d4f44b.css.map": "/wreckcon-app/static/css/main.77d4f44b.css.map",
-    "main.e0e9d133.js.map": "/wreckcon-app/static/js/main.e0e9d133.js.map",
+    "main.b5e4dead.css.map": "/wreckcon-app/static/css/main.b5e4dead.css.map",
+    "main.47829473.js.map": "/wreckcon-app/static/js/main.47829473.js.map",
     "787.28692217.chunk.js.map": "/wreckcon-app/static/js/787.28692217.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.77d4f44b.css",
-    "static/js/main.e0e9d133.js"
+    "static/css/main.b5e4dead.css",
+    "static/js/main.47829473.js"
   ]
 }
