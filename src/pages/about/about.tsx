@@ -19,7 +19,7 @@ export const About = (): JSX.Element => {
                 About WreckCon
             </div>
             <div className="flex flex-row h-fill">
-                <div className="w-[25vw] h-fill bg-[#000000] mb-[5vw] mt-[3vw] mx-[3vw]">
+                <div className="w-[25vw] h-fill bg-[#2e2f31] mb-[5vw] mt-[3vw] mx-[3vw]">
                     {useCarousel()}
                 </div>
                 <div className="font-inter text-[1.7vw] mb-[5vw] mt-[3vw] text-white w-[55vw]">

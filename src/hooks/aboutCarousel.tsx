@@ -12,35 +12,31 @@ import carousel10 from './../assets/about_carousel/6.jpg'
 
 const useCarousel = () => {
     const images = [carousel1, carousel2, carousel3, carousel4, carousel5, carousel6, carousel7, carousel8, carousel9, carousel10]
-    let [timer, setTimer] = useState(0);
     let [currentIndex, setCurrentIndex] = useState(1);
-    let [currentImage, setCurrentImage] = useState(images[currentIndex - 1]);
-    const interval = setInterval(() => {
-        setTimer(timer + 10)
-        if (timer > 7000) {
+    let [currentImage, setCurrentImage] = useState(images[currentIndex]);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
             if (currentIndex < images.length - 1) {
                 setCurrentIndex(currentIndex + 1);
             } else {
-                setCurrentIndex(0);
+                setCurrentIndex(2);
             }
             console.log(currentIndex);
-            setCurrentImage(images[currentIndex]);
-
-        }
-        clearInterval(interval)
-    }, 10);
-
-    useEffect(() => {
-        setTimer(0)
-    }, [currentImage])
+            setCurrentImage(images[currentIndex - 1]);
+            clearInterval(interval)
+        }, 3000);
+        return () => clearInterval(interval)    
+    }, [currentImage, currentIndex])
 
     const imageStyle = {
-        opacity: timer < 2000 ? timer / 2000 : timer < 5000 ? 1 : 1 - (timer - 5000) / 2000, // Fade out for 2 seconds, then fade in for 2 seconds
+        opacity: 1, // Fade out for 2 seconds, then fade in for 2 seconds
     };
 
     return <>
-        <img src={currentImage} alt='test' className={`w-[25vw] translate-y-[25%]`} style={imageStyle}/>
+        <img src={currentImage} alt='image could not load' className={`w-[25vw] translate-y-[25%]`} style={imageStyle}/>
     </>
 };
 
+// timer < 1000 ? timer / 1000 : timer < 2000 ? 1 : 1 - (timer - 2000) / 1000 fading stuff
 export { useCarousel };
