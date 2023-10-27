@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "https://WreckConOrg.github.io/wreckcon-app",
   "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@headlessui/tailwindcss": "^0.2.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -12,6 +14,8 @@
     "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "classnames": "^2.3.2",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.16.0",

@@ -2,6 +2,10 @@ import React from "react";
 import ClubLogo from "./clublogo";
 import boardgames from './../../assets/club_logos/board games logo.png';
 import sga from './../../assets/club_logos/sga logo.png';
+import mtg from './../../assets/club_logos/mtg logo.png';
+import vgdev from './../../assets/club_logos/vgdev logo.png';
+import dnd from './../../assets/club_logos/dnd logo.png';
+import anime from './../../assets/club_logos/anime logo.png';
 import { useCarousel } from "./../../hooks/aboutCarousel";
 import { Navbar } from "../../components/navbar/NavBar";
 import { NAVBARCONFIG } from "../../components/navbar/NavBarConfig";
@@ -19,7 +23,7 @@ export const About = (): JSX.Element => {
                 About WreckCon
             </div>
             <div className="flex flex-row h-fill">
-                <div className="w-[25vw] h-fill bg-[#2e2f31] mb-[5vw] mt-[3vw] mx-[3vw]">
+                <div className="w-[30vw] h-fill bg-[#2e2f31] mb-[5vw] mt-[3vw] mx-[3vw]">
                     {useCarousel()}
                 </div>
                 <div className="font-inter text-[1.7vw] mb-[5vw] mt-[3vw] text-white w-[55vw]">
@@ -33,9 +37,17 @@ export const About = (): JSX.Element => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </div>
             </div>
+            <div className="flex items-center justify-center h-fit space-x-[8vw]">
+                <ClubLogo logo={vgdev} clubLink="https://gtmtg.org/" clubTitle="VGDev" clubText="Magic: The Gathering" />
+                <ClubLogo logo={dnd} clubLink='https://github.com/WreckConOrg/wreckcon-app' clubTitle='GTD&D' clubText='Student Government Association'/>
+                <ClubLogo logo={mtg} clubLink="https://gtmtg.org/" clubTitle="GTMTG" clubText="Magic: The Gathering" />
+            </div>
             <div className="flex items-center justify-center h-fit space-x-[4vw]">
-                <ClubLogo logo={boardgames} clubLink='https://www.derivative-calculator.net/' clubTitle='VGDev' clubText="Georgia Tech's premiere board gaming club."/>
-                <ClubLogo logo={sga} clubLink='https://github.com/WreckConOrg/wreckcon-app' clubTitle='Board Games' clubText='I LOVE BOARD GAMING GAMING GAMING GAMING GAMING GAMING GAMING GAMIN!'/>
+                <ClubLogo logo={boardgames} clubLink='https://www.derivative-calculator.net/' clubTitle='Board Games' clubText="Georgia Tech's premiere board gaming club."/>
+                <ClubLogo logo={sga} clubLink='https://github.com/WreckConOrg/wreckcon-app' clubTitle='SGA' clubText='Student Government Association'/>
+            </div>
+            <div className="flex items-center justify-center h-fit space-x-[4vw]">
+                <ClubLogo logo={anime} clubLink='https://www.derivative-calculator.net/' clubTitle='Anime O-Tekku' clubText="Georgia Tech's premiere board gaming club."/>
             </div>
         </div>
 

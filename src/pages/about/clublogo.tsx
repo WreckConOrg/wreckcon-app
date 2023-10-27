@@ -14,7 +14,7 @@ function ClubLogo(props: LogoProps) {
             <div>
                 <div className="flex flex-col items-center h-[20vw] w-[17vw] bg-[#D9D9D9] my-[3vw]">
                     <img src={props.logo} alt='test' className="w-[9vw] translate-y-[-3vw]"/>
-                    <div className="font-inter font-bold text-black text-[2.3vw] translate-y-[-2.5vw]">
+                    <div className="font-inter font-bold text-black text-[1.9vw] translate-y-[-2.5vw]">
                         {props.clubTitle}
                     </div>
                     <div className="font-inter text-[1.1vw] translate-y-[-2.1vw] w-[14vw]">

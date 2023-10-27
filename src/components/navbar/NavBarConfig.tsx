@@ -7,24 +7,25 @@ export const NAVBARCONFIG: NavBarItemProps[] = [
             displayText: "about",
         },
         {
-            itemEnum: NavBarItemEnum.GET_INVOLVED,
-            url: "/get-involved",
-            displayText: "get involved",
-        },
-        {
             itemEnum: NavBarItemEnum.DISCORD,
             url: "https://discord.gg/BY2hTWjz4s",
             displayText: "discord",
         },
         {
-            itemEnum: NavBarItemEnum.BIGCARTEL,
-            url: "https://wreckcon.bigcartel.com/",
-            displayText: "bigcartel",
+            itemEnum: NavBarItemEnum.TICKETS,
+            url: "https://gatech.universitytickets.com/w/event.aspx?id=2002&p=1",
+            displayText: "tickets",
         },
         {
-            itemEnum: NavBarItemEnum.SPONSOR_US,
+            itemEnum: NavBarItemEnum.SHOP,
+            url: "https://wreckcon.bigcartel.com/",
+            displayText: "shop",
+        },
+        {
+            itemEnum: NavBarItemEnum.GET_INVOLVED,
             url: "/sponsor-us",
-            displayText: "sponsor us!",
+            displayText: "get involved",
+            dropdown: true
         },
 
     ]

@@ -32,7 +32,7 @@ const phrase = phrases[Math.floor(Math.random() * phrases.length)]
     <Routes>
       <Route path='/wreckcon-app' element={<Home phraseUsed={phrase} />}/>
       <Route path='/about' element={<About />}/>
-      <Route path='/sponsor-us' element={<Sponsor />}/>
+      <Route path='/sponsors' element={<Sponsor />}/>
     </Routes>
   );
 }

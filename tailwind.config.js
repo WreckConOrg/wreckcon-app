@@ -45,6 +45,8 @@ module.exports = {
     //   black: colors.black,
     //  }
   },
-  plugins: [],
+  plugins: [
+    require('@headlessui/tailwindcss')({prefix: 'ui'})
+  ],
 }
 

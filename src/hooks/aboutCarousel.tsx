@@ -24,17 +24,17 @@ const useCarousel = () => {
             }
             console.log(currentIndex);
             setCurrentImage(images[currentIndex - 1]);
-            clearInterval(interval)
+            clearInterval(interval);
         }, 3000);
         return () => clearInterval(interval)    
-    }, [currentImage, currentIndex])
+    }, [currentImage, currentIndex, images])
 
     const imageStyle = {
         opacity: 1, // Fade out for 2 seconds, then fade in for 2 seconds
     };
 
     return <>
-        <img src={currentImage} alt='image could not load' className={`w-[25vw] translate-y-[25%]`} style={imageStyle}/>
+        <img src={currentImage} alt='image could not load' className={`w-[40vw] translate-y-[15%]`} style={imageStyle}/>
     </>
 };
 

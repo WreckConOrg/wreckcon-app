@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 export interface NavBarProps {
     items: NavBarItemProps[]
     selectedItem: NavBarItemEnum;
+    dropdownSelect? : string;
 }
 
 export const Navbar = (props: NavBarProps) => {
@@ -13,6 +14,7 @@ export const Navbar = (props: NavBarProps) => {
         return NavBarItem({
             ...item,
             selected: props.selectedItem === item.itemEnum,
+            dropdownSelect: props.dropdownSelect
         }); 
     });
 

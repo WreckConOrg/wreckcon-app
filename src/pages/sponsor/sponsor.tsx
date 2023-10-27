@@ -8,7 +8,8 @@ export const Sponsor = (): JSX.Element => {
         <div className="h-fill bg-[#2e2f31]">
             <Navbar
                 items={NAVBARCONFIG}
-                selectedItem={NavBarItemEnum.SPONSOR_US}
+                selectedItem={NavBarItemEnum.GET_INVOLVED}
+                dropdownSelect="sponsors"
             />
             <div className="flex flex-row items-center justify-center h-[6vw] font-coolvetica text-white text-[4vw]">
                 Sponsors
