@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wreckcon-app/static/css/main.b5e4dead.css",
-    "main.js": "/wreckcon-app/static/js/main.47829473.js",
+    "main.css": "/wreckcon-app/static/css/main.44ffd3f5.css",
+    "main.js": "/wreckcon-app/static/js/main.7c8665f8.js",
     "static/js/787.28692217.chunk.js": "/wreckcon-app/static/js/787.28692217.chunk.js",
     "static/media/5.jpg": "/wreckcon-app/static/media/5.b9915d094086051536cf.jpg",
     "static/media/2.jpg": "/wreckcon-app/static/media/2.57f306130cf70426b912.jpg",
@@ -11,19 +11,23 @@
     "static/media/1.jpg": "/wreckcon-app/static/media/1.6c286ed7da8125f76e61.jpg",
     "static/media/Inter-Bold.ttf": "/wreckcon-app/static/media/Inter-Bold.88fa7ae373b07b41ecce.ttf",
     "static/media/Inter-Regular.ttf": "/wreckcon-app/static/media/Inter-Regular.e89cb19905e7db5591b0.ttf",
+    "static/media/anime logo.png": "/wreckcon-app/static/media/anime logo.53a2ad7dedf1f091c7e9.png",
     "static/media/sga logo.png": "/wreckcon-app/static/media/sga logo.19620709688b3c370665.png",
+    "static/media/dnd logo.png": "/wreckcon-app/static/media/dnd logo.a09fd53c16efe1deb7fa.png",
+    "static/media/mtg logo.png": "/wreckcon-app/static/media/mtg logo.2a52565aa47a7d0b9698.png",
     "static/media/board games logo.png": "/wreckcon-app/static/media/board games logo.d28a1e5e938e66fa4140.png",
+    "static/media/vgdev logo.png": "/wreckcon-app/static/media/vgdev logo.c935019e1c40532568b1.png",
     "static/media/coolvetica_rg-webfont.woff": "/wreckcon-app/static/media/coolvetica_rg-webfont.70ea307aa5b7234a3bdd.woff",
     "static/media/dark.png": "/wreckcon-app/static/media/dark.59327bdcf6c92155ada5.png",
     "static/media/tape.png": "/wreckcon-app/static/media/tape.23e75ed8c84cfddf4617.png",
     "static/media/coolvetica_rg-webfont.woff2": "/wreckcon-app/static/media/coolvetica_rg-webfont.87588e630d6040514256.woff2",
     "index.html": "/wreckcon-app/index.html",
-    "main.b5e4dead.css.map": "/wreckcon-app/static/css/main.b5e4dead.css.map",
-    "main.47829473.js.map": "/wreckcon-app/static/js/main.47829473.js.map",
+    "main.44ffd3f5.css.map": "/wreckcon-app/static/css/main.44ffd3f5.css.map",
+    "main.7c8665f8.js.map": "/wreckcon-app/static/js/main.7c8665f8.js.map",
     "787.28692217.chunk.js.map": "/wreckcon-app/static/js/787.28692217.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5e4dead.css",
-    "static/js/main.47829473.js"
+    "static/css/main.44ffd3f5.css",
+    "static/js/main.7c8665f8.js"
   ]
 }
