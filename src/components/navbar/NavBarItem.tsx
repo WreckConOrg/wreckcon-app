@@ -43,7 +43,7 @@ export const NavBarItem = (props: NavBarItemProps) => {
         const links = [
             {href: '/contact-us', label:'contact us', gray: true},
             {href: '/sponsors', label:'sponsors', gray: false},
-            {href: '/involved', label:'panelists, vendors, volunteers', gray: true},
+            {href: '/involved', label:'vendors, volunteers, panelists', gray: true},
             {href: 'https://ko-fi.com/wreckcon', label:'ko-fi', gray: false}
         ]
 
@@ -77,13 +77,13 @@ export const NavBarItem = (props: NavBarItemProps) => {
                                     {"bg-[#5A5454] bg-opacity-80" : link.gray},
                                     {"bg-[#131313] bg-opacity-90" : !link.gray}
                                 )}>
-                                    <a href={link.href} className={classNames(
+                                    <Link to={link.href} className={classNames(
                                         "font-inter font-thin text-[1.5vw] mx-[0.6vw] flex items-center my-[0.4vw]",
                                         {"text-white" : !(props.dropdownSelect == link.label)},
                                         {"text-[#FFC42D]" : (props.dropdownSelect == link.label)}
                                         )}>
                                         {link.label}
-                                    </a>
+                                    </Link>
                                 </div>
                             )}
                         </Menu.Item>

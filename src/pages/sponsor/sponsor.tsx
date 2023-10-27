@@ -11,11 +11,13 @@ export const Sponsor = (): JSX.Element => {
                 selectedItem={NavBarItemEnum.GET_INVOLVED}
                 dropdownSelect="sponsors"
             />
-            <div className="flex flex-row items-center justify-center h-[6vw] font-coolvetica text-white text-[4vw]">
-                Sponsors
-            </div>
-            <div className="flex flex-row justify-center items-center font-inter text-[1.7vw] mb-[4vw] mt-[3vw] text-white h-fit">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            <div className="flex flex-col justify-center items-center">
+                <div className="h-[6vw] font-coolvetica text-white text-[4vw]">
+                    Sponsors
+                </div>
+                <div className="w-[70vw] font-inter text-[1.7vw] mb-[4vw] mt-[3vw] text-white text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
             </div>
         </div>
     )
