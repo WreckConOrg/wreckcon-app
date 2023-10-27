@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wreckcon-app/static/css/main.44ffd3f5.css",
-    "main.js": "/wreckcon-app/static/js/main.feb13454.js",
+    "main.css": "/wreckcon-app/static/css/main.09f8aa77.css",
+    "main.js": "/wreckcon-app/static/js/main.ebf01491.js",
     "static/js/787.28692217.chunk.js": "/wreckcon-app/static/js/787.28692217.chunk.js",
     "static/media/5.jpg": "/wreckcon-app/static/media/5.b9915d094086051536cf.jpg",
     "static/media/2.jpg": "/wreckcon-app/static/media/2.57f306130cf70426b912.jpg",
@@ -22,12 +22,12 @@
     "static/media/tape.png": "/wreckcon-app/static/media/tape.23e75ed8c84cfddf4617.png",
     "static/media/coolvetica_rg-webfont.woff2": "/wreckcon-app/static/media/coolvetica_rg-webfont.87588e630d6040514256.woff2",
     "index.html": "/wreckcon-app/index.html",
-    "main.44ffd3f5.css.map": "/wreckcon-app/static/css/main.44ffd3f5.css.map",
-    "main.feb13454.js.map": "/wreckcon-app/static/js/main.feb13454.js.map",
+    "main.09f8aa77.css.map": "/wreckcon-app/static/css/main.09f8aa77.css.map",
+    "main.ebf01491.js.map": "/wreckcon-app/static/js/main.ebf01491.js.map",
     "787.28692217.chunk.js.map": "/wreckcon-app/static/js/787.28692217.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.44ffd3f5.css",
-    "static/js/main.feb13454.js"
+    "static/css/main.09f8aa77.css",
+    "static/js/main.ebf01491.js"
   ]
 }
