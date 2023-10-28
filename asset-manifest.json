@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wreckcon-app/static/css/main.28312feb.css",
-    "main.js": "/wreckcon-app/static/js/main.96a64e08.js",
+    "main.css": "/wreckcon-app/static/css/main.08a5d61d.css",
+    "main.js": "/wreckcon-app/static/js/main.e834a44a.js",
     "static/js/787.28692217.chunk.js": "/wreckcon-app/static/js/787.28692217.chunk.js",
     "static/media/5.jpg": "/wreckcon-app/static/media/5.b9915d094086051536cf.jpg",
     "static/media/2.jpg": "/wreckcon-app/static/media/2.57f306130cf70426b912.jpg",
@@ -29,12 +29,12 @@
     "static/media/twitterlogo.png": "/wreckcon-app/static/media/twitterlogo.7b5bdc5995fa40bcea79.png",
     "static/media/youtubelogo.png": "/wreckcon-app/static/media/youtubelogo.abfd36b30dfc5ba1a3db.png",
     "index.html": "/wreckcon-app/index.html",
-    "main.28312feb.css.map": "/wreckcon-app/static/css/main.28312feb.css.map",
-    "main.96a64e08.js.map": "/wreckcon-app/static/js/main.96a64e08.js.map",
+    "main.08a5d61d.css.map": "/wreckcon-app/static/css/main.08a5d61d.css.map",
+    "main.e834a44a.js.map": "/wreckcon-app/static/js/main.e834a44a.js.map",
     "787.28692217.chunk.js.map": "/wreckcon-app/static/js/787.28692217.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.28312feb.css",
-    "static/js/main.96a64e08.js"
+    "static/css/main.08a5d61d.css",
+    "static/js/main.e834a44a.js"
   ]
 }
