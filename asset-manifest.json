@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wreckcon-app/static/css/main.d8ddd286.css",
-    "main.js": "/wreckcon-app/static/js/main.7067c950.js",
+    "main.css": "/wreckcon-app/static/css/main.28312feb.css",
+    "main.js": "/wreckcon-app/static/js/main.96a64e08.js",
     "static/js/787.28692217.chunk.js": "/wreckcon-app/static/js/787.28692217.chunk.js",
     "static/media/5.jpg": "/wreckcon-app/static/media/5.b9915d094086051536cf.jpg",
     "static/media/2.jpg": "/wreckcon-app/static/media/2.57f306130cf70426b912.jpg",
@@ -17,21 +17,24 @@
     "static/media/mtg logo.png": "/wreckcon-app/static/media/mtg logo.2a52565aa47a7d0b9698.png",
     "static/media/board games logo.png": "/wreckcon-app/static/media/board games logo.d28a1e5e938e66fa4140.png",
     "static/media/vgdev logo.png": "/wreckcon-app/static/media/vgdev logo.c935019e1c40532568b1.png",
+    "static/media/gtmn logo.png": "/wreckcon-app/static/media/gtmn logo.db3242a9e6e50266e0a5.png",
+    "static/media/pokejackets logo.png": "/wreckcon-app/static/media/pokejackets logo.79ca6d0690842f5acefc.png",
     "static/media/coolvetica_rg-webfont.woff": "/wreckcon-app/static/media/coolvetica_rg-webfont.70ea307aa5b7234a3bdd.woff",
     "static/media/maillogo.png": "/wreckcon-app/static/media/maillogo.1d7df536aeaf78a8d54a.png",
     "static/media/dark.png": "/wreckcon-app/static/media/dark.59327bdcf6c92155ada5.png",
     "static/media/tape.png": "/wreckcon-app/static/media/tape.23e75ed8c84cfddf4617.png",
     "static/media/coolvetica_rg-webfont.woff2": "/wreckcon-app/static/media/coolvetica_rg-webfont.87588e630d6040514256.woff2",
     "static/media/instagramlogo.png": "/wreckcon-app/static/media/instagramlogo.0fba3ea06c924b7c17e6.png",
+    "static/media/wreck-logo-white.png": "/wreckcon-app/static/media/wreck-logo-white.c07dcafae6d00d9514a1.png",
     "static/media/twitterlogo.png": "/wreckcon-app/static/media/twitterlogo.7b5bdc5995fa40bcea79.png",
     "static/media/youtubelogo.png": "/wreckcon-app/static/media/youtubelogo.abfd36b30dfc5ba1a3db.png",
     "index.html": "/wreckcon-app/index.html",
-    "main.d8ddd286.css.map": "/wreckcon-app/static/css/main.d8ddd286.css.map",
-    "main.7067c950.js.map": "/wreckcon-app/static/js/main.7067c950.js.map",
+    "main.28312feb.css.map": "/wreckcon-app/static/css/main.28312feb.css.map",
+    "main.96a64e08.js.map": "/wreckcon-app/static/js/main.96a64e08.js.map",
     "787.28692217.chunk.js.map": "/wreckcon-app/static/js/787.28692217.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8ddd286.css",
-    "static/js/main.7067c950.js"
+    "static/css/main.28312feb.css",
+    "static/js/main.96a64e08.js"
   ]
 }
