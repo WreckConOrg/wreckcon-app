@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wreckcon-app/static/css/main.09f8aa77.css",
-    "main.js": "/wreckcon-app/static/js/main.ebf01491.js",
+    "main.css": "/wreckcon-app/static/css/main.6e4b59a3.css",
+    "main.js": "/wreckcon-app/static/js/main.222f4987.js",
     "static/js/787.28692217.chunk.js": "/wreckcon-app/static/js/787.28692217.chunk.js",
     "static/media/5.jpg": "/wreckcon-app/static/media/5.b9915d094086051536cf.jpg",
     "static/media/2.jpg": "/wreckcon-app/static/media/2.57f306130cf70426b912.jpg",
@@ -18,16 +18,20 @@
     "static/media/board games logo.png": "/wreckcon-app/static/media/board games logo.d28a1e5e938e66fa4140.png",
     "static/media/vgdev logo.png": "/wreckcon-app/static/media/vgdev logo.c935019e1c40532568b1.png",
     "static/media/coolvetica_rg-webfont.woff": "/wreckcon-app/static/media/coolvetica_rg-webfont.70ea307aa5b7234a3bdd.woff",
+    "static/media/maillogo.png": "/wreckcon-app/static/media/maillogo.1d7df536aeaf78a8d54a.png",
     "static/media/dark.png": "/wreckcon-app/static/media/dark.59327bdcf6c92155ada5.png",
     "static/media/tape.png": "/wreckcon-app/static/media/tape.23e75ed8c84cfddf4617.png",
     "static/media/coolvetica_rg-webfont.woff2": "/wreckcon-app/static/media/coolvetica_rg-webfont.87588e630d6040514256.woff2",
+    "static/media/instagramlogo.png": "/wreckcon-app/static/media/instagramlogo.0fba3ea06c924b7c17e6.png",
+    "static/media/twitterlogo.png": "/wreckcon-app/static/media/twitterlogo.7b5bdc5995fa40bcea79.png",
+    "static/media/youtubelogo.png": "/wreckcon-app/static/media/youtubelogo.abfd36b30dfc5ba1a3db.png",
     "index.html": "/wreckcon-app/index.html",
-    "main.09f8aa77.css.map": "/wreckcon-app/static/css/main.09f8aa77.css.map",
-    "main.ebf01491.js.map": "/wreckcon-app/static/js/main.ebf01491.js.map",
+    "main.6e4b59a3.css.map": "/wreckcon-app/static/css/main.6e4b59a3.css.map",
+    "main.222f4987.js.map": "/wreckcon-app/static/js/main.222f4987.js.map",
     "787.28692217.chunk.js.map": "/wreckcon-app/static/js/787.28692217.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.09f8aa77.css",
-    "static/js/main.ebf01491.js"
+    "static/css/main.6e4b59a3.css",
+    "static/js/main.222f4987.js"
   ]
 }
