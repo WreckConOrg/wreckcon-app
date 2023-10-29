@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wreckcon-app/static/css/main.08a5d61d.css",
-    "main.js": "/wreckcon-app/static/js/main.e834a44a.js",
+    "main.css": "/wreckcon-app/static/css/main.d9980a92.css",
+    "main.js": "/wreckcon-app/static/js/main.fc69fdf3.js",
     "static/js/787.28692217.chunk.js": "/wreckcon-app/static/js/787.28692217.chunk.js",
     "static/media/5.jpg": "/wreckcon-app/static/media/5.b9915d094086051536cf.jpg",
     "static/media/2.jpg": "/wreckcon-app/static/media/2.57f306130cf70426b912.jpg",
@@ -18,6 +18,8 @@
     "static/media/board games logo.png": "/wreckcon-app/static/media/board games logo.d28a1e5e938e66fa4140.png",
     "static/media/vgdev logo.png": "/wreckcon-app/static/media/vgdev logo.c935019e1c40532568b1.png",
     "static/media/gtmn logo.png": "/wreckcon-app/static/media/gtmn logo.db3242a9e6e50266e0a5.png",
+    "static/media/GTSF-logo-GOLD-CMYK.png": "/wreckcon-app/static/media/GTSF-logo-GOLD-CMYK.1843b7dd0ee171ad9481.png",
+    "static/media/parents-fund-logo.png": "/wreckcon-app/static/media/parents-fund-logo.4302321cf75e9243812a.png",
     "static/media/pokejackets logo.png": "/wreckcon-app/static/media/pokejackets logo.79ca6d0690842f5acefc.png",
     "static/media/coolvetica_rg-webfont.woff": "/wreckcon-app/static/media/coolvetica_rg-webfont.70ea307aa5b7234a3bdd.woff",
     "static/media/maillogo.png": "/wreckcon-app/static/media/maillogo.1d7df536aeaf78a8d54a.png",
@@ -29,12 +31,12 @@
     "static/media/twitterlogo.png": "/wreckcon-app/static/media/twitterlogo.7b5bdc5995fa40bcea79.png",
     "static/media/youtubelogo.png": "/wreckcon-app/static/media/youtubelogo.abfd36b30dfc5ba1a3db.png",
     "index.html": "/wreckcon-app/index.html",
-    "main.08a5d61d.css.map": "/wreckcon-app/static/css/main.08a5d61d.css.map",
-    "main.e834a44a.js.map": "/wreckcon-app/static/js/main.e834a44a.js.map",
+    "main.d9980a92.css.map": "/wreckcon-app/static/css/main.d9980a92.css.map",
+    "main.fc69fdf3.js.map": "/wreckcon-app/static/js/main.fc69fdf3.js.map",
     "787.28692217.chunk.js.map": "/wreckcon-app/static/js/787.28692217.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.08a5d61d.css",
-    "static/js/main.e834a44a.js"
+    "static/css/main.d9980a92.css",
+    "static/js/main.fc69fdf3.js"
   ]
 }
