@@ -38,7 +38,7 @@ const useCarousel = () => {
     return <>
         <img src={currentImage} alt='image could not load' className={classNames(`translate-y-[15%]`,
             { "w-[40vw]" : !isMobile},
-            { "w-[80vw]" : isMobile}
+            { "h-[30vh]" : isMobile}
         )} style={imageStyle}/>
     </>
 };

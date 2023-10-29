@@ -13,11 +13,11 @@ export const Involved = (): JSX.Element => {
                     <Navbar
                         items={NAVBARCONFIG}
                         selectedItem={NavBarItemEnum.GET_INVOLVED}
-                        dropdownSelect="vendors, volunteers, panelists"
+                        dropdownSelect="participate"
                     />
                 </BrowserView>
                 <MobileView>
-                    <Hamburger/>
+                    <Hamburger participate={true}/>
                 </MobileView>
                 <div className="flex flex-col justify-center items-center mb-[3vw]">
                     <div className="h-[6vw] font-coolvetica text-white text-[4vw]">

@@ -24,7 +24,7 @@ export const Contact = (): JSX.Element => {
                     />
                 </BrowserView>
                 <MobileView>
-                    <Hamburger/>
+                    <Hamburger contact={true} />
                 </MobileView>
                 <div className="flex flex-row justify-center space-x-[0.3vw]">
                     <div className="w-[40vw]">

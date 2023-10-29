@@ -69,7 +69,7 @@ export const Home = (props: HomeProps): JSX.Element => {
                         Tickets
                     </div> 
                 </Link>
-                <Link className="bg-[#D9D9D9] w-[40vw] h-[4vh] flex items-center justify-center rounded-md" to={'/about'}>
+                <Link className="bg-[#D9D9D9] w-fit h-[4vh] flex items-center justify-center rounded-md" to={'/about'}>
                     <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw]">
                         About WreckCon
                     </div> 

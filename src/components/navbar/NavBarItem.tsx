@@ -43,7 +43,7 @@ export const NavBarItem = (props: NavBarItemProps) => {
         const links = [
             {href: '/contact-us', label:'contact us', gray: true},
             {href: '/sponsors', label:'sponsors', gray: false},
-            {href: '/involved', label:'vendors, volunteers, panelists', gray: true},
+            {href: '/involved', label:'participate', gray: true},
             {href: 'https://ko-fi.com/wreckcon', label:'ko-fi', gray: false}
         ]
 
@@ -68,7 +68,7 @@ export const NavBarItem = (props: NavBarItemProps) => {
                         </div>
                     </div>
                 </Menu.Button>
-                <Menu.Items className="translate-y-[9.02vw] translate-x-[-16vw]">
+                <Menu.Items className="translate-y-[7.81vw] translate-x-[-16vw]">
                     {links.map((link => (
 
                         <Menu.Item key={link.href} as={Fragment}>

@@ -28,7 +28,7 @@ export const About = (): JSX.Element => {
                     selectedItem={NavBarItemEnum.ABOUT}/>
                 </BrowserView>
                 <MobileView>
-                    <Hamburger/>
+                    <Hamburger about={true}/>
                 </MobileView>
                 <div className={classNames("flex flex-row items-center justify-center font-coolvetica text-white",
                     { "h-[6vw] text-[4vw]" : !isMobile},
@@ -42,13 +42,13 @@ export const About = (): JSX.Element => {
                 )}>
                     <div className={classNames("w-[30vw] h-fill bg-[#2e2f31] mx-[3vw]",
                         { "w-[30vw] mb-[5vw] mt-[3vw]" : !isMobile},
-                        { "w-[80vw] mb-[3vh] z-0 mt-[2vh]" : isMobile}
+                        { "w-fit mb-[4vh] z-0" : isMobile}
                     )}>
                         {useCarousel()}
                     </div>
                     <div className={classNames("font-inter mb-[5vw] mt-[3vw] text-white",
                         { "w-[55vw] text-[1.7vw] mb-[5vw] mt-[3vw]" : !isMobile},
-                        { "w-[80vw] text-[2.5vw] mt-[3vh]" : isMobile}
+                        { "w-[80vw] text-[3.2vw] mt-[4vh] text-center" : isMobile}
                     )}>
                         WreckCon is a student culture convention held at Georgia Tech (Main Atlanta Campus), fully organized and run by Georgia Tech students. Starting in 2022, the Dungeons & Dragons and Magic: the Gathering clubs ran a small convention with events such as open play and tournaments. Realizing that the major potential for a convention at Tech, we began reaching out to other clubs to make the event a celebration of student culture here at Tech, following in the footsteps of previous events such as Techwood Con. We're envisioning an event that showcases the best of what people at Georgia Tech have to offer, built by Tech, for Tech. Go jackets!                </div>
                 </div>
@@ -61,7 +61,7 @@ export const About = (): JSX.Element => {
                 <div className="flex items-center justify-center font-inter text-white">
                     <div className={classNames("text-center",
                         { "text-[1.7vw] w-[70vw] my-[3vw]" : !isMobile},
-                        { "text-[2.5vw] w-[80vw] mt-[0.3vh] mb-[2vh]" : isMobile}
+                        { "text-[3vw] w-[80vw] mt-[0.3vh] mb-[2vh]" : isMobile}
                     )}>
                         WreckCon was designed as a showcase of the many varied student organizations we have at Tech,
                         and below you'll find a list of the student organizations involved with WreckCon this year.
