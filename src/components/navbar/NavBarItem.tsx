@@ -10,7 +10,8 @@ export enum NavBarItemEnum {
     DISCORD,
     TICKETS,
     GET_INVOLVED,
-    SHOP
+    SHOP,
+    SCHEDULE,
 }
 
 export interface NavBarItemProps {
@@ -30,7 +31,7 @@ export const NavBarItem = (props: NavBarItemProps) => {
                 <Link 
                 to={props.url} 
                 className={classNames( 
-                    "font-inter font-thin text-[2vw] ml-[6vw]",
+                    "font-inter font-thin text-[2vw] ml-[5vw]",
                     {"text-[#FFC42D]": props.selected},
                     {"text-white": !props.selected}
                 )}>

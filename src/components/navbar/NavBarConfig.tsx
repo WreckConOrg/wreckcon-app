@@ -17,6 +17,11 @@ export const NAVBARCONFIG: NavBarItemProps[] = [
             displayText: "tickets",
         },
         {
+            itemEnum: NavBarItemEnum.SCHEDULE,
+            url: "/schedule",
+            displayText: "schedule",
+        },
+        {
             itemEnum: NavBarItemEnum.SHOP,
             url: "https://wreckcon.bigcartel.com/",
             displayText: "shop",
