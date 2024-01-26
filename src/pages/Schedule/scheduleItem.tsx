@@ -10,6 +10,8 @@ export interface ScheduleItemProps {
     description: string;
     tags?: ScheduleTag[];
     top?: boolean;
+    startTime: number;
+    endTime: number;
 }
 
 export enum ScheduleTag {
@@ -22,14 +24,22 @@ export enum ScheduleTag {
 
 function ScheduleItem(props: ScheduleItemProps) {
 
+    const TimeToString = (time: number) =>
+    {
+        let h = (time % 1200).toString().slice(0, -2);
+        let m = time.toString().slice(-2);
+        let s = time >= 1200 ? "pm" : "am";
+        return `${h}:${m}${s}`;
+    }
+
     return (
         <div className="flex flex-row w-full">
-            <div className="p-8 w-[30%] text-right font-inter font-thin text-2xl text-white">
+            <div className="p-8 w-[25%] text-right font-inter font-thin text-2xl text-white">
                 <text>
-                    {props.time}
+                    {`${TimeToString(props.startTime)}-${TimeToString(props.endTime)}`}
                 </text>
             </div>
-            <div className="flex w-[70%]">
+            <div className="flex w-[75%]">
             <Disclosure as = "div" className={"w-full"}>
             {({ open }) => (
                 <>

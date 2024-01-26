@@ -5,11 +5,26 @@ interface ScheduleProps {
 }
 
 export const Schedule = (props: ScheduleProps) => {
+    const filterTag = ScheduleTag.EVENT;
+    const filterTime = 1300;
+
+    const TimeIsInRange = (time: number, item: ScheduleItemProps) => {
+        return item.startTime && item.endTime && time >= item.startTime && time <= item.endTime;
+    }
+
     const itemsList = props.items.map((item: ScheduleItemProps, index: number) => {
-        return ScheduleItem({
+        return (TimeIsInRange(filterTime, item) ? 
+            ScheduleItem({
             ...item,
-        }); 
+        }) : null); 
     });
+
+    // const itemsList = props.items.map((item: ScheduleItemProps, index: number) => {
+    //     return (item.tags?.includes(filterTag) ? 
+    //         ScheduleItem({
+    //         ...item,
+    //     }) : null); 
+    // });
 
     return (
         <div className="items-center w-full">
@@ -17,10 +32,10 @@ export const Schedule = (props: ScheduleProps) => {
                 Schedule
             </h1>
             <div className="flex flex-row items-end h-8 relative">
-                <div className="pr-8 w-[30%] text-right font-inter font-thin text-3xl text-white ">
+                <div className="pr-8 w-[25%] text-right font-inter font-thin text-3xl text-white ">
                     Saturday, March 2, 2024
                 </div>
-                <div className="flex w-[70%] text-white">
+                <div className="flex w-[75%] text-white">
                     <hr className="w-full"/>
                 </div>
             </div>
