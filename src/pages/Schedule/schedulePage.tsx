@@ -32,7 +32,7 @@ export const SchedulePage = (): JSX.Element => {
                 <MobileView>
                     <Hamburger about={true}/>
                 </MobileView>
-                <div className="py-10 px-40 items-center">
+                <div className="py-10 px-10 md:px-40 items-center">
                     <Schedule items={SCHEDULECONFIG}/>
                 </div>
             </div>
