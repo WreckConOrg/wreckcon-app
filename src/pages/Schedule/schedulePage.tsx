@@ -30,9 +30,9 @@ export const SchedulePage = (): JSX.Element => {
                     selectedItem={NavBarItemEnum.SCHEDULE}/>
                 </BrowserView>
                 <MobileView>
-                    <Hamburger about={true}/>
+                    <Hamburger selectedItem={NavBarItemEnum.SCHEDULE}/>
                 </MobileView>
-                <div className="py-10 px-10 md:px-40 items-center">
+                <div className="p-6 md:py-10 md:px-40 items-center">
                     <Schedule items={SCHEDULECONFIG}/>
                 </div>
             </div>

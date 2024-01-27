@@ -22,7 +22,7 @@ export const TagBox = (tag: ScheduleTag) =>
         case(ScheduleTag.CLUB_ACTIVITY):
             bgColor = "[#FF7F41]";
             break;
-            case(ScheduleTag.COMPETITION):
+        case(ScheduleTag.COMPETITION):
             bgColor = "[#FFC42D]";
             break;
     }
@@ -33,7 +33,7 @@ export const TagBox = (tag: ScheduleTag) =>
     }).join(" ");
 
     return (
-        <div className={`p-2 rounded-md bg-${bgColor} h-full text-xs md:text-sm align-middle text-center`}>
+        <div className={`p-1 md:p-2 rounded-md bg-${bgColor} h-full text-2xs md:text-sm align-middle text-center`}>
             {prettyName}
         </div>
     );

@@ -12,6 +12,9 @@ export enum NavBarItemEnum {
     GET_INVOLVED,
     SHOP,
     SCHEDULE,
+    CONTACT,
+    PARTICIPATE,
+    SPONSOR,
 }
 
 export interface NavBarItemProps {

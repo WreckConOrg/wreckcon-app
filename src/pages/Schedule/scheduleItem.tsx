@@ -3,6 +3,7 @@ import { Disclosure } from '@headlessui/react'
 import { CaretDown, CaretUp, Carrot, MapPinLine } from "@phosphor-icons/react";
 import classNames from "classnames";
 import { ScheduleTag, TagBox } from "./tagBox";
+import { BrowserView, MobileView } from "react-device-detect";
 
 export interface ScheduleItemProps {
     name: string;
@@ -46,9 +47,11 @@ function ScheduleItem(props: ScheduleItemProps) {
                         {"bg-[#5A5454]" : open},
                         "flex flex-col w-full font-inter font-thin text-white gap-2 md:gap-4 p-4 md:p-8")}>
                         <div className="w-full flex justify-between flex-row text-lg md:text-2xl">
-                            <div className="flex flex-row gap-4 align-center">
+                            <div className="flex flex-row gap-2 align-center">
                                 {props.name}
-                                {TagList}
+                                <BrowserView className="flex flex-row gap-2">
+                                    {TagList}
+                                </BrowserView>
                             </div>
                             <CaretDown
                             className={`${
@@ -56,6 +59,9 @@ function ScheduleItem(props: ScheduleItemProps) {
                             } h-4 w-4 md:h-8 md:w-8 text-white justify-end`}
                             />
                         </div>
+                        <MobileView className="flex flex-row gap-2">
+                            {TagList}
+                        </MobileView>
                         <div className="flex flex-row items-center pl-2 md:pl-4 gap-1 md:gap-2 font-inter font-thin text-m md:text-lg text-white">
                             <MapPinLine className="color-white" size={24} />
                             {props.location}
