@@ -138,6 +138,4 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
         startTime: 1100,
         endTime: 1300,
     },
-
-    
 ]

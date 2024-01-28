@@ -1,7 +1,7 @@
 import { Listbox, Popover } from "@headlessui/react";
 import ScheduleItem, { ScheduleItemProps } from "./scheduleItem";
 import { ScheduleTag, TagBox } from "./tagBox";
-import { ArrowCounterClockwise, Clock, FunnelSimple, Hammer, MagnifyingGlass, SmileySad, Tag } from "@phosphor-icons/react";
+import { ArrowCounterClockwise, Clock, FunnelSimple, Hammer, Tag } from "@phosphor-icons/react";
 import { BrowserView, MobileView } from "react-device-detect";
 import { useState } from "react";
 
@@ -105,16 +105,6 @@ export const Schedule = (props: ScheduleProps) => {
                 <div className="pr-2 md:pr-8 w-[25%] text-right font-inter font-thin text-md md:text-2xl text-white ">
                     Saturday, March 2, 2024
                 </div>
-                {/* <div className="flex flex-col flex-grow w-[75%] text-white absolute">
-                    <FilterPopover 
-                        OnSelectStartTime={setSelectedStartTime} 
-                        OnSelectEndTime={setSelectedEndTime}
-                        startTime={selectedStartTime} 
-                        endTime={selectedEndTime}
-                        tagList={TagList}
-                        ResetTags={ResetTags}
-                    />
-                </div> */}
                 <hr className="w-[75%]"/>
             </BrowserView>
             {scheduleContent}
