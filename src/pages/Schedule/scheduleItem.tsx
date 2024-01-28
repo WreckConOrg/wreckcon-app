@@ -27,7 +27,7 @@ function ScheduleItem(props: ScheduleItemProps) {
     }
 
     const TagList = props.tags?.map((tag:ScheduleTag) => {
-        return TagBox(tag);
+        return TagBox({tag});
     })
 
     return (

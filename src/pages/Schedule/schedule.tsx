@@ -1,7 +1,7 @@
 import { Listbox, Popover } from "@headlessui/react";
 import ScheduleItem, { ScheduleItemProps } from "./scheduleItem";
-import { ScheduleTag } from "./tagBox";
-import { Clock, FunnelSimple } from "@phosphor-icons/react";
+import { ScheduleTag, TagBox } from "./tagBox";
+import { ArrowCounterClockwise, Clock, FunnelSimple, Hammer, MagnifyingGlass, SmileySad, Tag } from "@phosphor-icons/react";
 import { BrowserView, MobileView } from "react-device-detect";
 import { useState } from "react";
 
@@ -10,36 +10,76 @@ interface ScheduleProps {
 }
 
 export const Schedule = (props: ScheduleProps) => {
-    const filterTag = ScheduleTag.EVENT;
-    const filterTimeStart = 1300;
-    const [selectedStartTime, setSelectedStartTime] = useState(1100)
-    const [selectedEndTime, setSelectedEndTime] = useState(2200)
+    const tags = [
+        ScheduleTag.CLUB_ACTIVITY,
+        ScheduleTag.COMPETITION,
+        ScheduleTag.EVENT,
+        ScheduleTag.CLUB_ACTIVITY,
+        ScheduleTag.COMPETITION,
+        ScheduleTag.EVENT,
+        ScheduleTag.CLUB_ACTIVITY,
+        ScheduleTag.COMPETITION,
+        ScheduleTag.EVENT,
+    ]
 
-    function foo(t: number)
-    {
-        console.log(t);
-        setSelectedStartTime(t);
+    const [selectedStartTime, setSelectedStartTime] = useState(1000)
+    const [selectedEndTime, setSelectedEndTime] = useState(2200)
+    const [selectedTags, setSelectedTags] = useState(tags)
+
+
+    const TagIsIncluded = (item: ScheduleItemProps) => {
+        return selectedTags.some((t) => item.tags.includes(t));
     }
 
+    const ResetTags = () => {
+        setSelectedTags(tags);
+    }
+
+    const AddTag = (tag:ScheduleTag) => {
+        setSelectedTags(selectedTags.concat(tag));
+    }
+
+    const RemoveTag = (tag:ScheduleTag) => {
+        setSelectedTags(selectedTags.filter((t) => t !== tag));
+    }
+
+    const ToggleTag = (tag: ScheduleTag) => {
+        if(selectedTags.includes(tag))
+        {
+            RemoveTag(tag);
+        }
+        else
+        {
+            AddTag(tag);
+        }
+    }
+
+    const TagList = tags?.map((tag:ScheduleTag) => {
+        const deselected = !selectedTags.includes(tag);
+        return TagBox({
+            tag, deselected,
+            onClick: (tag: ScheduleTag) => {
+                ToggleTag(tag);
+            }
+        });
+    })
 
     const TimeIsInRange = (item: ScheduleItemProps) => {
        return item.startTime < selectedEndTime && item.endTime > selectedStartTime;
-        // return item.startTime && item.endTime && time >= item.startTime && time <= item.endTime;
     }
 
     const itemsList = props.items.map((item: ScheduleItemProps, index: number) => {
-        return (TimeIsInRange(item) ? 
+        return (TimeIsInRange(item) && TagIsIncluded(item) ? 
             ScheduleItem({
             ...item,
         }) : null); 
     });
 
-    // const itemsList = props.items.map((item: ScheduleItemProps, index: number) => {
-    //     return (item.tags?.includes(filterTag) ? 
-    //         ScheduleItem({
-    //         ...item,
-    //     }) : null); 
-    // });
+    const scheduleContent = itemsList.filter((i) => i != null).length > 0 ? itemsList : 
+    (<div className="flex flex-col items-center gap-4 text-center text-white pt-4 text-lg">
+        <Hammer size = {32}/>
+        No results found. Please adjust filter parameters.
+    </div>)
 
     return (
         <div className="flex flex-col items-center w-full">
@@ -47,14 +87,16 @@ export const Schedule = (props: ScheduleProps) => {
                 <h1 className="relative font-coolvetica text-white items-center w-full text-center text-4xl md:text-7xl">
                     Schedule
                 </h1>
-                <MobileView className="absolute">
+                <div className="absolute md:mt-4">
                     <FilterPopover 
-                            OnSelectStartTime={foo} 
+                            OnSelectStartTime={setSelectedStartTime} 
                             OnSelectEndTime={setSelectedEndTime}
                             startTime={selectedStartTime} 
                             endTime={selectedEndTime}
+                            tagList={TagList}
+                            ResetTags={ResetTags}
                         />
-                </MobileView>
+                </div>
             </div>
             <MobileView className="w-full">
                 <hr className="w-full"/>
@@ -63,17 +105,19 @@ export const Schedule = (props: ScheduleProps) => {
                 <div className="pr-2 md:pr-8 w-[25%] text-right font-inter font-thin text-md md:text-2xl text-white ">
                     Saturday, March 2, 2024
                 </div>
-                <div className="flex flex-col flex-grow w-[75%] text-white">
+                {/* <div className="flex flex-col flex-grow w-[75%] text-white absolute">
                     <FilterPopover 
                         OnSelectStartTime={setSelectedStartTime} 
                         OnSelectEndTime={setSelectedEndTime}
                         startTime={selectedStartTime} 
                         endTime={selectedEndTime}
+                        tagList={TagList}
+                        ResetTags={ResetTags}
                     />
-                    <hr className="w-full"/>
-                </div>
+                </div> */}
+                <hr className="w-[75%]"/>
             </BrowserView>
-            {itemsList}
+            {scheduleContent}
         </div>
     )
 }
@@ -84,38 +128,50 @@ interface FilterProps {
     OnSelectEndTime: (t: number) => void;
     startTime: number;
     endTime: number;
-
+    tagList: JSX.Element[];
+    ResetTags: () => void;
 }
 
 function FilterPopover(props:FilterProps) {
     return (
-      <Popover className="relative flex flex-row justify-end text-white">
-        <Popover.Button className={"ui-open:text-[#FFC42D] flex flex-row items-center p-2 gap-2 text-lg md:text-2xl"}>
+      <Popover className="relative flex flex-row w-full justify-end text-white">
+        <Popover.Button className={"ui-open:text-[#FFC42D] bg-[#2e2f31] flex flex-row items-center p-2 gap-2 text-lg md:text-2xl"}>
             <FunnelSimple size={24}/>
             Filter
         </Popover.Button>
   
-        <Popover.Panel className="absolute mt-12 rounded-md z-10 bg-[#5A5454]">
-          <div className="flex flex-col gap-2 p-4">
-            <div className="flex flex-row gap-1 text-md items-center">
-                <Clock size ={24}/>
-                Time
-                <div className="w-2"/>
-                {TimeSelect(props.OnSelectStartTime, props.startTime, 0, props.endTime)}
-                -
-                {TimeSelect(props.OnSelectEndTime, props.endTime, props.startTime, 0)}
-                {/* <input className="ml-2 flex w-12 text-white p-1 text-xs rounded-md bg-[#2e2f31]" 
-                maxLength={4}>
-                </input>
-                -
-                <input className="flex w-12 text-white p-1 text-xs rounded-md bg-[#2e2f31]" 
-                maxLength={4}>
-                </input> */}
+        <Popover.Panel className="absolute mt-12 md:mt-20 rounded-md z-10 bg-[#5A5454]">
+          <div className="flex flex-col w-[calc(100vw-3rem)] md:max-w-md gap-2 p-4">
+            <div className="flex flex-row justify-between items-center">
+                <div className="flex flex-row gap-1 text-md items-center">
+                    <Clock size ={24}/>
+                    Time
+                    <div className="w-2"/>
+                    {TimeSelect(props.OnSelectStartTime, props.startTime, 0, props.endTime)}
+                    -
+                    {TimeSelect(props.OnSelectEndTime, props.endTime, props.startTime, 0)}
+                </div>
+                
+                <ArrowCounterClockwise size={24} onClick={() => {
+                    props.OnSelectStartTime(1000);
+                    props.OnSelectEndTime(2200);
+                }} />
             </div>
-            <div>
-                Type
+            <hr className="w=full"/>
+            <div className="flex flex-row justify-between items-center">
+                <div className="flex flex-row gap-1 text-md items-center">
+                    <Tag size ={24}/>
+                    Tags
+                    <div className="w-3"/>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                        {props.tagList}
+                    </div>
+                </div>
+                <ArrowCounterClockwise size={24} onClick={() => {
+                    props.ResetTags();
+                }} />
+                </div>
             </div>
-          </div>
           </Popover.Panel>
       </Popover>
     )
@@ -151,8 +207,6 @@ function FilterPopover(props:FilterProps) {
         return (!mintime || t > mintime) && (!maxtime || t < maxtime);
     })
     
-    //const [selectedTime, setSelectedTime] = useState(defaultTime ?? times[0])
-
     return (
         <Listbox value={time} onChange={onSelect} as = "div" className={"justfy-end"}>
         <Listbox.Button className={"bg-[#2e2f31] p-2 rounded-md relative w-20"}>
