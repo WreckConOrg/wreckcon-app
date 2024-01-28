@@ -4,7 +4,6 @@ import { ScheduleTag } from "./tagBox";
 import { Clock, FunnelSimple } from "@phosphor-icons/react";
 import { BrowserView, MobileView } from "react-device-detect";
 import { useState } from "react";
-import { time } from "console";
 
 interface ScheduleProps {
     items: ScheduleItemProps[]
@@ -102,9 +101,9 @@ function FilterPopover(props:FilterProps) {
                 <Clock size ={24}/>
                 Time
                 <div className="w-2"/>
-                {TimeSelect(props.OnSelectStartTime, props.startTime)}
+                {TimeSelect(props.OnSelectStartTime, props.startTime, 0, props.endTime)}
                 -
-                {TimeSelect(props.OnSelectEndTime, props.endTime)}
+                {TimeSelect(props.OnSelectEndTime, props.endTime, props.startTime, 0)}
                 {/* <input className="ml-2 flex w-12 text-white p-1 text-xs rounded-md bg-[#2e2f31]" 
                 maxLength={4}>
                 </input>
@@ -122,7 +121,7 @@ function FilterPopover(props:FilterProps) {
     )
   }
 
-  function TimeSelect(onSelect: (t: number) => void, time: number)
+  function TimeSelect(onSelect: (t: number) => void, time: number, mintime?: number, maxtime?: number)
   {
     const TimeToString = (time: number) =>
     {
@@ -147,6 +146,10 @@ function FilterPopover(props:FilterProps) {
         2100,
         2200,
       ]
+
+    const filteredTimes = times.filter((t: number) => {
+        return (!mintime || t > mintime) && (!maxtime || t < maxtime);
+    })
     
     //const [selectedTime, setSelectedTime] = useState(defaultTime ?? times[0])
 
@@ -155,11 +158,11 @@ function FilterPopover(props:FilterProps) {
         <Listbox.Button className={"bg-[#2e2f31] p-2 rounded-md relative w-20"}>
             {TimeToString(time)}
         </Listbox.Button>
-        <Listbox.Options className={"absolute w-20 rounded-md bg-[#D9D9D9]"}>
-            {times.map((time) => (
+        <Listbox.Options className={"absolute w-20 py-2 rounded-md bg-[#D9D9D9]"}>
+            {filteredTimes.map((time) => (
             <Listbox.Option
             value={time}
-            className={"bg-[#D9D9D9] w-16 text-black ml-2 py-1"}
+            className={"bg-[#D9D9D9] w-16 text-center text-black ml-2 rounded-md py-1 ui-selected:text-white ui-selected:bg-[#2e2f31]"}
             >
                 {TimeToString(time)}
             </Listbox.Option>
