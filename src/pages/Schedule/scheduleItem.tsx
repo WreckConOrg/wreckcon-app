@@ -20,7 +20,7 @@ function ScheduleItem(props: ScheduleItemProps) {
 
     const TimeToString = (time: number) =>
     {
-        let h = (time % 1200).toString().slice(0, -2);
+        let h = (time < 1300 ? time : time % 1200).toString().slice(0, -2);
         let m = time.toString().slice(-2);
         let s = time >= 1200 ? "pm" : "am";
         return `${h}:${m}${s}`;

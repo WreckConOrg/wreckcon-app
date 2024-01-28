@@ -1,8 +1,10 @@
-import { Popover } from "@headlessui/react";
+import { Listbox, Popover } from "@headlessui/react";
 import ScheduleItem, { ScheduleItemProps } from "./scheduleItem";
 import { ScheduleTag } from "./tagBox";
 import { Clock, FunnelSimple } from "@phosphor-icons/react";
 import { BrowserView, MobileView } from "react-device-detect";
+import { useState } from "react";
+import { time } from "console";
 
 interface ScheduleProps {
     items: ScheduleItemProps[]
@@ -10,14 +12,24 @@ interface ScheduleProps {
 
 export const Schedule = (props: ScheduleProps) => {
     const filterTag = ScheduleTag.EVENT;
-    const filterTime = 1300;
+    const filterTimeStart = 1300;
+    const [selectedStartTime, setSelectedStartTime] = useState(1100)
+    const [selectedEndTime, setSelectedEndTime] = useState(2200)
 
-    const TimeIsInRange = (time: number, item: ScheduleItemProps) => {
-        return item.startTime && item.endTime && time >= item.startTime && time <= item.endTime;
+    function foo(t: number)
+    {
+        console.log(t);
+        setSelectedStartTime(t);
+    }
+
+
+    const TimeIsInRange = (item: ScheduleItemProps) => {
+       return item.startTime < selectedEndTime && item.endTime > selectedStartTime;
+        // return item.startTime && item.endTime && time >= item.startTime && time <= item.endTime;
     }
 
     const itemsList = props.items.map((item: ScheduleItemProps, index: number) => {
-        return (TimeIsInRange(filterTime, item) ? 
+        return (TimeIsInRange(item) ? 
             ScheduleItem({
             ...item,
         }) : null); 
@@ -37,7 +49,12 @@ export const Schedule = (props: ScheduleProps) => {
                     Schedule
                 </h1>
                 <MobileView className="absolute">
-                    <FilterPopover/>
+                    <FilterPopover 
+                            OnSelectStartTime={foo} 
+                            OnSelectEndTime={setSelectedEndTime}
+                            startTime={selectedStartTime} 
+                            endTime={selectedEndTime}
+                        />
                 </MobileView>
             </div>
             <MobileView className="w-full">
@@ -48,7 +65,12 @@ export const Schedule = (props: ScheduleProps) => {
                     Saturday, March 2, 2024
                 </div>
                 <div className="flex flex-col flex-grow w-[75%] text-white">
-                    <FilterPopover/>
+                    <FilterPopover 
+                        OnSelectStartTime={setSelectedStartTime} 
+                        OnSelectEndTime={setSelectedEndTime}
+                        startTime={selectedStartTime} 
+                        endTime={selectedEndTime}
+                    />
                     <hr className="w-full"/>
                 </div>
             </BrowserView>
@@ -58,8 +80,15 @@ export const Schedule = (props: ScheduleProps) => {
 }
 
 export default Schedule;
+interface FilterProps {
+    OnSelectStartTime: (t: number) => void;
+    OnSelectEndTime: (t: number) => void;
+    startTime: number;
+    endTime: number;
 
-function FilterPopover() {
+}
+
+function FilterPopover(props:FilterProps) {
     return (
       <Popover className="relative flex flex-row justify-end text-white">
         <Popover.Button className={"ui-open:text-[#FFC42D] flex flex-row items-center p-2 gap-2 text-lg md:text-2xl"}>
@@ -67,15 +96,22 @@ function FilterPopover() {
             Filter
         </Popover.Button>
   
-        <Popover.Panel className="absolute mt-12 rounded-md z-10 bg-[#5A5454] w-screen max-w-xs">
+        <Popover.Panel className="absolute mt-12 rounded-md z-10 bg-[#5A5454]">
           <div className="flex flex-col gap-2 p-4">
-            <div className="flex flex-row gap-2 text-md items-center">
+            <div className="flex flex-row gap-1 text-md items-center">
                 <Clock size ={24}/>
                 Time
-                <input className="flex w-20 text-black">
+                <div className="w-2"/>
+                {TimeSelect(props.OnSelectStartTime, props.startTime)}
+                -
+                {TimeSelect(props.OnSelectEndTime, props.endTime)}
+                {/* <input className="ml-2 flex w-12 text-white p-1 text-xs rounded-md bg-[#2e2f31]" 
+                maxLength={4}>
                 </input>
-                <input className="flex w-20 text-black">
-                </input>
+                -
+                <input className="flex w-12 text-white p-1 text-xs rounded-md bg-[#2e2f31]" 
+                maxLength={4}>
+                </input> */}
             </div>
             <div>
                 Type
@@ -83,5 +119,52 @@ function FilterPopover() {
           </div>
           </Popover.Panel>
       </Popover>
+    )
+  }
+
+  function TimeSelect(onSelect: (t: number) => void, time: number)
+  {
+    const TimeToString = (time: number) =>
+    {
+        let h = (time < 1300 ? time : time % 1200).toString().slice(0, -2);
+        let m = time.toString().slice(-2);
+        let s = time >= 1200 ? "pm" : "am";
+        return `${h}:${m}${s}`;
+    }
+
+    const times = [
+        1000,
+        1100,
+        1200,
+        1300,
+        1400,
+        1500,
+        1600,
+        1700,
+        1800,
+        1900,
+        2000,
+        2100,
+        2200,
+      ]
+    
+    //const [selectedTime, setSelectedTime] = useState(defaultTime ?? times[0])
+
+    return (
+        <Listbox value={time} onChange={onSelect} as = "div" className={"justfy-end"}>
+        <Listbox.Button className={"bg-[#2e2f31] p-2 rounded-md relative w-20"}>
+            {TimeToString(time)}
+        </Listbox.Button>
+        <Listbox.Options className={"absolute w-20 rounded-md bg-[#D9D9D9]"}>
+            {times.map((time) => (
+            <Listbox.Option
+            value={time}
+            className={"bg-[#D9D9D9] w-16 text-black ml-2 py-1"}
+            >
+                {TimeToString(time)}
+            </Listbox.Option>
+            ))}
+        </Listbox.Options>
+        </Listbox>
     )
   }
