@@ -1,8 +1,8 @@
 {
   "name": "wreckcon-app",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://WreckConOrg.github.io/wreckcon-app",
+  "private": false,
+  "homepage": "https://wreckcon.org",
   "dependencies": {
     "@headlessui/react": "^1.7.17",
     "@headlessui/tailwindcss": "^0.2.0",
