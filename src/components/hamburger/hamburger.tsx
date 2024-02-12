@@ -4,17 +4,20 @@ import hamclose from './../../assets/ham-close.png';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import classNames from 'classnames';
+import { NavBarItemEnum } from '../navbar/NavBarItem';
 
 export interface HamburgerProps {
-    about? : boolean;
-    contact? : boolean;
-    participate? : boolean;
-    sponsors? : boolean
+    selectedItem: NavBarItemEnum;
 }
 
 export const Hamburger = (props: HamburgerProps) => {
 
     const [open, setOpen] = useState(false);
+
+    const GetTextColor = (page: NavBarItemEnum) => 
+    {
+        return page == props.selectedItem ? 'text-[#FFC42D]' : 'text-white';
+    }
 
     return (
         <div className='mb-[2vh]'>
@@ -32,10 +35,7 @@ export const Hamburger = (props: HamburgerProps) => {
                         </button>
                     </div>
                 </div>
-                <Link to={'/about'} className={classNames('ml-[10vw]',
-                    {'text-white' : !props.about},
-                    {'text-[#FFC42D]' : props.about}
-                )}>
+                <Link to={'/about'} className={`ml-[10vw] ${GetTextColor(NavBarItemEnum.ABOUT)}`}>
                     about
                 </Link>
                 <div>
@@ -47,28 +47,22 @@ export const Hamburger = (props: HamburgerProps) => {
                 <Link to={'https://gatech.universitytickets.com/w/event.aspx?id=2002&p=1'} className='ml-[10vw] text-white'>
                     tickets
                 </Link>
+                <Link to={'/schedule'} className={`ml-[10vw] ${GetTextColor(NavBarItemEnum.SCHEDULE)}`}>
+                    schedule
+                </Link>
                 <Link to={'https://wreckcon.bigcartel.com/'} className='ml-[10vw] text-white'>
                     shop
                 </Link>
                 <div>
                     <hr className='mx-[10vw] h-[0.3vh] border-none bg-[#FFC42D]'/>
                 </div>
-                <Link to={'/contact-us'} className={classNames('ml-[10vw]',
-                    {'text-white' : !props.contact},
-                    {'text-[#FFC42D]' : props.contact}
-                )}>
+                <Link to={'/contact-us'} className={`ml-[10vw] ${GetTextColor(NavBarItemEnum.CONTACT)}`}>
                     contact us
                 </Link>
-                <Link to={'/involved'} className={classNames('ml-[10vw]',
-                    {'text-white' : !props.participate},
-                    {'text-[#FFC42D]' : props.participate}
-                )}>
+                <Link to={'/involved'} className={`ml-[10vw] ${GetTextColor(NavBarItemEnum.PARTICIPATE)}`}>
                     participate
                 </Link>
-                <Link to={'/sponsors'} className={classNames('ml-[10vw]',
-                    {'text-white' : !props.sponsors},
-                    {'text-[#FFC42D]' : props.sponsors}
-                )}>
+                <Link to={'/sponsors'} className={`ml-[10vw] ${GetTextColor(NavBarItemEnum.SPONSOR)}`}>
                     sponsors
                 </Link>
             </div>

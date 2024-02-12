@@ -16,6 +16,11 @@ export const NAVBARCONFIG: NavBarItemProps[] = [
             url: "https://gatech.universitytickets.com/w/event.aspx?id=2002&p=1",
             displayText: "tickets",
         },
+        // {
+        //     itemEnum: NavBarItemEnum.SCHEDULE,
+        //     url: "/schedule",
+        //     displayText: "schedule",
+        // },
         {
             itemEnum: NavBarItemEnum.SHOP,
             url: "https://wreckcon.bigcartel.com/",
