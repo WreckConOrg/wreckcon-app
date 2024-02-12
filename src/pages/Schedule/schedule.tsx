@@ -10,16 +10,10 @@ interface ScheduleProps {
 }
 
 export const Schedule = (props: ScheduleProps) => {
-    const tags = [
-        ScheduleTag.CLUB_ACTIVITY,
-        ScheduleTag.COMPETITION,
-        ScheduleTag.EVENT,
-        ScheduleTag.CLUB_ACTIVITY,
-        ScheduleTag.COMPETITION,
-        ScheduleTag.EVENT,
-        ScheduleTag.CLUB_ACTIVITY,
-        ScheduleTag.COMPETITION,
-        ScheduleTag.EVENT,
+    const tags = [        
+        ScheduleTag.EVENT,        
+        ScheduleTag.PANEL,
+        ScheduleTag.FREE_PLAY
     ]
 
     const [selectedStartTime, setSelectedStartTime] = useState(1000)
@@ -82,12 +76,9 @@ export const Schedule = (props: ScheduleProps) => {
     </div>)
 
     return (
-        <div className="flex flex-col items-center w-full">
+        <div className="flex flex-col items-center w-full md:translate-x-[-3vw] md:translate-y-[-4vh]">
             <div className="flex flex-row w-full h-12 justify-end">
-                <h1 className="relative font-coolvetica text-white items-center w-full text-center text-4xl md:text-7xl">
-                    Schedule
-                </h1>
-                <div className="absolute md:mt-4">
+                <div className="absolute">
                     <FilterPopover 
                             OnSelectStartTime={setSelectedStartTime} 
                             OnSelectEndTime={setSelectedEndTime}
@@ -101,11 +92,11 @@ export const Schedule = (props: ScheduleProps) => {
             <MobileView className="w-full">
                 <hr className="w-full"/>
             </MobileView>
-            <BrowserView className="flex flex-row w-full items-end h-8 relative">
-                <div className="pr-2 md:pr-8 w-[25%] text-right font-inter font-thin text-md md:text-2xl text-white ">
+            <BrowserView className="flex flex-row w-full items-end h-[3vh] relative">
+                <div className="w-[40%] text-right font-inter font-thin text-md md:text-[1.7vw] text-white md:translate-x-[-1.5vw]">
                     Saturday, March 2, 2024
                 </div>
-                <hr className="w-[75%]"/>
+                <hr className="w-[120%]"/>
             </BrowserView>
             {scheduleContent}
         </div>
@@ -124,7 +115,7 @@ interface FilterProps {
 
 function FilterPopover(props:FilterProps) {
     return (
-      <Popover className="relative flex flex-row w-full justify-end text-white">
+      <Popover className="relative flex flex-row w-full justify-end text-white z-0">
         <Popover.Button className={"ui-open:text-[#FFC42D] bg-[#2e2f31] flex flex-row items-center p-2 gap-2 text-lg md:text-2xl"}>
             <FunnelSimple size={24}/>
             Filter

@@ -53,7 +53,7 @@ export const NavBarItem = (props: NavBarItemProps) => {
 
         return (
             <Menu>
-                <Menu.Button className="ml-[6vw] ui-open:bg-[#131313] bg-opacity-90">
+                <Menu.Button className="ml-[6vw] ui-open:bg-[#131313] bg-opacity-90 z-20">
                     <div className={classNames(
                         "font-inter font-thin text-[2vw] flex flex-row justify-center h-[3vw] w-[16vw] my-[0.3vw]",
                         {"text-[#FFC42D]": props.selected},
@@ -72,7 +72,7 @@ export const NavBarItem = (props: NavBarItemProps) => {
                         </div>
                     </div>
                 </Menu.Button>
-                <Menu.Items className="translate-y-[7.81vw] translate-x-[-16vw]">
+                <Menu.Items className="translate-y-[7.81vw] translate-x-[-16vw] z-20">
                     {links.map((link => (
 
                         <Menu.Item key={link.href} as={Fragment}>

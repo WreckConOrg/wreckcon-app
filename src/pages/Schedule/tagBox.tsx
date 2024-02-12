@@ -2,9 +2,9 @@ import classNames from "classnames";
 
 export enum ScheduleTag {
     ALL,
-    COMPETITION,
     EVENT,
-    CLUB_ACTIVITY,
+    FREE_PLAY,
+    PANEL
 }
 
 export interface TagBoxProps {
@@ -28,10 +28,10 @@ export const TagBox = (props: TagBoxProps) =>
             case(ScheduleTag.EVENT):
                 bgColor = "[#659470]";
                 break;
-            case(ScheduleTag.CLUB_ACTIVITY):
+            case(ScheduleTag.FREE_PLAY):
                 bgColor = "[#FF7F41]";
                 break;
-            case(ScheduleTag.COMPETITION):
+            case(ScheduleTag.PANEL):
                 bgColor = "[#FFC42D]";
                 break;
         }

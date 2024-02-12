@@ -6,6 +6,7 @@ import { BrowserView, MobileView, isMobile } from "react-device-detect";
 import { Hamburger } from "../../components/hamburger/hamburger";
 import Schedule from "./schedule";
 import { SCHEDULECONFIG } from "./scheduleConfig";
+import classNames from "classnames";
 
 export const SchedulePage = (): JSX.Element => {
 
@@ -20,7 +21,13 @@ export const SchedulePage = (): JSX.Element => {
                 <MobileView>
                     <Hamburger selectedItem={NavBarItemEnum.SCHEDULE}/>
                 </MobileView>
-                <div className="p-6 md:py-10 md:px-40 items-center">
+                <div className={classNames("flex flex-row items-center justify-center font-coolvetica text-white",
+                    { "h-[6vw] text-[4vw]" : !isMobile},
+                    { "mt-[2vh] text-[9vw] mb-[-2vh]" : isMobile}
+                )}>
+                    Schedule
+                </div>
+                <div className="p-6 md:mb-10 md:px-40 items-center">
                     <Schedule items={SCHEDULECONFIG}/>
                 </div>
             </div>
