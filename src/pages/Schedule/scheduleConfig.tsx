@@ -1,3 +1,4 @@
+import Schedule from "./schedule";
 import { ScheduleItemProps } from "./scheduleItem";
 import { ScheduleTag } from "./tagBox";
 
@@ -12,10 +13,19 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
         endTime: 1100,
     },
     {
+        name: "Smash Competition Open",
+        time: "10:30am-10:40am",
+        location: "Instructional Center",
+        description: "Registration and opening for the Smash tournament at WreckCon.",
+        tags: [ScheduleTag.EVENT],
+        startTime: 1030,
+        endTime: 1040,
+    },
+    {
         name: "Panel: How Anime Impacted Latin America",
         time: "11:00am-11:30am",
         location: "Home Park",
-        description: "A panel that dives into how Latin America fell in love with anime since its arrival and a panel that's spoken en English y Español! @simp.ly_faucet IG",
+        description: "A panel that dives into how Latin America fell in love with anime since its arrival and a panel that's spoken en English y Español! Find the panelist at @simp.ly_faucet on Instagram.",
         tags: [ScheduleTag.PANEL],
         startTime: 1100,
         endTime: 1130
@@ -25,7 +35,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
         time: "11:30am-12:30pm",
         location: "Main Stage",
         description: "A panel of indie game-developers at WreckCon.",
-        tags: [ScheduleTag.EVENT],
+        tags: [ScheduleTag.EVENT, ScheduleTag.PANEL],
         startTime: 1130,
         endTime: 1230
     },
@@ -39,10 +49,19 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
         endTime: 1200
     },
     {
+        name: "Smash Tournament Wave A",
+        time: "12:00pm-1:30pm",
+        location: "Instructional Center",
+        description: "Wave A for the WreckCon Smash Tournament.",
+        tags: [ScheduleTag.EVENT],
+        startTime: 1200,
+        endTime: 1330
+    },
+    {
         name: "Panel: Genshin Impact: Mind, Mythos, and Memory",
         time: "12:00pm-1:00pm",
         location: "Home Park",
-        description: "Prepare to embark on a journey through Teyvat like no other with our Genshin Impact trivia panel. Get ready to unleash your inner visionary and compete for exclusive prizes, all while celebrating the elemental wonders of Teyvat! @aquaholic_cosplay IG",
+        description: "Prepare to embark on a journey through Teyvat like no other with our Genshin Impact trivia panel. Get ready to unleash your inner visionary and compete for exclusive prizes, all while celebrating the elemental wonders of Teyvat! Find the panelist at @aquaholic_cosplay on Instagram.",
         tags: [ScheduleTag.PANEL],
         startTime: 1200,
         endTime: 1300
@@ -51,17 +70,26 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
         name: "Panel: We've All Been Punk'd",
         time: "1:00pm-2:00pm",
         location: "Home Park",
-        description: "What exactly are \"-punk\" genres? Where do they come from, what do they focus on... and why are there SO many of them now? A detailed look at the history of a fascinating lineage of contemporary genres, \"We've All Been Punk'd\" aims to answer these questions and more. Presented by Val Barnhart, senior LMC major and member of the GT Sci-Fi Lab. @val_bee_03 IG",
+        description: "What exactly are \"-punk\" genres? Where do they come from, what do they focus on... and why are there SO many of them now? A detailed look at the history of a fascinating lineage of contemporary genres, \"We've All Been Punk'd\" aims to answer these questions and more. Presented by Val Barnhart, senior LMC major and member of the GT Sci-Fi Lab. Find the panelist at @val_bee_03 on Instagram.",
         tags: [ScheduleTag.PANEL],
         startTime: 1300,
         endTime: 1400
+    },
+    {
+        name: "Smash Tournament Wave B",
+        time: "1:30pm-3:00pm",
+        location: "Instructional Center",
+        description: "Wave B of the WreckCon Smash Tournament.",
+        tags: [ScheduleTag.EVENT],
+        startTime: 1330,
+        endTime: 1500
     },
     {
         name: "Riot Games Panel",
         time: "2:00pm-3:00pm",
         location: "Main Stage",
         description: "A panel of several Riot Games designers and developers at WreckCon.",
-        tags: [ScheduleTag.EVENT],
+        tags: [ScheduleTag.EVENT, ScheduleTag.PANEL],
         startTime: 1400,
         endTime: 1500
     },
@@ -69,10 +97,19 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
         name: "Panel: Did the Disney Channel Original Movies age well?",
         time: "2:00pm-3:00pm",
         location: "Home Park",
-        description: "The panelist will be going through multiple disney channel films with the audience and explaining which ones still hold up and which ones do not. @harriyanna",
+        description: "The panelist will be going through multiple disney channel films with the audience and explaining which ones still hold up and which ones do not. Find the panelist at @harriyanna.",
         tags: [ScheduleTag.PANEL],
         startTime: 1400,
         endTime: 1500
+    },
+    {
+        name: "Smash Tournament Top 32",
+        time: "3:00pm-5:30pm",
+        location: "Instructional Center",
+        description: "The Top 32 of the WreckCon Smash Tournament!",
+        tags: [ScheduleTag.EVENT],
+        startTime: 1500,
+        endTime: 1730
     },
     {
         name: "Pokemon Club Presents: Who's That Pokemon?",
@@ -87,7 +124,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
         name: "Panel: So You Want to Make a Cosplay?!",
         time: "3:00pm-4:00pm",
         location: "Home Park",
-        description: "Join us to learn the ins and outs of hand making your first cosplay, from choosing the costume to actually assembling it! @FoxArcada",
+        description: "Join us to learn the ins and outs of hand making your first cosplay, from choosing the costume to actually assembling it! Find the panelist at @FoxArcada.",
         tags: [ScheduleTag.PANEL],
         startTime: 1500,
         endTime: 1600
@@ -100,6 +137,15 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
         tags: [ScheduleTag.EVENT],
         startTime: 1600,
         endTime: 1800
+    },
+    {
+        name: "Smash Tournament Top 8!",
+        time: "5:30pm-9:00pm",
+        location: "Instructional Center",
+        description: "The Final 8 of the WreckCon Smash Tournament. After a fierce competition, who will remain at the top?",
+        tags: [ScheduleTag.EVENT],
+        startTime: 1730,
+        endTime: 2100
     },
     {
         name: "Panel: Beginner Programming with Sensei (Python 101)",
@@ -123,7 +169,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
         name: "Panel: Slide into Our DMs",
         time: "7:00pm-8:30pm",
         location: "Home Park",
-        description: "Tips, Tricks, Guidance for new or continuing TTRPG game masters. The panel will be focusing on Dungeons and Dragons 5th edition, but most guidance is applicable to similar systems. We plan on doing a panel on designing combat encounters. @gt.dnd IG",
+        description: "Tips, Tricks, Guidance for new or continuing TTRPG game masters. The panel will be focusing on Dungeons and Dragons 5th edition, but most guidance is applicable to similar systems. We plan on doing a panel on designing combat encounters. Find the Dungeons and Dragons Club at @gt.dnd on Instagram",
         tags: [ScheduleTag.PANEL],
         startTime: 1900,
         endTime: 2030
@@ -132,7 +178,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
         name: "Panel: Star Wars: Rewrite",
         time: "8:30pm-10:00pm",
         location: "Home Park",
-        description: "If you could change any ending, scence, major death ect in any media, what would you change and why? @spaceboy_78 IG",
+        description: "If you could change any ending, scence, major death ect in any media, what would you change and why? Find the panelist at @spaceboy_78 on Instagram.",
         tags: [ScheduleTag.PANEL],
         startTime: 2030,
         endTime: 2200
@@ -141,7 +187,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
         name: "The WreckCon Trivia Gameshow!",
         time: "8:30pm-9:30pm",
         location: "Main Stage",
-        description: "WreckCon presents a trivia gameshow.",
+        description: "A trivia gameshow involving many of the clubs involved at WreckCon, held on the main stage!",
         tags: [ScheduleTag.EVENT],
         startTime: 2030,
         endTime: 2130
@@ -150,7 +196,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
         name: "VGDev Arcade",
         time: "10:00am-10:00pm",
         location: "Buckhead",
-        description: "VGDev Description",
+        description: "Come to the VGDev Arcade to play through multiple student developed games, all day at WreckCon!",
         tags: [ScheduleTag.FREE_PLAY],
         startTime: 1000,
         endTime: 2200,
@@ -159,7 +205,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
         name: "Magic: The Gathering, YuGiOh, and Pokemon Free Play",
         time: "10:00am-10:00pm",
         location: "Centennial",
-        description: "TCG Description",
+        description: "Come on over for all day Magic: The Gathering, YuGiOh, and Pokemon free play!",
         tags: [ScheduleTag.FREE_PLAY],
         startTime: 1000,
         endTime: 2200
@@ -168,7 +214,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
         name: "Dungeons and Dragons Free Play",
         time: "10:00am-10:00pm",
         location: "Kirkwood",
-        description: "DND Description",
+        description: "Join the GT D&D Club for all day tabletop RPG games, no experience required!",
         tags: [ScheduleTag.FREE_PLAY],
         startTime: 1000,
         endTime: 2200
@@ -177,7 +223,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
         name: "Board Game Club Free Play",
         time: "10:00am-10:00pm",
         location: "Old Fourth Ward + Sweet Auburn",
-        description: "Board Game Description",
+        description: "Join Board Game club to play a variety of games all throughout the day.",
         tags: [ScheduleTag.FREE_PLAY],
         startTime: 1000,
         endTime: 2200
@@ -186,16 +232,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
         name: "Warhammer Free Play",
         time: "10:00am-10:00pm",
         location: "Inman Park",
-        description: "Warhanmmer Description",
-        tags: [ScheduleTag.FREE_PLAY],
-        startTime: 1000,
-        endTime: 2200
-    },
-    {
-        name: "Dungeons and Dragons Free Play",
-        time: "10:00am-10:00pm",
-        location: "Kirkwood",
-        description: "DND Description",
+        description: "Join Warhammer Club for totally free Warhammer play in Inman Park!",
         tags: [ScheduleTag.FREE_PLAY],
         startTime: 1000,
         endTime: 2200

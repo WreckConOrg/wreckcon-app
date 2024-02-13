@@ -38,7 +38,7 @@ const phrase = phrases[Math.floor(Math.random() * phrases.length)]
       <Route path='/sponsors' element={<Sponsor />}/>
       <Route path='/involved' element={<Involved />}/>
       <Route path='/contact-us' element={<Contact />}/>
-      <Route path='/secret-schedule' element={<SchedulePage />}/>
+      <Route path='/schedule' element={<SchedulePage />}/>
     </Routes>
   );
 }
