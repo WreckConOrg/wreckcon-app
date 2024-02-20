@@ -9,7 +9,6 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import {SchedulePage} from './pages/Schedule/schedulePage';
 
 function App() {
 
@@ -38,7 +37,6 @@ const phrase = phrases[Math.floor(Math.random() * phrases.length)]
       <Route path='/sponsors' element={<Sponsor />}/>
       <Route path='/involved' element={<Involved />}/>
       <Route path='/contact-us' element={<Contact />}/>
-      <Route path='/secret-schedule' element={<SchedulePage />}/>
     </Routes>
   );
 }

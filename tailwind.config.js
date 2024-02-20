@@ -12,15 +12,8 @@ module.exports = {
     },
     extend: {
       screens: {
-        'sm': '400px',
-      'md': '960px',
-      'lg': '1440px',
         '3xl' : '1650px',
         '4xl' : '2500px'
-      },
-      fontSize: {
-        "2xs": '0.625rem',
-        "3xs": '0.5rem',
       },
       backgroundImage: {
         'tape': "url('./assets/tape.png')",
@@ -39,7 +32,7 @@ module.exports = {
         coolvetica: ["coolvetica", "sans-serif"],
         inter: ["inter", "sans-serif"],
         interbold: ["inter-bold", "sans-serif"]
-      },
+      }
      },
     //  colors: {
     //   yellow : {

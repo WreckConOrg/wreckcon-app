@@ -28,7 +28,7 @@ export const About = (): JSX.Element => {
                     selectedItem={NavBarItemEnum.ABOUT}/>
                 </BrowserView>
                 <MobileView>
-                    <Hamburger selectedItem={NavBarItemEnum.ABOUT}/>
+                    <Hamburger about={true}/>
                 </MobileView>
                 <div className={classNames("flex flex-row items-center justify-center font-coolvetica text-white",
                     { "h-[6vw] text-[4vw]" : !isMobile},
