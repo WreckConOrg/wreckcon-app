@@ -28,7 +28,7 @@ export const Sponsor = (): JSX.Element => {
                     />
                 </BrowserView>
                 <MobileView>
-                    <Hamburger selectedItem={NavBarItemEnum.SPONSOR}/>
+                    <Hamburger sponsors={true}/>
                 </MobileView>
                 <div className="flex flex-col justify-center items-center">
                     <div className="h-[6vw] font-coolvetica text-white text-[4vw]">
