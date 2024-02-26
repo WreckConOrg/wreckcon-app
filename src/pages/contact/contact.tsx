@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useRef, useState } from "react"
 import { Navbar } from "../../components/navbar/NavBar";
 import { NAVBARCONFIG } from "../../components/navbar/NavBarConfig";
 import { NavBarItemEnum } from "../../components/navbar/NavBarItem";
@@ -11,8 +11,45 @@ import mail from "../../assets/contact_logos/maillogo.png";
 import { Hamburger } from "../../components/hamburger/hamburger";
 
 export const Contact = (): JSX.Element => {
-
+    const emailRef = useRef<HTMLInputElement>(null);
+    const nameRef = useRef<HTMLInputElement>(null);
+    const messageRef = useRef<HTMLTextAreaElement>(null);
     const [submitted, setSubmitted] = useState(false);
+
+    function submitSheet() {
+        setSubmitted(true);
+
+        const name = nameRef.current?.value;
+        const email = emailRef.current?.value;
+        const message = messageRef.current?.value;
+
+        console.log(name);
+        console.log(email);
+        console.log(message);
+
+        let today = new Date().toLocaleDateString()
+
+        fetch('https://sheetdb.io/api/v1/3w5sniyxjs8ya', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                data: [
+                    {
+                        'Date': today,
+                        'Name': name,
+                        'Email': email,
+                        'Message': message
+                    }
+                ]
+            })
+        })
+          .then((response) => response.json())
+          .then((data) => console.log(data));
+        
+    }
 
     return (
         <div className="bg-[#2e2f31] h-screen">
@@ -60,6 +97,7 @@ export const Contact = (): JSX.Element => {
                                 type="text"
                                 placeholder="name"
                                 name="name"
+                                ref={nameRef}
                                 className="text-black w-[40vw]"
                             />
                         </div>
@@ -68,6 +106,7 @@ export const Contact = (): JSX.Element => {
                                 type="email"
                                 placeholder="email"
                                 name="email"
+                                ref={emailRef}
                                 className="text-black w-[40vw]"
                             />
                         </div>
@@ -75,11 +114,12 @@ export const Contact = (): JSX.Element => {
                             <textarea
                                 placeholder="message"
                                 name="message"
+                                ref={messageRef}
                                 className="text-black w-[40vw] h-[20vw]"
                             />
                         </div>
                         <div>
-                            <button
+                            <button onClick={submitSheet}
                                 className="bg-[#FFC42D] w-[7vw] h-[3vw] rounded-md translate-y-[-5vw] translate-x-[30vw]"
                             >
                                 send

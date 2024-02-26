@@ -21,24 +21,16 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
         startTime: 1030,
         endTime: 1040,
     },
-    {
-        name: "Panel: How Anime Impacted Latin America",
-        time: "11:00am-11:30am",
-        location: "Home Park",
-        description: "A panel that dives into how Latin America fell in love with anime since its arrival and a panel that's spoken en English y Español! Find the panelist at @simp.ly_faucet on Instagram.",
-        tags: [ScheduleTag.PANEL],
-        startTime: 1100,
-        endTime: 1130
-    },
-    {
-        name: "Indie Gaming Panel",
-        time: "11:30am-12:30pm",
-        location: "Main Stage",
-        description: "A panel of indie game-developers at WreckCon.",
-        tags: [ScheduleTag.EVENT, ScheduleTag.PANEL],
-        startTime: 1130,
-        endTime: 1230
-    },
+
+    // {
+    //     name: "Indie Gaming Panel",
+    //     time: "11:30am-12:30pm",
+    //     location: "Main Stage",
+    //     description: "A panel of indie game-developers at WreckCon.",
+    //     tags: [ScheduleTag.EVENT, ScheduleTag.PANEL],
+    //     startTime: 1130,
+    //     endTime: 1230
+    // },
     {
         name: "Panel: Anime for the Female Gaze!",
         time: "11:30am-12:00pm",
@@ -151,7 +143,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
         name: "Panel: Beginner Programming with Sensei (Python 101)",
         time: "6:00pm-7:00pm",
         location: "Home Park",
-        description: "A panel on beginning Python at WreckCon.",
+        description: "Come learn beginning programming with your own personal sensei! Your sensei will go over the basics of computer programming using a widely known programming language called Python! Feel free to bring a laptop and follow along.",
         tags: [ScheduleTag.PANEL],
         startTime: 1800,
         endTime: 1900
@@ -160,7 +152,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
         name: "Idolfest Concert",
         time: "7:00pm-8:30pm",
         location: "Main Stage",
-        description: "Idolfest presents a concert at WreckCon.",
+        description: "BubbleStarL!ve will be hosting an IdolFest that people can come and watch. We will be inviting other idol groups and solo idols to participate in this event along with us!",
         tags: [ScheduleTag.EVENT],
         startTime: 1900,
         endTime: 2030
@@ -173,6 +165,15 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
         tags: [ScheduleTag.PANEL],
         startTime: 1900,
         endTime: 2030
+    },
+    {
+        name: "Dungeons and Dragons Free Play",
+        time: "11:00am-9:00pm",
+        location: "Kirkwood",
+        description: "Join the GT D&D Club for all day tabletop RPG games, no experience required!",
+        tags: [ScheduleTag.FREE_PLAY],
+        startTime: 1100,
+        endTime: 2100
     },
     {
         name: "Panel: Star Wars: Rewrite",
@@ -206,15 +207,6 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
         time: "10:00am-10:00pm",
         location: "Centennial",
         description: "Come on over for all day Magic: The Gathering, YuGiOh, and Pokemon free play!",
-        tags: [ScheduleTag.FREE_PLAY],
-        startTime: 1000,
-        endTime: 2200
-    },
-    {
-        name: "Dungeons and Dragons Free Play",
-        time: "10:00am-10:00pm",
-        location: "Kirkwood",
-        description: "Join the GT D&D Club for all day tabletop RPG games, no experience required!",
         tags: [ScheduleTag.FREE_PLAY],
         startTime: 1000,
         endTime: 2200

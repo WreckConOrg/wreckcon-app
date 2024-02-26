@@ -21,15 +21,20 @@ export const Involved = (): JSX.Element => {
                 </MobileView>
                 <div className="flex flex-col justify-center items-center mb-[3vw]">
                     <div className="h-[6vw] font-coolvetica text-white text-[4vw]">
-                        Panelists/Vendors/Volunteers
+                        Participate in WreckCon 2024!
                     </div>
-                    <div className="w-[75vw] font-inter text-[1.7vw] mb-[4vw] mt-[2vw] text-white text-center">
+                    {/* <div className="w-[75vw] font-inter text-[1.7vw] mb-[4vw] mt-[2vw] text-white text-center">
                         WreckCon wouldn't be possible without the involvement of countless people, and we're currently looking
                        for <b>artists</b>, <b>vendors</b>, <b>volunteers</b>, and <b>panelists</b> to make WreckCon 2024 the best it can be. If you're interested, 
                         check out the tabs below. Perks include free tabling space/paneling spots, and free meals and merch!
+                    </div> */}
+                    <div className="w-[75vw] font-inter text-[1.7vw] mb-[4vw] mt-[2vw] text-white text-center">
+                        WreckCon wouldn't be possible without the involvement of countless people, bute we are no longer looking
+                       for artists, vendors, volunteers, and panelists for WreckCon 2024. However, if you're interested in joining our
+                       <b>cosplay competition</b> or our <b>Smash competition</b>, check out the links below!
                     </div>
                     <div className="flex items-center justify-center space-x-[2vw]">
-                        <div className="h-[20vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
+                        {/* <div className="h-[20vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
                             <div className="h-[5vw] w-[100%] bg-[#659470] text-center rounded-t-lg">
                                 <p className="mt-[0.5vw] font-coolvetica text-[3vw]"> Artists </p>
                             </div>
@@ -76,8 +81,31 @@ export const Involved = (): JSX.Element => {
                             <Link to={'https://forms.gle/6jV8xcb8LvtWmiVW9'} className="flex flex-col justify-center h-[20vw] bg-[#F04924] w-fit h-[3vw] rounded absolute translate-y-[16vw]">
                                 <p className="font-inter font-white w-fit mx-[1vw] items-center text-[1.5vw]"> Panelist Interest </p>
                             </Link>
+                        </div> */}
+                        <div className="h-[20vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
+                            <div className="h-[5vw] w-[100%] bg-[#FFC42D] text-center rounded-t-lg">
+                                <p className="mt-[0.8vw] font-coolvetica text-[2.2vw]"> Cosplay Competition </p>
+                            </div>
+                            <div className="font-inter font-white mt-[1.5vw] mx-[2vw] text-[1.1vw]">
+                                Use the form below to sign up for the WreckCon 2024 Cosplay Competition! More details about the competition
+                                can be found in the WreckCon discord server.
+                            </div>
+                            <Link to={'https://docs.google.com/forms/d/e/1FAIpQLSeGYCKLd1uc95oDXLvWth3Bu4-mMorUrCEP17hUZZEBoVMSsg/viewform?usp=sharing'} className="flex flex-col justify-center h-[20vw] bg-[#FFC42D] w-fit h-[3vw] rounded absolute translate-y-[16vw]">
+                                <p className="font-inter w-fit mx-[1vw] items-center text-[1.5vw]"> Cosplay Interest </p>
+                            </Link>
                         </div>
-                        
+                        <div className="h-[20vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
+                            <div className="h-[5vw] w-[100%] bg-[#FF7F41] text-center rounded-t-lg">
+                                <p className="mt-[0.8vw] font-coolvetica text-[2.2vw]"> Smash Competition </p>
+                            </div>
+                            <div className="font-inter font-white mt-[1.5vw] mx-[2vw] text-[1.1vw]">
+                                Use the form below to sign up for the WreckCon 2024 Smash Competition! More details about the competition
+                                can be found in the WreckCon discord server.
+                            </div>
+                            <Link to={'https://start.gg/wreckcon'} className="flex flex-col justify-center h-[20vw] bg-[#FF7F41] w-fit h-[3vw] rounded absolute translate-y-[16vw]">
+                                <p className="font-inter w-fit mx-[1vw] items-center text-[1.5vw]"> Smash Interest </p>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>

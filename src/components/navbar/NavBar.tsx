@@ -20,7 +20,7 @@ export const Navbar = (props: NavBarProps) => {
 
     return (
     <div className="bg-[#2e2f31] flex flex-row items-center h-[8vw]">
-        <Link to={'/wreckcon-app'} className="font-coolvetica text-white font-thin text-[3vw] ml-[6vw]">
+        <Link to={'/'} className="font-coolvetica text-white font-thin text-[3vw] ml-[6vw]">
             WreckCon
         </Link>
         {itemsList}
