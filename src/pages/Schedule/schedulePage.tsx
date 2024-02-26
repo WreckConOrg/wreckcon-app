@@ -1,4 +1,3 @@
-
 import { Navbar } from "../../components/navbar/NavBar";
 import { NAVBARCONFIG } from "../../components/navbar/NavBarConfig";
 import { NavBarItemEnum } from "../../components/navbar/NavBarItem";

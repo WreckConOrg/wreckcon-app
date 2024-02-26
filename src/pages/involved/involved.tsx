@@ -17,7 +17,7 @@ export const Involved = (): JSX.Element => {
                     />
                 </BrowserView>
                 <MobileView>
-                    <Hamburger participate={true}/>
+                    <Hamburger selectedItem={NavBarItemEnum.GET_INVOLVED}/>
                 </MobileView>
                 <div className="flex flex-col justify-center items-center mb-[3vw]">
                     <div className="h-[6vw] font-coolvetica text-white text-[4vw]">

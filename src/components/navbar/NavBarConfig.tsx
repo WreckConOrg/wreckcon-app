@@ -16,14 +16,11 @@ export const NAVBARCONFIG: NavBarItemProps[] = [
             url: "https://gatech.universitytickets.com/w/event.aspx?id=2002&p=1",
             displayText: "tickets",
         },
-<<<<<<< HEAD
         {
             itemEnum: NavBarItemEnum.SCHEDULE,
             url: "/schedule",
             displayText: "schedule",
         },
-=======
->>>>>>> 17a616c46ce67f5d8b810fd1d5e59eb1c9088f1d
         {
             itemEnum: NavBarItemEnum.SHOP,
             url: "https://wreckcon.bigcartel.com/",

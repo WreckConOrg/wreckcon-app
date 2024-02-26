@@ -5,6 +5,7 @@ import {About} from './pages/about/about'
 import { Sponsor } from './pages/sponsor/sponsor';
 import { Involved } from './pages/involved/involved';
 import { Contact } from './pages/contact/contact';
+import { SchedulePage } from './pages/Schedule/schedulePage';
 import {
   Routes,
   Route,
@@ -37,10 +38,7 @@ const phrase = phrases[Math.floor(Math.random() * phrases.length)]
       <Route path='/sponsors' element={<Sponsor />}/>
       <Route path='/involved' element={<Involved />}/>
       <Route path='/contact-us' element={<Contact />}/>
-<<<<<<< HEAD
       <Route path='/schedule' element={<SchedulePage />}/>
-=======
->>>>>>> 17a616c46ce67f5d8b810fd1d5e59eb1c9088f1d
     </Routes>
   );
 }

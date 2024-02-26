@@ -10,8 +10,12 @@ interface HomeProps {
 
 export const Home = (props: HomeProps): JSX.Element => {
 
-    const CONDATE = new Date("March 2, 2024 10:00:00").getTime()
-    const [days, hours, minutes, seconds] = useCountdown(CONDATE)
+    const CONDATE = new Date("March 2, 2024 10:00:00").getTime();
+    const [days, hours, minutes, seconds] = useCountdown(CONDATE);
+
+    const ZeroPad = (n: number) => {
+        return ('0'+ n).slice(-2);
+     };
 
   return (
     <div>
@@ -41,7 +45,7 @@ export const Home = (props: HomeProps): JSX.Element => {
                     { "text-[3vw]" : !isMobile},
                     { "text-[7vw] mt-[-2vh]" : isMobile}
                 )}>
-                    {days}:{hours}:{minutes}:{seconds} • 3/2/24
+                    {ZeroPad(days)}:{ZeroPad(hours)}:{ZeroPad(minutes)}:{ZeroPad(seconds)} • 3/2/24
                 </span>
                 <br/>
                 <div className={classNames("font-inter text-white leading-snug",

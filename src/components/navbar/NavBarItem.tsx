@@ -10,7 +10,11 @@ export enum NavBarItemEnum {
     DISCORD,
     TICKETS,
     GET_INVOLVED,
-    SHOP
+    SHOP,
+    SCHEDULE,
+    CONTACT,
+    PARTICIPATE,
+    SPONSOR,
 }
 
 export interface NavBarItemProps {
@@ -30,11 +34,7 @@ export const NavBarItem = (props: NavBarItemProps) => {
                 <Link 
                 to={props.url} 
                 className={classNames( 
-<<<<<<< HEAD
                     "font-inter font-thin text-[2vw] ml-[4.3vw]",
-=======
-                    "font-inter font-thin text-[2vw] ml-[6vw]",
->>>>>>> 17a616c46ce67f5d8b810fd1d5e59eb1c9088f1d
                     {"text-[#FFC42D]": props.selected},
                     {"text-white": !props.selected}
                 )}>
@@ -53,11 +53,7 @@ export const NavBarItem = (props: NavBarItemProps) => {
 
         return (
             <Menu>
-<<<<<<< HEAD
                 <Menu.Button className="ml-[4.3vw] ui-open:bg-[#131313] bg-opacity-90 z-20">
-=======
-                <Menu.Button className="ml-[6vw] ui-open:bg-[#131313] bg-opacity-90">
->>>>>>> 17a616c46ce67f5d8b810fd1d5e59eb1c9088f1d
                     <div className={classNames(
                         "font-inter font-thin text-[2vw] flex flex-row justify-center h-[3vw] w-[16vw] my-[0.3vw]",
                         {"text-[#FFC42D]": props.selected},
@@ -76,7 +72,7 @@ export const NavBarItem = (props: NavBarItemProps) => {
                         </div>
                     </div>
                 </Menu.Button>
-                <Menu.Items className="translate-y-[7.81vw] translate-x-[-16vw]">
+                <Menu.Items className="translate-y-[7.81vw] translate-x-[-16vw] z-20">
                     {links.map((link => (
 
                         <Menu.Item key={link.href} as={Fragment}>
@@ -102,4 +98,6 @@ export const NavBarItem = (props: NavBarItemProps) => {
         )
     }
 }
+
+
 
