@@ -10,6 +10,7 @@ export interface ScheduleItemProps {
     time: string;
     location: string;
     description: string;
+    testDesc?: JSX.Element;
     tags: ScheduleTag[];
     top?: boolean;
     startTime: number;
@@ -68,6 +69,7 @@ function ScheduleItem(props: ScheduleItemProps) {
                             </div>
                             <Disclosure.Panel as = "div" className="font-inter font-thin text-sm md:text-lg text-left text-white bg-[#5A5454] pl-2 md:pl-4">
                                 {props.description}
+                                {props.testDesc ? props.testDesc : <p/>}
                             </Disclosure.Panel>
                             </Disclosure.Button>
                             

@@ -13,7 +13,10 @@ export const Schedule = (props: ScheduleProps) => {
     const tags = [        
         ScheduleTag.EVENT,        
         ScheduleTag.PANEL,
-        ScheduleTag.FREE_PLAY
+        ScheduleTag.FREE_PLAY,
+        ScheduleTag.ANIME,
+        ScheduleTag.TABLETOP,
+        ScheduleTag.GAMING,
     ]
 
     const [selectedStartTime, setSelectedStartTime] = useState(1000)

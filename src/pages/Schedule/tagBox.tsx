@@ -4,7 +4,10 @@ export enum ScheduleTag {
     ALL,
     EVENT,
     FREE_PLAY,
-    PANEL
+    PANEL,
+    ANIME,
+    TABLETOP,
+    GAMING
 }
 
 export interface TagBoxProps {
@@ -33,6 +36,15 @@ export const TagBox = (props: TagBoxProps) =>
                 break;
             case(ScheduleTag.PANEL):
                 bgColor = "[#FFC42D]";
+                break;
+            case(ScheduleTag.ANIME):
+                bgColor = "[#659470]";
+                break;
+            case(ScheduleTag.TABLETOP):
+                bgColor = "[#FFC42D]";
+                break;
+            case(ScheduleTag.GAMING):
+                bgColor = "[#FF7F41]";
                 break;
         }
     }
