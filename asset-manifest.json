@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d596e5f3.css",
-    "main.js": "/static/js/main.bcc16d77.js",
+    "main.css": "/static/css/main.44089725.css",
+    "main.js": "/static/js/main.788aa0bd.js",
     "static/js/787.28692217.chunk.js": "/static/js/787.28692217.chunk.js",
     "static/media/5.jpg": "/static/media/5.b9915d094086051536cf.jpg",
     "static/media/2.jpg": "/static/media/2.57f306130cf70426b912.jpg",
@@ -9,6 +9,8 @@
     "static/media/4.jpg": "/static/media/4.8f4da2f1c94f9b55f9c9.jpg",
     "static/media/6.jpg": "/static/media/6.d21432f3724f89f484b0.jpg",
     "static/media/1.jpg": "/static/media/1.6c286ed7da8125f76e61.jpg",
+    "static/media/map1.png": "/static/media/map1.07485220794b91852d36.png",
+    "static/media/map2.png": "/static/media/map2.d8b63a7e34eb4eba6ffd.png",
     "static/media/Inter-Bold.ttf": "/static/media/Inter-Bold.88fa7ae373b07b41ecce.ttf",
     "static/media/Inter-Regular.ttf": "/static/media/Inter-Regular.e89cb19905e7db5591b0.ttf",
     "static/media/anime logo.png": "/static/media/anime logo.53a2ad7dedf1f091c7e9.png",
@@ -31,12 +33,12 @@
     "static/media/twitterlogo.png": "/static/media/twitterlogo.7b5bdc5995fa40bcea79.png",
     "static/media/youtubelogo.png": "/static/media/youtubelogo.abfd36b30dfc5ba1a3db.png",
     "index.html": "/index.html",
-    "main.d596e5f3.css.map": "/static/css/main.d596e5f3.css.map",
-    "main.bcc16d77.js.map": "/static/js/main.bcc16d77.js.map",
+    "main.44089725.css.map": "/static/css/main.44089725.css.map",
+    "main.788aa0bd.js.map": "/static/js/main.788aa0bd.js.map",
     "787.28692217.chunk.js.map": "/static/js/787.28692217.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d596e5f3.css",
-    "static/js/main.bcc16d77.js"
+    "static/css/main.44089725.css",
+    "static/js/main.788aa0bd.js"
   ]
 }
