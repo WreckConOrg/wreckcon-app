@@ -11,11 +11,11 @@ export const NAVBARCONFIG: NavBarItemProps[] = [
             url: "https://discord.gg/BY2hTWjz4s",
             displayText: "discord",
         },
-        {
-            itemEnum: NavBarItemEnum.TICKETS,
-            url: "https://gatech.universitytickets.com/w/event.aspx?id=2002&p=1",
-            displayText: "tickets",
-        },
+        // {
+        //     itemEnum: NavBarItemEnum.TICKETS,
+        //     url: "https://gatech.universitytickets.com/w/event.aspx?id=2002&p=1",
+        //     displayText: "tickets",
+        // },
         {
             itemEnum: NavBarItemEnum.SCHEDULE,
             url: "/schedule",

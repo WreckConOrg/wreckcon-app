@@ -45,7 +45,8 @@ export const Home = (props: HomeProps): JSX.Element => {
                     { "text-[3vw]" : !isMobile},
                     { "text-[7vw] mt-[-2vh]" : isMobile}
                 )}>
-                    {ZeroPad(days)}:{ZeroPad(hours)}:{ZeroPad(minutes)}:{ZeroPad(seconds)} • 3/2/24
+                    {/* {ZeroPad(days)}:{ZeroPad(hours)}:{ZeroPad(minutes)}:{ZeroPad(seconds)} • 3/2/24 */}
+                    Tickets available in fall!
                 </span>
                 <br/>
                 <div className={classNames("font-inter text-white leading-snug",
@@ -56,23 +57,23 @@ export const Home = (props: HomeProps): JSX.Element => {
                 </div>
             </div>
             <BrowserView>
-                <Link className="bg-[#D9D9D9] absolute left-[20vw] top-[82vh] w-fit h-[4vw] flex items-center justify-center" to={'/about'}>
+                <Link className="bg-[#D9D9D9] absolute left-[6vw] top-[82vh] w-fit h-[4vw] flex items-center justify-center" to={'/about'}>
                     <div className="font-inter font-bold text-[#2e2f31] text-[2vw] mx-[3vw]">
                         About WreckCon
                     </div> 
                 </Link>
-                <Link className="bg-[#FFC42D] absolute left-[6vw] top-[82vh] w-fit h-[4vw] flex items-center justify-center" to={'https://gatech.universitytickets.com/w/event.aspx?id=2002'}>
+                {/* <Link className="bg-[#FFC42D] absolute left-[6vw] top-[82vh] w-fit h-[4vw] flex items-center justify-center" to={'https://gatech.universitytickets.com/w/event.aspx?id=2002'}>
                     <div className="font-inter font-bold text-[#2e2f31] text-[2vw] mx-[3vw] ">
                         Tickets
                     </div> 
-                </Link>
+                </Link> */}
             </BrowserView>
             <MobileView className="flex flex-row items-center justify-center translate-y-[-33vh] space-x-[5vw]">
-                <Link className="bg-[#FFC42D] w-[27vw] h-[4vh] flex items-center justify-center rounded-md" to={'https://gatech.universitytickets.com/w/event.aspx?id=2002'}>
+                {/* <Link className="bg-[#FFC42D] w-[27vw] h-[4vh] flex items-center justify-center rounded-md" to={'https://gatech.universitytickets.com/w/event.aspx?id=2002'}>
                     <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw] ">
                         Tickets
                     </div> 
-                </Link>
+                </Link> */}
                 <Link className="bg-[#D9D9D9] w-fit h-[4vh] flex items-center justify-center rounded-md" to={'/about'}>
                     <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw]">
                         About WreckCon
