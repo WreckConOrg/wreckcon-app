@@ -23,7 +23,6 @@ function App() {
     "run by students, for students (and everyone else)",
     "for the people",
     "totally, completely free",
-    "definitely not a money laundering scheme",
     "funny on twitter @conwreck",
     "nockcerw spelled backwards",
     "one of the convention ever",
