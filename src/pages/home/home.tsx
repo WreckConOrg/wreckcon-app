@@ -46,7 +46,9 @@ export const Home = (props: HomeProps): JSX.Element => {
                     { "text-[7vw] mt-[-2vh]" : isMobile}
                 )}>
                     {/* {ZeroPad(days)}:{ZeroPad(hours)}:{ZeroPad(minutes)}:{ZeroPad(seconds)} • 3/2/24 */}
-                    Tickets available in fall!
+                    {/* Tickets available in fall! */}
+                    Pop-Up Artist Alley 
+                    on November 17th!
                 </span>
                 <br/>
                 <div className={classNames("font-inter text-white leading-snug",

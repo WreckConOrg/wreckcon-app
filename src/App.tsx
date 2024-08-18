@@ -25,7 +25,7 @@ function App() {
     "totally, completely free",
     "funny on twitter @conwreck",
     "nockcerw spelled backwards",
-    "one of the convention ever",
+    "one of the conventions ever",
     ""
 ]
 

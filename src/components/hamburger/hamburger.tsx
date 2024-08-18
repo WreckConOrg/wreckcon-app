@@ -26,7 +26,7 @@ export const Hamburger = (props: HamburgerProps) => {
                 { 'translate-x-[-80vw]' : !open}
             )}>
                 <div className='h-[5vh] w-fill justify-center flex mt-[1vh]'>
-                    <Link to={'/wreckcon-app'} className='w-fill'>
+                    <Link to={'/'} className='w-fill'>
                         <img src={logo} className='w-[18vw]'></img>
                     </Link>
                     <div>
