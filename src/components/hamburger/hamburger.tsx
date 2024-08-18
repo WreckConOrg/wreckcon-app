@@ -67,7 +67,7 @@ export const Hamburger = (props: HamburgerProps) => {
                 </Link>
             </div>
             <div className="h-[5vh] w-screen flex flex-column justify-center mt-[2vh] translate-x-[5vw]">
-                    <Link to={'/wreckcon-app'} className='w-fill'>
+                    <Link to={'/'} className='w-fill'>
                         <img src={logo} className='w-[20vw]'></img>
                     </Link>
                 <div>

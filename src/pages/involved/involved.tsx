@@ -113,7 +113,7 @@ export const Involved = (): JSX.Element => {
                         </div> */}
                         <div className="h-[20vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
                             <div className="h-[5vw] w-[100%] bg-[#659470] text-center rounded-t-lg">
-                                <p className="mt-[0.8vw] font-coolvetica text-[2.2vw]"> Artists </p>
+                                <p className="mt-[0.8vw] font-coolvetica text-[2.2vw]"> Pop-Up Artists </p>
                             </div>
                             <div className="font-inter font-white mt-[1.5vw] mx-[2vw] text-[1.1vw]">
                                 If you are interested in participating as an artist for our pop-up artist alley, please fill out the form below!
