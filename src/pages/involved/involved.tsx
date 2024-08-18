@@ -34,10 +34,9 @@ export const Involved = (): JSX.Element => {
                        <b> cosplay competition</b> or our <b>Smash competition</b>, check out the links below!
                     </div> */}
                     <div className="w-[75vw] font-inter text-[1.7vw] mb-[4vw] mt-[2vw] text-white text-center">
-                        WreckCon wouldn't be possible without the involvement of countless people, and we are looking for artists to help make our pop-up artist alley the best it can be. 
-                        
-                        Additionally, we are looking for prospective and current students to join our Registered Student
-                        Organization to help organize future installments of Wreckcon over the course of the year. If you're interested, check out the links below!
+                        WreckCon wouldn't be possible without the involvement of countless people, and we're looking for artists to help make our pop-up artist 
+                        alley the best it can be. Additionally, we're looking for prospective and current students to join our Registered Student Organization 
+                        to help organize future installments of Wreckcon over the course of the year. If you're interested, check out the links below!
                     </div>
                     <div className="flex items-center justify-center space-x-[2vw]">
                         {/* <div className="h-[20vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
@@ -117,7 +116,7 @@ export const Involved = (): JSX.Element => {
                                 <p className="mt-[0.8vw] font-coolvetica text-[2.2vw]"> Artists </p>
                             </div>
                             <div className="font-inter font-white mt-[1.5vw] mx-[2vw] text-[1.1vw]">
-                                If you are interested in participating as an artist in our pop-up artist alley, please fill out the form below!
+                                If you are interested in participating as an artist for our pop-up artist alley, please fill out the form below!
                             </div>
                             <Link to={'https://forms.gle/idi3miJ2TDz8r1TD7'} className="flex flex-col justify-center h-[20vw] bg-[#659470] w-fit h-[3vw] rounded absolute translate-y-[16vw]">
                                 <p className="font-inter w-fit mx-[1vw] items-center text-[1.5vw]"> Artist Intake </p>
