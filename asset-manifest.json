@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1bf462b3.css",
-    "main.js": "/static/js/main.4b470880.js",
+    "main.js": "/static/js/main.f5232403.js",
     "static/js/787.28692217.chunk.js": "/static/js/787.28692217.chunk.js",
     "static/media/5.jpg": "/static/media/5.b9915d094086051536cf.jpg",
     "static/media/2.jpg": "/static/media/2.57f306130cf70426b912.jpg",
@@ -9,6 +9,7 @@
     "static/media/4.jpg": "/static/media/4.8f4da2f1c94f9b55f9c9.jpg",
     "static/media/6.jpg": "/static/media/6.d21432f3724f89f484b0.jpg",
     "static/media/1.jpg": "/static/media/1.6c286ed7da8125f76e61.jpg",
+    "static/media/nerdi-gras-logo.png": "/static/media/nerdi-gras-logo.b6163793d48a7a42e42b.png",
     "static/media/Inter-Bold.ttf": "/static/media/Inter-Bold.88fa7ae373b07b41ecce.ttf",
     "static/media/Inter-Regular.ttf": "/static/media/Inter-Regular.e89cb19905e7db5591b0.ttf",
     "static/media/anime logo.png": "/static/media/anime logo.53a2ad7dedf1f091c7e9.png",
@@ -32,11 +33,11 @@
     "static/media/youtubelogo.png": "/static/media/youtubelogo.abfd36b30dfc5ba1a3db.png",
     "index.html": "/index.html",
     "main.1bf462b3.css.map": "/static/css/main.1bf462b3.css.map",
-    "main.4b470880.js.map": "/static/js/main.4b470880.js.map",
+    "main.f5232403.js.map": "/static/js/main.f5232403.js.map",
     "787.28692217.chunk.js.map": "/static/js/787.28692217.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1bf462b3.css",
-    "static/js/main.4b470880.js"
+    "static/js/main.f5232403.js"
   ]
 }
