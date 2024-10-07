@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import gtsf from './../../assets/sponsor_logos/GTSF-logo-GOLD-CMYK.png';
 import parentsfund from './../../assets/sponsor_logos/parents-fund-logo.png'
+import nerdigras from './../../assets/sponsor_logos/nerdi-gras-logo.png'
 import classNames from "classnames";
 
 import 'swiper/css';
@@ -45,6 +46,7 @@ export const Sponsor = (): JSX.Element => {
                         spaceBetween={30}
                         centeredSlides={true}
                         slidesPerView={3}
+                        initialSlide={1}
                         loop={false}
                         onSlideChange={() => console.log('slide change')}
                         onSwiper={(swiper:any) => console.log(swiper)}
@@ -68,7 +70,7 @@ export const Sponsor = (): JSX.Element => {
                         // effect="coverflow"
                     >
                         <div>
-                            <SwiperSlide>
+                            {/* <SwiperSlide>
                                 {({ isActive, isNext, isPrev }) => (
                                     <div className={classNames("h-[20vw] w-[22vw] bg-[#E0F4F5] flex flex-col items-center rounded-lg transition-all",
                                             {"scale-75" : !isActive},
@@ -86,7 +88,7 @@ export const Sponsor = (): JSX.Element => {
                                         </div>
                                     </div>
                                 )}
-                            </SwiperSlide>                             
+                            </SwiperSlide>                              */}
                             <SwiperSlide>
                                 {({ isActive, isNext, isPrev }) => (
                                     <div className={classNames("h-[20vw] w-[22vw] bg-[#F5E5CD] flex flex-col items-center rounded-lg transition-all",
@@ -104,7 +106,7 @@ export const Sponsor = (): JSX.Element => {
                                             <div className="font-coolvetica text-[3vw] translate-y-[-0.5vw] translate-x-[-0.5vw]">
                                                 $5,000
                                             </div>
-                                            <img src={parentsfund} alt="parents fund logo" className="w-[15vw]"/>
+                                            <img src={parentsfund} alt="Parents Fund Logo" className="w-[15vw]"/>
                                         </div>
                                     </div>
                                 )}
@@ -126,7 +128,7 @@ export const Sponsor = (): JSX.Element => {
                                             <div className="font-coolvetica text-[3vw] translate-y-[-0.5vw] translate-x-[-0.5vw]">
                                                 $1,000
                                             </div>
-                                            <img src={gtsf} className="w-[20vw]"/>
+                                            <img src={gtsf} alt="GTSF Logo" className="w-[20vw]"/>
                                         </div>
                                     </div>
                                 )}
@@ -149,6 +151,7 @@ export const Sponsor = (): JSX.Element => {
                                         <div className="font-coolvetica text-[3vw] translate-y-[-0.5vw] translate-x-[-0.5vw]">
                                             $500
                                         </div>
+                                        <a href="https://nerdigras.org/"><img src={nerdigras} alt="Nerdi Gras Logo" className="w-[20vw]"/></a>
                                     </div>
                                 )}
                             </SwiperSlide>
