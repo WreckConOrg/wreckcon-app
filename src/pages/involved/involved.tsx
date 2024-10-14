@@ -111,7 +111,7 @@ export const Involved = (): JSX.Element => {
                                 <p className="font-inter w-fit mx-[1vw] items-center text-[1.5vw]"> Smash Interest </p>
                             </Link>
                         </div> */}
-                        <div className="h-[20vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
+                        {/* <div className="h-[20vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
                             <div className="h-[5vw] w-[100%] bg-[#659470] text-center rounded-t-lg">
                                 <p className="mt-[0.8vw] font-coolvetica text-[2.2vw]"> Pop-Up Artists </p>
                             </div>
@@ -121,7 +121,7 @@ export const Involved = (): JSX.Element => {
                             <Link to={'https://forms.gle/idi3miJ2TDz8r1TD7'} className="flex flex-col justify-center h-[20vw] bg-[#659470] w-fit h-[3vw] rounded absolute translate-y-[16vw]">
                                 <p className="font-inter w-fit mx-[1vw] items-center text-[1.5vw]"> Artist Intake </p>
                             </Link>
-                        </div>
+                        </div> */}
                         <div className="h-[20vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
                             <div className="h-[5vw] w-[100%] bg-[#FFC42D] text-center rounded-t-lg">
                                 <p className="mt-[0.8vw] font-coolvetica text-[2.2vw]"> RSO Intake </p>
