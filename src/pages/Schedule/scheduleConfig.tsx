@@ -1,4 +1,4 @@
-import Schedule from "./schedule";
+import { Schedule } from "./schedule";
 import { ScheduleItemProps } from "./scheduleItem";
 import { ScheduleTag } from "./tagBox";
 

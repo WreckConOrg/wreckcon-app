@@ -33,10 +33,12 @@ export const Involved = (): JSX.Element => {
                        for artists, vendors, volunteers, and panelists for WreckCon 2024. However, if you're interested in joining our 
                        <b> cosplay competition</b> or our <b>Smash competition</b>, check out the links below!
                     </div> */}
+                    <div className="w-[75vw] font-inter text-[1.7vw] mt-[2vw] text-white text-center">
+                        WreckCon wouldn't be possible without the involvement of countless people, and we're looking for prospective and current students to join our Registered Student Organization 
+                        to help organize future installments of Wreckcon over the course of the year. If you're interested, check out the link below! 
+                    </div>
                     <div className="w-[75vw] font-inter text-[1.7vw] mb-[4vw] mt-[2vw] text-white text-center">
-                        WreckCon wouldn't be possible without the involvement of countless people, and we're looking for artists to help make our pop-up artist 
-                        alley the best it can be. Additionally, we're looking for prospective and current students to join our Registered Student Organization 
-                        to help organize future installments of Wreckcon over the course of the year. If you're interested, check out the links below!
+                        Additionally, artist and vendor applications will be opening soon! Panelist and volunteer applications will open in December. 
                     </div>
                     <div className="flex items-center justify-center space-x-[2vw]">
                         {/* <div className="h-[20vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">

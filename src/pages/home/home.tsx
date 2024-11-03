@@ -43,7 +43,7 @@ export const Home = (props: HomeProps): JSX.Element => {
                 <br className={classNames({ "hidden" : isMobile })}/>
                 <span className={classNames("font-interbold font-bold text-white",
                     { "text-[3vw]" : !isMobile},
-                    { "text-[7vw] mt-[-2vh]" : isMobile}
+                    { "text-[7vw] mt-[2vh]" : isMobile}
                 )}>
                     {/* {ZeroPad(days)}:{ZeroPad(hours)}:{ZeroPad(minutes)}:{ZeroPad(seconds)} • 3/2/24 */}
                     {/* Tickets available in fall! */}
@@ -51,9 +51,18 @@ export const Home = (props: HomeProps): JSX.Element => {
                     on November 17th!
                 </span>
                 <br/>
+                <span className={classNames("font-interbold font-bold text-white",
+                    { "text-[3vw]" : !isMobile},
+                    { "text-[7vw] mt-[2vh]" : isMobile}
+                )}>
+                    {/* {ZeroPad(days)}:{ZeroPad(hours)}:{ZeroPad(minutes)}:{ZeroPad(seconds)} • 3/2/24 */}
+                    {/* Tickets available in fall! */}
+                    WreckCon 2025 is on March 1st!
+                </span>
+                <br/>
                 <div className={classNames("font-inter text-white leading-snug",
-                    { "text-[2.3vw] w-[40vw]" : !isMobile},
-                    { "text-[5vw] w-[90vw] mt-[-2vh]" : isMobile}
+                    { "text-[2.3vw] w-[45vw]" : !isMobile},
+                    { "text-[5vw] w-[90vw] mt-[2vh] mb-[3vh]" : isMobile}
                 )}>
                     {"WreckCon is " + props.phraseUsed + '.'}
                 </div>
@@ -64,21 +73,31 @@ export const Home = (props: HomeProps): JSX.Element => {
                         About WreckCon
                     </div> 
                 </Link>
-                {/* <Link className="bg-[#FFC42D] absolute left-[6vw] top-[82vh] w-fit h-[4vw] flex items-center justify-center" to={'https://gatech.universitytickets.com/w/event.aspx?id=2002'}>
+                <Link className="bg-[#FFC42D] absolute left-[30vw] top-[82vh] w-fit h-[4vw] flex items-center justify-center" to={'https://gatech.universitytickets.com/w/event.aspx?id=2099'}>
                     <div className="font-inter font-bold text-[#2e2f31] text-[2vw] mx-[3vw] ">
                         Tickets
                     </div> 
-                </Link> */}
+                </Link>
+                <Link className="bg-[#D9D9D9] absolute left-[44.5vw] top-[82vh] w-fit h-[4vw] flex items-center justify-center" to={'/involved'}>
+                    <div className="font-inter font-bold text-[#2e2f31] text-[2vw] mx-[3vw] ">
+                        Get Involved
+                    </div> 
+                </Link>
             </BrowserView>
-            <MobileView className="flex flex-row items-center justify-center translate-y-[-33vh] space-x-[5vw]">
-                {/* <Link className="bg-[#FFC42D] w-[27vw] h-[4vh] flex items-center justify-center rounded-md" to={'https://gatech.universitytickets.com/w/event.aspx?id=2002'}>
+            <MobileView className="flex flex-col items-center justify-center translate-y-[-12vh]">
+                <Link className="bg-[#D9D9D9] w-[40vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md" to={'/about'}>
                     <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw] ">
+                        About Wreckcon
+                    </div> 
+                </Link>
+                <Link className="bg-[#FFC42D] w-[40vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md" to={'https://gatech.universitytickets.com/w/event.aspx?id=2099'}>
+                    <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw]">
                         Tickets
                     </div> 
-                </Link> */}
-                <Link className="bg-[#D9D9D9] w-fit h-[4vh] flex items-center justify-center rounded-md" to={'/about'}>
+                </Link>
+                <Link className="bg-[#D9D9D9] w-[40vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md" to={'/involved'}>
                     <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw]">
-                        About WreckCon
+                        Get Involved
                     </div> 
                 </Link>
             </MobileView>

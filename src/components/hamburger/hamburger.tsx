@@ -44,9 +44,9 @@ export const Hamburger = (props: HamburgerProps) => {
                 <Link to={'https://discord.gg/BY2hTWjz4s'} className='ml-[10vw] text-white'>
                     discord
                 </Link>
-                {/* <Link to={'https://gatech.universitytickets.com/w/event.aspx?id=2002&p=1'} className='ml-[10vw] text-white'>
+                <Link to={'https://gatech.universitytickets.com/w/event.aspx?id=2099'} className='ml-[10vw] text-white'>
                     tickets
-                </Link> */}
+                </Link>
                 <Link to={'/schedule'} className={`ml-[10vw] ${GetTextColor(NavBarItemEnum.SCHEDULE)}`}>
                     schedule
                 </Link>
