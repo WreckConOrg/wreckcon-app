@@ -85,17 +85,17 @@ export const Home = (props: HomeProps): JSX.Element => {
                 </Link>
             </BrowserView>
             <MobileView className="flex flex-col items-center justify-center translate-y-[-12vh]">
-                <Link className="bg-[#D9D9D9] w-[40vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md" to={'/about'}>
+                <Link className="bg-[#D9D9D9] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md" to={'/about'}>
                     <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw] ">
                         About Wreckcon
                     </div> 
                 </Link>
-                <Link className="bg-[#FFC42D] w-[40vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md" to={'https://gatech.universitytickets.com/w/event.aspx?id=2099'}>
+                <Link className="bg-[#FFC42D] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md" to={'https://gatech.universitytickets.com/w/event.aspx?id=2099'}>
                     <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw]">
                         Tickets
                     </div> 
                 </Link>
-                <Link className="bg-[#D9D9D9] w-[40vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md" to={'/involved'}>
+                <Link className="bg-[#D9D9D9] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md" to={'/involved'}>
                     <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw]">
                         Get Involved
                     </div> 
