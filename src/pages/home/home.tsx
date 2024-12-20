@@ -10,7 +10,7 @@ interface HomeProps {
 
 export const Home = (props: HomeProps): JSX.Element => {
 
-    const CONDATE = new Date("March 2, 2024 10:00:00").getTime();
+    const CONDATE = new Date("March 1, 2025 10:00:00").getTime();
     const [days, hours, minutes, seconds] = useCountdown(CONDATE);
 
     const ZeroPad = (n: number) => {
@@ -45,19 +45,8 @@ export const Home = (props: HomeProps): JSX.Element => {
                     { "text-[3vw]" : !isMobile},
                     { "text-[7vw] mt-[2vh]" : isMobile}
                 )}>
-                    {/* {ZeroPad(days)}:{ZeroPad(hours)}:{ZeroPad(minutes)}:{ZeroPad(seconds)} • 3/2/24 */}
+                    {ZeroPad(days)}:{ZeroPad(hours)}:{ZeroPad(minutes)}:{ZeroPad(seconds)} • 3/1/25
                     {/* Tickets available in fall! */}
-                    Pop-Up Artist Alley 
-                    on November 17th!
-                </span>
-                <br/>
-                <span className={classNames("font-interbold font-bold text-white",
-                    { "text-[3vw]" : !isMobile},
-                    { "text-[7vw] mt-[2vh]" : isMobile}
-                )}>
-                    {/* {ZeroPad(days)}:{ZeroPad(hours)}:{ZeroPad(minutes)}:{ZeroPad(seconds)} • 3/2/24 */}
-                    {/* Tickets available in fall! */}
-                    WreckCon 2025 is on March 1st!
                 </span>
                 <br/>
                 <div className={classNames("font-inter text-white leading-snug",
