@@ -118,8 +118,8 @@ export const Involved = (): JSX.Element => {
                                 <p className="mt-[0.5vw] font-coolvetica text-[3vw]"> Volunteers </p>
                             </div>
                             <div className="font-inter mt-[1.5vw] mx-[2vw] text-[1.1vw]">
-                                We're always looking for help managing WreckCon. Volunteering can either be 
-                                involvement in organizing the event beforehand, or day-of convention help. 
+                                We're always looking for help managing WreckCon. If you would like to help out and volunteer 
+                                on the day of the of the convention, you can sign up here!
                             </div>
                             <Link to={'https://forms.gle/2nJDnXiTGpWZPGFY9 '} className="flex flex-col justify-center h-[20vw] bg-[#2D68FF] w-fit h-[3vw] rounded absolute translate-y-[18vw]">
                                 <p className="font-inter font-white w-fit mx-[1vw] items-center text-[1.5vw]"> Volunteer Intake </p>
