@@ -1,14 +1,10 @@
-import React, { useRef, useState } from "react";
-import { Navbar } from "../../components/navbar/NavBar";
-import { NAVBARCONFIG } from "../../components/navbar/NavBarConfig";
-import { NavBarItemEnum } from "../../components/navbar/NavBarItem";
+import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import { BrowserView, MobileView } from "react-device-detect";
-import twitter from "../../assets/contact_logos/twitterlogo.png";
 import instagram from "../../assets/contact_logos/instagramlogo.png";
-import youtube from "../../assets/contact_logos/youtubelogo.png";
 import mail from "../../assets/contact_logos/maillogo.png";
-import { Hamburger } from "../../components/hamburger/hamburger";
+import twitter from "../../assets/contact_logos/twitterlogo.png";
+import youtube from "../../assets/contact_logos/youtubelogo.png";
+import { NavBarItemEnum } from "../../components/navbar/NavBarItem";
 import { BasePage } from "../BasePage";
 
 export const Contact = (): JSX.Element => {
@@ -54,7 +50,7 @@ export const Contact = (): JSX.Element => {
   return (
     <BasePage
       selectedItem={NavBarItemEnum.GET_INVOLVED}
-      mobileSelectedItem={NavBarItemEnum.PARTICIPATE}
+      mobileSelectedItem={NavBarItemEnum.CONTACT}
       dropdownSelect="contact us"
     >
       <div className="flex flex-row justify-center space-x-[0.3vw]">

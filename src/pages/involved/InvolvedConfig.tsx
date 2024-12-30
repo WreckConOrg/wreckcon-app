@@ -31,7 +31,7 @@ export const INVOLVEDCONFIG: ParticipateBoxProps[] = [
       "We're always looking for help managing WreckCon. If you would like to help out and volunteer on the day of the of the convention, you can sign up here!",
     link: "https://forms.gle/2nJDnXiTGpWZPGFY9",
     buttonText: "Volunteer Intake",
-    color: "2D68FF",
+    color: "64A2FF",
   },
   {
     name: "Panelists",
@@ -39,7 +39,7 @@ export const INVOLVEDCONFIG: ParticipateBoxProps[] = [
       "Have an idea or topic you're dying to share at WreckCon? Paneling space is completely free, but highly in-demand, so sign up as soon as you can!",
     link: "https://forms.gle/rKWmuNAxvnnStNqy8",
     buttonText: "Panelist Intake",
-    color: "F04924",
+    color: "A880FF",
   },
   {
     name: "Indie Games",

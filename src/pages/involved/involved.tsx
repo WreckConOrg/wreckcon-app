@@ -29,7 +29,7 @@ export const Involved = (): JSX.Element => {
                        for artists, vendors, volunteers, and panelists for WreckCon 2024. However, if you're interested in joining our 
                        <b> cosplay competition</b> or our <b>Smash competition</b>, check out the links below!
                     </div> */}
-        <div className="w-[75vw] font-inter text-[1.7vw] mt-[2vw] text-white text-center">
+        <div className="w-[75vw] font-inter text-[2.5vw] md:text-[1.7vw] mt-[2vw] text-white text-center">
           WreckCon wouldn't be possible without the involvement of countless
           people, and we're currently looking for <b>artists</b>, <b>vendors</b>
           , <b>volunteers</b>, <b>indie games</b>, and <b>panelists</b> to make
@@ -39,7 +39,7 @@ export const Involved = (): JSX.Element => {
           organize future installments of Wreckcon over the course of the year.
           If you're interested, check out the links below!
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 grid-rows-2 gap-x-[2vw] gap-y-[1.5vw] mt-[1.5vw]">
+        <div className="grid grid-cols-2 md:grid-cols-3 grid-rows-2 gap-x-[4vw] md:gap-x-[2vw] gap-y-[3vw] md:gap-y-[1.5vw] mt-[1.5vw]">
           {participateBoxes}
         </div>
       </div>

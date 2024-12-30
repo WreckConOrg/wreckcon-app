@@ -1,27 +1,22 @@
-import React from "react";
-import { Navbar } from "../../components/navbar/NavBar";
-import { NAVBARCONFIG } from "../../components/navbar/NavBarConfig";
-import { NavBarItemEnum } from "../../components/navbar/NavBarItem";
-import { Swiper, SwiperSlide } from "swiper/react";
+import classNames from "classnames";
 import {
+  A11y,
   EffectCoverflow,
   Navigation,
   Pagination,
   Scrollbar,
-  A11y,
 } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { NavBarItemEnum } from "../../components/navbar/NavBarItem";
 import gtsf from "./../../assets/sponsor_logos/GTSF-logo-GOLD-CMYK.png";
-import parentsfund from "./../../assets/sponsor_logos/parents-fund-logo.png";
 import nerdigras from "./../../assets/sponsor_logos/nerdi-gras-logo.png";
-import classNames from "classnames";
+import parentsfund from "./../../assets/sponsor_logos/parents-fund-logo.png";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 import "swiper/css/effect-fade";
-import { BrowserView, MobileView } from "react-device-detect";
-import { Hamburger } from "../../components/hamburger/hamburger";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import { BasePage } from "../BasePage";
 
 export const Sponsor = (): JSX.Element => {

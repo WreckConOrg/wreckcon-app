@@ -1,11 +1,6 @@
-import { Navbar } from "../../components/navbar/NavBar";
-import { NAVBARCONFIG } from "../../components/navbar/NavBarConfig";
-import { NavBarItemEnum } from "../../components/navbar/NavBarItem";
-import { BrowserView, MobileView, isMobile } from "react-device-detect";
-import { Hamburger } from "../../components/hamburger/hamburger";
-import { Schedule } from "./schedule";
-import { SCHEDULECONFIG } from "./scheduleConfig";
 import classNames from "classnames";
+import { isMobile } from "react-device-detect";
+import { NavBarItemEnum } from "../../components/navbar/NavBarItem";
 import { BasePage } from "../BasePage";
 
 export const SchedulePage = (): JSX.Element => {
@@ -28,8 +23,7 @@ export const SchedulePage = (): JSX.Element => {
             { "mt-[6vh] text-[3vw] mb-[-6vh]": isMobile }
           )}
         >
-          WreckCon 2025's schedule is coming soon! Meanwhile, view WreckCon
-          2024's schedule below.
+          The schedule for WreckCon 2025 will be available soon!
         </div>
         <div
           className={classNames(
@@ -39,7 +33,7 @@ export const SchedulePage = (): JSX.Element => {
           )}
         ></div>
         <div className="p-6 md:mb-10 md:px-40 items-center">
-          <Schedule items={SCHEDULECONFIG} />
+          {/* <Schedule items={SCHEDULECONFIG} /> */}
         </div>
       </>
     </BasePage>

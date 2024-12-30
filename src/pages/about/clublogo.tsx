@@ -9,7 +9,7 @@ interface LogoProps {
 
 function ClubLogo(props: LogoProps) {
   return (
-    <a href={props.clubLink} target="_blank">
+    <a href={props.clubLink} target="_blank" rel="noreferrer">
       <div>
         <div className="flex flex-col items-center h-[22vw] w-[18vw] bg-[#D9D9D9] my-[3vw]">
           <img
