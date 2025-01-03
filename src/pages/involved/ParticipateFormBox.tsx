@@ -13,7 +13,8 @@ export const ParticipateFormBox = (props: ParticipateBoxProps) => {
   return (
     <div className="h-[40vw] md:h-[22vw] w-[40vw] md:w-[22vw] bg-white flex flex-col items-center rounded-lg">
       <div
-        className={`h=[10vw] md:h-[5vw] w-[100%] bg-[#${props.color}] text-center rounded-t-lg`}
+        style={{ backgroundColor: props.color }}
+        className={`h=[10vw] md:h-[5vw] w-[100%] text-center rounded-t-lg`}
       >
         <p className="mt-[0.5vw] font-coolvetica text-[6vw] md:text-[3vw]">
           {" "}
@@ -26,7 +27,8 @@ export const ParticipateFormBox = (props: ParticipateBoxProps) => {
       <Link
         to={props.link}
         target="_blank"
-        className={`flex flex-col justify-center bg-[#${props.color}] w-fit h-[6vw] md:h-[3vw] rounded absolute translate-y-[30vw] md:translate-y-[18vw]`}
+        style={{ backgroundColor: props.color }}
+        className={`flex flex-col justify-center w-fit h-[6vw] md:h-[3vw] rounded absolute translate-y-[30vw] md:translate-y-[18vw]`}
       >
         <p className="font-inter w-fit mx-[1vw] items-center text-[3vw] md:text-[1.5vw]">
           {` ${props.buttonText} `}
