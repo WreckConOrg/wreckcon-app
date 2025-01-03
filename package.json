@@ -1,11 +1,12 @@
 {
   "name": "wreckcon-app",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://WreckConOrg.github.io/wreckcon-app",
+  "private": false,
+  "homepage": "https://wreckcon.org",
   "dependencies": {
     "@headlessui/react": "^1.7.17",
     "@headlessui/tailwindcss": "^0.2.0",
+    "@phosphor-icons/react": "^2.1.5",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -17,6 +18,7 @@
     "fs": "^0.0.1-security",
     "path": "^0.12.7",
     "react": "^18.2.0",
+    "react-device-detect": "^2.2.3",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.16.0",
     "react-scripts": "5.0.1",

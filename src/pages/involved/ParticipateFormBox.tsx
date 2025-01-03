@@ -1,0 +1,37 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+export interface ParticipateBoxProps {
+  name: string;
+  bodyText: string;
+  link: string;
+  buttonText: string;
+  color: string;
+}
+
+export const ParticipateFormBox = (props: ParticipateBoxProps) => {
+  return (
+    <div className="h-[40vw] md:h-[22vw] w-[40vw] md:w-[22vw] bg-white flex flex-col items-center rounded-lg">
+      <div
+        className={`h=[10vw] md:h-[5vw] w-[100%] bg-[#${props.color}] text-center rounded-t-lg`}
+      >
+        <p className="mt-[0.5vw] font-coolvetica text-[6vw] md:text-[3vw]">
+          {" "}
+          {props.name}{" "}
+        </p>
+      </div>
+      <div className="font-inter font-white mt-[1.5vw] mx-[2vw] text-[2vw] md:text-[1.1vw]">
+        {props.bodyText}
+      </div>
+      <Link
+        to={props.link}
+        target="_blank"
+        className={`flex flex-col justify-center bg-[#${props.color}] w-fit h-[6vw] md:h-[3vw] rounded absolute translate-y-[30vw] md:translate-y-[18vw]`}
+      >
+        <p className="font-inter w-fit mx-[1vw] items-center text-[3vw] md:text-[1.5vw]">
+          {` ${props.buttonText} `}
+        </p>
+      </Link>
+    </div>
+  );
+};
