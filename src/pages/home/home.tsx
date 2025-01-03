@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useCountdown } from "../../hooks/countdownTimes";
 import classNames from "classnames";
-import { isMobile, BrowserView, MobileView } from "react-device-detect";
+import { BrowserView, isMobile, MobileView } from "../../utils/BrowserUtils";
 
 interface HomeProps {
     phraseUsed: string;

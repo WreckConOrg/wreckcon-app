@@ -1,180 +1,48 @@
-import { Navbar } from "../../components/navbar/NavBar";
-import { Link } from "react-router-dom";
-import { NAVBARCONFIG } from "../../components/navbar/NavBarConfig";
-import { NavBarItem, NavBarItemEnum } from "../../components/navbar/NavBarItem";
-import { BrowserView, MobileView } from "react-device-detect";
-import { Hamburger } from "../../components/hamburger/hamburger";
+import { NavBarItemEnum } from "../../components/navbar/NavBarItem";
+import { BasePage } from "../BasePage";
+import { INVOLVEDCONFIG } from "./InvolvedConfig";
+import { ParticipateBoxProps, ParticipateFormBox } from "./ParticipateFormBox";
 
 export const Involved = (): JSX.Element => {
-    return (
-        <div className="bg-[#2e2f31] h-screen">
-            <div className="h-fit overflow-hidden bg-[#2e2f31]">
-                <BrowserView>
-                    <Navbar
-                        items={NAVBARCONFIG}
-                        selectedItem={NavBarItemEnum.GET_INVOLVED}
-                        dropdownSelect="participate"
-                    />
-                </BrowserView>
-                <MobileView>
-                    <Hamburger selectedItem={NavBarItemEnum.GET_INVOLVED}/>
-                </MobileView>
-                <div className="flex flex-col justify-center items-center mb-[3vw]">
-                    <div className="h-[6vw] font-coolvetica text-white text-[4vw]">
-                        Participate in WreckCon 2025!
-                    </div>
-                    {/* <div className="w-[75vw] font-inter text-[1.7vw] mb-[4vw] mt-[2vw] text-white text-center">
+  const participateBoxes = INVOLVEDCONFIG.map(
+    (item: ParticipateBoxProps, index: number) => {
+      return ParticipateFormBox(item);
+    }
+  );
+  return (
+    <BasePage
+      selectedItem={NavBarItemEnum.GET_INVOLVED}
+      mobileSelectedItem={NavBarItemEnum.PARTICIPATE}
+      dropdownSelect="participate"
+    >
+      <div className="flex flex-col justify-center items-center mb-[3vw]">
+        <div className="h-[6vw] font-coolvetica text-white text-[4vw]">
+          Participate in WreckCon 2025!
+        </div>
+        {/* <div className="w-[75vw] font-inter text-[1.7vw] mb-[4vw] mt-[2vw] text-white text-center">
                         WreckCon wouldn't be possible without the involvement of countless people, and we're currently looking
                        for <b>artists</b>, <b>vendors</b>, <b>volunteers</b>, and <b>panelists</b> to make WreckCon 2024 the best it can be. If you're interested, 
                         check out the tabs below. Perks include free tabling space/paneling spots, and free meals and merch!
                     </div> */}
-                    {/* <div className="w-[75vw] font-inter text-[1.7vw] mb-[4vw] mt-[2vw] text-white text-center">
+        {/* <div className="w-[75vw] font-inter text-[1.7vw] mb-[4vw] mt-[2vw] text-white text-center">
                         WreckCon wouldn't be possible without the involvement of countless people, but we are no longer looking
                        for artists, vendors, volunteers, and panelists for WreckCon 2024. However, if you're interested in joining our 
                        <b> cosplay competition</b> or our <b>Smash competition</b>, check out the links below!
                     </div> */}
-                    <div className="w-[75vw] font-inter text-[1.7vw] mt-[2vw] text-white text-center">
-                        WreckCon wouldn't be possible without the involvement of countless people, and we're currently looking 
-                        for <b>artists</b>, <b>vendors</b>, <b>volunteers</b>, and <b>panelists</b> to make WreckCon 2025 the best it can be. Perks include free tabling space 
-                        and free meals/merch! In addition, we're looking for prospective and current students to join our Registered 
-                        Student Organization to help organize future installments of Wreckcon over the course of the year. If you're interested, 
-                        check out the links below! 
-                    </div>
-                    <div className="flex w-[75vw] mt-[1.5vw] items-center justify-center space-x-[2vw]">
-                        <div className="h-[22vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
-                            <div className="h-[5vw] w-[100%] bg-[#659470] text-center rounded-t-lg">
-                                <p className="mt-[0.5vw] font-coolvetica text-[3vw]"> Artists </p>
-                            </div>
-                            <div className="font-inter font-white mt-[1.5vw] mx-[2vw] text-[1.1vw]">
-                                Sign up below if you would like to sell your work at WreckCon 2025, but you do <b>not</b> have a business license. Tabling space is 
-                                totally free, but unfortunately not guaranteed.
-                            </div>
-                            <Link to={'https://forms.gle/kvhUyLAfUJo2WA998'} className="flex flex-col justify-center h-[20vw] bg-[#659470] w-fit h-[3vw] rounded absolute translate-y-[18vw]">
-                                <p className="font-inter w-fit mx-[1vw] items-center text-[1.5vw]"> Artist Intake </p>
-                            </Link>
-                        </div>
-                        <div className="h-[22vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
-                            <div className="h-[5vw] w-[100%] bg-[#FF7F41] text-center rounded-t-lg">
-                                <p className="mt-[0.5vw] font-coolvetica text-[3vw]"> Vendors </p>
-                            </div>
-                            <div className="font-inter mt-[1.5vw] mx-[2vw] text-[1.1vw]">
-                                If you are a seller interested in WreckCon 2025 <b>with</b> a business license, please fill out the form below! All other sellers
-                                should use the Artists signup form.
-                            </div>
-                            <Link to={'https://forms.gle/xTpZRyW7oiebYn3n6'} className="flex flex-col justify-center h-[20vw] bg-[#FF7F41] w-fit h-[3vw] rounded absolute translate-y-[18vw]">
-                                <p className="font-inter font-white w-fit mx-[1vw] items-center text-[1.5vw]"> Vendor Intake </p>
-                            </Link>
-                        </div>
-                        {/* <div className="h-[20vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
-                            <div className="h-[5vw] w-[100%] bg-[#FFC42D] text-center rounded-t-lg">
-                                <p className="mt-[0.8vw] font-coolvetica text-[2.2vw]"> Cosplay Competition </p>
-                            </div>
-                            <div className="font-inter font-white mt-[1.5vw] mx-[2vw] text-[1.1vw]">
-                                Use the form below to sign up for the WreckCon 2024 Cosplay Competition! More details about the competition
-                                can be found in the WreckCon discord server.
-                            </div>
-                            <Link to={'https://docs.google.com/forms/d/e/1FAIpQLSeGYCKLd1uc95oDXLvWth3Bu4-mMorUrCEP17hUZZEBoVMSsg/viewform?usp=sharing'} className="flex flex-col justify-center h-[20vw] bg-[#FFC42D] w-fit h-[3vw] rounded absolute translate-y-[16vw]">
-                                <p className="font-inter w-fit mx-[1vw] items-center text-[1.5vw]"> Cosplay Interest </p>
-                            </Link>
-                        </div>
-                        <div className="h-[20vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
-                            <div className="h-[5vw] w-[100%] bg-[#FF7F41] text-center rounded-t-lg">
-                                <p className="mt-[0.8vw] font-coolvetica text-[2.2vw]"> Smash Competition </p>
-                            </div>
-                            <div className="font-inter font-white mt-[1.5vw] mx-[2vw] text-[1.1vw]">
-                                Use the form below to sign up for the WreckCon 2024 Smash Competition! More details about the competition
-                                can be found in the WreckCon discord server.
-                            </div>
-                            <Link to={'https://start.gg/wreckcon'} className="flex flex-col justify-center h-[20vw] bg-[#FF7F41] w-fit h-[3vw] rounded absolute translate-y-[16vw]">
-                                <p className="font-inter w-fit mx-[1vw] items-center text-[1.5vw]"> Smash Interest </p>
-                            </Link>
-                        </div> */}
-                        {/* <div className="h-[20vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
-                            <div className="h-[5vw] w-[100%] bg-[#659470] text-center rounded-t-lg">
-                                <p className="mt-[0.8vw] font-coolvetica text-[2.2vw]"> Pop-Up Artists </p>
-                            </div>
-                            <div className="font-inter font-white mt-[1.5vw] mx-[2vw] text-[1.1vw]">
-                                If you are interested in participating as an artist for our pop-up artist alley, please fill out the form below!
-                            </div>
-                            <Link to={'https://forms.gle/idi3miJ2TDz8r1TD7'} className="flex flex-col justify-center h-[20vw] bg-[#659470] w-fit h-[3vw] rounded absolute translate-y-[16vw]">
-                                <p className="font-inter w-fit mx-[1vw] items-center text-[1.5vw]"> Artist Intake </p>
-                            </Link>
-                        </div> */}
-                        <div className="h-[22vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
-                            <div className="h-[5vw] w-[100%] bg-[#FFC42D] text-center rounded-t-lg">
-                                <p className="mt-[0.5vw] font-coolvetica text-[3vw]"> RSO Intake </p>
-                            </div>
-                            <div className="font-inter font-white mt-[1.5vw] mx-[2vw] text-[1.1vw]">
-                                If you are interested in applying for membership in the WreckCon RSO, please fill out the form below!
-                            </div>
-                            <Link to={'https://docs.google.com/forms/d/e/1FAIpQLScfVxvDfGG828S1f7wFYvsRQf1TXACiIqHUTBpIduh8U3bFww/viewform?usp=sharing'} className="flex flex-col justify-center h-[20vw] bg-[#FFC42D] w-fit h-[3vw] rounded absolute translate-y-[18vw]">
-                                <p className="font-inter w-fit mx-[1vw] items-center text-[1.5vw]"> RSO Intake </p>
-                            </Link>
-                        </div>
-                    </div>
-                    <div className="flex w-[75vw] mt-[1.5vw] items-center justify-center space-x-[2vw]">
-                        <div className="h-[22vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
-                            <div className="h-[5vw] w-[100%] bg-[#2D68FF] text-center rounded-t-lg">
-                                <p className="mt-[0.5vw] font-coolvetica text-[3vw]"> Volunteers </p>
-                            </div>
-                            <div className="font-inter mt-[1.5vw] mx-[2vw] text-[1.1vw]">
-                                We're always looking for help managing WreckCon. If you would like to help out and volunteer 
-                                on the day of the of the convention, you can sign up here!
-                            </div>
-                            <Link to={'https://forms.gle/2nJDnXiTGpWZPGFY9 '} className="flex flex-col justify-center h-[20vw] bg-[#2D68FF] w-fit h-[3vw] rounded absolute translate-y-[18vw]">
-                                <p className="font-inter font-white w-fit mx-[1vw] items-center text-[1.5vw]"> Volunteer Intake </p>
-                            </Link>
-                        </div>
-                        <div className="h-[22vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
-                            <div className="h-[5vw] w-[100%] bg-[#F04924] text-center rounded-t-lg">
-                                <p className="mt-[0.5vw] font-coolvetica text-[3vw]"> Panelists </p>
-                            </div>
-                            <div className="font-inter mt-[1.5vw] text-[1.1vw] mx-[2vw]">
-                                Have an idea or topic you're dying to share at WreckCon? Paneling space is completely free,
-                                but highly in-demand, so sign up as soon as you can!
-                            </div>
-                            <Link to={'https://forms.gle/rKWmuNAxvnnStNqy8'} className="flex flex-col justify-center h-[20vw] bg-[#F04924] w-fit h-[3vw] rounded absolute translate-y-[18vw]">
-                                <p className="font-inter font-white w-fit mx-[1vw] items-center text-[1.5vw]"> Panelist Intake </p>
-                            </Link>
-                        </div>
-                        {/* <div className="h-[20vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
-                            <div className="h-[5vw] w-[100%] bg-[#FFC42D] text-center rounded-t-lg">
-                                <p className="mt-[0.8vw] font-coolvetica text-[2.2vw]"> Cosplay Competition </p>
-                            </div>
-                            <div className="font-inter font-white mt-[1.5vw] mx-[2vw] text-[1.1vw]">
-                                Use the form below to sign up for the WreckCon 2024 Cosplay Competition! More details about the competition
-                                can be found in the WreckCon discord server.
-                            </div>
-                            <Link to={'https://docs.google.com/forms/d/e/1FAIpQLSeGYCKLd1uc95oDXLvWth3Bu4-mMorUrCEP17hUZZEBoVMSsg/viewform?usp=sharing'} className="flex flex-col justify-center h-[20vw] bg-[#FFC42D] w-fit h-[3vw] rounded absolute translate-y-[16vw]">
-                                <p className="font-inter w-fit mx-[1vw] items-center text-[1.5vw]"> Cosplay Interest </p>
-                            </Link>
-                        </div>
-                        <div className="h-[20vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
-                            <div className="h-[5vw] w-[100%] bg-[#FF7F41] text-center rounded-t-lg">
-                                <p className="mt-[0.8vw] font-coolvetica text-[2.2vw]"> Smash Competition </p>
-                            </div>
-                            <div className="font-inter font-white mt-[1.5vw] mx-[2vw] text-[1.1vw]">
-                                Use the form below to sign up for the WreckCon 2024 Smash Competition! More details about the competition
-                                can be found in the WreckCon discord server.
-                            </div>
-                            <Link to={'https://start.gg/wreckcon'} className="flex flex-col justify-center h-[20vw] bg-[#FF7F41] w-fit h-[3vw] rounded absolute translate-y-[16vw]">
-                                <p className="font-inter w-fit mx-[1vw] items-center text-[1.5vw]"> Smash Interest </p>
-                            </Link>
-                        </div> */}
-                        {/* <div className="h-[20vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
-                            <div className="h-[5vw] w-[100%] bg-[#659470] text-center rounded-t-lg">
-                                <p className="mt-[0.8vw] font-coolvetica text-[2.2vw]"> Pop-Up Artists </p>
-                            </div>
-                            <div className="font-inter font-white mt-[1.5vw] mx-[2vw] text-[1.1vw]">
-                                If you are interested in participating as an artist for our pop-up artist alley, please fill out the form below!
-                            </div>
-                            <Link to={'https://forms.gle/idi3miJ2TDz8r1TD7'} className="flex flex-col justify-center h-[20vw] bg-[#659470] w-fit h-[3vw] rounded absolute translate-y-[16vw]">
-                                <p className="font-inter w-fit mx-[1vw] items-center text-[1.5vw]"> Artist Intake </p>
-                            </Link>
-                        </div> */}
-                    </div>
-                </div>
-            </div>
+        <div className="w-[75vw] font-inter text-[2.5vw] md:text-[1.7vw] mt-[2vw] text-white text-center">
+          WreckCon wouldn't be possible without the involvement of countless
+          people, and we're currently looking for <b>artists</b>, <b>vendors</b>
+          , <b>volunteers</b>, <b>indie games</b>, and <b>panelists</b> to make
+          WreckCon 2025 the best it can be. Perks include free tabling space and
+          free meals/merch! In addition, we're looking for prospective and
+          current students to join our Registered Student Organization to help
+          organize future installments of Wreckcon over the course of the year.
+          If you're interested, check out the links below!
         </div>
-    )
-}
+        <div className="grid grid-cols-2 md:grid-cols-3 grid-rows-2 gap-x-[4vw] md:gap-x-[2vw] gap-y-[3vw] md:gap-y-[1.5vw] mt-[1.5vw]">
+          {participateBoxes}
+        </div>
+      </div>
+    </BasePage>
+  );
+};

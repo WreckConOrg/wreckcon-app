@@ -1,354 +1,235 @@
 import { Listbox, Popover } from "@headlessui/react";
 import ScheduleItem, { ScheduleItemProps } from "./scheduleItem";
 import { ScheduleTag, TagBox } from "./tagBox";
-import { ArrowCounterClockwise, Clock, FunnelSimple, Hammer, Tag } from "@phosphor-icons/react";
-import { BrowserView, MobileView } from "react-device-detect";
+import {
+  ArrowCounterClockwise,
+  Clock,
+  FunnelSimple,
+  Hammer,
+  Tag,
+} from "@phosphor-icons/react";
+import { BrowserView, isMobile, MobileView } from "../../utils/BrowserUtils";
 import { useState } from "react";
 
 interface ScheduleProps {
-    items: ScheduleItemProps[]
+  items: ScheduleItemProps[];
 }
 
 export const Schedule = (props: ScheduleProps) => {
-    const tags = [        
-        ScheduleTag.EVENT,        
-        ScheduleTag.PANEL,
-        ScheduleTag.FREE_PLAY,
-        ScheduleTag.ANIME,
-        ScheduleTag.TABLETOP,
-        ScheduleTag.GAMING,
-    ]
+  const tags = [
+    ScheduleTag.EVENT,
+    ScheduleTag.PANEL,
+    ScheduleTag.FREE_PLAY,
+    ScheduleTag.ANIME,
+    ScheduleTag.TABLETOP,
+    ScheduleTag.GAMING,
+  ];
 
-    const [selectedStartTime, setSelectedStartTime] = useState(1000)
-    const [selectedEndTime, setSelectedEndTime] = useState(2200)
-    const [selectedTags, setSelectedTags] = useState(tags)
+  const [selectedStartTime, setSelectedStartTime] = useState(1000);
+  const [selectedEndTime, setSelectedEndTime] = useState(2200);
+  const [selectedTags, setSelectedTags] = useState(tags);
 
+  const TagIsIncluded = (item: ScheduleItemProps) => {
+    return selectedTags.some((t) => item.tags.includes(t));
+  };
 
-    const TagIsIncluded = (item: ScheduleItemProps) => {
-        return selectedTags.some((t) => item.tags.includes(t));
+  const ResetTags = () => {
+    setSelectedTags(tags);
+  };
+
+  const AddTag = (tag: ScheduleTag) => {
+    setSelectedTags(selectedTags.concat(tag));
+  };
+
+  const RemoveTag = (tag: ScheduleTag) => {
+    setSelectedTags(selectedTags.filter((t) => t !== tag));
+  };
+
+  const ToggleTag = (tag: ScheduleTag) => {
+    if (selectedTags.includes(tag)) {
+      RemoveTag(tag);
+    } else {
+      AddTag(tag);
     }
+  };
 
-    const ResetTags = () => {
-        setSelectedTags(tags);
-    }
-
-    const AddTag = (tag:ScheduleTag) => {
-        setSelectedTags(selectedTags.concat(tag));
-    }
-
-    const RemoveTag = (tag:ScheduleTag) => {
-        setSelectedTags(selectedTags.filter((t) => t !== tag));
-    }
-
-    const ToggleTag = (tag: ScheduleTag) => {
-        if(selectedTags.includes(tag))
-        {
-            RemoveTag(tag);
-        }
-        else
-        {
-            AddTag(tag);
-        }
-    }
-
-    const TagList = tags?.map((tag:ScheduleTag) => {
-        const deselected = !selectedTags.includes(tag);
-        return TagBox({
-            tag, deselected,
-            onClick: (tag: ScheduleTag) => {
-                ToggleTag(tag);
-            }
-        });
-    })
-
-    const TimeIsInRange = (item: ScheduleItemProps) => {
-       return item.startTime < selectedEndTime && item.endTime > selectedStartTime;
-    }
-
-    const itemsList = props.items.map((item: ScheduleItemProps, index: number) => {
-        return (TimeIsInRange(item) && TagIsIncluded(item) ? 
-            ScheduleItem({
-            ...item,
-        }) : null); 
+  const TagList = tags?.map((tag: ScheduleTag) => {
+    const deselected = !selectedTags.includes(tag);
+    return TagBox({
+      tag,
+      deselected,
+      onClick: (tag: ScheduleTag) => {
+        ToggleTag(tag);
+      },
     });
+  });
 
-    const scheduleContent = itemsList.filter((i) => i != null).length > 0 ? itemsList : 
-    (<div className="flex flex-col items-center gap-4 text-center text-white pt-4 text-lg">
-        <Hammer size = {32}/>
+  const TimeIsInRange = (item: ScheduleItemProps) => {
+    return item.startTime < selectedEndTime && item.endTime > selectedStartTime;
+  };
+
+  const itemsList = props.items.map(
+    (item: ScheduleItemProps, index: number) => {
+      return TimeIsInRange(item) && TagIsIncluded(item)
+        ? ScheduleItem({
+            ...item,
+          })
+        : null;
+    }
+  );
+
+  const scheduleContent =
+    itemsList.filter((i) => i != null).length > 0 ? (
+      itemsList
+    ) : (
+      <div className="flex flex-col items-center gap-4 text-center text-white pt-4 text-lg">
+        <Hammer size={32} />
         No results found. Please adjust filter parameters.
-    </div>)
+      </div>
+    );
 
-    return (
-        <div className="flex flex-col items-center w-full md:translate-x-[-3vw] md:translate-y-[-4vh]">
-            <div className="flex flex-row w-full h-12 justify-end">
-                <div className="absolute">
-                    <FilterPopover 
-                            OnSelectStartTime={setSelectedStartTime} 
-                            OnSelectEndTime={setSelectedEndTime}
-                            startTime={selectedStartTime} 
-                            endTime={selectedEndTime}
-                            tagList={TagList}
-                            ResetTags={ResetTags}
-                        />
-                </div>
-            </div>
-            <MobileView className="w-full">
-                <hr className="w-full"/>
-            </MobileView>
-            <BrowserView className="flex flex-row w-full items-end h-[3vh] relative">
-                <div className="w-[40%] text-right font-inter font-thin text-md md:text-[1.7vw] text-white md:translate-x-[-1.5vw]">
-                    Saturday, March 2, 2024
-                </div>
-                <hr className="w-[120%]"/>
-            </BrowserView>
-            {scheduleContent}
+  return (
+    <div className="flex flex-col items-center w-full md:translate-x-[-3vw] md:translate-y-[-4vh]">
+      <div className="flex flex-row w-full h-12 justify-end">
+        <div className="absolute">
+          <FilterPopover
+            OnSelectStartTime={setSelectedStartTime}
+            OnSelectEndTime={setSelectedEndTime}
+            startTime={selectedStartTime}
+            endTime={selectedEndTime}
+            tagList={TagList}
+            ResetTags={ResetTags}
+          />
         </div>
-    )
-}
+      </div>
+      <MobileView className="w-full">
+        <hr className="w-full" />
+      </MobileView>
+      <BrowserView className="flex flex-row w-full items-end h-[3vh] relative">
+        <div className="w-[40%] text-right font-inter font-thin text-md md:text-[1.7vw] text-white md:translate-x-[-1.5vw]">
+          Saturday, March 2, 2024
+        </div>
+        <hr className="w-[120%]" />
+      </BrowserView>
+      {scheduleContent}
+    </div>
+  );
+};
 
 export default Schedule;
 interface FilterProps {
-    OnSelectStartTime: (t: number) => void;
-    OnSelectEndTime: (t: number) => void;
-    startTime: number;
-    endTime: number;
-    tagList: JSX.Element[];
-    ResetTags: () => void;
+  OnSelectStartTime: (t: number) => void;
+  OnSelectEndTime: (t: number) => void;
+  startTime: number;
+  endTime: number;
+  tagList: JSX.Element[];
+  ResetTags: () => void;
 }
 
-function FilterPopover(props:FilterProps) {
-    return (
-      <Popover className="relative flex flex-row w-full justify-end text-white z-0">
-        <Popover.Button className={"ui-open:text-[#FFC42D] bg-[#2e2f31] flex flex-row items-center p-2 gap-2 text-lg md:text-2xl"}>
-            <FunnelSimple size={24}/>
-            Filter
-        </Popover.Button>
-  
-        <Popover.Panel className="absolute mt-12 md:mt-20 rounded-md z-10 bg-[#5A5454]">
-          <div className="flex flex-col w-[calc(100vw-3rem)] md:max-w-md gap-2 p-4">
-            <div className="flex flex-row justify-between items-center">
-                <div className="flex flex-row gap-1 text-md items-center">
-                    <Clock size ={24}/>
-                    Time
-                    <div className="w-2"/>
-                    {TimeSelect(props.OnSelectStartTime, props.startTime, 0, props.endTime)}
-                    -
-                    {TimeSelect(props.OnSelectEndTime, props.endTime, props.startTime, 0)}
-                </div>
-                
-                <ArrowCounterClockwise size={24} onClick={() => {
-                    props.OnSelectStartTime(1000);
-                    props.OnSelectEndTime(2200);
-                }} />
+function FilterPopover(props: FilterProps) {
+  return (
+    <Popover className="relative flex flex-row w-full justify-end text-white z-0">
+      <Popover.Button
+        className={
+          "ui-open:text-[#FFC42D] bg-[#2e2f31] flex flex-row items-center p-2 gap-2 text-lg md:text-2xl"
+        }
+      >
+        <FunnelSimple size={24} />
+        Filter
+      </Popover.Button>
+
+      <Popover.Panel className="absolute mt-12 md:mt-20 rounded-md z-10 bg-[#5A5454]">
+        <div className="flex flex-col w-[calc(100vw-3rem)] md:max-w-md gap-2 p-4">
+          <div className="flex flex-row justify-between items-center">
+            <div className="flex flex-row gap-1 text-md items-center">
+              <Clock size={24} />
+              Time
+              <div className="w-2" />
+              {TimeSelect(
+                props.OnSelectStartTime,
+                props.startTime,
+                0,
+                props.endTime
+              )}
+              -
+              {TimeSelect(
+                props.OnSelectEndTime,
+                props.endTime,
+                props.startTime,
+                0
+              )}
             </div>
-            <hr className="w=full"/>
-            <div className="flex flex-row justify-between items-center">
-                <div className="flex flex-row gap-1 text-md items-center">
-                    <Tag size ={24}/>
-                    Tags
-                    <div className="w-3"/>
-                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-                        {props.tagList}
-                    </div>
-                </div>
-                <ArrowCounterClockwise size={24} onClick={() => {
-                    props.ResetTags();
-                }} />
-                </div>
+
+            <ArrowCounterClockwise
+              size={24}
+              onClick={() => {
+                props.OnSelectStartTime(1000);
+                props.OnSelectEndTime(2200);
+              }}
+            />
+          </div>
+          <hr className="w=full" />
+          <div className="flex flex-row justify-between items-center">
+            <div className="flex flex-row gap-1 text-md items-center">
+              <Tag size={24} />
+              Tags
+              <div className="w-3" />
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                {props.tagList}
+              </div>
             </div>
-          </Popover.Panel>
-      </Popover>
-    )
-  }
+            <ArrowCounterClockwise
+              size={24}
+              onClick={() => {
+                props.ResetTags();
+              }}
+            />
+          </div>
+        </div>
+      </Popover.Panel>
+    </Popover>
+  );
+}
 
-  function TimeSelect(onSelect: (t: number) => void, time: number, mintime?: number, maxtime?: number)
-  {
-    const TimeToString = (time: number) =>
-    {
-        let h = (time < 1300 ? time : time % 1200).toString().slice(0, -2);
-        let m = time.toString().slice(-2);
-        let s = time >= 1200 ? "pm" : "am";
-        return `${h}:${m}${s}`;
-    }
+function TimeSelect(
+  onSelect: (t: number) => void,
+  time: number,
+  mintime?: number,
+  maxtime?: number
+) {
+  const TimeToString = (time: number) => {
+    let h = (time < 1300 ? time : time % 1200).toString().slice(0, -2);
+    let m = time.toString().slice(-2);
+    let s = time >= 1200 ? "pm" : "am";
+    return `${h}:${m}${s}`;
+  };
 
-    const times = [
-        1000,
-        1100,
-        1200,
-        1300,
-        1400,
-        1500,
-        1600,
-        1700,
-        1800,
-        1900,
-        2000,
-        2100,
-        2200,
-      ]
+  const times = [
+    1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100,
+    2200,
+  ];
 
-    const filteredTimes = times.filter((t: number) => {
-        return (!mintime || t > mintime) && (!maxtime || t < maxtime);
-    })
-    
-    return (
-        <Listbox value={time} onChange={onSelect} as = "div" className={"justfy-end"}>
-        <Listbox.Button className={"bg-[#2e2f31] p-2 rounded-md relative w-20"}>
-            {TimeToString(time)}
-        </Listbox.Button>
-        <Listbox.Options className={"absolute w-20 py-2 rounded-md bg-[#D9D9D9]"}>
-            {filteredTimes.map((time) => (
-            <Listbox.Option
+  const filteredTimes = times.filter((t: number) => {
+    return (!mintime || t > mintime) && (!maxtime || t < maxtime);
+  });
+
+  return (
+    <Listbox value={time} onChange={onSelect} as="div" className={"justfy-end"}>
+      <Listbox.Button className={"bg-[#2e2f31] p-2 rounded-md relative w-20"}>
+        {TimeToString(time)}
+      </Listbox.Button>
+      <Listbox.Options className={"absolute w-20 py-2 rounded-md bg-[#D9D9D9]"}>
+        {filteredTimes.map((time) => (
+          <Listbox.Option
             value={time}
-            className={"bg-[#D9D9D9] w-16 text-center text-black ml-2 rounded-md py-1 ui-selected:text-white ui-selected:bg-[#2e2f31]"}
-            >
-                {TimeToString(time)}
-            </Listbox.Option>
-            ))}
-        </Listbox.Options>
-        </Listbox>
-    )
-  }
-
-
-// import { Navbar } from "../../components/navbar/NavBar";
-// import { Link } from "react-router-dom";
-// import { NAVBARCONFIG } from "../../components/navbar/NavBarConfig";
-// import { NavBarItem, NavBarItemEnum } from "../../components/navbar/NavBarItem";
-// import { BrowserView, MobileView } from "react-device-detect";
-// import { Hamburger } from "../../components/hamburger/hamburger";
-
-// export const Schedule = (): JSX.Element => {
-//     return (
-//         <div className="bg-[#2e2f31] h-screen">
-//             <div className="h-fit overflow-hidden bg-[#2e2f31]">
-//                 <BrowserView>
-//                     <Navbar
-//                         items={NAVBARCONFIG}
-//                         selectedItem={NavBarItemEnum.SCHEDULE}
-//                         dropdownSelect="participate"
-//                     />
-//                 </BrowserView>
-//                 <MobileView>
-//                     <Hamburger selectedItem={NavBarItemEnum.SCHEDULE}/>
-//                 </MobileView>
-//                 <div className="flex flex-col justify-center items-center mb-[3vw]">
-//                     <div className="h-[6vw] font-coolvetica text-white text-[4vw]">
-//                         Participate in WreckCon 2025!
-//                     </div>
-//                     {/* <div className="w-[75vw] font-inter text-[1.7vw] mb-[4vw] mt-[2vw] text-white text-center">
-//                         WreckCon wouldn't be possible without the involvement of countless people, and we're currently looking
-//                        for <b>artists</b>, <b>vendors</b>, <b>volunteers</b>, and <b>panelists</b> to make WreckCon 2024 the best it can be. If you're interested, 
-//                         check out the tabs below. Perks include free tabling space/paneling spots, and free meals and merch!
-//                     </div> */}
-//                     {/* <div className="w-[75vw] font-inter text-[1.7vw] mb-[4vw] mt-[2vw] text-white text-center">
-//                         WreckCon wouldn't be possible without the involvement of countless people, but we are no longer looking
-//                        for artists, vendors, volunteers, and panelists for WreckCon 2024. However, if you're interested in joining our 
-//                        <b> cosplay competition</b> or our <b>Smash competition</b>, check out the links below!
-//                     </div> */}
-//                     <div className="w-[75vw] font-inter text-[1.7vw] mb-[4vw] mt-[2vw] text-white text-center">
-//                         WreckCon wouldn't be possible without the involvement of countless people, and we're looking for artists to help make our pop-up artist 
-//                         alley the best it can be. Additionally, we're looking for prospective and current students to join our Registered Student Organization 
-//                         to help organize future installments of Wreckcon over the course of the year. If you're interested, check out the links below!
-//                     </div>
-//                     <div className="flex items-center justify-center space-x-[2vw]">
-//                         {/* <div className="h-[20vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
-//                             <div className="h-[5vw] w-[100%] bg-[#659470] text-center rounded-t-lg">
-//                                 <p className="mt-[0.5vw] font-coolvetica text-[3vw]"> Artists </p>
-//                             </div>
-//                             <div className="font-inter font-white mt-[1.5vw] mx-[2vw] text-[1.1vw]">
-//                                 Sign up below if you would like to sell at WreckCon 2024, but you do <b>not</b> have a business license. Tabling space is 
-//                                 totally free, but unfortunately not guaranteed.
-//                             </div>
-//                             <Link to={'https://forms.gle/zq8Ebas1sor5iqqJ6'} className="flex flex-col justify-center h-[20vw] bg-[#659470] w-fit h-[3vw] rounded absolute translate-y-[16vw]">
-//                                 <p className="font-inter w-fit mx-[1vw] items-center text-[1.5vw]"> Artist Interest </p>
-//                             </Link>
-//                         </div>
-//                         <div className="h-[20vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
-//                             <div className="h-[5vw] w-[100%] bg-[#FF7F41] text-center rounded-t-lg">
-//                                 <p className="mt-[0.5vw] font-coolvetica text-[3vw]"> Vendors </p>
-//                             </div>
-//                             <div className="font-inter mt-[1.5vw] mx-[2vw] text-[1.1vw]">
-//                                 If you are a seller interested in WreckCon 2024 <b>with</b> a business license, please fill out the form below! All other sellers
-//                                 should use the Artists signup form.
-//                             </div>
-//                             <Link to={'https://forms.gle/TT3ENSjcoVVw1hmo7'} className="flex flex-col justify-center h-[20vw] bg-[#FF7F41] w-fit h-[3vw] rounded absolute translate-y-[16vw]">
-//                                 <p className="font-inter font-white w-fit mx-[1vw] items-center text-[1.5vw]"> Vendor Interest </p>
-//                             </Link>
-//                         </div>
-//                         <div className="h-[20vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
-//                             <div className="h-[5vw] w-[100%] bg-[#FFC42D] text-center rounded-t-lg">
-//                                 <p className="mt-[0.5vw] font-coolvetica text-[3vw]"> Volunteers </p>
-//                             </div>
-//                             <div className="font-inter mt-[1.5vw] mx-[2vw] text-[1.1vw]">
-//                                 We're always looking for help managing WreckCon. Volunteering can either be 
-//                                 involvement in organizing the event beforehand, or day-of convention help. 
-//                             </div>
-//                             <Link to={'https://forms.gle/L9cK8FpicDh1WxZF6'} className="flex flex-col justify-center h-[20vw] bg-[#FFC42D] w-fit h-[3vw] rounded absolute translate-y-[16vw]">
-//                                 <p className="font-inter font-white w-fit mx-[1vw] items-center text-[1.5vw]"> Volunteer Interest </p>
-//                             </Link>
-//                         </div>
-//                         <div className="h-[20vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
-//                             <div className="h-[5vw] w-[100%] bg-[#F04924] text-center rounded-t-lg">
-//                                 <p className="mt-[0.5vw] font-coolvetica text-[3vw]"> Panelists </p>
-//                             </div>
-//                             <div className="font-inter mt-[1.5vw] text-[1.1vw] mx-[2vw]">
-//                                 Have an idea or topic you're dying to share at WreckCon? Paneling space is completely free,
-//                                 but highly in-demand, so sign up as soon as you can!
-//                             </div>
-//                             <Link to={'https://forms.gle/6jV8xcb8LvtWmiVW9'} className="flex flex-col justify-center h-[20vw] bg-[#F04924] w-fit h-[3vw] rounded absolute translate-y-[16vw]">
-//                                 <p className="font-inter font-white w-fit mx-[1vw] items-center text-[1.5vw]"> Panelist Interest </p>
-//                             </Link>
-//                         </div>
-//                         <div className="h-[20vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
-//                             <div className="h-[5vw] w-[100%] bg-[#FFC42D] text-center rounded-t-lg">
-//                                 <p className="mt-[0.8vw] font-coolvetica text-[2.2vw]"> Cosplay Competition </p>
-//                             </div>
-//                             <div className="font-inter font-white mt-[1.5vw] mx-[2vw] text-[1.1vw]">
-//                                 Use the form below to sign up for the WreckCon 2024 Cosplay Competition! More details about the competition
-//                                 can be found in the WreckCon discord server.
-//                             </div>
-//                             <Link to={'https://docs.google.com/forms/d/e/1FAIpQLSeGYCKLd1uc95oDXLvWth3Bu4-mMorUrCEP17hUZZEBoVMSsg/viewform?usp=sharing'} className="flex flex-col justify-center h-[20vw] bg-[#FFC42D] w-fit h-[3vw] rounded absolute translate-y-[16vw]">
-//                                 <p className="font-inter w-fit mx-[1vw] items-center text-[1.5vw]"> Cosplay Interest </p>
-//                             </Link>
-//                         </div>
-//                         <div className="h-[20vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
-//                             <div className="h-[5vw] w-[100%] bg-[#FF7F41] text-center rounded-t-lg">
-//                                 <p className="mt-[0.8vw] font-coolvetica text-[2.2vw]"> Smash Competition </p>
-//                             </div>
-//                             <div className="font-inter font-white mt-[1.5vw] mx-[2vw] text-[1.1vw]">
-//                                 Use the form below to sign up for the WreckCon 2024 Smash Competition! More details about the competition
-//                                 can be found in the WreckCon discord server.
-//                             </div>
-//                             <Link to={'https://start.gg/wreckcon'} className="flex flex-col justify-center h-[20vw] bg-[#FF7F41] w-fit h-[3vw] rounded absolute translate-y-[16vw]">
-//                                 <p className="font-inter w-fit mx-[1vw] items-center text-[1.5vw]"> Smash Interest </p>
-//                             </Link>
-//                         </div> */}
-//                         {/* <div className="h-[20vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
-//                             <div className="h-[5vw] w-[100%] bg-[#659470] text-center rounded-t-lg">
-//                                 <p className="mt-[0.8vw] font-coolvetica text-[2.2vw]"> Pop-Up Artists </p>
-//                             </div>
-//                             <div className="font-inter font-white mt-[1.5vw] mx-[2vw] text-[1.1vw]">
-//                                 If you are interested in participating as an artist for our pop-up artist alley, please fill out the form below!
-//                             </div>
-//                             <Link to={'https://forms.gle/idi3miJ2TDz8r1TD7'} className="flex flex-col justify-center h-[20vw] bg-[#659470] w-fit h-[3vw] rounded absolute translate-y-[16vw]">
-//                                 <p className="font-inter w-fit mx-[1vw] items-center text-[1.5vw]"> Artist Intake </p>
-//                             </Link>
-//                         </div> */}
-//                         <div className="h-[20vw] w-[22vw] bg-white flex flex-col items-center rounded-lg">
-//                             <div className="h-[5vw] w-[100%] bg-[#FFC42D] text-center rounded-t-lg">
-//                                 <p className="mt-[0.8vw] font-coolvetica text-[2.2vw]"> RSO Intake </p>
-//                             </div>
-//                             <div className="font-inter font-white mt-[1.5vw] mx-[2vw] text-[1.1vw]">
-//                                 If you are interested in applying for membership in the WreckCon RSO, please fill out the form below!
-//                             </div>
-//                             <Link to={'https://docs.google.com/forms/d/e/1FAIpQLScfVxvDfGG828S1f7wFYvsRQf1TXACiIqHUTBpIduh8U3bFww/viewform?usp=sharing'} className="flex flex-col justify-center h-[20vw] bg-[#FFC42D] w-fit h-[3vw] rounded absolute translate-y-[16vw]">
-//                                 <p className="font-inter w-fit mx-[1vw] items-center text-[1.5vw]"> RSO Intake </p>
-//                             </Link>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-//     )
-// }
+            className={
+              "bg-[#D9D9D9] w-16 text-center text-black ml-2 rounded-md py-1 ui-selected:text-white ui-selected:bg-[#2e2f31]"
+            }
+          >
+            {TimeToString(time)}
+          </Listbox.Option>
+        ))}
+      </Listbox.Options>
+    </Listbox>
+  );
+}
