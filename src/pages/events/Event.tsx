@@ -41,7 +41,7 @@ export const Event = React.forwardRef<HTMLDivElement, EventProps>(
             >
               {props.name}
             </div>
-            {props.location && (
+            {/* {props.location && (
               <div className="flex flex-row gap-[0.5vw] items-center mb-[1vw] md:mb-0">
                 <MapPinLine
                   className="text-white"
@@ -54,7 +54,7 @@ export const Event = React.forwardRef<HTMLDivElement, EventProps>(
                   {props.location}
                 </span>
               </div>
-            )}
+            )} */}
             {!isScreenSizeMedium && button}
           </div>
         </div>
@@ -66,7 +66,7 @@ export const Event = React.forwardRef<HTMLDivElement, EventProps>(
             />
           )}
           <div className="flex flex-col justify-between gap-[2vw] md:gap-[1vw]">
-            <div className="font-inter text-white text-[3vw] md:text-[1.5vw] grow mt-[1vw] md:mt-0">
+            <div className="font-inter text-white text-[3vw] md:text-[1.5vw] grow mt-[1vw] md:mt-0 whitespace-pre-wrap">
               {props.bodyText}
             </div>
             {isScreenSizeMedium && button}
