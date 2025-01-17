@@ -15,6 +15,7 @@ export enum NavBarItemEnum {
   CONTACT,
   PARTICIPATE,
   SPONSOR,
+  EVENTS,
 }
 
 export interface NavBarItemProps {
@@ -52,7 +53,7 @@ export const NavBarItem = (props: NavBarItemProps) => {
 
     return (
       <Menu>
-        <Menu.Button className="ml-[20vw] ui-open:bg-[#131313] bg-opacity-90 z-20">
+        <Menu.Button className="ml-[10vw] ui-open:bg-[#131313] bg-opacity-90 z-20">
           <div
             className={classNames(
               "font-inter font-thin text-[2vw] flex flex-row justify-center h-[3vw] w-[16vw] my-[0.3vw]",
