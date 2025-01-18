@@ -1,17 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.55fa92be.css",
-    "main.js": "/static/js/main.d39fb85b.js",
+    "main.css": "/static/css/main.432c5950.css",
+    "main.js": "/static/js/main.3047cd61.js",
     "static/js/787.28692217.chunk.js": "/static/js/787.28692217.chunk.js",
+    "static/media/cosplay.png": "/static/media/cosplay.61fe403e9afe25ebbe3d.png",
+    "static/media/idolfest.png": "/static/media/idolfest.3b5a5299246194b02fbf.png",
+    "static/media/boardgames.png": "/static/media/boardgames.14d8838c576327c870b8.png",
     "static/media/5.jpg": "/static/media/5.b9915d094086051536cf.jpg",
+    "static/media/smashbros.jpg": "/static/media/smashbros.47d625aa9c15c413648d.jpg",
     "static/media/2.jpg": "/static/media/2.57f306130cf70426b912.jpg",
     "static/media/3.jpg": "/static/media/3.532753203c5c0345d150.jpg",
     "static/media/4.jpg": "/static/media/4.8f4da2f1c94f9b55f9c9.jpg",
     "static/media/6.jpg": "/static/media/6.d21432f3724f89f484b0.jpg",
     "static/media/1.jpg": "/static/media/1.6c286ed7da8125f76e61.jpg",
     "static/media/nerdi-gras-logo.png": "/static/media/nerdi-gras-logo.b6163793d48a7a42e42b.png",
+    "static/media/indiegames.jpg": "/static/media/indiegames.e9958d8ba0586420dc6c.jpg",
+    "static/media/tabletop.jpg": "/static/media/tabletop.f02454d3b594b1062cf7.jpg",
+    "static/media/cosplayshowcase.jpg": "/static/media/cosplayshowcase.636dccf1a98935dca59b.jpg",
+    "static/media/tcg.jpg": "/static/media/tcg.144a083a050b8e915cd2.jpg",
+    "static/media/artistsalley.jpg": "/static/media/artistsalley.dc63bee33d373aba6544.jpg",
     "static/media/Inter-Bold.ttf": "/static/media/Inter-Bold.88fa7ae373b07b41ecce.ttf",
     "static/media/Inter-Regular.ttf": "/static/media/Inter-Regular.e89cb19905e7db5591b0.ttf",
+    "static/media/vgdevarcade.jpg": "/static/media/vgdevarcade.8bea01e2bbc8c623edcc.jpg",
+    "static/media/panels.jpg": "/static/media/panels.d53948b541676a4b8d9d.jpg",
     "static/media/anime logo.png": "/static/media/anime logo.53a2ad7dedf1f091c7e9.png",
     "static/media/sga logo.png": "/static/media/sga logo.19620709688b3c370665.png",
     "static/media/dnd logo.png": "/static/media/dnd logo.a09fd53c16efe1deb7fa.png",
@@ -32,12 +43,12 @@
     "static/media/twitterlogo.png": "/static/media/twitterlogo.7b5bdc5995fa40bcea79.png",
     "static/media/youtubelogo.png": "/static/media/youtubelogo.abfd36b30dfc5ba1a3db.png",
     "index.html": "/index.html",
-    "main.55fa92be.css.map": "/static/css/main.55fa92be.css.map",
-    "main.d39fb85b.js.map": "/static/js/main.d39fb85b.js.map",
+    "main.432c5950.css.map": "/static/css/main.432c5950.css.map",
+    "main.3047cd61.js.map": "/static/js/main.3047cd61.js.map",
     "787.28692217.chunk.js.map": "/static/js/787.28692217.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.55fa92be.css",
-    "static/js/main.d39fb85b.js"
+    "static/css/main.432c5950.css",
+    "static/js/main.3047cd61.js"
   ]
 }
