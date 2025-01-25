@@ -74,9 +74,11 @@ In the panel rooms, have a topic you'd like to hear about? Want to hear some liv
     name: "TTRPG Freeplay",
     bodyText: `Have you heard of Dungeons & Dragons, Pathfinder, or another TableTop Roleplaying Game and want to give it a go? Take a look at our open games and contact a GM, or just show up if it's a walk-up!
   
-Game listings coming soon.`,
+DM applications are now open. Game listings coming soon.`,
     picture: tabletop,
     location: "Main Stage",
+    link: "https://forms.gle/7aPR1WF3P8nJYn7q9",
+    buttonText: "Apply",
   },
   {
     name: "VGDev Arcade",

@@ -85,10 +85,18 @@ export const Contact = (): JSX.Element => {
               <img src={youtube} alt="could not load" />
               <div className="mt-[1vw]"> WreckCon </div>
             </Link>
+            {/* <Link
+              to={"https://www.facebook.com/profile.php?id=61572095518667"}
+              className="w-[8vw] font-inter"
+            >
+              <img src={youtube} alt="could not load" />
+              <div className="mt-[1vw]"> WreckCon </div>
+            </Link> */}
             <a href={"mailto:info@wreckcon.org"} className="w-[8vw] font-inter">
               <img src={mail} alt="image could not load" />
               <div className="mt-[1vw]"> info@wreckcon.org </div>
             </a>
+            
           </div>
         </div>
         <form className="w-[50vw] flex flex-col font-inter text-[1.7vw] mb-[3vw] mt-[2vw] space-y-[3vw]">
