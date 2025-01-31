@@ -10,6 +10,7 @@ import vgdev from "./../../assets/event_pictures/vgdevarcade.jpg";
 import smash from "./../../assets/event_pictures/smashbros.jpg";
 import tcg from "./../../assets/event_pictures/tcg.jpg";
 import artistsalley from "./../../assets/event_pictures/artistsalley.jpg";
+import mariokart from "./../../assets/event_pictures/mariokart.jpg";
 
 export const EVENTCONFIG: EventProps[] = [
   {
@@ -17,7 +18,7 @@ export const EVENTCONFIG: EventProps[] = [
     bodyText: `We have an incredible lineup of local and GT artists this year! Browse our Artist Alley in the Exhibition Hall and grab a slew of merchandise. With designs both original and inspired by your favorite media franchises, there's something for everyone. They don't call it “disposable income” for nothing, after all.
     
 Our featured vendors this year are Level-Up Games and Sorensen's Precision Diceworks.`,
-    link: "https://forms.gle/kvhUyLAfUJo2WA998",
+    //link: "https://forms.gle/kvhUyLAfUJo2WA998",
     buttonText: "Apply",
     picture: artistsalley,
     location: "Main Stage",
@@ -48,10 +49,10 @@ Signups will be in-person at WreckCon 2025, first come-first serve! `,
 
   {
     name: "Indie Game Showcase",
-    bodyText: `Play free demos of amazing games from local independent developers. Featuring award-winning games and brand new projects, discover your newest gaming addiction. If you are a developer with a video game or tabletop game which you would like to demo, you can apply on the linked form.`,
+    bodyText: `Play free demos of amazing games from local independent developers. Featuring award-winning games and brand new projects, discover your newest gaming addiction.`,
     picture: indiegames,
     location: "Main Stage",
-    link: "https://forms.gle/GKzwJkK6yGEpCrCRA",
+  //  link: "https://forms.gle/GKzwJkK6yGEpCrCRA",
     buttonText: "Apply",
   },
   {
@@ -61,7 +62,7 @@ Signups will be in-person at WreckCon 2025, first come-first serve! `,
 In the panel rooms, have a topic you'd like to hear about? Want to hear some live music, or maybe see a dance? Check out our panels in the Instructional Center and on the second floor of the Exhibition Hall!`,
     picture: panels,
     location: "Main Stage",
-    link: "https://forms.gle/rKWmuNAxvnnStNqy8",
+   // link: "https://forms.gle/rKWmuNAxvnnStNqy8",
     buttonText: "Apply",
   },
   {
@@ -74,10 +75,10 @@ In the panel rooms, have a topic you'd like to hear about? Want to hear some liv
     name: "TTRPG Freeplay",
     bodyText: `Have you heard of Dungeons & Dragons, Pathfinder, or another TableTop Roleplaying Game and want to give it a go? Take a look at our open games and contact a GM, or just show up if it's a walk-up!
   
-DM applications are now open. Game listings coming soon.`,
+Game listings coming soon.`,
     picture: tabletop,
     location: "Main Stage",
-    link: "https://forms.gle/7aPR1WF3P8nJYn7q9",
+    //link: "https://forms.gle/7aPR1WF3P8nJYn7q9",
     buttonText: "Apply",
   },
   {
@@ -98,7 +99,7 @@ DM applications are now open. Game listings coming soon.`,
     bodyText: `Come and cheer on your favorite idols in our idolfest, co-hosted by Pri5m and Cosmic Stories! Watch idols cosplay as the characters in their chosen songs or perform as their own original idols as all in the spotlight all will shine! Raise those penlights in the air as idol groups light the stage with performances from all different genres from Jpop, Vocaloid, rhythm games, anime and Kpop!`,
     picture: idolfest,
     location: "Main Stage",
-    link: "https://forms.gle/TTr5VxMkReWXa3QQ6",
+    //link: "https://forms.gle/TTr5VxMkReWXa3QQ6",
     buttonText: "Apply",
   },
   {
@@ -111,10 +112,13 @@ One day only, March 1st, and a grand prize of a MomoCon ticket for each tourney!
     link: "https://start.gg/wreckcon",
     buttonText: "Register",
   },
-  // {
-  //   name: "Mario Kart 8 Tournament",
-  //   bodyText: `Play Video Games. Yay!`,
-  //   picture: placeholder,
-  //   location: "Main Stage",
-  // },
+  {
+    name: "Mario Kart 8 Tournament",
+    bodyText: `In collaboration with Georgia Mario Kart and the Collegiate Karting League, GT Mario Kart will be running a LAN tournament at WreckCon 2025. Race against your friends in Mario Kart 8 Deluxe to claim the title of WreckCon's greatest Kart racer!
+Registration is free. Providing setups is greatly appreciated.`,
+    picture: mariokart,
+    location: "Main Stage",
+    link: "https://www.start.gg/tournament/mario-kart-wreckcon-2025/details",
+    buttonText: "Register"
+  },
 ];

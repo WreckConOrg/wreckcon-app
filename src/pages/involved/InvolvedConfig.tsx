@@ -8,6 +8,7 @@ export const INVOLVEDCONFIG: ParticipateBoxProps[] = [
     link: "https://forms.gle/kvhUyLAfUJo2WA998",
     buttonText: "Artist Intake",
     color: "#659470",
+    isOpen: false
   },
   {
     name: "Vendors",
@@ -16,6 +17,8 @@ export const INVOLVEDCONFIG: ParticipateBoxProps[] = [
     link: "https://forms.gle/xTpZRyW7oiebYn3n6",
     buttonText: "Vendor Intake",
     color: "#FF7F41",
+        isOpen: false
+
   },
   {
     name: "RSO Intake",
@@ -24,6 +27,8 @@ export const INVOLVEDCONFIG: ParticipateBoxProps[] = [
     link: "https://docs.google.com/forms/d/e/1FAIpQLScfVxvDfGG828S1f7wFYvsRQf1TXACiIqHUTBpIduh8U3bFww/viewform?usp=sharing",
     buttonText: "RSO Intake",
     color: "#FFC42D",
+        isOpen: true
+
   },
   {
     name: "Volunteers",
@@ -32,6 +37,8 @@ export const INVOLVEDCONFIG: ParticipateBoxProps[] = [
     link: "https://forms.gle/2nJDnXiTGpWZPGFY9",
     buttonText: "Volunteer Intake",
     color: "#64A2FF",
+        isOpen: false
+
   },
   {
     name: "Panelists",
@@ -40,6 +47,8 @@ export const INVOLVEDCONFIG: ParticipateBoxProps[] = [
     link: "https://forms.gle/rKWmuNAxvnnStNqy8",
     buttonText: "Panelist Intake",
     color: "#A880FF",
+        isOpen: false
+
   },
   {
     name: "Indie Games",
@@ -48,5 +57,7 @@ export const INVOLVEDCONFIG: ParticipateBoxProps[] = [
     link: "https://forms.gle/GKzwJkK6yGEpCrCRA",
     buttonText: "Indie Games Intake",
     color: "#F04924",
+        isOpen: false
+
   },
 ];

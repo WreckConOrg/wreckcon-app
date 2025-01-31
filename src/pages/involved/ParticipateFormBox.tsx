@@ -7,6 +7,7 @@ export interface ParticipateBoxProps {
   link: string;
   buttonText: string;
   color: string;
+  isOpen: boolean;
 }
 
 export const ParticipateFormBox = (props: ParticipateBoxProps) => {
@@ -24,6 +25,7 @@ export const ParticipateFormBox = (props: ParticipateBoxProps) => {
       <div className="font-inter font-white mt-[1.5vw] mx-[2vw] text-[2vw] md:text-[1.1vw]">
         {props.bodyText}
       </div>
+      {props.isOpen ?
       <Link
         to={props.link}
         target="_blank"
@@ -33,7 +35,11 @@ export const ParticipateFormBox = (props: ParticipateBoxProps) => {
         <p className="font-inter w-fit mx-[1vw] items-center text-[3vw] md:text-[1.5vw]">
           {` ${props.buttonText} `}
         </p>
-      </Link>
+      </Link> :
+      <div className="font-inter w-fit mt-auto mb-[1vw] mx-[2vw] md:mx-[1vw] items-center text-[3vw] md:text-[1.5vw] text-center">
+        Applications are now closed
+      </div>
+      }
     </div>
   );
 };
