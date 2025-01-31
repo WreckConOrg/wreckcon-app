@@ -67,9 +67,9 @@ export const Home = (props: HomeProps): JSX.Element => {
                         Tickets
                     </div> 
                 </Link>
-                <Link className="bg-[#D9D9D9] absolute left-[44.5vw] top-[82vh] w-fit h-[4vw] flex items-center justify-center" to={'/involved'}>
+                <Link className="bg-[#D9D9D9] absolute left-[44.5vw] top-[82vh] w-fit h-[4vw] flex items-center justify-center" to={'/events'}>
                     <div className="font-inter font-bold text-[#2e2f31] text-[2vw] mx-[3vw] ">
-                        Get Involved
+                        Events
                     </div> 
                 </Link>
             </BrowserView>
@@ -84,9 +84,9 @@ export const Home = (props: HomeProps): JSX.Element => {
                         Tickets
                     </div> 
                 </Link>
-                <Link className="bg-[#D9D9D9] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md" to={'/involved'}>
+                <Link className="bg-[#D9D9D9] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md" to={'/events'}>
                     <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw]">
-                        Get Involved
+                        Events
                     </div> 
                 </Link>
             </MobileView>
