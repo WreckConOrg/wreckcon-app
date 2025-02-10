@@ -72,7 +72,7 @@ export const Event = React.forwardRef<HTMLDivElement, EventProps>(
             {isScreenSizeMedium && button}
           </div>
         </div>
-        <hr className="w-full mt-[3vw] md:mt-[1vw] mb-[2vw] md:mb-0 text-white" />
+        <hr className="w-full mt-[3vw] md:mt-[1vw] mb-[2vw] md:mb-0 bg-[#FFC42D] border-0 h-px" />
       </div>
     );
   }
