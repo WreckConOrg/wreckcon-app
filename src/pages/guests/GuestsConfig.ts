@@ -13,7 +13,7 @@ export const GUESTSCONFIG: GuestProps[] = [
 
 She has also lended her voice to dozens of vidoe games, including Warframe, Neversong, Brawl Stars, Paladins, and Smite.
 
-Tiffany will be participating in the Voice Actor's panel! Join us and ask her some of your burning questions about voice acting`,
+Tiffany will be participating in the Voice Actor's panel! Join us and ask her some of your burning questions about voice acting!`,
     picture: TiffanyGrant,
     role: "Voice Actress",
   },
