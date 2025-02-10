@@ -26,7 +26,7 @@ export const Schedule = (props: ScheduleProps) => {
   ];
 
   const [selectedStartTime, setSelectedStartTime] = useState(1000);
-  const [selectedEndTime, setSelectedEndTime] = useState(2200);
+  const [selectedEndTime, setSelectedEndTime] = useState(2000);
   const [selectedTags, setSelectedTags] = useState(tags);
 
   const TagIsIncluded = (item: ScheduleItemProps) => {
@@ -107,7 +107,7 @@ export const Schedule = (props: ScheduleProps) => {
       </MobileView>
       <BrowserView className="flex flex-row w-full items-end h-[3vh] relative">
         <div className="w-[40%] text-right font-inter font-thin text-md md:text-[1.7vw] text-white md:translate-x-[-1.5vw]">
-          Saturday, March 2, 2024
+          Saturday, March 1, 2025
         </div>
         <hr className="w-[120%]" />
       </BrowserView>
@@ -164,7 +164,7 @@ function FilterPopover(props: FilterProps) {
               size={24}
               onClick={() => {
                 props.OnSelectStartTime(1000);
-                props.OnSelectEndTime(2200);
+                props.OnSelectEndTime(2000);
               }}
             />
           </div>
@@ -205,8 +205,7 @@ function TimeSelect(
   };
 
   const times = [
-    1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100,
-    2200,
+    1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000,
   ];
 
   const filteredTimes = times.filter((t: number) => {

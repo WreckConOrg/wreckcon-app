@@ -36,7 +36,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
     time: "11:00am-4:00pm",
     location: "Ex Hall Floor 2: Kirkwood",
     description: "",
-    testDesc: (
+    advancedDescription: (
       <div>
         <div>
           Come join GTD&D Club, as well as the UGA D&D Club and the Pathfinder
@@ -224,7 +224,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
     time: "4:00pm-9:00pm",
     location: "Ex Hall Floor 2: Kirkwood",
     description: "",
-    testDesc: (
+    advancedDescription: (
       <div>
         <div>
           Come join GTD&D Club, as well as the UGA D&D Club and the Pathfinder
