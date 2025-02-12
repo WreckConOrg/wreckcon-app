@@ -63,12 +63,14 @@ function ScheduleItem(props: ScheduleItemProps) {
                     </div>
                   </div>
                   {!isScreenSizeMedium && (
-                    <div className="flex flex-row gap-2">{TagList}</div>
+                    <div className="grid grid-cols-2 gap-2 items-left">
+                      {TagList}
+                    </div>
                   )}
-                  <div className="flex flex-row items-center pl-2 md:pl-4 gap-1 md:gap-2 font-inter font-thin text-m md:text-lg text-left text-wrap text-white">
+                  {/* <div className="flex flex-row items-center pl-2 md:pl-4 gap-1 md:gap-2 font-inter font-thin text-m md:text-lg text-left text-wrap text-white">
                     <MapPinLine className="color-white" size={24} />
                     {props.location}
-                  </div>
+                  </div> */}
                   <Disclosure.Panel
                     as="div"
                     className="font-inter font-thin text-sm md:text-lg text-left text-white bg-[#5A5454] pl-2 md:pl-4"

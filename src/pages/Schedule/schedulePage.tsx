@@ -25,8 +25,11 @@ export const SchedulePage = (): JSX.Element => {
             { "mt-[-6vh] text-[3vw] mb-[6vh]": isMobile }
           )}
         ></div>
-        <div className="p-6 md:mb-10 md:px-40 items-center">
-          <Schedule items={SCHEDULECONFIG} />
+        <div className="flex flex-row">
+          <div className="min-h-[600px]"></div>
+          <div className="p-6 md:mb-10 md:px-40 flex flex-col flex-grow self-stretch h-full items-center">
+            <Schedule items={SCHEDULECONFIG} />
+          </div>
         </div>
       </>
     </BasePage>

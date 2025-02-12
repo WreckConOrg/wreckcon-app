@@ -23,7 +23,7 @@ function App() {
     "funny on twitter @conwreck",
     "nockcerw spelled backwards",
     "one of the conventions ever",
-    "",
+    "back and better than ever",
   ];
 
   const phrase = phrases[Math.floor(Math.random() * phrases.length)];

@@ -11,14 +11,14 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
     endTime: 1030,
   },
 
-  {
-    name: "TTRPG Panel by Tom Bloom",
-    location: "Main Stage",
-    description: "Yoyoyo its ya boi tom tearing it up on the mainstage.",
-    tags: [ScheduleTag.EVENT, ScheduleTag.TABLETOP, ScheduleTag.PANEL],
-    startTime: 1030,
-    endTime: 1130,
-  },
+  // {
+  //   name: "TTRPG Panel by Tom Bloom",
+  //   location: "Main Stage",
+  //   description: "Yoyoyo its ya boi tom tearing it up on the mainstage.",
+  //   tags: [ScheduleTag.EVENT, ScheduleTag.TABLETOP, ScheduleTag.PANEL],
+  //   startTime: 1030,
+  //   endTime: 1130,
+  // },
 
   {
     name: "Panel - Modern vs. Classic Tetris: A Summary ",
@@ -30,14 +30,33 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
     endTime: 1130,
   },
 
+  // {
+  //   name: "Panel - Idol Random Play Dance",
+  //   location: "Instructional Center 111",
+  //   description:
+  //     "Come and dance along to your favorite idol songs from franchises like Love Live, Project Sekai, Ensemble Stars, and so many more!",
+  //   tags: [ScheduleTag.PANEL, ScheduleTag.DANCE],
+  //   startTime: 1030,
+  //   endTime: 1130,
+  // },
+
   {
-    name: "Panel - Idol Random Play Dance",
-    location: "Instructional Center 111",
+    name: "Super Smash Bros. Tournament - Registration",
+    location: "Instructional Center Floor 2",
     description:
-      "Come and dance along to your favorite idol songs from franchises like Love Live, Project Sekai, Ensemble Stars, and so many more!",
-    tags: [ScheduleTag.PANEL, ScheduleTag.DANCE],
+      "Registration for the Super Smash Bros. Ultimate Arcadian and Super Smash Bros. Melee tournaments.",
+    tags: [ScheduleTag.TOURNAMENT, ScheduleTag.GAMING],
     startTime: 1030,
-    endTime: 1130,
+    endTime: 1200,
+  },
+
+  {
+    name: "Mario Kart 8 Tournament - Registration",
+    location: "Instructional Center Room 105",
+    description: "Registration for the Mario Kart 8 tournament",
+    tags: [ScheduleTag.TOURNAMENT, ScheduleTag.GAMING],
+    startTime: 1030,
+    endTime: 1400,
   },
 
   {
@@ -60,15 +79,15 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
     endTime: 1200,
   },
 
-  {
-    name: "Riot Games Panel",
-    location: "Main Stage",
-    description:
-      "A panel of several Riot Games designers and developers at WreckCon.",
-    tags: [ScheduleTag.EVENT, ScheduleTag.PANEL, ScheduleTag.GAMING],
-    startTime: 1200,
-    endTime: 1300,
-  },
+  // {
+  //   name: "Riot Games Panel",
+  //   location: "Main Stage",
+  //   description:
+  //     "A panel of several Riot Games designers and developers at WreckCon.",
+  //   tags: [ScheduleTag.EVENT, ScheduleTag.PANEL, ScheduleTag.GAMING],
+  //   startTime: 1200,
+  //   endTime: 1300,
+  // },
 
   {
     name: "Panel - Japenese Music on the Rise",
@@ -91,6 +110,16 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
   },
 
   {
+    name: "Super Smash Bros. Tournament",
+    location: "Instructional Center Floor 2",
+    description:
+      "Super Smash Bros. Ultimate Arcadian and Super Smash Bros. Melee tournaments. Registration is required beforehand.",
+    tags: [ScheduleTag.TOURNAMENT, ScheduleTag.GAMING],
+    startTime: 1200,
+    endTime: 2100,
+  },
+
+  {
     name: "Panel - Ensemble Stars!! Random Play Dance",
     location: "Ex Hall Floor 2: Home Park",
     description:
@@ -100,15 +129,15 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
     endTime: 1400,
   },
 
-  {
-    name: "Panel - Speedrunning Prop Making",
-    location: "Instructional Center 111",
-    description:
-      "Got a convention coming up and no cosplays ready? Suddenly feel a spark of inspiration 2 days before a con? Well this panel is perfect for the procrastinator in you! Learn how to make props small or large from the idea, build, painting, to cool photo taking. You’ll learn the steps to bring your favorite character to life! There will also be tips on how to make your props travel friendly and break proof! From small guns to 6’ canons there’s something here for everyone. Learn from a first hand procrastinator how to build stunning props on a time and money budget!",
-    tags: [ScheduleTag.PANEL, ScheduleTag.ARTS_AND_CRAFTS],
-    startTime: 1300,
-    endTime: 1400,
-  },
+  // {
+  //   name: "Panel - Speedrunning Prop Making",
+  //   location: "Instructional Center 111",
+  //   description:
+  //     "Got a convention coming up and no cosplays ready? Suddenly feel a spark of inspiration 2 days before a con? Well this panel is perfect for the procrastinator in you! Learn how to make props small or large from the idea, build, painting, to cool photo taking. You’ll learn the steps to bring your favorite character to life! There will also be tips on how to make your props travel friendly and break proof! From small guns to 6’ canons there’s something here for everyone. Learn from a first hand procrastinator how to build stunning props on a time and money budget!",
+  //   tags: [ScheduleTag.PANEL, ScheduleTag.ARTS_AND_CRAFTS],
+  //   startTime: 1300,
+  //   endTime: 1400,
+  // },
 
   {
     name: "Voice Actors Panel",
@@ -122,6 +151,15 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
     ],
     startTime: 1400,
     endTime: 1500,
+  },
+
+  {
+    name: "Mario Kart 8 Tournament",
+    location: "Instructional Center Room 105",
+    description: "Mario Kart 8 tournament. Prior registration is required.",
+    tags: [ScheduleTag.TOURNAMENT, ScheduleTag.GAMING],
+    startTime: 1400,
+    endTime: 2100,
   },
 
   {
@@ -194,7 +232,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
     location: "Instructional Center 111",
     description:
       "Providing insight as to the basic tenets of creating a compelling story, integrating imagination with technology and common pitfalls of writers.",
-    tags: [ScheduleTag.PANEL],
+    tags: [ScheduleTag.PANEL, ScheduleTag.ANIME],
     startTime: 1745,
     endTime: 1845,
   },
@@ -229,6 +267,25 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
     endTime: 1945,
   },
 
+  {
+    name: "Artists Alley",
+    location: "Ex Hall Midtown Ballroom",
+    description: `We have an incredible lineup of local and GT artists this year! Browse our Artist Alley in the Exhibition Hall and grab a slew of merchandise. With designs both original and inspired by your favorite media franchises, there's something for everyone. They don't call it “disposable income” for nothing, after all.
+    
+Our featured vendors this year are Level-Up Games and Sorensen's Precision Diceworks.`,
+    tags: [ScheduleTag.ARTS_AND_CRAFTS],
+    startTime: 1000,
+    endTime: 2000,
+  },
+  {
+    name: "Indie Game Showcase",
+    location: "Instructional Center 109",
+    description:
+      "Play free demos of amazing games from local independent developers. Featuring award-winning games and brand new projects, discover your newest gaming addiction.",
+    tags: [ScheduleTag.FREE_PLAY, ScheduleTag.GAMING],
+    startTime: 1000,
+    endTime: 2000,
+  },
   {
     name: "VGDev Arcade",
     location: "Ex Hall Floor 2: Buckhead",
