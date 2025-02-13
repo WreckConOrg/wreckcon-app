@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4147099a.css",
-    "main.js": "/static/js/main.5dc5fcc6.js",
+    "main.css": "/static/css/main.712f860a.css",
+    "main.js": "/static/js/main.d643dad9.js",
     "static/js/787.28692217.chunk.js": "/static/js/787.28692217.chunk.js",
     "static/media/cosplay.png": "/static/media/cosplay.61fe403e9afe25ebbe3d.png",
     "static/media/idolfest.png": "/static/media/idolfest.3b5a5299246194b02fbf.png",
@@ -14,8 +14,13 @@
     "static/media/4.jpg": "/static/media/4.8f4da2f1c94f9b55f9c9.jpg",
     "static/media/6.jpg": "/static/media/6.d21432f3724f89f484b0.jpg",
     "static/media/1.jpg": "/static/media/1.6c286ed7da8125f76e61.jpg",
+    "static/media/bridoof.png": "/static/media/bridoof.f82746c35eedbd69a392.png",
+    "static/media/Foxarcada.png": "/static/media/Foxarcada.577cec1355b5c008afb7.png",
     "static/media/nerdi-gras-logo.png": "/static/media/nerdi-gras-logo.b6163793d48a7a42e42b.png",
     "static/media/indiegames.jpg": "/static/media/indiegames.e9958d8ba0586420dc6c.jpg",
+    "static/media/Ginkgocrown.png": "/static/media/Ginkgocrown.b04d9aada1b6a9a274d4.png",
+    "static/media/petiteGrandpa.png": "/static/media/petiteGrandpa.ccafebaf0004f7d8a0bd.png",
+    "static/media/TiffanyGrant.png": "/static/media/TiffanyGrant.c5e03e40ef716455d954.png",
     "static/media/tabletop.jpg": "/static/media/tabletop.f02454d3b594b1062cf7.jpg",
     "static/media/cosplayshowcase.jpg": "/static/media/cosplayshowcase.636dccf1a98935dca59b.jpg",
     "static/media/tcg.jpg": "/static/media/tcg.144a083a050b8e915cd2.jpg",
@@ -26,6 +31,7 @@
     "static/media/panels.jpg": "/static/media/panels.d53948b541676a4b8d9d.jpg",
     "static/media/anime logo.png": "/static/media/anime logo.53a2ad7dedf1f091c7e9.png",
     "static/media/sga logo.png": "/static/media/sga logo.19620709688b3c370665.png",
+    "static/media/NadiaMarshall.jpeg": "/static/media/NadiaMarshall.e55b4440c8bca0766b5b.jpeg",
     "static/media/dnd logo.png": "/static/media/dnd logo.a09fd53c16efe1deb7fa.png",
     "static/media/mtg logo.png": "/static/media/mtg logo.2a52565aa47a7d0b9698.png",
     "static/media/board games logo.png": "/static/media/board games logo.d28a1e5e938e66fa4140.png",
@@ -44,12 +50,12 @@
     "static/media/twitterlogo.png": "/static/media/twitterlogo.7b5bdc5995fa40bcea79.png",
     "static/media/youtubelogo.png": "/static/media/youtubelogo.abfd36b30dfc5ba1a3db.png",
     "index.html": "/index.html",
-    "main.4147099a.css.map": "/static/css/main.4147099a.css.map",
-    "main.5dc5fcc6.js.map": "/static/js/main.5dc5fcc6.js.map",
+    "main.712f860a.css.map": "/static/css/main.712f860a.css.map",
+    "main.d643dad9.js.map": "/static/js/main.d643dad9.js.map",
     "787.28692217.chunk.js.map": "/static/js/787.28692217.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4147099a.css",
-    "static/js/main.5dc5fcc6.js"
+    "static/css/main.712f860a.css",
+    "static/js/main.d643dad9.js"
   ]
 }
