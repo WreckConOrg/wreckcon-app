@@ -129,20 +129,21 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
     endTime: 1400,
   },
 
-  // {
-  //   name: "Panel - Speedrunning Prop Making",
-  //   location: "Instructional Center 111",
-  //   description:
-  //     "Got a convention coming up and no cosplays ready? Suddenly feel a spark of inspiration 2 days before a con? Well this panel is perfect for the procrastinator in you! Learn how to make props small or large from the idea, build, painting, to cool photo taking. You’ll learn the steps to bring your favorite character to life! There will also be tips on how to make your props travel friendly and break proof! From small guns to 6’ canons there’s something here for everyone. Learn from a first hand procrastinator how to build stunning props on a time and money budget!",
-  //   tags: [ScheduleTag.PANEL, ScheduleTag.ARTS_AND_CRAFTS],
-  //   startTime: 1300,
-  //   endTime: 1400,
-  // },
+  {
+    name: "Panel - Speedrunning Prop Making",
+    location: "Instructional Center 111",
+    description:
+      "Got a convention coming up and no cosplays ready? Suddenly feel a spark of inspiration 2 days before a con? Well this panel is perfect for the procrastinator in you! Learn how to make props small or large from the idea, build, painting, to cool photo taking. You’ll learn the steps to bring your favorite character to life! There will also be tips on how to make your props travel friendly and break proof! From small guns to 6’ canons there’s something here for everyone. Learn from a first hand procrastinator how to build stunning props on a time and money budget!",
+    tags: [ScheduleTag.PANEL, ScheduleTag.ARTS_AND_CRAFTS],
+    startTime: 1300,
+    endTime: 1400,
+  },
 
   {
-    name: "Voice Actors Panel",
+    name: "Tiffany Grant and Nadia Marshall: Behind the Voices",
     location: "Main Stage",
-    description: "Tiffany the gaot Grant",
+    description:
+      "Join Tiffany Grant and Nadia Marshall as Anime O'Tekku deep dives into their history as voice acting profesisonals, from anime and gaming to theatre! Get ready to ask your own questions as well!",
     tags: [
       ScheduleTag.EVENT,
       ScheduleTag.PANEL,
@@ -163,9 +164,10 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
   },
 
   {
-    name: "Panel - Ballroom Dance",
+    name: "Panel - It Takes Two to Tango: Introduction to Ballroom Dancing",
     location: "Instructional Center 111",
-    description: "Ballroom Dance",
+    description:
+      "Have you ever wanted to dance like Eula or Black Swan and Acheron? Do you ever wonder if you can just invite someone to dance without having a preplanned choreography? If so, come learn tango with us! No partner or experience necessary",
     tags: [ScheduleTag.PANEL, ScheduleTag.DANCE],
     startTime: 1430,
     endTime: 1600,

@@ -22,15 +22,20 @@ export const NAVBARCONFIG: NavBarItemProps[] = [
     displayText: "schedule",
   },
   {
+    itemEnum: NavBarItemEnum.GUESTS,
+    url: "/guests",
+    displayText: "guests",
+  },
+  {
     itemEnum: NavBarItemEnum.DISCORD,
     url: "https://discord.gg/BY2hTWjz4s",
     displayText: "discord",
   },
-  {
-    itemEnum: NavBarItemEnum.SHOP,
-    url: "https://wreckcon.bigcartel.com/",
-    displayText: "shop",
-  },
+  // {
+  //   itemEnum: NavBarItemEnum.SHOP,
+  //   url: "https://wreckcon.bigcartel.com/",
+  //   displayText: "shop",
+  // },
   {
     itemEnum: NavBarItemEnum.GET_INVOLVED,
     url: "/sponsor-us",

@@ -72,6 +72,12 @@ export const Hamburger = (props: HamburgerProps) => {
           schedule
         </Link>
         <Link
+          to={"/guests"}
+          className={`ml-[10vw] ${GetTextColor(NavBarItemEnum.GUESTS)}`}
+        >
+          guests
+        </Link>
+        <Link
           to={"https://wreckcon.bigcartel.com/"}
           className="ml-[10vw] text-white"
         >

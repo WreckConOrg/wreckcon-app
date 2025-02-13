@@ -1,7 +1,6 @@
 import { Disclosure } from "@headlessui/react";
 import { CaretDown, MapPinLine } from "@phosphor-icons/react";
 import classNames from "classnames";
-import { BrowserView, MobileView } from "react-device-detect";
 import { ScheduleTag, TagBox } from "./tagBox";
 import { isScreenSizeMedium } from "../../utils/BrowserUtils";
 

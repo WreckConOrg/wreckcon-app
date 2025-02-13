@@ -3,6 +3,7 @@ import bridoof from "./../../assets/guest_pictures/bridoof.png";
 import foxarcadia from "./../../assets/guest_pictures/Foxarcada.png";
 import ginkgocrown from "./../../assets/guest_pictures/Ginkgocrown.png";
 import petitegrandpa from "./../../assets/guest_pictures/petiteGrandpa.png";
+import NadiaMarshall from "./../../assets/guest_pictures/NadiaMarshall.jpeg";
 
 import { GuestProps } from "./Guest";
 
@@ -15,6 +16,14 @@ She has also lended her voice to dozens of vidoe games, including Warframe, Neve
 
 Tiffany will be participating in the Voice Actor's panel! Join us and ask her some of your burning questions about voice acting!`,
     picture: TiffanyGrant,
+    role: "Voice Actress",
+  },
+  {
+    name: "Nadia Marshall",
+    bodyText: `Nadia Marshall is an award winning voice actor, opera singer, and performer who has been using her voice professionally for over a decade. You've heard her in video game titles like Zenless Zone Zero, Nobody Wants to Die, Cassette Beasts, Grimguard Tactics, Cloudpunk: City of Ghosts, Hauma, and much more. 
+
+Some fun facts about Nadia: She is of British and Indian heritage and is an American and British citizen. Nadia has been dancing Argentine tango since 2012 and enjoys dancing bachata, kizomba, and salsa. She is a vegetarian athlete and has competed in events like the Burpee 5k (how much fun does that sound?!), Toughest Mudder, and World's Toughest Mudder.`,
+    picture: NadiaMarshall,
     role: "Voice Actress",
   },
   {
