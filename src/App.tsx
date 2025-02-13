@@ -23,7 +23,7 @@ function App() {
     "funny on twitter @conwreck",
     "nockcerw spelled backwards",
     "one of the conventions ever",
-    "",
+    "back and better than ever",
   ];
 
   const phrase = phrases[Math.floor(Math.random() * phrases.length)];
@@ -43,7 +43,7 @@ function App() {
         path="/tickets"
         Component={() => {
           window.location.href =
-            "https://gatech.universitytickets.com/w/event.aspx?id=2002&p=1";
+            "https://gatech.universitytickets.com/w/event.aspx?id=2099";
           return null;
         }}
       />

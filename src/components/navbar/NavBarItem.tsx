@@ -3,6 +3,7 @@ import classNames from "classnames";
 import { Link } from "react-router-dom";
 import { Menu } from "@headlessui/react";
 import { Fragment } from "react";
+import { DiscordLogo } from "@phosphor-icons/react";
 
 export enum NavBarItemEnum {
   HOME,
@@ -29,13 +30,20 @@ export interface NavBarItemProps {
 }
 
 export const NavBarItem = (props: NavBarItemProps) => {
+  // if (props.itemEnum === NavBarItemEnum.DISCORD) {
+  //   return (
+  //     <Link to={props.url} className="ml-[4vw]">
+  //       <DiscordLogo size="3vw" className="text-white" weight="fill" />
+  //     </Link>
+  //   );
+  // }
   if (!props.dropdown) {
     return (
       <div>
         <Link
           to={props.url}
           className={classNames(
-            "font-inter font-thin text-[2vw] ml-[4.3vw]",
+            "font-inter font-thin text-[2vw] ml-[3vw]",
             { "text-[#FFC42D]": props.selected },
             { "text-white": !props.selected }
           )}
@@ -54,7 +62,7 @@ export const NavBarItem = (props: NavBarItemProps) => {
 
     return (
       <Menu>
-        <Menu.Button className="ml-[10vw] ui-open:bg-[#131313] bg-opacity-90 z-20">
+        <Menu.Button className="ml-[3.5vw] ui-open:bg-[#131313] bg-opacity-90 z-20">
           <div
             className={classNames(
               "font-inter font-thin text-[2vw] flex flex-row justify-center h-[3vw] w-[16vw] my-[0.3vw]",

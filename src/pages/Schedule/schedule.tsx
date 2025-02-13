@@ -8,7 +8,12 @@ import {
   Hammer,
   Tag,
 } from "@phosphor-icons/react";
-import { BrowserView, isMobile, MobileView } from "../../utils/BrowserUtils";
+import {
+  BrowserView,
+  isMobile,
+  isScreenSizeMedium,
+  MobileView,
+} from "../../utils/BrowserUtils";
 import { useState } from "react";
 
 interface ScheduleProps {
@@ -18,15 +23,20 @@ interface ScheduleProps {
 export const Schedule = (props: ScheduleProps) => {
   const tags = [
     ScheduleTag.EVENT,
-    ScheduleTag.PANEL,
     ScheduleTag.FREE_PLAY,
+    ScheduleTag.PANEL,
     ScheduleTag.ANIME,
     ScheduleTag.TABLETOP,
     ScheduleTag.GAMING,
+    ScheduleTag.DANCE,
+    ScheduleTag.ARTS_AND_CRAFTS,
+    ScheduleTag.MUSIC,
+    ScheduleTag.TRIVIA,
+    ScheduleTag.TOURNAMENT,
   ];
 
   const [selectedStartTime, setSelectedStartTime] = useState(1000);
-  const [selectedEndTime, setSelectedEndTime] = useState(2200);
+  const [selectedEndTime, setSelectedEndTime] = useState(2100);
   const [selectedTags, setSelectedTags] = useState(tags);
 
   const TagIsIncluded = (item: ScheduleItemProps) => {
@@ -61,6 +71,7 @@ export const Schedule = (props: ScheduleProps) => {
       onClick: (tag: ScheduleTag) => {
         ToggleTag(tag);
       },
+      classNames: "!w-full",
     });
   });
 
@@ -107,7 +118,7 @@ export const Schedule = (props: ScheduleProps) => {
       </MobileView>
       <BrowserView className="flex flex-row w-full items-end h-[3vh] relative">
         <div className="w-[40%] text-right font-inter font-thin text-md md:text-[1.7vw] text-white md:translate-x-[-1.5vw]">
-          Saturday, March 2, 2024
+          Saturday, March 1, 2025
         </div>
         <hr className="w-[120%]" />
       </BrowserView>
@@ -139,10 +150,10 @@ function FilterPopover(props: FilterProps) {
       </Popover.Button>
 
       <Popover.Panel className="absolute mt-12 md:mt-20 rounded-md z-10 bg-[#5A5454]">
-        <div className="flex flex-col w-[calc(100vw-3rem)] md:max-w-md gap-2 p-4">
+        <div className="flex flex-col w-[320px] md:w-[600px] md:max-w-md gap-2 p-2 md:p-4">
           <div className="flex flex-row justify-between items-center">
-            <div className="flex flex-row gap-1 text-md items-center">
-              <Clock size={24} />
+            <div className="flex flex-row gap-1 text-sm md:text-md items-center">
+              <Clock size={isScreenSizeMedium ? 24 : 16} />
               Time
               <div className="w-2" />
               {TimeSelect(
@@ -164,17 +175,17 @@ function FilterPopover(props: FilterProps) {
               size={24}
               onClick={() => {
                 props.OnSelectStartTime(1000);
-                props.OnSelectEndTime(2200);
+                props.OnSelectEndTime(2100);
               }}
             />
           </div>
           <hr className="w=full" />
-          <div className="flex flex-row justify-between items-center">
-            <div className="flex flex-row gap-1 text-md items-center">
-              <Tag size={24} />
+          <div className="flex flex-row justify-between items-center gap-2">
+            <div className="flex flex-row gap-1 text-sm md:text-md items-center flex-grow">
+              <Tag size={isScreenSizeMedium ? 24 : 16} />
               Tags
               <div className="w-3" />
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+              <div className="grid grid-cols-2 flex-grow gap-2 w-full">
                 {props.tagList}
               </div>
             </div>
@@ -206,7 +217,6 @@ function TimeSelect(
 
   const times = [
     1000, 1100, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, 2000, 2100,
-    2200,
   ];
 
   const filteredTimes = times.filter((t: number) => {
@@ -215,7 +225,11 @@ function TimeSelect(
 
   return (
     <Listbox value={time} onChange={onSelect} as="div" className={"justfy-end"}>
-      <Listbox.Button className={"bg-[#2e2f31] p-2 rounded-md relative w-20"}>
+      <Listbox.Button
+        className={
+          "bg-[#2e2f31] p-1 md:p-2 rounded-md relative w-16 text-sm md:text-base md:w-20"
+        }
+      >
         {TimeToString(time)}
       </Listbox.Button>
       <Listbox.Options className={"absolute w-20 py-2 rounded-md bg-[#D9D9D9]"}>

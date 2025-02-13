@@ -1,19 +1,19 @@
 import { Disclosure } from "@headlessui/react";
 import { CaretDown, MapPinLine } from "@phosphor-icons/react";
 import classNames from "classnames";
-import { BrowserView, MobileView } from "react-device-detect";
 import { ScheduleTag, TagBox } from "./tagBox";
+import { isScreenSizeMedium } from "../../utils/BrowserUtils";
 
 export interface ScheduleItemProps {
   name: string;
-  time: string;
   location: string;
-  description: string;
-  testDesc?: JSX.Element;
+  description?: string;
+  advancedDescription?: JSX.Element;
   tags: ScheduleTag[];
   top?: boolean;
   startTime: number;
   endTime: number;
+  time?: string;
 }
 
 function ScheduleItem(props: ScheduleItemProps) {
@@ -46,32 +46,36 @@ function ScheduleItem(props: ScheduleItemProps) {
                     "flex flex-col w-full font-inter font-thin text-white gap-2 md:gap-4 p-4 md:p-8"
                   )}
                 >
-                  <div className="w-full flex justify-between flex-row text-lg md:text-2xl">
-                    <div className="flex flex-row gap-2 align-center">
+                  <div className="w-full flex justify-between flex-row text-lg md:text-2xl text-left text-wrap">
+                    <div className="flex flex-row gap-6">
                       {props.name}
-                      <BrowserView className="flex flex-row gap-2">
-                        {TagList}
-                      </BrowserView>
+                      {isScreenSizeMedium && (
+                        <div className="flex flex-row gap-2">{TagList}</div>
+                      )}
                     </div>
-                    <CaretDown
-                      className={`${
-                        open ? "rotate-180 transform" : ""
-                      } h-4 w-4 md:h-8 md:w-8 text-white justify-end`}
-                    />
+                    <div className="pl-4">
+                      <CaretDown
+                        className={`${
+                          open ? "rotate-180 transform" : ""
+                        } h-4 w-4 md:h-8 md:w-8 text-white justify-end`}
+                      />
+                    </div>
                   </div>
-                  <MobileView className="flex flex-row gap-2">
-                    {TagList}
-                  </MobileView>
-                  <div className="flex flex-row items-center pl-2 md:pl-4 gap-1 md:gap-2 font-inter font-thin text-m md:text-lg text-white">
+                  {!isScreenSizeMedium && (
+                    <div className="grid grid-cols-2 gap-2 items-left">
+                      {TagList}
+                    </div>
+                  )}
+                  {/* <div className="flex flex-row items-center pl-2 md:pl-4 gap-1 md:gap-2 font-inter font-thin text-m md:text-lg text-left text-wrap text-white">
                     <MapPinLine className="color-white" size={24} />
                     {props.location}
-                  </div>
+                  </div> */}
                   <Disclosure.Panel
                     as="div"
                     className="font-inter font-thin text-sm md:text-lg text-left text-white bg-[#5A5454] pl-2 md:pl-4"
                   >
                     {props.description}
-                    {props.testDesc ? props.testDesc : <p />}
+                    {props.advancedDescription}
                   </Disclosure.Panel>
                 </Disclosure.Button>
               </div>

@@ -1,8 +1,6 @@
-import { createRef, RefObject } from "react";
 import { NavBarItemEnum } from "../../components/navbar/NavBarItem";
 import { BasePage } from "../BasePage";
 
-import { isMobile } from "../../utils/BrowserUtils";
 import { GUESTSCONFIG } from "./GuestsConfig";
 import { Guest, GuestProps } from "./Guest";
 

@@ -1,7 +1,5 @@
-import { MapPinLine } from "@phosphor-icons/react";
-import React, { RefObject } from "react";
-import { Link } from "react-router-dom";
-import { isMobile, isScreenSizeMedium } from "../../utils/BrowserUtils";
+import React from "react";
+import { isScreenSizeMedium } from "../../utils/BrowserUtils";
 
 export interface GuestProps {
   name: string;
@@ -19,6 +17,7 @@ export const Guest = (props: GuestProps) => {
           <img
             src={props.picture}
             className={`min-w-[35vw] h-[35vw] rounded object-cover ${props.pictureClasses}`}
+            alt={props.name}
           />
         )}
         <div className="flex flex-col md:flex-row justify-between w-full">
@@ -37,6 +36,7 @@ export const Guest = (props: GuestProps) => {
           <img
             src={props.picture}
             className={`w-[24vw] h-[24vw] min-w-[24vw] rounded object-cover ${props.pictureClasses}`}
+            alt={props.name}
           />
         )}
         <div className="flex flex-col justify-between gap-[2vw] md:gap-[1vw]">

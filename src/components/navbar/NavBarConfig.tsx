@@ -7,11 +7,6 @@ export const NAVBARCONFIG: NavBarItemProps[] = [
     displayText: "about",
   },
   {
-    itemEnum: NavBarItemEnum.DISCORD,
-    url: "https://discord.gg/BY2hTWjz4s",
-    displayText: "discord",
-  },
-  {
     itemEnum: NavBarItemEnum.TICKETS,
     url: "https://gatech.universitytickets.com/w/event.aspx?id=2099",
     displayText: "tickets",
@@ -21,16 +16,26 @@ export const NAVBARCONFIG: NavBarItemProps[] = [
     url: "/events",
     displayText: "events",
   },
-  // {
-  //     itemEnum: NavBarItemEnum.SCHEDULE,
-  //     url: "/schedule",
-  //     displayText: "schedule",
-  // },
   {
-    itemEnum: NavBarItemEnum.SHOP,
-    url: "https://wreckcon.bigcartel.com/",
-    displayText: "shop",
+    itemEnum: NavBarItemEnum.SCHEDULE,
+    url: "/schedule",
+    displayText: "schedule",
   },
+  {
+    itemEnum: NavBarItemEnum.GUESTS,
+    url: "/guests",
+    displayText: "guests",
+  },
+  {
+    itemEnum: NavBarItemEnum.DISCORD,
+    url: "https://discord.gg/BY2hTWjz4s",
+    displayText: "discord",
+  },
+  // {
+  //   itemEnum: NavBarItemEnum.SHOP,
+  //   url: "https://wreckcon.bigcartel.com/",
+  //   displayText: "shop",
+  // },
   {
     itemEnum: NavBarItemEnum.GET_INVOLVED,
     url: "/sponsor-us",
