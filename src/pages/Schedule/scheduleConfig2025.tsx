@@ -143,7 +143,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
         </div>
         <br />
         <div>
-        <b className="font-bold">System:</b> D&D 5e
+        <b className="font-bold">System:</b> Fallen London TTRPG
           <br /> <br />
         <b className="font-bold">Style:</b> Pre-Prepped
           <br /> <br />
@@ -204,7 +204,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
   // },
 
   {
-    name: "Panel - Japenese Music on the Rise",
+    name: "Panel - Japanese Music on the Rise",
     location: "Ex Hall Floor 2: Home Park",
     description:
       "How did Japanese music find so much success in the East Asian (and worldwide) market when genres such as KPop exists? This panel aims to answer that question with statistics, facts, and some rocking music!",
@@ -339,7 +339,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
         </div>
         <br />
         <div>
-        <b className="font-bold">System:</b> D&D 5e
+        <b className="font-bold">System:</b> Fallen London TTRPG
           <br /> <br />
         <b className="font-bold">Style:</b> Pre-Prepped
           <br /> <br />
@@ -379,7 +379,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
           <br /> <br />
         <b className="font-bold">Style:</b> Walk-Up
           <br /> <br />
-        <b className="font-bold">Description:</b>As a group of mech pilots called Lancers, you, the players, will breach a Metavault—the warped pocket-dimension of an extradimensional being. Its forces will most likely respond with violence as the very fabric of reality twists around you. Expect mech-based combat in a puzzle-like space dungeon!
+        <b className="font-bold">Description:</b> As a group of mech pilots called Lancers, you, the players, will breach a Metavault—the warped pocket-dimension of an extradimensional being. Its forces will most likely respond with violence as the very fabric of reality twists around you. Expect mech-based combat in a puzzle-like space dungeon!
         <br /> <br />
         Enter its labyrinthine chambers. Burn out its architecture. Smash all its fine things, and eat them. Make room for a greater one.
         <br /> <br />
@@ -387,9 +387,9 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
         <br /> <br />
         Likely trigger warnings include gore, violence, existentialism, and derealization.
           <br /> <br />
-        <b className="font-bold">Player Specifications:</b>3-5 LL1 Players.
+        <b className="font-bold">Player Specifications:</b> 3-5 LL1 Players.
           <br /> <br />
-        <b className="font-bold">Notes:</b> If anyone wants to bring their own character sheet, that's totally fine. I can always be reached on Discord: @sailorspellcheck3.
+        <b className="font-bold">Notes:</b> If anyone wants to bring their own character sheet, that's totally fine. I can always be reached on Discord: @sailorspellcheck.
         </div>
         </div>
         <br />
@@ -411,7 +411,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
           <br /> <br />
         <b className="font-bold">Description:</b> Come try Draw Steel! A new ttrpg from award winning design studio MCDM. Step into the role of heroes in this module as you track down and apprehend a group of evil dwarves who has taken captives from a nearby town. This system prioritizes tactical combat and cinematic, powerful characters in a fantasy setting. You will be able to pick from a variety of pregenerated characters.
           <br /> <br />
-        <b className="font-bold">Player Specifications:</b>4 players, 1st level, pre-generated characters provided.
+        <b className="font-bold">Player Specifications:</b> 4 players, 1st level, pre-generated characters provided.
           <br /> <br />
         <b className="font-bold">Contact:</b> @heyitsjohn on Discord.
           <br /> <br />
@@ -435,13 +435,13 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
           <br /> <br />
         <b className="font-bold">Style:</b> Walk-Up
           <br /> <br />
-        <b className="font-bold">Description:</b>You've been riding with this crew for several weeks, it ain't easy heading west, but these cowpokes seem tougher than your average tinhorn.
+        <b className="font-bold">Description:</b> You've been riding with this crew for several weeks, it ain't easy heading west, but these cowpokes seem tougher than your average tinhorn.
           <br /> <br />
         After crossing the deserts of Nevada you've finally made it to the land of opportunity; California. One more town visit to load up on supplies and then it's straight to the shattered coast to do some prospectin.
           <br /> <br />
         That town visit will end up more than you bargained for though.... Time to be the big damn heroes.
           <br /> <br />
-        <b className="font-bold">Player Specifications:</b>4-6 players, character creation + 15 bounty. Pre-generated characters will be available.
+        <b className="font-bold">Player Specifications:</b> 4-6 players, character creation + 15 bounty. Pre-generated characters will be available.
           <br /> <br />
         <b className="font-bold">Notes:</b> This game will be more suitable for those over the age of 16.
         </div>
