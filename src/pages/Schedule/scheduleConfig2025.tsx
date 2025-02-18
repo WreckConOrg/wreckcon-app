@@ -32,15 +32,25 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
     endTime: 1130,
   },
 
-  // {
-  //   name: "Panel - Idol Random Play Dance",
-  //   location: "Instructional Center 111",
-  //   description:
-  //     "Come and dance along to your favorite idol songs from franchises like Love Live, Project Sekai, Ensemble Stars, and so many more!",
-  //   tags: [ScheduleTag.PANEL, ScheduleTag.DANCE],
-  //   startTime: 1030,
-  //   endTime: 1130,
-  // },
+  {
+    name: "Panel - Thrifiting for Quality in Cosplay",
+    location: "Instructional Center 111",
+    description:
+      "You've probably heard people recommend thrift shopping for cosplay pieces before, but how do you actually DO that? How do you find the right pieces? How do people seem to crank out new cosplays all the time from seemingly nothing? That's what this session is all about! Take it from a cosplayer of 10 years who has never bought a store-made cosplay: everything can be secondhand!",
+    tags: [ScheduleTag.PANEL, ScheduleTag.ARTS_AND_CRAFTS],
+    startTime: 1030,
+    endTime: 1130,
+  },
+
+  {
+    name: "Panel - BL/GL: Kiss, Marry, Pass",
+    location: "Instructional Center 105",
+    description:
+      "Come play an immersive game of Kiss, Marry, Pass with your fellow BL/GL lovers! We listen and we do not judge!",
+    tags: [ScheduleTag.PANEL],
+    startTime: 1030,
+    endTime: 1130,
+  },
 
   {
     name: "Super Smash Bros. Tournament - Registration",
@@ -54,7 +64,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
 
   {
     name: "Mario Kart 8 Tournament - Registration",
-    location: "Instructional Center Room 105",
+    location: "Instructional Center Room 109",
     description: "Registration for the Mario Kart 8 tournament",
     tags: [ScheduleTag.TOURNAMENT, ScheduleTag.GAMING],
     startTime: 1030,
@@ -71,101 +81,153 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
         <div>
           Come join GTD&D Club, as well as the UGA D&D Club and the Pathfinder
           Society for some tabletop free play! Games will be divided into two
-          blocks, one from 10:30am-3pm and the other from 3:30pm-8pm. The games being
-          run during <b className="font-bold">block one</b> are:
+          blocks, one from 10:30am-3pm and the other from 3:30pm-8pm. The games
+          being run during <b className="font-bold">block one</b> are:
         </div>
         <br />
-        <div className={classNames(
-          "flex flex-col items-center justify-center text-center"
-        )}>
-        <div className={classNames(
-            "flex flex-row items-center justify-center font-inter text-white text-center",
-            { "h-[3vw] text-[2vw]": !isMobile },
-            { "text-[6vw] mb-[3vw]": isMobile }
-        )}>
-          Game 1: Run by Matt from GTD&D
+        <div
+          className={classNames(
+            "flex flex-col items-center justify-center text-center"
+          )}
+        >
+          <div
+            className={classNames(
+              "flex flex-row items-center justify-center font-inter text-white text-center",
+              { "h-[3vw] text-[2vw]": !isMobile },
+              { "text-[6vw] mb-[3vw]": isMobile }
+            )}
+          >
+            Game 1: Run by Matt from GTD&D
+          </div>
+          <br />
+          <div>
+            <b className="font-bold">System:</b> Pathfinder 2e
+            <br /> <br />
+            <b className="font-bold">Style:</b> Pre-Prepped
+            <br /> <br />
+            <b className="font-bold">Description:</b> A blizzard interrupts your
+            travel, a roadside lodge welcomes you, a sense of unease fills the
+            air. Someone has gone missing in the snow, will you help find them?
+            This Pathfinder 2nd Edition session will feature at least one
+            mystery, one knight, one squire, a cozy living room, an elk, some
+            porridge, plenty of roleplaying, and a bit of potentially difficult
+            combat. This is open to both new and experienced PF2E players.
+            <br /> <br />
+            <b className="font-bold">Player Specifications:</b> 5 players, 2nd
+            level characters, 50gp starting gold.
+            <br /> <br />
+            <b className="font-bold">Contact:</b> @gokumc3 on Discord.
+            <br /> <br />
+            <b className="font-bold">Notes:</b> I can also probably do walk-ups
+            if people wander into the room and want to play.
+          </div>
         </div>
         <br />
-        <div>
-        <b className="font-bold">System:</b> Pathfinder 2e
-          <br /> <br />
-        <b className="font-bold">Style:</b> Pre-Prepped
-          <br /> <br />
-        <b className="font-bold">Description:</b> A blizzard interrupts your travel, a roadside lodge welcomes you, a sense of unease fills the air. Someone has gone missing in the snow, will you help find them? This Pathfinder 2nd Edition session will feature at least one mystery, one knight, one squire, a cozy living room, an elk, some porridge, plenty of roleplaying, and a bit of potentially difficult combat. This is open to both new and experienced PF2E players.
-          <br /> <br />
-        <b className="font-bold">Player Specifications:</b> 5 players, 2nd level characters, 50gp starting gold.
-          <br /> <br />
-        <b className="font-bold">Contact:</b> @gokumc3 on Discord.
-          <br /> <br />
-        <b className="font-bold">Notes:</b> I can also probably do walk-ups if people wander into the room and want to play.
-        </div>
-        </div>
-        <br />
-        <div className={classNames(
-          "flex flex-col items-center justify-center text-center"
-        )}>
-        <div className={classNames(
-            "flex flex-row items-center justify-center font-inter text-white text-center",
-            { "h-[3vw] text-[2vw]": !isMobile },
-            { "text-[6vw] mb-[3vw]": isMobile }
-        )}>
-          Game 2: Run by Miles Rosenstrauch from GTD&D
-        </div>
-        <br />
-        <div>
-        <b className="font-bold">System:</b> D&D 5e
-          <br /> <br />
-        <b className="font-bold">Style:</b> Pre-Prepped
-          <br /> <br />
-        <b className="font-bold">Description:</b> Welcome to the Espial Empire, the richest and most powerful nation in all the lands. You are a knight of the Espial Empire's Tax Collection Division. Your job is to go to towns that haven't payed their monthly tribute, and "convince" them to pay up -- by force, if necessary. 
-          <br /> <br />
-          Funnily enough, the mining outpost of Droth is late on their tribute. They said they have no funds because they've been getting attacked by a beast. They mentioned some sort of "Mothman." Whatever. It's probably just a hoax they made up to get out of paying their tribute. 
-          <br /> <br />
-          Well, what are you waiting for? Droth is just a few miles away from the capital. Now go out there and collect some taxes!
-          <br /> <br />
-          Expect high-stakes tax collection, high-octane chase scenes, and high-flying moths.
-          <br /> <br />
-        <b className="font-bold">Player Specifications:</b> 5 players, level 3.
-          <br /> <br />
-        <b className="font-bold">Contact:</b> @mistermooster on Discord, kilometers550@gmail.com for email.
-        </div>
-        </div>
-        <br />
-        <div className={classNames(
-          "flex flex-col items-center justify-center text-center"
-        )}>
-        <div className={classNames(
-            "flex flex-row items-center justify-center font-inter text-white text-center",
-            { "h-[3vw] text-[2vw]": !isMobile },
-            { "text-[6vw] mb-[3vw]": isMobile }
-        )}>
-          Game 3: Run by Maddie from GTD&D
+        <div
+          className={classNames(
+            "flex flex-col items-center justify-center text-center"
+          )}
+        >
+          <div
+            className={classNames(
+              "flex flex-row items-center justify-center font-inter text-white text-center",
+              { "h-[3vw] text-[2vw]": !isMobile },
+              { "text-[6vw] mb-[3vw]": isMobile }
+            )}
+          >
+            Game 2: Run by Miles Rosenstrauch from GTD&D
+          </div>
+          <br />
+          <div>
+            <b className="font-bold">System:</b> D&D 5e
+            <br /> <br />
+            <b className="font-bold">Style:</b> Pre-Prepped
+            <br /> <br />
+            <b className="font-bold">Description:</b> Welcome to the Espial
+            Empire, the richest and most powerful nation in all the lands. You
+            are a knight of the Espial Empire's Tax Collection Division. Your
+            job is to go to towns that haven't payed their monthly tribute, and
+            "convince" them to pay up -- by force, if necessary.
+            <br /> <br />
+            Funnily enough, the mining outpost of Droth is late on their
+            tribute. They said they have no funds because they've been getting
+            attacked by a beast. They mentioned some sort of "Mothman."
+            Whatever. It's probably just a hoax they made up to get out of
+            paying their tribute.
+            <br /> <br />
+            Well, what are you waiting for? Droth is just a few miles away from
+            the capital. Now go out there and collect some taxes!
+            <br /> <br />
+            Expect high-stakes tax collection, high-octane chase scenes, and
+            high-flying moths.
+            <br /> <br />
+            <b className="font-bold">Player Specifications:</b> 5 players, level
+            3.
+            <br /> <br />
+            <b className="font-bold">Contact:</b> @mistermooster on Discord,
+            kilometers550@gmail.com for email.
+          </div>
         </div>
         <br />
-        <div>
-        <b className="font-bold">System:</b> Fallen London TTRPG
-          <br /> <br />
-        <b className="font-bold">Style:</b> Pre-Prepped
-          <br /> <br />
-        <b className="font-bold">Description:</b> The Disappearance of the Transfigured Poet
-          <br /> <br />
-          Sunlight does not reach London anymore, not since the Fall fourty years ago, when the entire city was stolen and sequestered underground by millions of bats. No, her rays do not shine this far down under the Earth. The light here comes from London's gas-lamps and the faintly gleaming glim-stars, sparkling from the cavern ceiling above. The rules are *different* here. Death isn't usually permanent. Everything can change, from streets, to names, to even the flesh. But these differences allow fantastic and terrifying things to exist here. Creatures and concoctions unlike anything the Surface has ever seen.
-          <br /> <br />
-          Most of all, there are monsters in the Neath. And you and your associates have vowed to hunt them. But the hunt begins slowly, as all great things do, with a favor owed to gain your very first lead on how to kill the creature in your sights.
-          <br /> <br />
-          That favor? A woman named the Ambitious Muse needs you to find her missing protégé. A simple task, surely. But nothing is ever very simple in the Neath...
-          <br /> <br />
-          Pregenerated characters provided, familiarity with the system or Fallen London setting not necessary!
-          <br /> <br />
-          Contains themes of drug use, body horror, and real world religion (Christianity).
-          <br /> <br />
-        <b className="font-bold">Player Specifications:</b> 3-5 players,  pre-generated characters provided.
-          <br /> <br />
-        <b className="font-bold">Contact:</b> @Bubblyishyoshi on Discord.
-          <br /> <br />
-        <b className="font-bold">Notes:</b> I'm fine with taking walk-ups, but I'd like to be able to send lore/setting primers to them beforehand!
+        <div
+          className={classNames(
+            "flex flex-col items-center justify-center text-center"
+          )}
+        >
+          <div
+            className={classNames(
+              "flex flex-row items-center justify-center font-inter text-white text-center",
+              { "h-[3vw] text-[2vw]": !isMobile },
+              { "text-[6vw] mb-[3vw]": isMobile }
+            )}
+          >
+            Game 3: Run by Maddie from GTD&D
+          </div>
+          <br />
+          <div>
+            <b className="font-bold">System:</b> Fallen London TTRPG
+            <br /> <br />
+            <b className="font-bold">Style:</b> Pre-Prepped
+            <br /> <br />
+            <b className="font-bold">Description:</b> The Disappearance of the
+            Transfigured Poet
+            <br /> <br />
+            Sunlight does not reach London anymore, not since the Fall fourty
+            years ago, when the entire city was stolen and sequestered
+            underground by millions of bats. No, her rays do not shine this far
+            down under the Earth. The light here comes from London's gas-lamps
+            and the faintly gleaming glim-stars, sparkling from the cavern
+            ceiling above. The rules are *different* here. Death isn't usually
+            permanent. Everything can change, from streets, to names, to even
+            the flesh. But these differences allow fantastic and terrifying
+            things to exist here. Creatures and concoctions unlike anything the
+            Surface has ever seen.
+            <br /> <br />
+            Most of all, there are monsters in the Neath. And you and your
+            associates have vowed to hunt them. But the hunt begins slowly, as
+            all great things do, with a favor owed to gain your very first lead
+            on how to kill the creature in your sights.
+            <br /> <br />
+            That favor? A woman named the Ambitious Muse needs you to find her
+            missing protégé. A simple task, surely. But nothing is ever very
+            simple in the Neath...
+            <br /> <br />
+            Pregenerated characters provided, familiarity with the system or
+            Fallen London setting not necessary!
+            <br /> <br />
+            Contains themes of drug use, body horror, and real world religion
+            (Christianity).
+            <br /> <br />
+            <b className="font-bold">Player Specifications:</b> 3-5 players,
+            pre-generated characters provided.
+            <br /> <br />
+            <b className="font-bold">Contact:</b> @Bubblyishyoshi on Discord.
+            <br /> <br />
+            <b className="font-bold">Notes:</b> I'm fine with taking walk-ups,
+            but I'd like to be able to send lore/setting primers to them
+            beforehand!
+          </div>
         </div>
-      </div>
       </div>
     ),
     tags: [ScheduleTag.FREE_PLAY, ScheduleTag.TABLETOP],
@@ -193,15 +255,25 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
     endTime: 1200,
   },
 
-  // {
-  //   name: "Riot Games Panel",
-  //   location: "Main Stage",
-  //   description:
-  //     "A panel of several Riot Games designers and developers at WreckCon.",
-  //   tags: [ScheduleTag.EVENT, ScheduleTag.PANEL, ScheduleTag.GAMING],
-  //   startTime: 1200,
-  //   endTime: 1300,
-  // },
+  {
+    name: "Panel - Star Wars: Rewrite",
+    location: "Instructional Center 105",
+    description:
+      'If you could change any ending, scene, death, or more in any Star Wars media, what would you change and why? Join us to dicuss your own ideas, alternate scenarios, and "What If\'s" in a Galaxy Far, Far Away!',
+    tags: [ScheduleTag.PANEL],
+    startTime: 1130,
+    endTime: 1300,
+  },
+
+  {
+    name: "Riot Games Panel",
+    location: "Main Stage",
+    description:
+      "A panel of several Riot Games designers and developers at WreckCon. Join us with your questions about the game development process!",
+    tags: [ScheduleTag.EVENT, ScheduleTag.PANEL, ScheduleTag.GAMING],
+    startTime: 1200,
+    endTime: 1300,
+  },
 
   {
     name: "Panel - Japanese Music on the Rise",
@@ -254,6 +326,16 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
   },
 
   {
+    name: "Panel - Intro to Lancer RPG Lore",
+    location: "Instructional Center 105",
+    description:
+      "Do you like mechs? Do you like sci-fi? Do you like a deeply imperfect world striving for the better while needing to redress the sins of the past? Then the world of Lancer RPG is for you! This panel will introduce prospective players to the basics of the spacefaring, mech-filled, reality-bending world and lore of the game and answer any questions they might have. Content warnings for world-ending events, colonialism, war, oppression, classism, and genocide.",
+    tags: [ScheduleTag.PANEL, ScheduleTag.TABLETOP],
+    startTime: 1300,
+    endTime: 1400,
+  },
+
+  {
     name: "Tiffany Grant and Nadia Marshall: Behind the Voices",
     location: "Main Stage",
     description:
@@ -270,7 +352,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
 
   {
     name: "Mario Kart 8 Tournament",
-    location: "Instructional Center Room 105",
+    location: "Instructional Center Room 109",
     description: "Mario Kart 8 tournament. Prior registration is required.",
     tags: [ScheduleTag.TOURNAMENT, ScheduleTag.GAMING],
     startTime: 1400,
@@ -298,10 +380,20 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
   },
 
   {
+    name: "Panel - Want to start a YouTube channel? Here's what you need to know!",
+    location: "Instructional Center 105",
+    description:
+      "Get tips and tricks on what it's like to be a Youtuber from someone who has been creating video for over 10 years!",
+    tags: [ScheduleTag.PANEL],
+    startTime: 1500,
+    endTime: 1600,
+  },
+
+  {
     name: "The WreckQuiz!",
     location: "Main Stage",
     description:
-      "A trivia gameshow involving many of the clubs involved at WreckCon, held on the main stage!",
+      "A trivia gameshow themed around WreckCon and the many clubs that hold it together. There might even be some prizes involved...",
     tags: [
       ScheduleTag.EVENT,
       ScheduleTag.TRIVIA,
@@ -323,128 +415,192 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
         <div>
           Come join GTD&D Club, as well as the UGA D&D Club and the Pathfinder
           Society for some tabletop free play! Games will be divided into two
-          blocks, one from 10:30am-3pm and the other from 3:30pm-8pm. The games being
-          run during <b className="font-bold">block two</b> are:
+          blocks, one from 10:30am-3pm and the other from 3:30pm-8pm. The games
+          being run during <b className="font-bold">block two</b> are:
         </div>
         <br />
-        <div className={classNames(
-          "flex flex-col items-center justify-center text-center"
-        )}>
-        <div className={classNames(
-            "flex flex-row items-center justify-center font-inter text-white text-center",
-            { "h-[3vw] text-[2vw]": !isMobile },
-            { "text-[6vw] mb-[3vw]": isMobile }
-        )}>
-          Game 1: Run by Maddie from GTD&D
+        <div
+          className={classNames(
+            "flex flex-col items-center justify-center text-center"
+          )}
+        >
+          <div
+            className={classNames(
+              "flex flex-row items-center justify-center font-inter text-white text-center",
+              { "h-[3vw] text-[2vw]": !isMobile },
+              { "text-[6vw] mb-[3vw]": isMobile }
+            )}
+          >
+            Game 1: Run by Maddie from GTD&D
+          </div>
+          <br />
+          <div>
+            <b className="font-bold">System:</b> Fallen London TTRPG
+            <br /> <br />
+            <b className="font-bold">Style:</b> Pre-Prepped
+            <br /> <br />
+            <b className="font-bold">Description:</b> The Disappearance of the
+            Transfigured Poet
+            <br /> <br />
+            Sunlight does not reach London anymore, not since the Fall fourty
+            years ago, when the entire city was stolen and sequestered
+            underground by millions of bats. No, her rays do not shine this far
+            down under the Earth. The light here comes from London's gas-lamps
+            and the faintly gleaming glim-stars, sparkling from the cavern
+            ceiling above. The rules are *different* here. Death isn't usually
+            permanent. Everything can change, from streets, to names, to even
+            the flesh. But these differences allow fantastic and terrifying
+            things to exist here. Creatures and concoctions unlike anything the
+            Surface has ever seen.
+            <br /> <br />
+            Most of all, there are monsters in the Neath. And you and your
+            associates have vowed to hunt them. But the hunt begins slowly, as
+            all great things do, with a favor owed to gain your very first lead
+            on how to kill the creature in your sights.
+            <br /> <br />
+            That favor? A woman named the Ambitious Muse needs you to find her
+            missing protégé. A simple task, surely. But nothing is ever very
+            simple in the Neath...
+            <br /> <br />
+            Pregenerated characters provided, familiarity with the system or
+            Fallen London setting not necessary!
+            <br /> <br />
+            Contains themes of drug use, body horror, and real world religion
+            (Christianity).
+            <br /> <br />
+            <b className="font-bold">Player Specifications:</b> 3-5 players,
+            pre-generated characters provided.
+            <br /> <br />
+            <b className="font-bold">Contact:</b> @Bubblyishyoshi on Discord.
+            <br /> <br />
+            <b className="font-bold">Notes:</b> I'm fine with taking walk-ups,
+            but I'd like to be able to send lore/setting primers to them
+            beforehand!
+          </div>
         </div>
         <br />
-        <div>
-        <b className="font-bold">System:</b> Fallen London TTRPG
-          <br /> <br />
-        <b className="font-bold">Style:</b> Pre-Prepped
-          <br /> <br />
-        <b className="font-bold">Description:</b> The Disappearance of the Transfigured Poet
-          <br /> <br />
-          Sunlight does not reach London anymore, not since the Fall fourty years ago, when the entire city was stolen and sequestered underground by millions of bats. No, her rays do not shine this far down under the Earth. The light here comes from London's gas-lamps and the faintly gleaming glim-stars, sparkling from the cavern ceiling above. The rules are *different* here. Death isn't usually permanent. Everything can change, from streets, to names, to even the flesh. But these differences allow fantastic and terrifying things to exist here. Creatures and concoctions unlike anything the Surface has ever seen.
-          <br /> <br />
-          Most of all, there are monsters in the Neath. And you and your associates have vowed to hunt them. But the hunt begins slowly, as all great things do, with a favor owed to gain your very first lead on how to kill the creature in your sights.
-          <br /> <br />
-          That favor? A woman named the Ambitious Muse needs you to find her missing protégé. A simple task, surely. But nothing is ever very simple in the Neath...
-          <br /> <br />
-          Pregenerated characters provided, familiarity with the system or Fallen London setting not necessary!
-          <br /> <br />
-          Contains themes of drug use, body horror, and real world religion (Christianity).
-          <br /> <br />
-        <b className="font-bold">Player Specifications:</b> 3-5 players,  pre-generated characters provided.
-          <br /> <br />
-        <b className="font-bold">Contact:</b> @Bubblyishyoshi on Discord.
-          <br /> <br />
-        <b className="font-bold">Notes:</b> I'm fine with taking walk-ups, but I'd like to be able to send lore/setting primers to them beforehand!
-        </div>
-        </div>
-        <br />
-        <div className={classNames(
-          "flex flex-col items-center justify-center text-center"
-        )}>
-        <div className={classNames(
-            "flex flex-row items-center justify-center font-inter text-white text-center",
-            { "h-[3vw] text-[2vw]": !isMobile },
-            { "text-[6vw] mb-[3vw]": isMobile }
-        )}>
-          Game 2: Run by Gracie Crofton from GTD&D
-        </div>
-        <br />
-        <div>
-        <b className="font-bold">System:</b> Lancer RPG
-          <br /> <br />
-        <b className="font-bold">Style:</b> Walk-Up
-          <br /> <br />
-        <b className="font-bold">Description:</b> As a group of mech pilots called Lancers, you, the players, will breach a Metavault—the warped pocket-dimension of an extradimensional being. Its forces will most likely respond with violence as the very fabric of reality twists around you. Expect mech-based combat in a puzzle-like space dungeon!
-        <br /> <br />
-        Enter its labyrinthine chambers. Burn out its architecture. Smash all its fine things, and eat them. Make room for a greater one.
-        <br /> <br />
-        This will be a LL1 Lancer RPG combat-focused one-shot open to 3-5 players, using preconstructed character sheets. Beginners and experienced players alike are welcome! Please bring a laptop if you have one, as we will be using Owlbear Rodeo for battle maps.
-        <br /> <br />
-        Likely trigger warnings include gore, violence, existentialism, and derealization.
-          <br /> <br />
-        <b className="font-bold">Player Specifications:</b> 3-5 LL1 Players.
-          <br /> <br />
-        <b className="font-bold">Notes:</b> If anyone wants to bring their own character sheet, that's totally fine. I can always be reached on Discord: @sailorspellcheck.
-        </div>
+        <div
+          className={classNames(
+            "flex flex-col items-center justify-center text-center"
+          )}
+        >
+          <div
+            className={classNames(
+              "flex flex-row items-center justify-center font-inter text-white text-center",
+              { "h-[3vw] text-[2vw]": !isMobile },
+              { "text-[6vw] mb-[3vw]": isMobile }
+            )}
+          >
+            Game 2: Run by Gracie Crofton from GTD&D
+          </div>
+          <br />
+          <div>
+            <b className="font-bold">System:</b> Lancer RPG
+            <br /> <br />
+            <b className="font-bold">Style:</b> Walk-Up
+            <br /> <br />
+            <b className="font-bold">Description:</b> As a group of mech pilots
+            called Lancers, you, the players, will breach a Metavault—the warped
+            pocket-dimension of an extradimensional being. Its forces will most
+            likely respond with violence as the very fabric of reality twists
+            around you. Expect mech-based combat in a puzzle-like space dungeon!
+            <br /> <br />
+            Enter its labyrinthine chambers. Burn out its architecture. Smash
+            all its fine things, and eat them. Make room for a greater one.
+            <br /> <br />
+            This will be a LL1 Lancer RPG combat-focused one-shot open to 3-5
+            players, using preconstructed character sheets. Beginners and
+            experienced players alike are welcome! Please bring a laptop if you
+            have one, as we will be using Owlbear Rodeo for battle maps.
+            <br /> <br />
+            Likely trigger warnings include gore, violence, existentialism, and
+            derealization.
+            <br /> <br />
+            <b className="font-bold">Player Specifications:</b> 3-5 LL1 Players.
+            <br /> <br />
+            <b className="font-bold">Notes:</b> If anyone wants to bring their
+            own character sheet, that's totally fine. I can always be reached on
+            Discord: @sailorspellcheck.
+          </div>
         </div>
         <br />
-        <div className={classNames(
-          "flex flex-col items-center justify-center text-center"
-        )}>
-        <div className={classNames(
-            "flex flex-row items-center justify-center font-inter text-white text-center",
-            { "h-[3vw] text-[2vw]": !isMobile },
-            { "text-[6vw] mb-[3vw]": isMobile }
-        )}>
-          Game 3: Run by John Degonia from GTD&D
+        <div
+          className={classNames(
+            "flex flex-col items-center justify-center text-center"
+          )}
+        >
+          <div
+            className={classNames(
+              "flex flex-row items-center justify-center font-inter text-white text-center",
+              { "h-[3vw] text-[2vw]": !isMobile },
+              { "text-[6vw] mb-[3vw]": isMobile }
+            )}
+          >
+            Game 3: Run by John Degonia from GTD&D
+          </div>
+          <br />
+          <div>
+            <b className="font-bold">System:</b> Draw Steel
+            <br /> <br />
+            <b className="font-bold">Style:</b> Pre-Prepped
+            <br /> <br />
+            <b className="font-bold">Description:</b> Come try Draw Steel! A new
+            ttrpg from award winning design studio MCDM. Step into the role of
+            heroes in this module as you track down and apprehend a group of
+            evil dwarves who has taken captives from a nearby town. This system
+            prioritizes tactical combat and cinematic, powerful characters in a
+            fantasy setting. You will be able to pick from a variety of
+            pregenerated characters.
+            <br /> <br />
+            <b className="font-bold">Player Specifications:</b> 4 players, 1st
+            level, pre-generated characters provided.
+            <br /> <br />
+            <b className="font-bold">Contact:</b> @heyitsjohn on Discord.
+            <br /> <br />
+            <b className="font-bold">Notes:</b> Players must bring laptops for
+            this oneshot.
+          </div>
         </div>
         <br />
-        <div>
-        <b className="font-bold">System:</b> Draw Steel
-          <br /> <br />
-        <b className="font-bold">Style:</b> Pre-Prepped
-          <br /> <br />
-        <b className="font-bold">Description:</b> Come try Draw Steel! A new ttrpg from award winning design studio MCDM. Step into the role of heroes in this module as you track down and apprehend a group of evil dwarves who has taken captives from a nearby town. This system prioritizes tactical combat and cinematic, powerful characters in a fantasy setting. You will be able to pick from a variety of pregenerated characters.
-          <br /> <br />
-        <b className="font-bold">Player Specifications:</b> 4 players, 1st level, pre-generated characters provided.
-          <br /> <br />
-        <b className="font-bold">Contact:</b> @heyitsjohn on Discord.
-          <br /> <br />
-        <b className="font-bold">Notes:</b> Players must bring laptops for this oneshot.
-        </div>
-        </div>
-        <br />
-        <div className={classNames(
-          "flex flex-col items-center justify-center text-center"
-        )}>
-        <div className={classNames(
-            "flex flex-row items-center justify-center font-inter text-white text-center",
-            { "h-[3vw] text-[2vw]": !isMobile },
-            { "text-[6vw] mb-[3vw]": isMobile }
-        )}>
-          Game 4: Run by Chase from ATLRPG
-        </div>
-        <br />
-        <div>
-        <b className="font-bold">System:</b> Deadlands Classic
-          <br /> <br />
-        <b className="font-bold">Style:</b> Walk-Up
-          <br /> <br />
-        <b className="font-bold">Description:</b> You've been riding with this crew for several weeks, it ain't easy heading west, but these cowpokes seem tougher than your average tinhorn.
-          <br /> <br />
-        After crossing the deserts of Nevada you've finally made it to the land of opportunity; California. One more town visit to load up on supplies and then it's straight to the shattered coast to do some prospectin.
-          <br /> <br />
-        That town visit will end up more than you bargained for though.... Time to be the big damn heroes.
-          <br /> <br />
-        <b className="font-bold">Player Specifications:</b> 4-6 players, character creation + 15 bounty. Pre-generated characters will be available.
-          <br /> <br />
-        <b className="font-bold">Notes:</b> This game will be more suitable for those over the age of 16.
-        </div>
+        <div
+          className={classNames(
+            "flex flex-col items-center justify-center text-center"
+          )}
+        >
+          <div
+            className={classNames(
+              "flex flex-row items-center justify-center font-inter text-white text-center",
+              { "h-[3vw] text-[2vw]": !isMobile },
+              { "text-[6vw] mb-[3vw]": isMobile }
+            )}
+          >
+            Game 4: Run by Chase from ATLRPG
+          </div>
+          <br />
+          <div>
+            <b className="font-bold">System:</b> Deadlands Classic
+            <br /> <br />
+            <b className="font-bold">Style:</b> Walk-Up
+            <br /> <br />
+            <b className="font-bold">Description:</b> You've been riding with
+            this crew for several weeks, it ain't easy heading west, but these
+            cowpokes seem tougher than your average tinhorn.
+            <br /> <br />
+            After crossing the deserts of Nevada you've finally made it to the
+            land of opportunity; California. One more town visit to load up on
+            supplies and then it's straight to the shattered coast to do some
+            prospectin.
+            <br /> <br />
+            That town visit will end up more than you bargained for though....
+            Time to be the big damn heroes.
+            <br /> <br />
+            <b className="font-bold">Player Specifications:</b> 4-6 players,
+            character creation + 15 bounty. Pre-generated characters will be
+            available.
+            <br /> <br />
+            <b className="font-bold">Notes:</b> This game will be more suitable
+            for those over the age of 16.
+          </div>
         </div>
         <br />
       </div>
@@ -494,6 +650,16 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
     endTime: 1845,
   },
 
+  // {
+  //   name: "Panel - Drones 101: Taking Flight",
+  //   location: "Instructional Center 111",
+  //   description:
+  //     "Ready to take to the skies? Join us for a fun and approachable panel where we'll cover everything you need to know about getting started with drones. From picking the right gear to mastering your first flight, we'll help you turn curiosity into confidence!",
+  //   tags: [ScheduleTag.PANEL],
+  //   startTime: 1745,
+  //   endTime: 1845,
+  // },
+
   {
     name: "Idolfest Concert",
     location: "Main Stage",
@@ -536,7 +702,7 @@ Our featured vendors this year are Level-Up Games and Sorensen's Precision Dicew
   },
   {
     name: "Indie Game Showcase",
-    location: "Instructional Center 109",
+    location: "Instructional Center 115",
     description:
       "Play free demos of amazing games from local independent developers. Featuring award-winning games and brand new projects, discover your newest gaming addiction.",
     tags: [ScheduleTag.FREE_PLAY, ScheduleTag.GAMING],
