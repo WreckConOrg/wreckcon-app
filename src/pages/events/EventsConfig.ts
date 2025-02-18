@@ -17,7 +17,7 @@ export const EVENTCONFIG: EventProps[] = [
     name: "Artists Alley",
     bodyText: `We have an incredible lineup of local and GT artists this year! Browse our Artist Alley in the Exhibition Hall and grab a slew of merchandise. With designs both original and inspired by your favorite media franchises, there's something for everyone. They don't call it “disposable income” for nothing, after all.
     
-Our featured vendors this year are Level-Up Games and Sorensen's Precision Diceworks.`,
+Our featured vendors this year is Sorensen's Precision Diceworks.`,
     //link: "https://forms.gle/kvhUyLAfUJo2WA998",
     buttonText: "Apply",
     picture: artistsalley,
@@ -52,7 +52,7 @@ Signups will be in-person at WreckCon 2025, first come-first serve! `,
     bodyText: `Play free demos of amazing games from local independent developers. Featuring award-winning games and brand new projects, discover your newest gaming addiction.`,
     picture: indiegames,
     location: "Main Stage",
-  //  link: "https://forms.gle/GKzwJkK6yGEpCrCRA",
+    //  link: "https://forms.gle/GKzwJkK6yGEpCrCRA",
     buttonText: "Apply",
   },
   {
@@ -62,7 +62,7 @@ Signups will be in-person at WreckCon 2025, first come-first serve! `,
 In the panel rooms, have a topic you'd like to hear about? Want to hear some live music, or maybe see a dance? Check out our panels in the Instructional Center and on the second floor of the Exhibition Hall!`,
     picture: panels,
     location: "Main Stage",
-   // link: "https://forms.gle/rKWmuNAxvnnStNqy8",
+    // link: "https://forms.gle/rKWmuNAxvnnStNqy8",
     buttonText: "Apply",
   },
   {
@@ -119,6 +119,6 @@ Registration is free. Providing setups is greatly appreciated.`,
     picture: mariokart,
     location: "Main Stage",
     link: "https://www.start.gg/tournament/mario-kart-wreckcon-2025/details",
-    buttonText: "Register"
+    buttonText: "Register",
   },
 ];

@@ -695,7 +695,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
     location: "Ex Hall Midtown Ballroom",
     description: `We have an incredible lineup of local and GT artists this year! Browse our Artist Alley in the Exhibition Hall and grab a slew of merchandise. With designs both original and inspired by your favorite media franchises, there's something for everyone. They don't call it “disposable income” for nothing, after all.
     
-Our featured vendors this year are Level-Up Games and Sorensen's Precision Diceworks.`,
+Our featured vendor this year is Sorensen's Precision Diceworks.`,
     tags: [ScheduleTag.ARTS_AND_CRAFTS],
     startTime: 1000,
     endTime: 2000,
