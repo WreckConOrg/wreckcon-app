@@ -44,7 +44,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
 
   {
     name: "Panel - BL/GL: Kiss, Marry, Pass",
-    location: "Instructional Center 105",
+    location: "Instructional Center 109",
     description:
       "Come play an immersive game of Kiss, Marry, Pass with your fellow BL/GL lovers! We listen and we do not judge!",
     tags: [ScheduleTag.PANEL],
@@ -64,7 +64,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
 
   {
     name: "Mario Kart 8 Tournament - Registration",
-    location: "Instructional Center Room 109",
+    location: "Instructional Center Room 105",
     description: "Registration for the Mario Kart 8 tournament",
     tags: [ScheduleTag.TOURNAMENT, ScheduleTag.GAMING],
     startTime: 1030,
@@ -257,7 +257,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
 
   {
     name: "Panel - Star Wars: Rewrite",
-    location: "Instructional Center 105",
+    location: "Instructional Center 109",
     description:
       'If you could change any ending, scene, death, or more in any Star Wars media, what would you change and why? Join us to dicuss your own ideas, alternate scenarios, and "What If\'s" in a Galaxy Far, Far Away!',
     tags: [ScheduleTag.PANEL],
@@ -327,7 +327,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
 
   {
     name: "Panel - Intro to Lancer RPG Lore",
-    location: "Instructional Center 105",
+    location: "Instructional Center 109",
     description:
       "Do you like mechs? Do you like sci-fi? Do you like a deeply imperfect world striving for the better while needing to redress the sins of the past? Then the world of Lancer RPG is for you! This panel will introduce prospective players to the basics of the spacefaring, mech-filled, reality-bending world and lore of the game and answer any questions they might have. Content warnings for world-ending events, colonialism, war, oppression, classism, and genocide.",
     tags: [ScheduleTag.PANEL, ScheduleTag.TABLETOP],
@@ -352,7 +352,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
 
   {
     name: "Mario Kart 8 Tournament",
-    location: "Instructional Center Room 109",
+    location: "Instructional Center Room 105",
     description: "Mario Kart 8 tournament. Prior registration is required.",
     tags: [ScheduleTag.TOURNAMENT, ScheduleTag.GAMING],
     startTime: 1400,
@@ -381,7 +381,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
 
   {
     name: "Panel - Want to start a YouTube channel? Here's what you need to know!",
-    location: "Instructional Center 105",
+    location: "Instructional Center 109",
     description:
       "Get tips and tricks on what it's like to be a Youtuber from someone who has been creating video for over 10 years!",
     tags: [ScheduleTag.PANEL],
