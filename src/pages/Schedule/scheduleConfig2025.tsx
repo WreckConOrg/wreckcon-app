@@ -13,14 +13,15 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
     endTime: 1030,
   },
 
-  // {
-  //   name: "TTRPG Panel by Tom Bloom",
-  //   location: "Main Stage",
-  //   description: "Yoyoyo its ya boi tom tearing it up on the mainstage.",
-  //   tags: [ScheduleTag.EVENT, ScheduleTag.TABLETOP, ScheduleTag.PANEL],
-  //   startTime: 1030,
-  //   endTime: 1130,
-  // },
+  {
+    name: "Panel - How to Create a TTRPG with Tom Bloom",
+    location: "Main Stage",
+    description:
+      "Join Tom Bloom, the creator of Lancer and CAIN, as he talks about the ins and outs of TTRPG creation, from the setting to the lore to the mechanics! Players and DMs alike can learn a lot about system design, as well as ask your own questions!",
+    tags: [ScheduleTag.EVENT, ScheduleTag.TABLETOP, ScheduleTag.PANEL],
+    startTime: 1030,
+    endTime: 1130,
+  },
 
   {
     name: "Panel - Modern vs. Classic Tetris: A Summary ",
@@ -266,10 +267,10 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
   },
 
   {
-    name: "Riot Games Panel",
+    name: "Panel - League of Legends: Designing a Champion",
     location: "Main Stage",
     description:
-      "A panel of several Riot Games designers and developers at WreckCon. Join us with your questions about the game development process!",
+      "Have you ever wondered what goes into creating a character for League of Legends? Join Isa Mari De Leon (Narrative Writer), Sarah Reinstein (Game Production Manager), Max Perlman (Game Designer) and Oussama Agazzoum (Concept Artist), as they take about how to create a Champion from the ground up, from the concept art, to the abilities, to the implementation in this virtual panel!",
     tags: [ScheduleTag.EVENT, ScheduleTag.PANEL, ScheduleTag.GAMING],
     startTime: 1200,
     endTime: 1300,
@@ -666,7 +667,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
     description:
       "Come and cheer on your favorite idols in our idolfest, co-hosted by Pri5m and Cosmic Stories! Watch idols cosplay as the characters in their chosen songs or perform as their own original idols as all in the spotlight all will shine! Raise those penlights in the air as idol groups light the stage with performances from all different genres from Jpop, Vocaloid, rhythm games, anime and Kpop!",
     tags: [ScheduleTag.EVENT, ScheduleTag.DANCE, ScheduleTag.ANIME],
-    startTime: 1800,
+    startTime: 1830,
     endTime: 2000,
   },
 
@@ -738,9 +739,9 @@ Our featured vendor this year is Sorensen's Precision Diceworks.`,
   },
   {
     name: "Warhammer Free Play",
-    location: "Ex Hall Floor 2: Inman Park",
+    location: "Ex Hall Floor 2: Inman Park + Cabbagetown",
     description:
-      "Join Warhammer Club for totally free Warhammer play in Inman Park!",
+      "Join Warhammer Club for totally free Warhammer play in Inman Park and Cabbagetown!",
     tags: [ScheduleTag.FREE_PLAY, ScheduleTag.TABLETOP],
     startTime: 1000,
     endTime: 2000,

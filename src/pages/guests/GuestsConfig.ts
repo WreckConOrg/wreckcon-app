@@ -1,9 +1,11 @@
 import TiffanyGrant from "./../../assets/guest_pictures/TiffanyGrant.png";
 import bridoof from "./../../assets/guest_pictures/bridoof.png";
-import foxarcadia from "./../../assets/guest_pictures/Foxarcada.png";
+import foxarcada from "./../../assets/guest_pictures/Foxarcada.png";
 import ginkgocrown from "./../../assets/guest_pictures/Ginkgocrown.png";
 import petitegrandpa from "./../../assets/guest_pictures/petiteGrandpa.png";
 import NadiaMarshall from "./../../assets/guest_pictures/NadiaMarshall.jpeg";
+import TomBloom from "./../../assets/guest_pictures/TomBloom.png";
+import CoreyWilder from "./../../assets/guest_pictures/CoreyWilder.png";
 
 import { GuestProps } from "./Guest";
 
@@ -29,6 +31,14 @@ Nadia will also be participating in our Voice Actors' panel: “Tiffany Grant an
     role: "Voice Actress",
   },
   {
+    name: "Tom Bloom",
+    role: "TTRPG Author",
+    bodyText: `Tom Bloom is a comic author and game designer best known for the webcomic Kill Six Billion Demons and the role playing games Lancer RPG, CAIN, and Maleghast.
+  
+Tom will be presenting a panel on Creating a TTRPG on the main stage from 10:30am to 11:30am! Get ready to ask your questions, whether you be a GM or player!`,
+    picture: TomBloom,
+  },
+  {
     name: "Bridoof",
     role: "Cosplay Contest Judge",
     bodyText: `Bridoof is a self taught seamstress, fabricator, and cosplayer of 10+ years with extensive background in theme park entertainment costumes, now working on the world of corporate mascots for sports and businesses around the world. She has also won her fair share of craftsmanship based contests over the years, which has introduced her to so many wonderful crafters around the country that inspire her every day! Cosplay and crafting is her heart and home and she's so excited to participate as a judge this year for WreckCon 2025!`,
@@ -49,10 +59,10 @@ Photo credit: Honeyheatherworks`,
     pictureClasses: "object-top",
   },
   {
-    name: "Fox Aracdia",
+    name: "Fox Arcada",
     role: "Cosplay Contest Judge",
     bodyText: `Fox is a sewing-focused cosmaker of over 10 years. They started self-taught and went on to major in fashion design. They are hugely passionate about all things nerdy, which is how they found their home in the cosplay community, and find so much joy in bringing these characters to life with art. They can’t wait to meet everyone at Wreckcon and are very honored to get to judge the cosplay contest.`,
-    picture: foxarcadia,
+    picture: foxarcada,
     pictureClasses: "object-top",
   },
 ];

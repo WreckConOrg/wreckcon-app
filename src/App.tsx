@@ -9,6 +9,7 @@ import { SchedulePage } from "./pages/Schedule/schedulePage";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import { EventsPage } from "./pages/events/EventsPage";
 import { GuestsPage } from "./pages/guests/GuestsPage";
+import { ArtistsPage } from "./pages/artists/ArtistsPage";
 
 function App() {
   const phrases = [
@@ -38,6 +39,7 @@ function App() {
       <Route path="/schedule" element={<SchedulePage />} />
       <Route path="/events" element={<EventsPage />} />
       <Route path="/guests" element={<GuestsPage />} />
+      <Route path="/artists" element={<ArtistsPage />} />
 
       <Route
         path="/tickets"

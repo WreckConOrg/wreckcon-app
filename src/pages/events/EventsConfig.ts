@@ -17,11 +17,13 @@ export const EVENTCONFIG: EventProps[] = [
     name: "Artists Alley",
     bodyText: `We have an incredible lineup of local and GT artists this year! Browse our Artist Alley in the Exhibition Hall and grab a slew of merchandise. With designs both original and inspired by your favorite media franchises, there's something for everyone. They don't call it “disposable income” for nothing, after all.
     
-Our featured vendors this year is Sorensen's Precision Diceworks.`,
-    //link: "https://forms.gle/kvhUyLAfUJo2WA998",
-    buttonText: "Apply",
+Our featured vendor this year is Sorensen's Precision Diceworks.
+
+Click the button to view all participating artists!`,
+    link: "/artists",
+    buttonText: "View Artists",
     picture: artistsalley,
-    location: "Main Stage",
+    location: "Exhibition Hall Midtown Ballroom",
   },
   {
     name: "Cosplay Contest",
@@ -29,7 +31,7 @@ Our featured vendors this year is Sorensen's Precision Diceworks.`,
 
 25 people will be selected to go through to day-of judging. More details on the rules are on the application.
 
-Signups close February 16th at 11:59pm.`,
+Signups close February 23rd at 11:59pm.`,
     link: "https://forms.gle/aBS5BbX6XR8xzdAe6",
     buttonText: "Apply",
     picture: cosplay,
@@ -51,9 +53,9 @@ Signups will be in-person at WreckCon 2025, first come-first serve! `,
     name: "Indie Game Showcase",
     bodyText: `Play free demos of amazing games from local independent developers. Featuring award-winning games and brand new projects, discover your newest gaming addiction.`,
     picture: indiegames,
-    location: "Main Stage",
+    location: "Instructional Center Room 115",
     //  link: "https://forms.gle/GKzwJkK6yGEpCrCRA",
-    buttonText: "Apply",
+    buttonText: "View Games",
   },
   {
     name: "Panels",
@@ -61,9 +63,7 @@ Signups will be in-person at WreckCon 2025, first come-first serve! `,
 
 In the panel rooms, have a topic you'd like to hear about? Want to hear some live music, or maybe see a dance? Check out our panels in the Instructional Center and on the second floor of the Exhibition Hall!`,
     picture: panels,
-    location: "Main Stage",
-    // link: "https://forms.gle/rKWmuNAxvnnStNqy8",
-    buttonText: "Apply",
+    location: "Main Stage, Exhibition Hall Floor 2: Home Park, IC 111, IC 109",
   },
   {
     name: "TCG Freeplay",
@@ -75,32 +75,30 @@ In the panel rooms, have a topic you'd like to hear about? Want to hear some liv
     name: "TTRPG Freeplay",
     bodyText: `Have you heard of Dungeons & Dragons, Pathfinder, or another TableTop Roleplaying Game and want to give it a go? Take a look at our open games and contact a GM, or just show up if it's a walk-up!
   
-Game listings coming soon.`,
+View game listings on the schedule page!`,
     picture: tabletop,
-    location: "Main Stage",
-    //link: "https://forms.gle/7aPR1WF3P8nJYn7q9",
-    buttonText: "Apply",
+    location: "Exhibition Hall Floor 2: Kirkwood, Inman Park, Cabbagetown",
+    link: "/schedule",
+    buttonText: "View Games",
   },
   {
     name: "VGDev Arcade",
     bodyText: `Play a selection of student-made games from VGDev, Georgia Tech's student game development club. Complete quests in order to earn tickets, and trade them in for a variety of free prizes!`,
     picture: vgdev,
-    location: "Main Stage",
+    location: "Exhibition Hall Floor 2: Buckhead",
   },
 
   {
     name: "Board Game Freeplay",
     bodyText: `Want to unwind with a board game? This is the place to do it! Enjoy Catan, 7 Wonders, Wingspan, and dozens more games with friends old and new.`,
     picture: boardgames,
-    location: "Main Stage",
+    location: "Exhibition Hall Floor 2: Old Forth Ward + Sweet Auburn",
   },
   {
     name: "Idolfest",
     bodyText: `Come and cheer on your favorite idols in our idolfest, co-hosted by Pri5m and Cosmic Stories! Watch idols cosplay as the characters in their chosen songs or perform as their own original idols as all in the spotlight all will shine! Raise those penlights in the air as idol groups light the stage with performances from all different genres from Jpop, Vocaloid, rhythm games, anime and Kpop!`,
     picture: idolfest,
     location: "Main Stage",
-    //link: "https://forms.gle/TTr5VxMkReWXa3QQ6",
-    buttonText: "Apply",
   },
   {
     name: "Super Smash Bros. Tournaments",
@@ -108,7 +106,7 @@ Game listings coming soon.`,
 To enter the Ultimate Arcadian, you must have never been power ranked, so if you're new to the game this is a perfect chance to test your skills.
 One day only, March 1st, and a grand prize of a MomoCon ticket for each tourney!`,
     picture: smash,
-    location: "Main Stage",
+    location: "Instructional Center Floor 2",
     link: "https://start.gg/wreckcon",
     buttonText: "Register",
   },
@@ -117,7 +115,7 @@ One day only, March 1st, and a grand prize of a MomoCon ticket for each tourney!
     bodyText: `In collaboration with Georgia Mario Kart and the Collegiate Karting League, GT Mario Kart will be running a LAN tournament at WreckCon 2025. Race against your friends in Mario Kart 8 Deluxe to claim the title of WreckCon's greatest Kart racer!
 Registration is free. Providing setups is greatly appreciated.`,
     picture: mariokart,
-    location: "Main Stage",
+    location: "Instructional Center Room 105",
     link: "https://www.start.gg/tournament/mario-kart-wreckcon-2025/details",
     buttonText: "Register",
   },
