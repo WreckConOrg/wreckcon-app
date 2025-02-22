@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.712f860a.css",
-    "main.js": "/static/js/main.4208bd24.js",
+    "main.css": "/static/css/main.8829467b.css",
+    "main.js": "/static/js/main.4eab0b5c.js",
     "static/js/787.28692217.chunk.js": "/static/js/787.28692217.chunk.js",
     "static/media/cosplay.png": "/static/media/cosplay.61fe403e9afe25ebbe3d.png",
     "static/media/idolfest.png": "/static/media/idolfest.3b5a5299246194b02fbf.png",
@@ -20,6 +20,7 @@
     "static/media/indiegames.jpg": "/static/media/indiegames.e9958d8ba0586420dc6c.jpg",
     "static/media/Ginkgocrown.png": "/static/media/Ginkgocrown.b04d9aada1b6a9a274d4.png",
     "static/media/petiteGrandpa.png": "/static/media/petiteGrandpa.ccafebaf0004f7d8a0bd.png",
+    "static/media/TomBloom.png": "/static/media/TomBloom.3c3a94f1194089e48e5d.png",
     "static/media/TiffanyGrant.png": "/static/media/TiffanyGrant.c5e03e40ef716455d954.png",
     "static/media/tabletop.jpg": "/static/media/tabletop.f02454d3b594b1062cf7.jpg",
     "static/media/cosplayshowcase.jpg": "/static/media/cosplayshowcase.636dccf1a98935dca59b.jpg",
@@ -50,12 +51,12 @@
     "static/media/twitterlogo.png": "/static/media/twitterlogo.7b5bdc5995fa40bcea79.png",
     "static/media/youtubelogo.png": "/static/media/youtubelogo.abfd36b30dfc5ba1a3db.png",
     "index.html": "/index.html",
-    "main.712f860a.css.map": "/static/css/main.712f860a.css.map",
-    "main.4208bd24.js.map": "/static/js/main.4208bd24.js.map",
+    "main.8829467b.css.map": "/static/css/main.8829467b.css.map",
+    "main.4eab0b5c.js.map": "/static/js/main.4eab0b5c.js.map",
     "787.28692217.chunk.js.map": "/static/js/787.28692217.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.712f860a.css",
-    "static/js/main.4208bd24.js"
+    "static/css/main.8829467b.css",
+    "static/js/main.4eab0b5c.js"
   ]
 }
