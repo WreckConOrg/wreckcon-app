@@ -139,7 +139,7 @@ export const Home = (props: HomeProps): JSX.Element => {
           </Link>
           <Link
             className="bg-[#D9D9D9] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md"
-            to={"/events"}
+            to={"/info"}
           >
             <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw]">
               Event Info
@@ -155,7 +155,7 @@ export const Home = (props: HomeProps): JSX.Element => {
           </Link>
           <Link
             className="bg-[#D9D9D9] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md"
-            to={"/events"}
+            to={"/schedule"}
           >
             <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw]">
               Schedule
@@ -163,7 +163,7 @@ export const Home = (props: HomeProps): JSX.Element => {
           </Link>
           <Link
             className="bg-[#D9D9D9] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md"
-            to={"/events"}
+            to={"/guests"}
           >
             <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw]">
               Guests
