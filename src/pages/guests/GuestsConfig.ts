@@ -34,9 +34,9 @@ Nadia will also be participating in our Voice Actors' panel: “Tiffany Grant, N
     name: "Corey Wilder",
     bodyText: `Corey Wilder is an African American Non-Binary Voice Actor who has voiced in anime, animations, and video games.
 
-He's voiced in many properties such as Frieren, Crayola Scribble Scrubbies, Microsoft, One Piece, World War Z, Wistoria, Attack on Titan, Link Click, Dragon Ball Daima and so many more! 
+They've voiced in many properties such as Frieren, Crayola Scribble Scrubbies, Microsoft, One Piece, World War Z, Wistoria, Attack on Titan, Link Click, Dragon Ball Daima and so many more! 
 
-Corey will also be participating in our Voice Actors' panel: “Tiffany Grant and Nadia Marshall: Behind the Voices”! Join us and ask her some of your burning questions about voice acting!`,
+Corey will also be participating in our Voice Actors' panel: “Tiffany Grant, Nadia Marshall, and Corey Wilder: Behind the Voices”! Join us and ask them some of your burning questions about voice acting!`,
     picture: CoreyWilder,
     role: "Voice Actor",
     pictureClasses: "object-top",
