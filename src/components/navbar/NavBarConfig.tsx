@@ -1,11 +1,11 @@
 import { NavBarItemEnum, NavBarItemProps } from "./NavBarItem";
 
 export const NAVBARCONFIG: NavBarItemProps[] = [
-  {
-    itemEnum: NavBarItemEnum.ABOUT,
-    url: "/about",
-    displayText: "about",
-  },
+  // {
+  //   itemEnum: NavBarItemEnum.ABOUT,
+  //   url: "/about",
+  //   displayText: "about",
+  // },
   {
     itemEnum: NavBarItemEnum.TICKETS,
     url: "https://gatech.universitytickets.com/w/event.aspx?id=2099",
@@ -22,15 +22,20 @@ export const NAVBARCONFIG: NavBarItemProps[] = [
     displayText: "schedule",
   },
   {
+    itemEnum: NavBarItemEnum.EVENT_INFO,
+    url: "/info",
+    displayText: "event info",
+  },
+  {
     itemEnum: NavBarItemEnum.GUESTS,
     url: "/guests",
     displayText: "guests",
   },
-  {
-    itemEnum: NavBarItemEnum.DISCORD,
-    url: "https://discord.gg/BY2hTWjz4s",
-    displayText: "discord",
-  },
+  // {
+  //   itemEnum: NavBarItemEnum.DISCORD,
+  //   url: "https://discord.gg/BY2hTWjz4s",
+  //   displayText: "discord",
+  // },
   // {
   //   itemEnum: NavBarItemEnum.SHOP,
   //   url: "https://wreckcon.bigcartel.com/",

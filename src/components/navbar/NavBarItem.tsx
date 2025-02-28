@@ -18,6 +18,7 @@ export enum NavBarItemEnum {
   SPONSOR,
   EVENTS,
   GUESTS,
+  EVENT_INFO,
 }
 
 export interface NavBarItemProps {

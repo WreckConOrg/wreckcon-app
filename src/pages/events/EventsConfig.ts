@@ -29,10 +29,8 @@ Click the button to view all participating artists!`,
     name: "Cosplay Contest",
     bodyText: `This is a chance for you to show off your cosplay crafting skills at WreckCon 2025! A panel of special guest cosplay judges will evaluate your cosplays and select 5 winners to take home a 4-day pass to MomoCon 2025.
 
-25 people will be selected to go through to day-of judging. More details on the rules are on the application.
-
-Signups close February 23rd at 11:59pm.`,
-    link: "https://forms.gle/aBS5BbX6XR8xzdAe6",
+Previous signup required. Up to 25 people will be selected to go through to day-of judging.`,
+    //link: "https://forms.gle/aBS5BbX6XR8xzdAe6",
     buttonText: "Apply",
     picture: cosplay,
     location: "Main Stage",

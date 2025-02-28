@@ -17,7 +17,6 @@ export const Event = React.forwardRef<HTMLDivElement, EventProps>(
     const button = props.link ? (
       <Link
         to={props.link}
-        target="_blank"
         className={`flex flex-col justify-center w-fit h-[6vw] md:h-[3vw] rounded bg-[#FFC42D] mb-[0.25vw] mt-[2vw] md:mt-0`}
       >
         <p className="font-inter w-fit p-[2vw] md:p-[1vw] items-center text-[4vw] md:text-[1.5vw]">

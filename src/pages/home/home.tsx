@@ -88,6 +88,14 @@ export const Home = (props: HomeProps): JSX.Element => {
             </Link>
             <Link
               className="bg-[#D9D9D9] w-fit h-[4vw] flex items-center justify-center z-10 rounded-lg"
+              to={"/info"}
+            >
+              <div className="font-inter font-bold text-[#2e2f31] text-[2vw] mx-[3vw] ">
+                Event Info
+              </div>
+            </Link>
+            <Link
+              className="bg-[#D9D9D9] w-fit h-[4vw] flex items-center justify-center z-10 rounded-lg"
               to={"/events"}
             >
               <div className="font-inter font-bold text-[#2e2f31] text-[2vw] mx-[3vw] ">
@@ -112,15 +120,15 @@ export const Home = (props: HomeProps): JSX.Element => {
             </Link>
           </div>
         </BrowserView>
-        <MobileView className="flex flex-col items-center justify-center translate-y-[-12vh]">
-          <Link
+        <MobileView className="flex flex-col items-center justify-center translate-y-[-30vh]">
+          {/* <Link
             className="bg-[#D9D9D9] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md"
             to={"/about"}
           >
             <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw] ">
               About WreckCon
             </div>
-          </Link>
+          </Link> */}
           <Link
             className="bg-[#FFC42D] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md"
             to={"https://gatech.universitytickets.com/w/event.aspx?id=2099"}
@@ -134,7 +142,31 @@ export const Home = (props: HomeProps): JSX.Element => {
             to={"/events"}
           >
             <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw]">
+              Event Info
+            </div>
+          </Link>
+          <Link
+            className="bg-[#D9D9D9] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md"
+            to={"/events"}
+          >
+            <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw]">
               Events
+            </div>
+          </Link>
+          <Link
+            className="bg-[#D9D9D9] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md"
+            to={"/events"}
+          >
+            <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw]">
+              Schedule
+            </div>
+          </Link>
+          <Link
+            className="bg-[#D9D9D9] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md"
+            to={"/events"}
+          >
+            <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw]">
+              Guests
             </div>
           </Link>
         </MobileView>

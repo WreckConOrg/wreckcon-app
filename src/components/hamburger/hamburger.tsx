@@ -72,6 +72,12 @@ export const Hamburger = (props: HamburgerProps) => {
           schedule
         </Link>
         <Link
+          to={"/info"}
+          className={`ml-[10vw] ${GetTextColor(NavBarItemEnum.EVENT_INFO)}`}
+        >
+          event info
+        </Link>
+        <Link
           to={"/guests"}
           className={`ml-[10vw] ${GetTextColor(NavBarItemEnum.GUESTS)}`}
         >

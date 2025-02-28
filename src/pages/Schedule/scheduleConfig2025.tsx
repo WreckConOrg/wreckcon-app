@@ -337,10 +337,10 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
   },
 
   {
-    name: "Tiffany Grant and Nadia Marshall: Behind the Voices",
+    name: "Panel - Tiffany Grant, Nadia Marshall, and Corey Wilder: Behind the Voices",
     location: "Main Stage",
     description:
-      "Join Tiffany Grant and Nadia Marshall as Anime O'Tekku deep dives into their history as voice acting profesisonals, from anime and gaming to theatre! Get ready to ask your own questions as well!",
+      "Join Tiffany Grant, Nadia Marshall, and Corey Wilder as Anime O'Tekku deep dives into their history as voice acting profesisonals, from anime and gaming to theatre! Get ready to ask your own questions as well!",
     tags: [
       ScheduleTag.EVENT,
       ScheduleTag.PANEL,

@@ -16,7 +16,7 @@ export const GUESTSCONFIG: GuestProps[] = [
 
 She has also lended her voice to dozens of vidoe games, including Warframe, Neversong, Brawl Stars, Paladins, and Smite.
 
-Tiffany will be participating in our Voice Actors' panel: “Tiffany Grant and Nadia Marshall: Behind the Voices”! Join us and ask her some of your burning questions about voice acting!`,
+Tiffany will be participating in our Voice Actors' panel: “Tiffany Grant, Nadia Marshall, and Corey Wilder: Behind the Voices”! Join us and ask her some of your burning questions about voice acting!`,
     picture: TiffanyGrant,
     role: "Voice Actress",
   },
@@ -26,9 +26,20 @@ Tiffany will be participating in our Voice Actors' panel: “Tiffany Grant and N
 
 Some fun facts about Nadia: She is of British and Indian heritage and is an American and British citizen. Nadia has been dancing Argentine tango since 2012 and enjoys dancing bachata, kizomba, and salsa. She is a vegetarian athlete and has competed in events like the Burpee 5k (how much fun does that sound?!), Toughest Mudder, and World's Toughest Mudder.
 
-Nadia will also be participating in our Voice Actors' panel: “Tiffany Grant and Nadia Marshall: Behind the Voices”! Join us and ask her some of your burning questions about voice acting!`,
+Nadia will also be participating in our Voice Actors' panel: “Tiffany Grant, Nadia Marshall, and Corey Wilder: Behind the Voices”! Join us and ask her some of your burning questions about voice acting!`,
     picture: NadiaMarshall,
     role: "Voice Actress",
+  },
+  {
+    name: "Corey Wilder",
+    bodyText: `Corey Wilder is an African American Non-Binary Voice Actor who has voiced in anime, animations, and video games.
+
+He's voiced in many properties such as Frieren, Crayola Scribble Scrubbies, Microsoft, One Piece, World War Z, Wistoria, Attack on Titan, Link Click, Dragon Ball Daima and so many more! 
+
+Corey will also be participating in our Voice Actors' panel: “Tiffany Grant and Nadia Marshall: Behind the Voices”! Join us and ask her some of your burning questions about voice acting!`,
+    picture: CoreyWilder,
+    role: "Voice Actor",
+    pictureClasses: "object-top",
   },
   {
     name: "Tom Bloom",
