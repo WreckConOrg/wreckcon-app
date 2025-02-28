@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8829467b.css",
-    "main.js": "/static/js/main.4eab0b5c.js",
+    "main.css": "/static/css/main.0b880f66.css",
+    "main.js": "/static/js/main.7862bd20.js",
     "static/js/787.28692217.chunk.js": "/static/js/787.28692217.chunk.js",
     "static/media/cosplay.png": "/static/media/cosplay.61fe403e9afe25ebbe3d.png",
     "static/media/idolfest.png": "/static/media/idolfest.3b5a5299246194b02fbf.png",
@@ -23,14 +23,20 @@
     "static/media/TomBloom.png": "/static/media/TomBloom.3c3a94f1194089e48e5d.png",
     "static/media/TiffanyGrant.png": "/static/media/TiffanyGrant.c5e03e40ef716455d954.png",
     "static/media/tabletop.jpg": "/static/media/tabletop.f02454d3b594b1062cf7.jpg",
+    "static/media/CoreyWilder.png": "/static/media/CoreyWilder.f02791ea2af6d90223b2.png",
     "static/media/cosplayshowcase.jpg": "/static/media/cosplayshowcase.636dccf1a98935dca59b.jpg",
     "static/media/tcg.jpg": "/static/media/tcg.144a083a050b8e915cd2.jpg",
     "static/media/artistsalley.jpg": "/static/media/artistsalley.dc63bee33d373aba6544.jpg",
     "static/media/Inter-Bold.ttf": "/static/media/Inter-Bold.88fa7ae373b07b41ecce.ttf",
     "static/media/Inter-Regular.ttf": "/static/media/Inter-Regular.e89cb19905e7db5591b0.ttf",
     "static/media/vgdevarcade.jpg": "/static/media/vgdevarcade.8bea01e2bbc8c623edcc.jpg",
+    "static/media/ExhallFloor1Map.png": "/static/media/ExhallFloor1Map.4197e51675cc291bfcb7.png",
     "static/media/panels.jpg": "/static/media/panels.d53948b541676a4b8d9d.jpg",
+    "static/media/ExhallFloor2Map.png": "/static/media/ExhallFloor2Map.7e42d82aafe74dc9c88c.png",
+    "static/media/CampusMap.png": "/static/media/CampusMap.55973bd5853f91b7d4d3.png",
+    "static/media/ICFloor1Map.png": "/static/media/ICFloor1Map.08e500c0b524f7c075c4.png",
     "static/media/anime logo.png": "/static/media/anime logo.53a2ad7dedf1f091c7e9.png",
+    "static/media/ICFloor2Map.png": "/static/media/ICFloor2Map.8f57066b7bb67e9bc90d.png",
     "static/media/sga logo.png": "/static/media/sga logo.19620709688b3c370665.png",
     "static/media/NadiaMarshall.jpeg": "/static/media/NadiaMarshall.e55b4440c8bca0766b5b.jpeg",
     "static/media/dnd logo.png": "/static/media/dnd logo.a09fd53c16efe1deb7fa.png",
@@ -51,12 +57,12 @@
     "static/media/twitterlogo.png": "/static/media/twitterlogo.7b5bdc5995fa40bcea79.png",
     "static/media/youtubelogo.png": "/static/media/youtubelogo.abfd36b30dfc5ba1a3db.png",
     "index.html": "/index.html",
-    "main.8829467b.css.map": "/static/css/main.8829467b.css.map",
-    "main.4eab0b5c.js.map": "/static/js/main.4eab0b5c.js.map",
+    "main.0b880f66.css.map": "/static/css/main.0b880f66.css.map",
+    "main.7862bd20.js.map": "/static/js/main.7862bd20.js.map",
     "787.28692217.chunk.js.map": "/static/js/787.28692217.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8829467b.css",
-    "static/js/main.4eab0b5c.js"
+    "static/css/main.0b880f66.css",
+    "static/js/main.7862bd20.js"
   ]
 }
