@@ -61,9 +61,9 @@ export const Home = (props: HomeProps): JSX.Element => {
               { "text-[7vw] mt-[2vh]": isMobile }
             )}
           >
-            {ZeroPad(days)}:{ZeroPad(hours)}:{ZeroPad(minutes)}:
-            {ZeroPad(seconds)} • 3/1/25
-            {/* Tickets available in fall! */}
+            {/* {ZeroPad(days)}:{ZeroPad(hours)}:{ZeroPad(minutes)}:
+            {ZeroPad(seconds)} • 3/1/25 */}
+            Thank You for attending WreckCon 2025!
           </span>
           <br />
           <div
@@ -73,7 +73,16 @@ export const Home = (props: HomeProps): JSX.Element => {
               { "text-[5vw] w-[90vw] mt-[2vh] mb-[3vh]": isMobile }
             )}
           >
-            {"WreckCon is " + props.phraseUsed + "."}
+            {/* {"WreckCon is " + props.phraseUsed + "."} */}
+            We appreciate your feedback - please fill out our{" "}
+            <Link
+              className="underline "
+              to="https://tinyurl.com/wreckcon25"
+              target="_blank"
+            >
+              Feedback Form
+            </Link>{" "}
+            to help us improve future WreckCons!
           </div>
         </div>
         <BrowserView>
