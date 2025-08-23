@@ -53,7 +53,7 @@ export const Home = (props: HomeProps): JSX.Element => {
             <span className="text-[#ffc42d]">Wreck</span>
             <span className="text-white">Con</span>
           </span>
-          <br className={classNames({ hidden: isMobile })} />
+          {/* <br className={classNames({ hidden: isMobile })} />
           <span
             className={classNames(
               "font-interbold font-bold text-white",
@@ -61,11 +61,11 @@ export const Home = (props: HomeProps): JSX.Element => {
               { "text-[7vw] mt-[2vh]": isMobile }
             )}
           >
-            {/* {ZeroPad(days)}:{ZeroPad(hours)}:{ZeroPad(minutes)}:
-            {ZeroPad(seconds)} • 3/1/25 */}
+            {ZeroPad(days)}:{ZeroPad(hours)}:{ZeroPad(minutes)}:
+            {ZeroPad(seconds)} • 3/1/25 
             Thank You for attending WreckCon 2025!
           </span>
-          <br />
+          <br /> */}
           <div
             className={classNames(
               "font-inter text-white leading-snug",
@@ -73,8 +73,8 @@ export const Home = (props: HomeProps): JSX.Element => {
               { "text-[5vw] w-[90vw] mt-[2vh] mb-[3vh]": isMobile }
             )}
           >
-            {/* {"WreckCon is " + props.phraseUsed + "."} */}
-            We appreciate your feedback - please fill out our{" "}
+            {"WreckCon is " + props.phraseUsed + "."}
+            {/* We appreciate your feedback - please fill out our{" "}
             <Link
               className="underline "
               to="https://tinyurl.com/wreckcon25"
@@ -82,102 +82,110 @@ export const Home = (props: HomeProps): JSX.Element => {
             >
               Feedback Form
             </Link>{" "}
-            to help us improve future WreckCons!
+            to help us improve future WreckCons! */}
           </div>
         </div>
         <BrowserView>
           <div className="flex flex-row gap-4 pl-[6vw] pt-[6vw]">
             <Link
+              className="bg-[#D9D9D9] w-fit h-[4vw] flex items-center justify-center z-10 rounded-lg"
+              to={"/about"}
+            >
+              <div className="font-inter font-bold text-[#2e2f31] text-[2vw] mx-[3vw] ">
+              About
+              </div>
+            </Link>
+            {/* <Link
               className="bg-[#FFC42D] a w-fit h-[4vw] flex items-center justify-center z-10 rounded-lg"
               to={"https://gatech.universitytickets.com/w/event.aspx?id=2099"}
             >
               <div className="font-inter font-bold text-[#2e2f31] text-[2vw] mx-[3vw] ">
                 Tickets
               </div>
-            </Link>
-            <Link
+            </Link> */}
+            {/* <Link
               className="bg-[#D9D9D9] w-fit h-[4vw] flex items-center justify-center z-10 rounded-lg"
               to={"/info"}
             >
               <div className="font-inter font-bold text-[#2e2f31] text-[2vw] mx-[3vw] ">
                 Event Info
               </div>
-            </Link>
-            <Link
+            </Link> */}
+            {/* <Link
               className="bg-[#D9D9D9] w-fit h-[4vw] flex items-center justify-center z-10 rounded-lg"
               to={"/events"}
             >
               <div className="font-inter font-bold text-[#2e2f31] text-[2vw] mx-[3vw] ">
                 Events
               </div>
-            </Link>
-            <Link
+            </Link> */}
+            {/* <Link
               className="bg-[#D9D9D9] w-fit h-[4vw] flex items-center justify-center z-10 rounded-lg"
               to={"/schedule"}
             >
               <div className="font-inter font-bold text-[#2e2f31] text-[2vw] mx-[3vw] ">
                 Schedule
               </div>
-            </Link>
-            <Link
+            </Link> */}
+            {/* <Link
               className="bg-[#D9D9D9] w-fit h-[4vw] flex items-center justify-center z-10 rounded-lg"
               to={"/guests"}
             >
               <div className="font-inter font-bold text-[#2e2f31] text-[2vw] mx-[3vw] ">
                 Guests
               </div>
-            </Link>
+            </Link> */}
           </div>
         </BrowserView>
         <MobileView className="flex flex-col items-center justify-center translate-y-[-30vh]">
-          {/* <Link
+          <Link
             className="bg-[#D9D9D9] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md"
             to={"/about"}
           >
             <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw] ">
               About WreckCon
             </div>
-          </Link> */}
-          <Link
+          </Link>
+          {/* <Link
             className="bg-[#FFC42D] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md"
             to={"https://gatech.universitytickets.com/w/event.aspx?id=2099"}
           >
             <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw]">
               Tickets
             </div>
-          </Link>
-          <Link
+          </Link> */}
+          {/* <Link
             className="bg-[#D9D9D9] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md"
             to={"/info"}
           >
             <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw]">
               Event Info
             </div>
-          </Link>
-          <Link
+          </Link> */}
+          {/* <Link
             className="bg-[#D9D9D9] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md"
             to={"/events"}
           >
             <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw]">
               Events
             </div>
-          </Link>
-          <Link
+          </Link> */}
+          {/* <Link
             className="bg-[#D9D9D9] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md"
             to={"/schedule"}
           >
             <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw]">
               Schedule
             </div>
-          </Link>
-          <Link
+          </Link> */}
+          {/* <Link
             className="bg-[#D9D9D9] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md"
             to={"/guests"}
           >
             <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw]">
               Guests
             </div>
-          </Link>
+          </Link> */}
         </MobileView>
       </div>
     </div>
