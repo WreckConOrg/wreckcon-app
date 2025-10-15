@@ -19,6 +19,7 @@ export enum NavBarItemEnum {
   EVENTS,
   GUESTS,
   EVENT_INFO,
+  PRETTY_DERBY
 }
 
 export interface NavBarItemProps {
@@ -62,7 +63,7 @@ export const NavBarItem = (props: NavBarItemProps) => {
     ];
 
     return (
-      <Menu>
+      <Menu as="div" className="relative">
         <Menu.Button className="ml-[3.5vw] ui-open:bg-[#131313] bg-opacity-90 z-20">
           <div
             className={classNames(
@@ -100,7 +101,7 @@ export const NavBarItem = (props: NavBarItemProps) => {
             </div>
           </div>
         </Menu.Button>
-        <Menu.Items className="translate-y-[7.81vw] translate-x-[-16vw] z-20">
+        <Menu.Items className="absolute left-0 translate-x-[3.55vw] z-20">
           {links.map((link) => (
             <Menu.Item key={link.href} as={Fragment}>
               {({ active }) => (

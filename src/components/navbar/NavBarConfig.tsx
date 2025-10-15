@@ -2,6 +2,11 @@ import { NavBarItemEnum, NavBarItemProps } from "./NavBarItem";
 
 export const NAVBARCONFIG: NavBarItemProps[] = [
   {
+    itemEnum: NavBarItemEnum.PRETTY_DERBY,
+    url: "/pretty-derby",
+    displayText: "pretty derby",
+  },
+  {
     itemEnum: NavBarItemEnum.ABOUT,
     url: "/about",
     displayText: "about",
@@ -31,11 +36,11 @@ export const NAVBARCONFIG: NavBarItemProps[] = [
   //   url: "/guests",
   //   displayText: "guests",
   // },
-  // {
-  //   itemEnum: NavBarItemEnum.DISCORD,
-  //   url: "https://discord.gg/BY2hTWjz4s",
-  //   displayText: "discord",
-  // },
+  {
+    itemEnum: NavBarItemEnum.DISCORD,
+    url: "https://discord.gg/BY2hTWjz4s",
+    displayText: "discord",
+  },
   {
     itemEnum: NavBarItemEnum.SHOP,
     url: "https://wreckcon.bigcartel.com/",

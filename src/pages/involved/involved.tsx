@@ -2,6 +2,9 @@ import { NavBarItemEnum } from "../../components/navbar/NavBarItem";
 import { BasePage } from "../BasePage";
 import { INVOLVEDCONFIG } from "./InvolvedConfig";
 import { ParticipateBoxProps, ParticipateFormBox } from "./ParticipateFormBox";
+import classNames from "classnames";
+import { BrowserView, isMobile, MobileView } from "../../utils/BrowserUtils";
+
 
 export const Involved = (): JSX.Element => {
   const participateBoxes = INVOLVEDCONFIG.map(
@@ -16,8 +19,14 @@ export const Involved = (): JSX.Element => {
       dropdownSelect="participate"
     >
       <div className="flex flex-col justify-center items-center mb-[3vw]">
-        <div className="h-[6vw] font-coolvetica text-white text-[4vw]">
-          Participate in WreckCon 2025!
+        <div className={classNames("font-coolvetica text-white", 
+          {
+            "h-[6vw] text-[4vw]": !isMobile, 
+            "w-[90vw] h-fit text-[8vw] mt-[2vw] text-center": isMobile
+          }
+        )}
+        >
+          Participate in WreckCon 2026!
         </div>
         {/* <div className="w-[75vw] font-inter text-[1.7vw] mb-[4vw] mt-[2vw] text-white text-center">
                         WreckCon wouldn't be possible without the involvement of countless people, and we're currently looking
@@ -28,15 +37,25 @@ export const Involved = (): JSX.Element => {
                         WreckCon wouldn't be possible without the involvement of countless people, but we are no longer looking
                        for artists, vendors, volunteers, and panelists for WreckCon 2024. However, if you're interested in joining our 
                        <b> cosplay competition</b> or our <b>Smash competition</b>, check out the links below!
+                       WreckCon wouldn't be possible without the involvement of countless 
+                      people, and we're currently looking for prospective and current students 
+                      to join our Registered Student Organization to help organize future 
+                      installments of WreckCon over the course of the year. If you're interested, 
+                      check out the link below!
                     </div> */}
-        <div className="w-[75vw] font-inter text-[2.5vw] md:text-[1.7vw] mt-[2vw] text-white text-center">
+        <div className={classNames("font-inter text-white text-center", 
+          {
+            "w-[75vw] text-[1.7vw] mt-[2vw]": !isMobile, 
+            "w-[75vw] text-[3.2vw] mt-[4vw]": isMobile
+          }
+        )}
+        // "w-[75vw] font-inter text-[2.5vw] md:text-[1.7vw] mt-[2vw] text-white text-center"
+        >
           WreckCon wouldn't be possible without the involvement of countless 
-          people, and we're currently looking for prospective and current students 
-          to join our Registered Student Organization to help organize future 
-          installments of WreckCon over the course of the year. If you're interested, 
-          check out the link below!
+          people. If you're interested in participating as a racer in WreckCon: Pretty Derby, or if you're a prospective or current student 
+          looking to help organize future installments of WreckCon by joining our Registered Student Organization, please check out the links below!
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-1 grid-rows-1 gap-x-[4vw] md:gap-x-[2vw] gap-y-[3vw] md:gap-y-[1.5vw] mt-[1.5vw]">
+        <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 gap-x-[4vw] md:gap-x-[2vw] gap-y-[3vw] md:gap-y-[1.5vw] mt-[4vw]">
           {participateBoxes}
         </div>
       </div>

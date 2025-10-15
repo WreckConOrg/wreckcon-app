@@ -73,7 +73,8 @@ export const Home = (props: HomeProps): JSX.Element => {
               { "text-[5vw] w-[90vw] mt-[2vh] mb-[3vh]": isMobile }
             )}
           >
-            {"WreckCon is " + props.phraseUsed + "."}
+            {/* {"WreckCon is " + props.phraseUsed + "."} */}
+            {"Come join us for WreckCon: Pretty Derby on Sunday, October 26th 3:30pm-5:00pm at Couch Park!"}
             {/* We appreciate your feedback - please fill out our{" "}
             <Link
               className="underline "
@@ -93,6 +94,14 @@ export const Home = (props: HomeProps): JSX.Element => {
             >
               <div className="font-inter font-bold text-[#2e2f31] text-[2vw] mx-[3vw] ">
               About
+              </div>
+            </Link>
+            <Link
+              className="bg-[#FFC42D] w-fit h-[4vw] flex items-center justify-center z-10 rounded-lg"
+              to={"/pretty-derby"}
+            >
+              <div className="font-inter font-bold text-[#2e2f31] text-[2vw] mx-[3vw] ">
+              Pretty Derby
               </div>
             </Link>
             {/* <Link
@@ -144,6 +153,14 @@ export const Home = (props: HomeProps): JSX.Element => {
           >
             <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw] ">
               About WreckCon
+            </div>
+          </Link>
+          <Link
+            className="bg-[#FFC42D] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md"
+            to={"/pretty-derby"}
+          >
+            <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw] ">
+              Pretty Derby
             </div>
           </Link>
           {/* <Link

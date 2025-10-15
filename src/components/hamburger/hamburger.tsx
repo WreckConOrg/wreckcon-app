@@ -39,6 +39,12 @@ export const Hamburger = (props: HamburgerProps) => {
           </div>
         </div>
         <Link
+          to={"/pretty-derby"}
+          className={`ml-[10vw] ${GetTextColor(NavBarItemEnum.PRETTY_DERBY)}`}
+        >
+          pretty derby
+        </Link>
+        <Link
           to={"/about"}
           className={`ml-[10vw] ${GetTextColor(NavBarItemEnum.ABOUT)}`}
         >
@@ -53,36 +59,36 @@ export const Hamburger = (props: HamburgerProps) => {
         >
           discord
         </Link>
-        <Link
+        {/* <Link
           to={"https://gatech.universitytickets.com/w/event.aspx?id=2099"}
           className="ml-[10vw] text-white"
         >
           tickets
-        </Link>
-        <Link
+        </Link> */}
+        {/* <Link
           to={"/events"}
           className={`ml-[10vw] ${GetTextColor(NavBarItemEnum.EVENTS)}`}
         >
           events
-        </Link>
+        </Link> */}
         <Link
           to={"/schedule"}
           className={`ml-[10vw] ${GetTextColor(NavBarItemEnum.SCHEDULE)}`}
         >
           schedule
         </Link>
-        <Link
+        {/* <Link
           to={"/info"}
           className={`ml-[10vw] ${GetTextColor(NavBarItemEnum.EVENT_INFO)}`}
         >
           event info
-        </Link>
-        <Link
+        </Link> */}
+        {/* <Link
           to={"/guests"}
           className={`ml-[10vw] ${GetTextColor(NavBarItemEnum.GUESTS)}`}
         >
           guests
-        </Link>
+        </Link> */}
         <Link
           to={"https://wreckcon.bigcartel.com/"}
           className="ml-[10vw] text-white"

@@ -11,6 +11,7 @@ import { EventsPage } from "./pages/events/EventsPage";
 import { GuestsPage } from "./pages/guests/GuestsPage";
 import { ArtistsPage } from "./pages/artists/ArtistsPage";
 import { EventInfoPage } from "./pages/eventInfo/EventInfoPage";
+import { PrettyDerbyPage } from "./pages/prettyDerby/PrettyDerbyPage";
 
 function App() {
   const phrases = [
@@ -42,6 +43,7 @@ function App() {
       <Route path="/guests" element={<GuestsPage />} />
       <Route path="/artists" element={<ArtistsPage />} />
       <Route path="/info" element={<EventInfoPage />} />
+      <Route path="/pretty-derby" element={<PrettyDerbyPage />} />
 
       <Route
         path="/tickets"

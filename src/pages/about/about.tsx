@@ -23,7 +23,7 @@ export const About = (): JSX.Element => {
           className={classNames(
             "flex flex-row items-center justify-center font-coolvetica text-white",
             { "h-[6vw] text-[4vw]": !isMobile },
-            { "mt-[2vh] text-[9vw] mb-[-2vh]": isMobile }
+            { "mt-[2vh] text-[9vw] mb-[-1vh]": isMobile }
           )}
         >
           About WreckCon
@@ -67,7 +67,7 @@ export const About = (): JSX.Element => {
           className={classNames(
             "flex flex-row items-center justify-center font-coolvetica",
             { "h-[7vw] text-[4vw] bg-[#FFC42D] text-black": !isMobile },
-            { "h-fit text-[9vw] text-white mt-[-1vh]": isMobile }
+            { "h-[fit] text-[9vw] bg-[#FFC42D] text-black mt-[-1vh]": isMobile }
           )}
         >
           Partnering Orgs
@@ -77,7 +77,7 @@ export const About = (): JSX.Element => {
             className={classNames(
               "text-center",
               { "text-[1.7vw] w-[70vw] my-[3vw]": !isMobile },
-              { "text-[3vw] w-[80vw] mt-[0.3vh] mb-[2vh]": isMobile }
+              { "text-[3.2vw] w-[80vw] mt-[2vh] mb-[2vh]": isMobile }
             )}
           >
             WreckCon was designed as a showcase of the many varied student
