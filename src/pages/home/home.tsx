@@ -156,22 +156,22 @@ export const Home = (props: HomeProps): JSX.Element => {
               About WreckCon
             </div>
           </Link>
-          <Link
+          {/* <Link
             className="bg-[#FFC42D] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md"
             to={"/pretty-derby"}
           >
             <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw] ">
               Pretty Derby
             </div>
-          </Link>
-          {/* <Link
+          </Link> */}
+          <Link
             className="bg-[#FFC42D] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md"
-            to={"https://gatech.universitytickets.com/w/event.aspx?id=2099"}
+            to={"https://gatech.universitytickets.com/w/event.aspx?id=2196"}
           >
             <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw]">
               Tickets
             </div>
-          </Link> */}
+          </Link>
           {/* <Link
             className="bg-[#D9D9D9] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md"
             to={"/info"}
