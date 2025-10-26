@@ -38,12 +38,12 @@ export const Hamburger = (props: HamburgerProps) => {
             </button>
           </div>
         </div>
-        <Link
+        {/* <Link
           to={"/pretty-derby"}
           className={`ml-[10vw] ${GetTextColor(NavBarItemEnum.PRETTY_DERBY)}`}
         >
           pretty derby
-        </Link>
+        </Link> */}
         <Link
           to={"/about"}
           className={`ml-[10vw] ${GetTextColor(NavBarItemEnum.ABOUT)}`}
@@ -59,24 +59,24 @@ export const Hamburger = (props: HamburgerProps) => {
         >
           discord
         </Link>
-        {/* <Link
-          to={"https://gatech.universitytickets.com/w/event.aspx?id=2099"}
+        <Link
+          to={"https://gatech.universitytickets.com/w/event.aspx?id=2196"}
           className="ml-[10vw] text-white"
         >
           tickets
-        </Link> */}
+        </Link>
         {/* <Link
           to={"/events"}
           className={`ml-[10vw] ${GetTextColor(NavBarItemEnum.EVENTS)}`}
         >
           events
         </Link> */}
-        <Link
+        {/* <Link
           to={"/schedule"}
           className={`ml-[10vw] ${GetTextColor(NavBarItemEnum.SCHEDULE)}`}
         >
           schedule
-        </Link>
+        </Link> */}
         {/* <Link
           to={"/info"}
           className={`ml-[10vw] ${GetTextColor(NavBarItemEnum.EVENT_INFO)}`}

@@ -20,16 +20,16 @@ export const INVOLVEDCONFIG: ParticipateBoxProps[] = [
   //       isOpen: false
 
   // },
-  {
-    name: "Pretty Derby",
-    bodyText:
-      "If you are interested in participating in WreckCon: Pretty Derby, please sign up by Wednesday, October 22nd by filling out the form below.",
-    link: "https://docs.google.com/forms/d/e/1FAIpQLScOTT7RORpSsOjJ_dxOh6XH1hhplffrBIP_gnifT7MerUZ-Xw/viewform?usp=sharing",
-    buttonText: "Pretty Derby Signup",
-    color: "#FF7F41",
-        isOpen: true
+  // {
+  //   name: "Pretty Derby",
+  //   bodyText:
+  //     "If you are interested in participating in WreckCon: Pretty Derby, please sign up by Wednesday, October 22nd by filling out the form below.",
+  //   link: "https://docs.google.com/forms/d/e/1FAIpQLScOTT7RORpSsOjJ_dxOh6XH1hhplffrBIP_gnifT7MerUZ-Xw/viewform?usp=sharing",
+  //   buttonText: "Pretty Derby Signup",
+  //   color: "#FF7F41",
+  //       isOpen: true
 
-  },
+  // },
   {
     name: "RSO Intake",
     bodyText:

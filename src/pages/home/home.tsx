@@ -9,11 +9,14 @@ interface HomeProps {
 }
 
 export const Home = (props: HomeProps): JSX.Element => {
-  const CONDATE = new Date("March 1, 2025 10:00:00").getTime();
+  const CONDATE = new Date("February 28, 2026 10:00:00").getTime();
   const [days, hours, minutes, seconds] = useCountdown(CONDATE);
 
   const ZeroPad = (n: number) => {
     return ("0" + n).slice(-2);
+  };
+  const ZeroPadDays = (n: number) => {
+    return ("0" + n).slice(-3);
   };
 
   return (
@@ -53,7 +56,7 @@ export const Home = (props: HomeProps): JSX.Element => {
             <span className="text-[#ffc42d]">Wreck</span>
             <span className="text-white">Con</span>
           </span>
-          {/* <br className={classNames({ hidden: isMobile })} />
+          <br className={classNames({ hidden: isMobile })} />
           <span
             className={classNames(
               "font-interbold font-bold text-white",
@@ -61,11 +64,10 @@ export const Home = (props: HomeProps): JSX.Element => {
               { "text-[7vw] mt-[2vh]": isMobile }
             )}
           >
-            {ZeroPad(days)}:{ZeroPad(hours)}:{ZeroPad(minutes)}:
-            {ZeroPad(seconds)} • 3/1/25 
-            Thank You for attending WreckCon 2025!
+            {ZeroPadDays(days)}:{ZeroPad(hours)}:{ZeroPad(minutes)}:
+            {ZeroPad(seconds)} • 2/28/26
           </span>
-          <br /> */}
+          <br />
           <div
             className={classNames(
               "font-inter text-white leading-snug",
@@ -73,8 +75,7 @@ export const Home = (props: HomeProps): JSX.Element => {
               { "text-[5vw] w-[90vw] mt-[2vh] mb-[3vh]": isMobile }
             )}
           >
-            {/* {"WreckCon is " + props.phraseUsed + "."} */}
-            {"Come join us for WreckCon: Pretty Derby on Sunday, October 26th 3:30pm-5:00pm at Couch Park!"}
+            {"WreckCon is " + props.phraseUsed + "."}
             {/* We appreciate your feedback - please fill out our{" "}
             <Link
               className="underline "
@@ -96,22 +97,22 @@ export const Home = (props: HomeProps): JSX.Element => {
               About
               </div>
             </Link>
-            <Link
+            {/* <Link
               className="bg-[#FFC42D] w-fit h-[4vw] flex items-center justify-center z-10 rounded-lg"
               to={"/pretty-derby"}
             >
               <div className="font-inter font-bold text-[#2e2f31] text-[2vw] mx-[3vw] ">
               Pretty Derby
               </div>
-            </Link>
-            {/* <Link
+            </Link> */}
+            <Link
               className="bg-[#FFC42D] a w-fit h-[4vw] flex items-center justify-center z-10 rounded-lg"
-              to={"https://gatech.universitytickets.com/w/event.aspx?id=2099"}
+              to={"https://gatech.universitytickets.com/w/event.aspx?id=2196"}
             >
               <div className="font-inter font-bold text-[#2e2f31] text-[2vw] mx-[3vw] ">
                 Tickets
               </div>
-            </Link> */}
+            </Link>
             {/* <Link
               className="bg-[#D9D9D9] w-fit h-[4vw] flex items-center justify-center z-10 rounded-lg"
               to={"/info"}
