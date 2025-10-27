@@ -49,7 +49,7 @@ function App() {
         path="/tickets"
         Component={() => {
           window.location.href =
-            "https://gatech.universitytickets.com/w/event.aspx?id=2099";
+            "https://gatech.universitytickets.com/w/event.aspx?id=2196";
           return null;
         }}
       />
