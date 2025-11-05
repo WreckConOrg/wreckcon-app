@@ -97,14 +97,14 @@ export const Home = (props: HomeProps): JSX.Element => {
               About
               </div>
             </Link>
-            {/* <Link
-              className="bg-[#FFC42D] w-fit h-[4vw] flex items-center justify-center z-10 rounded-lg"
-              to={"/pretty-derby"}
+            <Link
+              className="bg-[#D9D9D9] w-fit h-[4vw] flex items-center justify-center z-10 rounded-lg"
+              to={"/involved"}
             >
               <div className="font-inter font-bold text-[#2e2f31] text-[2vw] mx-[3vw] ">
-              Pretty Derby
+              Get Involved
               </div>
-            </Link> */}
+            </Link>
             <Link
               className="bg-[#FFC42D] a w-fit h-[4vw] flex items-center justify-center z-10 rounded-lg"
               to={"https://gatech.universitytickets.com/w/event.aspx?id=2196"}
@@ -156,14 +156,14 @@ export const Home = (props: HomeProps): JSX.Element => {
               About WreckCon
             </div>
           </Link>
-          {/* <Link
-            className="bg-[#FFC42D] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md"
-            to={"/pretty-derby"}
+          <Link
+            className="bg-[#D9D9D9] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md"
+            to={"/involved"}
           >
             <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw] ">
-              Pretty Derby
+              Get Involved
             </div>
-          </Link> */}
+          </Link>
           <Link
             className="bg-[#FFC42D] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md"
             to={"https://gatech.universitytickets.com/w/event.aspx?id=2196"}

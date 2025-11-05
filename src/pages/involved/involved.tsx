@@ -52,11 +52,12 @@ export const Involved = (): JSX.Element => {
         // "w-[75vw] font-inter text-[2.5vw] md:text-[1.7vw] mt-[2vw] text-white text-center"
         >
           WreckCon wouldn't be possible without the involvement of countless 
-          people. If you're a prospective or current student looking to help organize 
-          future installments of WreckCon by joining our Registered Student Organization, 
-          please check out the link below!
+          people, and we're currently looking for <b>artists</b> and <b>vendors</b> to make 
+          WreckCon 2026 the best it can be. In addition, we're looking for prospective or current students
+          to join our Registered Student Organization to help organize future installments of WreckCon. 
+          If you're interested, check out the links below!
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-1 grid-rows-1 gap-x-[4vw] md:gap-x-[2vw] gap-y-[3vw] md:gap-y-[1.5vw] mt-[4vw]">
+        <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-1 gap-x-[4vw] md:gap-x-[2vw] gap-y-[3vw] md:gap-y-[1.5vw] mt-[4vw]">
           {participateBoxes}
         </div>
       </div>

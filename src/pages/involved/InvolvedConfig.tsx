@@ -1,25 +1,25 @@
 import { ParticipateBoxProps } from "./ParticipateFormBox";
 
 export const INVOLVEDCONFIG: ParticipateBoxProps[] = [
-  // {
-  //   name: "Artists",
-  //   bodyText:
-  //     "Sign up below if you would like to sell your work at WreckCon 2025, but you do not have a business license. Tabling space is totally free, but unfortunately not guaranteed.",
-  //   link: "https://forms.gle/kvhUyLAfUJo2WA998",
-  //   buttonText: "Artist Intake",
-  //   color: "#659470",
-  //   isOpen: false
-  // },
-  // {
-  //   name: "Vendors",
-  //   bodyText:
-  //     "If you are a seller interested in WreckCon 2025 with a business license, please fill out the form below! All other sellers should use the Artists signup form.",
-  //   link: "https://forms.gle/xTpZRyW7oiebYn3n6",
-  //   buttonText: "Vendor Intake",
-  //   color: "#FF7F41",
-  //       isOpen: false
+  {
+    name: "Artists",
+    bodyText:
+      "Sign up below if you would like to sell your work at WreckCon 2026, but you do not have a business license. Tabling space for artists is totally free, but unfortunately not guaranteed.",
+    link: "https://forms.gle/AYxp3roTTNr2cW4f6",
+    buttonText: "Artist Intake",
+    color: "#659470",
+    isOpen: true
+  },
+  {
+    name: "Vendors",
+    bodyText:
+      "If you are a seller with a business license interested in WreckCon 2026, please fill out the form below! Please note that as per Georgia Tech policy, tabling as a vendor will incur a $300 fee.",
+    link: "https://forms.gle/49npviDD7znRQkx17",
+    buttonText: "Vendor Intake",
+    color: "#FF7F41",
+    isOpen: true
 
-  // },
+  },
   // {
   //   name: "Pretty Derby",
   //   bodyText:
