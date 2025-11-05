@@ -4,7 +4,7 @@ export const INVOLVEDCONFIG: ParticipateBoxProps[] = [
   {
     name: "Artists",
     bodyText:
-      "Sign up below if you would like to sell your work at WreckCon 2026, but you do not have a business license. Tabling space for artists is totally free, but unfortunately not guaranteed.",
+      "Sign up below if you would like to sell your work at WreckCon 2026 and you do not have a business license. Tabling space for artists is totally free, but unfortunately not guaranteed.",
     link: "https://forms.gle/AYxp3roTTNr2cW4f6",
     buttonText: "Artist Intake",
     color: "#659470",
