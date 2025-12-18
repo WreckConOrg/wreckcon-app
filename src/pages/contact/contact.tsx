@@ -60,8 +60,7 @@ export const Contact = (): JSX.Element => {
           </div>
           <div className="font-inter text-[1.7vw] text-white">
             Have something you'd like to tell us? You can reach us at any of the
-            social medias below, or send us a message with the form to the
-            right.
+            social medias below!
           </div>
           <div className="w-[40vw] mx-auto">
           <div className="grid grid-cols-2 gap-[2vw] text-[1.7vw] text-white mb-[2vw]">
