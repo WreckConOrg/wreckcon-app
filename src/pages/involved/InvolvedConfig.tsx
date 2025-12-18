@@ -40,34 +40,34 @@ export const INVOLVEDCONFIG: ParticipateBoxProps[] = [
         isOpen: true
 
   },
-  // {
-  //   name: "Volunteers",
-  //   bodyText:
-  //     "We're always looking for help managing WreckCon. If you would like to help out and volunteer on the day of the of the convention, you can sign up here!",
-  //   link: "https://forms.gle/2nJDnXiTGpWZPGFY9",
-  //   buttonText: "Volunteer Intake",
-  //   color: "#64A2FF",
-  //       isOpen: false
+  {
+    name: "Volunteers",
+    bodyText:
+      "We're always looking for help managing WreckCon. If you would like to help out and volunteer on the day of the of the convention, you can sign up here!",
+    link: "https://forms.gle/vDX1tkFcRmaxYoQB9",
+    buttonText: "Volunteer Intake",
+    color: "#64A2FF",
+        isOpen: true
 
-  // },
-  // {
-  //   name: "Panelists",
-  //   bodyText:
-  //     "Have an idea or topic you're dying to share at WreckCon? Paneling space is completely free, but highly in-demand, so sign up as soon as you can!",
-  //   link: "https://forms.gle/rKWmuNAxvnnStNqy8",
-  //   buttonText: "Panelist Intake",
-  //   color: "#A880FF",
-  //       isOpen: false
+  },
+  {
+    name: "Panelists",
+    bodyText:
+      "Have an idea or topic you're dying to share at WreckCon? Paneling space is completely free, but highly in-demand, so sign up as soon as you can!",
+    link: "https://forms.gle/6rQ7WYve3vKbXWG47",
+    buttonText: "Panelist Intake",
+    color: "#A880FF",
+        isOpen: true
 
-  // },
-  // {
-  //   name: "Indie Games",
-  //   bodyText:
-  //     "If you would like to demo a video game or other itneractive media at WreckCon, sign up below! Tabling space will be free, but is not guaranteed.",
-  //   link: "https://forms.gle/GKzwJkK6yGEpCrCRA",
-  //   buttonText: "Indie Games Intake",
-  //   color: "#F04924",
-  //       isOpen: false
+  },
+  {
+    name: "Indie Games",
+    bodyText:
+      "If you would like to demo a video game or other itneractive media at WreckCon, sign up below! Tabling space will be free, but is not guaranteed.",
+    link: "https://forms.gle/vkA8NxT2YZVoWjFS8",
+    buttonText: "Indie Games Intake",
+    color: "#F04924",
+        isOpen: true
 
-  // },
+  },
 ];

@@ -54,8 +54,8 @@ export const Contact = (): JSX.Element => {
       dropdownSelect="contact us"
     >
       <div className="flex flex-row justify-center space-x-[0.3vw]">
-        <div className="w-[40vw]">
-          <div className="h-[6vw] mt-[1vw] font-coolvetica text-white text-[4vw]">
+        <div className="w-[80vw]">
+          <div className="h-[6vw] flex flex-col items-center mt-[1vw] font-coolvetica text-white text-[4vw]">
             Contact Us!
           </div>
           <div className="font-inter text-[1.7vw] text-white">
@@ -63,6 +63,7 @@ export const Contact = (): JSX.Element => {
             social medias below, or send us a message with the form to the
             right.
           </div>
+          <div className="w-[40vw] mx-auto">
           <div className="grid grid-cols-2 gap-[2vw] text-[1.7vw] text-white mb-[2vw]">
             <Link
               to={"https://twitter.com/conwreck"}
@@ -96,10 +97,11 @@ export const Contact = (): JSX.Element => {
               <img src={mail} alt="image could not load" />
               <div className="mt-[1vw]"> info@wreckcon.org </div>
             </a>
+            </div>
             
           </div>
         </div>
-        <form className="w-[50vw] flex flex-col font-inter text-[1.7vw] mb-[3vw] mt-[2vw] space-y-[3vw]">
+        {/* <form className="w-[50vw] flex flex-col font-inter text-[1.7vw] mb-[3vw] mt-[2vw] space-y-[3vw]">
           <div>
             <input
               type="text"
@@ -134,7 +136,7 @@ export const Contact = (): JSX.Element => {
               send
             </button>
           </div>
-        </form>
+        </form> */}
       </div>
     </BasePage>
   );

@@ -13,7 +13,7 @@ import classNames from 'classnames';
 import { isMobile } from 'react-device-detect';
 
 const useCarousel = () => {
-    const images = [carousel1, carousel2, carousel3, carousel4, carousel5, carousel6, carousel7, carousel8, carousel9, carousel10]
+    const images = [carousel1, carousel4, carousel5, carousel6, carousel7, carousel8, carousel9, carousel10]
     let [currentIndex, setCurrentIndex] = useState(1);
     let [currentImage, setCurrentImage] = useState(images[currentIndex]);
 
