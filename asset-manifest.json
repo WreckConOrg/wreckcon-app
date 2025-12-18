@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.35b0037b.css",
-    "main.js": "/static/js/main.17bd828a.js",
+    "main.js": "/static/js/main.2dce85a6.js",
     "static/js/787.28692217.chunk.js": "/static/js/787.28692217.chunk.js",
     "static/media/cosplay.png": "/static/media/cosplay.61fe403e9afe25ebbe3d.png",
     "static/media/idolfest.png": "/static/media/idolfest.3b5a5299246194b02fbf.png",
@@ -56,11 +56,11 @@
     "static/media/youtubelogo.png": "/static/media/youtubelogo.abfd36b30dfc5ba1a3db.png",
     "index.html": "/index.html",
     "main.35b0037b.css.map": "/static/css/main.35b0037b.css.map",
-    "main.17bd828a.js.map": "/static/js/main.17bd828a.js.map",
+    "main.2dce85a6.js.map": "/static/js/main.2dce85a6.js.map",
     "787.28692217.chunk.js.map": "/static/js/787.28692217.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.35b0037b.css",
-    "static/js/main.17bd828a.js"
+    "static/js/main.2dce85a6.js"
   ]
 }
