@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c3d65c36.css",
-    "main.js": "/static/js/main.2a54cda4.js",
+    "main.css": "/static/css/main.35b0037b.css",
+    "main.js": "/static/js/main.17bd828a.js",
     "static/js/787.28692217.chunk.js": "/static/js/787.28692217.chunk.js",
     "static/media/cosplay.png": "/static/media/cosplay.61fe403e9afe25ebbe3d.png",
     "static/media/idolfest.png": "/static/media/idolfest.3b5a5299246194b02fbf.png",
@@ -9,8 +9,6 @@
     "static/media/5.jpg": "/static/media/5.b9915d094086051536cf.jpg",
     "static/media/smashbros.jpg": "/static/media/smashbros.47d625aa9c15c413648d.jpg",
     "static/media/mariokart.jpg": "/static/media/mariokart.e3babc21080389acadf9.jpg",
-    "static/media/2.jpg": "/static/media/2.57f306130cf70426b912.jpg",
-    "static/media/3.jpg": "/static/media/3.532753203c5c0345d150.jpg",
     "static/media/4.jpg": "/static/media/4.8f4da2f1c94f9b55f9c9.jpg",
     "static/media/6.jpg": "/static/media/6.d21432f3724f89f484b0.jpg",
     "static/media/1.jpg": "/static/media/1.6c286ed7da8125f76e61.jpg",
@@ -57,12 +55,12 @@
     "static/media/twitterlogo.png": "/static/media/twitterlogo.7b5bdc5995fa40bcea79.png",
     "static/media/youtubelogo.png": "/static/media/youtubelogo.abfd36b30dfc5ba1a3db.png",
     "index.html": "/index.html",
-    "main.c3d65c36.css.map": "/static/css/main.c3d65c36.css.map",
-    "main.2a54cda4.js.map": "/static/js/main.2a54cda4.js.map",
+    "main.35b0037b.css.map": "/static/css/main.35b0037b.css.map",
+    "main.17bd828a.js.map": "/static/js/main.17bd828a.js.map",
     "787.28692217.chunk.js.map": "/static/js/787.28692217.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3d65c36.css",
-    "static/js/main.2a54cda4.js"
+    "static/css/main.35b0037b.css",
+    "static/js/main.17bd828a.js"
   ]
 }
