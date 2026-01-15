@@ -63,7 +63,7 @@ export const INVOLVEDCONFIG: ParticipateBoxProps[] = [
   {
     name: "Indie Games",
     bodyText:
-      "If you would like to demo a video game or other itneractive media at WreckCon, sign up below! Tabling space will be free, but is not guaranteed.",
+      "If you would like to demo a video game or other interactive media at WreckCon, sign up below! Tabling space will be free, but is not guaranteed.",
     link: "https://forms.gle/vkA8NxT2YZVoWjFS8",
     buttonText: "Indie Games Intake",
     color: "#F04924",

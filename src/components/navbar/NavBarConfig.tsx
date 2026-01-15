@@ -16,11 +16,11 @@ export const NAVBARCONFIG: NavBarItemProps[] = [
     url: "https://gatech.universitytickets.com/w/event.aspx?id=2196",
     displayText: "tickets",
   },
-  // {
-  //   itemEnum: NavBarItemEnum.EVENTS,
-  //   url: "/events",
-  //   displayText: "events",
-  // },
+  {
+    itemEnum: NavBarItemEnum.EVENTS,
+    url: "/events",
+    displayText: "events",
+  },
   // {
   //   itemEnum: NavBarItemEnum.SCHEDULE,
   //   url: "/schedule",
@@ -31,11 +31,11 @@ export const NAVBARCONFIG: NavBarItemProps[] = [
   //   url: "/info",
   //   displayText: "event info",
   // },
-  // {
-  //   itemEnum: NavBarItemEnum.GUESTS,
-  //   url: "/guests",
-  //   displayText: "guests",
-  // },
+  {
+    itemEnum: NavBarItemEnum.GUESTS,
+    url: "/guests",
+    displayText: "guests",
+  },
   {
     itemEnum: NavBarItemEnum.DISCORD,
     url: "https://discord.gg/BY2hTWjz4s",
