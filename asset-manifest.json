@@ -1,27 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.35b0037b.css",
-    "main.js": "/static/js/main.2dce85a6.js",
+    "main.js": "/static/js/main.5f4fa7ad.js",
     "static/js/787.28692217.chunk.js": "/static/js/787.28692217.chunk.js",
     "static/media/cosplay.png": "/static/media/cosplay.61fe403e9afe25ebbe3d.png",
     "static/media/idolfest.png": "/static/media/idolfest.3b5a5299246194b02fbf.png",
     "static/media/boardgames.png": "/static/media/boardgames.14d8838c576327c870b8.png",
     "static/media/5.jpg": "/static/media/5.b9915d094086051536cf.jpg",
-    "static/media/smashbros.jpg": "/static/media/smashbros.47d625aa9c15c413648d.jpg",
-    "static/media/mariokart.jpg": "/static/media/mariokart.e3babc21080389acadf9.jpg",
     "static/media/4.jpg": "/static/media/4.8f4da2f1c94f9b55f9c9.jpg",
     "static/media/6.jpg": "/static/media/6.d21432f3724f89f484b0.jpg",
     "static/media/1.jpg": "/static/media/1.6c286ed7da8125f76e61.jpg",
-    "static/media/bridoof.png": "/static/media/bridoof.f82746c35eedbd69a392.png",
-    "static/media/Foxarcada.png": "/static/media/Foxarcada.577cec1355b5c008afb7.png",
     "static/media/nerdi-gras-logo.png": "/static/media/nerdi-gras-logo.b6163793d48a7a42e42b.png",
-    "static/media/indiegames.jpg": "/static/media/indiegames.e9958d8ba0586420dc6c.jpg",
-    "static/media/Ginkgocrown.png": "/static/media/Ginkgocrown.b04d9aada1b6a9a274d4.png",
-    "static/media/petiteGrandpa.png": "/static/media/petiteGrandpa.ccafebaf0004f7d8a0bd.png",
-    "static/media/TomBloom.png": "/static/media/TomBloom.3c3a94f1194089e48e5d.png",
     "static/media/TiffanyGrant.png": "/static/media/TiffanyGrant.c5e03e40ef716455d954.png",
     "static/media/tabletop.jpg": "/static/media/tabletop.f02454d3b594b1062cf7.jpg",
-    "static/media/CoreyWilder.png": "/static/media/CoreyWilder.f02791ea2af6d90223b2.png",
     "static/media/cosplayshowcase.jpg": "/static/media/cosplayshowcase.636dccf1a98935dca59b.jpg",
     "static/media/tcg.jpg": "/static/media/tcg.144a083a050b8e915cd2.jpg",
     "static/media/artistsalley.jpg": "/static/media/artistsalley.dc63bee33d373aba6544.jpg",
@@ -32,11 +23,11 @@
     "static/media/panels.jpg": "/static/media/panels.d53948b541676a4b8d9d.jpg",
     "static/media/ExhallFloor2Map.png": "/static/media/ExhallFloor2Map.7e42d82aafe74dc9c88c.png",
     "static/media/CampusMap.png": "/static/media/CampusMap.55973bd5853f91b7d4d3.png",
+    "static/media/SarahNicoleRobles.jpg": "/static/media/SarahNicoleRobles.4c3b23f0dc43c7401026.jpg",
     "static/media/ICFloor1Map.png": "/static/media/ICFloor1Map.08e500c0b524f7c075c4.png",
     "static/media/anime logo.png": "/static/media/anime logo.53a2ad7dedf1f091c7e9.png",
     "static/media/ICFloor2Map.png": "/static/media/ICFloor2Map.8f57066b7bb67e9bc90d.png",
     "static/media/sga logo.png": "/static/media/sga logo.19620709688b3c370665.png",
-    "static/media/NadiaMarshall.jpeg": "/static/media/NadiaMarshall.e55b4440c8bca0766b5b.jpeg",
     "static/media/dnd logo.png": "/static/media/dnd logo.a09fd53c16efe1deb7fa.png",
     "static/media/mtg logo.png": "/static/media/mtg logo.2a52565aa47a7d0b9698.png",
     "static/media/board games logo.png": "/static/media/board games logo.d28a1e5e938e66fa4140.png",
@@ -56,11 +47,11 @@
     "static/media/youtubelogo.png": "/static/media/youtubelogo.abfd36b30dfc5ba1a3db.png",
     "index.html": "/index.html",
     "main.35b0037b.css.map": "/static/css/main.35b0037b.css.map",
-    "main.2dce85a6.js.map": "/static/js/main.2dce85a6.js.map",
+    "main.5f4fa7ad.js.map": "/static/js/main.5f4fa7ad.js.map",
     "787.28692217.chunk.js.map": "/static/js/787.28692217.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.35b0037b.css",
-    "static/js/main.2dce85a6.js"
+    "static/js/main.5f4fa7ad.js"
   ]
 }
