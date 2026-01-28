@@ -7,6 +7,8 @@ import petitegrandpa from "./../../assets/guest_pictures/petiteGrandpa.png";
 import NadiaMarshall from "./../../assets/guest_pictures/NadiaMarshall.jpeg";
 import TomBloom from "./../../assets/guest_pictures/TomBloom.png";
 import CoreyWilder from "./../../assets/guest_pictures/CoreyWilder.png";
+import ZachPokres from "./../../assets/guest_pictures/ZachPokres.jpg";
+
 
 import { GuestProps } from "./Guest";
 
@@ -29,6 +31,14 @@ Catch her alongside Tiffany Grant and other TBA guests at our voice acting panel
     picture: SarahNicoleRobles,
     role: "Voice Actress",
   },
+  {
+    name: "Zach Pokres",
+    bodyText: `Zach is a California-based voice actor with years of experience in animation and games. You may recognize him from Indigo Park as Finely, MiSide as the player character, or from the viral "Stop Posting About Among Us" meme. When he's not in the booth, Zach is busy running his voice acting and dubbing studio ZAUDIO or livestreaming on Twitch.
+
+Catch him alongside Sarah-Nicole Robles and Tiffany Grant, along with other TBA guests on the main stage at our voice actor's panel at WreckCon 2026!`,
+    picture: ZachPokres,
+    role: "Voice Actor",
+  },
 //   {
 //     name: "Nadia Marshall",
 //     bodyText: `Nadia Marshall is an award winning voice actor, opera singer, and performer who has been using her voice professionally for over a decade. You've heard her in video game titles like Zenless Zone Zero, Nobody Wants to Die, Cassette Beasts, Grimguard Tactics, Cloudpunk: City of Ghosts, Hauma, and much more. 
@@ -50,14 +60,14 @@ Catch her alongside Tiffany Grant and other TBA guests at our voice acting panel
 //     role: "Voice Actor",
 //     pictureClasses: "object-top",
 //   },
-//   {
-//     name: "Tom Bloom",
-//     role: "TTRPG Author",
-//     bodyText: `Tom Bloom is a comic author and game designer best known for the webcomic Kill Six Billion Demons and the role playing games Lancer RPG, CAIN, and Maleghast.
-  
-// Tom will be presenting a panel on Creating a TTRPG on the main stage from 10:30am to 11:30am! Get ready to ask your questions, whether you be a GM or player!`,
-//     picture: TomBloom,
-//   },
+  {
+    name: "Tom Bloom",
+    role: "Comic Author, TTRPG Designer",
+    bodyText: `Tom Bloom is a comic author and game designer best known for the webcomic Kill Six Billion Demons and the role playing games Lancer RPG, CAIN, and Maleghast. :d6: 
+
+If you've ever struggled with worldbuilding, whether it be for story writing or TTRPG game creation, check out Tom's Worldbuilding panel on the main stage!`,
+    picture: TomBloom,
+  },
 //   {
 //     name: "Bridoof",
 //     role: "Cosplay Contest Judge",

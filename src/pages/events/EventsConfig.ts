@@ -154,7 +154,7 @@ Signups will be in-person at WreckCon 2026, first come-first serve! `,
   },
   {
     name: "Panels",
-    bodyText: `On the main stage, get ready for a voice acting panel featuring Tiffany Grant and Sarah-Nicole Robles, among other TBA voice actors! More main stage panels will be announced soon.
+    bodyText: `On the main stage, get ready for a voice acting panel featuring Tiffany Grant, Sarah-Nicole Robles, and Zach Pokres, among other TBA voice actors! In addition, get ready for a worldbuilding panel from comic author and game designer Tom Bloom! More main stage panels will be announced soon.
     
 In the panel rooms, have a topic you'd like to hear about? Want to hear some live music, or maybe see a dance? Check out our panels in the Instructional Center and on the second floor of the Exhibition Hall!`,
     picture: panels,
