@@ -63,7 +63,7 @@ Catch him alongside Sarah-Nicole Robles and Tiffany Grant, along with other TBA 
   {
     name: "Tom Bloom",
     role: "Comic Author, TTRPG Designer",
-    bodyText: `Tom Bloom is a comic author and game designer best known for the webcomic Kill Six Billion Demons and the role playing games Lancer RPG, CAIN, and Maleghast. :d6: 
+    bodyText: `Tom Bloom is a comic author and game designer best known for the webcomic Kill Six Billion Demons and the role playing games Lancer RPG, CAIN, and Maleghast. 
 
 If you've ever struggled with worldbuilding, whether it be for story writing or TTRPG game creation, check out Tom's Worldbuilding panel on the main stage!`,
     picture: TomBloom,
