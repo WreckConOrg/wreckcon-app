@@ -142,7 +142,8 @@ Previous signup required. Up to 25 people will be selected to go through to day-
     
 You will get 45 seconds on stage to do whatever your heart desires, including skits and performances! You can also submit music you would like to play. 
     
-Signups will be in-person at WreckCon 2026, first come-first serve! `,
+Signups will be open on the day of WreckCon 2026 at the link given here!`,
+    link: 'https://forms.gle/29dMFUspucrrfGc9A',
     picture: cosplayshowcase,
     location: "Main Stage",
   },

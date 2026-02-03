@@ -15,9 +15,6 @@ export const Home = (props: HomeProps): JSX.Element => {
   const ZeroPad = (n: number) => {
     return ("0" + n).slice(-2);
   };
-  const ZeroPadDays = (n: number) => {
-    return ("0" + n).slice(-3);
-  };
 
   return (
     <div>
@@ -64,7 +61,7 @@ export const Home = (props: HomeProps): JSX.Element => {
               { "text-[7vw] mt-[2vh]": isMobile }
             )}
           >
-            {ZeroPadDays(days)}:{ZeroPad(hours)}:{ZeroPad(minutes)}:
+            {ZeroPad(days)}:{ZeroPad(hours)}:{ZeroPad(minutes)}:
             {ZeroPad(seconds)} • 2/28/26
           </span>
           <br />
