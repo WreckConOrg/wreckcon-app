@@ -18,17 +18,17 @@ export const Home = (props: HomeProps): JSX.Element => {
 
   return (
     <div>
-      <div className="h-screen bg-[#2e2f31] overflow-hidden">
+      <div className="min-h-screen bg-[#2e2f31] overflow-hidden">
         <div
           className={classNames({
-            "bg-darktape bg-contain bg-repeat-x rotate-[-47.11deg] overflow-hidden w-[6000px] h-[10vw] translate-x-[-1540px] 3xl:translate-x-[-43vw] 3xl:translate-y-[-20vw] 4xl:translate-x-[-2vw]":
+            "bg-darktape bg-contain bg-repeat-x rotate-[-47.11deg] overflow-hidden w-[300vw] left-1/2 translate-x-[-36vw] h-[10vw]":
               !isMobile,
           })}
         />
         <div
           className={classNames(
             {
-              "bg-tape bg-contain bg-repeat-x rotate-[18.55deg] overflow-hidden w-[6000px] h-[10vw] translate-x-[-2200px] 3xl:translate-x-[-55vw] 3xl:translate-y-[12vw] 4xl:translate-x-[-10vw]":
+              "bg-tape bg-contain bg-repeat-x rotate-[18.55deg] overflow-hidden w-[300vw] left-1/2 translate-x-[-80vw] h-[10vw]":
                 !isMobile,
             },
             { hidden: isMobile }
@@ -85,7 +85,7 @@ export const Home = (props: HomeProps): JSX.Element => {
           </div>
         </div>
         <BrowserView>
-          <div className="flex flex-row gap-4 pl-[6vw] pt-[6vw]">
+          <div className="flex flex-row gap-4 pl-[6vw] pt-[6vw] mb-[3vh]">
             <Link
               className="bg-[#D9D9D9] w-fit h-[4vw] flex items-center justify-center z-10 rounded-lg"
               to={"/about"}

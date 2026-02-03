@@ -144,6 +144,7 @@ You will get 45 seconds on stage to do whatever your heart desires, including sk
     
 Signups will be open on the day of WreckCon 2026 at the link given here!`,
     link: 'https://forms.gle/29dMFUspucrrfGc9A',
+    buttonText: "Apply",
     picture: cosplayshowcase,
     location: "Main Stage",
   },
