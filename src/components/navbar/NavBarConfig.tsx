@@ -17,6 +17,11 @@ export const NAVBARCONFIG: NavBarItemProps[] = [
     displayText: "tickets",
   },
   {
+    itemEnum: NavBarItemEnum.BROCHURE,
+    url: "/brochure",
+    displayText: "brochure",
+  },
+  {
     itemEnum: NavBarItemEnum.EVENTS,
     url: "/events",
     displayText: "events",

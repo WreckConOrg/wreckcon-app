@@ -8,6 +8,7 @@ import { DiscordLogo } from "@phosphor-icons/react";
 export enum NavBarItemEnum {
   HOME,
   ABOUT,
+  BROCHURE,
   DISCORD,
   TICKETS,
   GET_INVOLVED,
@@ -45,7 +46,7 @@ export const NavBarItem = (props: NavBarItemProps) => {
         <Link
           to={props.url}
           className={classNames(
-            "font-inter font-thin text-[2vw] ml-[3vw]",
+            "font-inter font-thin text-[1.8vw] ml-[3vw]",
             { "text-[#FFC42D]": props.selected },
             { "text-white": !props.selected }
           )}
@@ -64,10 +65,10 @@ export const NavBarItem = (props: NavBarItemProps) => {
 
     return (
       <Menu as="div" className="relative">
-        <Menu.Button className="ml-[3.5vw] ui-open:bg-[#131313] bg-opacity-90 z-20">
+        <Menu.Button className="ml-[1.5vw] mt-[0.2vw] ui-open:bg-[#131313] bg-opacity-90 z-20">
           <div
             className={classNames(
-              "font-inter font-thin text-[2vw] flex flex-row justify-center h-[3vw] w-[16vw] my-[0.3vw]",
+              "font-inter font-thin text-[1.8vw] flex flex-row justify-center h-[3vw] w-[16vw] my-[0.3vw]",
               { "text-[#FFC42D]": props.selected },
               { "text-white": !props.selected }
             )}
@@ -101,7 +102,7 @@ export const NavBarItem = (props: NavBarItemProps) => {
             </div>
           </div>
         </Menu.Button>
-        <Menu.Items className="absolute left-0 translate-x-[3.55vw] z-20">
+        <Menu.Items className="absolute left-0 translate-x-[1.55vw] z-20">
           {links.map((link) => (
             <Menu.Item key={link.href} as={Fragment}>
               {({ active }) => (
@@ -115,7 +116,7 @@ export const NavBarItem = (props: NavBarItemProps) => {
                   <Link
                     to={link.href}
                     className={classNames(
-                      "font-inter font-thin text-[1.5vw] mx-[0.6vw] flex items-center my-[0.4vw]",
+                      "font-inter font-thin text-[1.4vw] mx-[1.6vw] flex items-center my-[0.4vw]",
                       { "text-white": !(props.dropdownSelect == link.label) },
                       { "text-[#FFC42D]": props.dropdownSelect == link.label }
                     )}
