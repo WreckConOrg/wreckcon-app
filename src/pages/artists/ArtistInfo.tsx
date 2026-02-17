@@ -11,6 +11,8 @@ export interface ArtistInfoProps {
   website?: string;
   table: string;
   index?: number;
+  logo?: string;
+  secondLogo?: string;
 }
 
 export const ArtistInfo = (props: ArtistInfoProps) => {
@@ -36,6 +38,26 @@ export const ArtistInfo = (props: ArtistInfoProps) => {
         <Desk size={iconSize} />
         <div className="font-coolvetica text-lg md:text-3xl">{props.table}</div>
       </div>
+
+      {(props.logo || props.secondLogo) && (
+        <div className="flex -space-x-2 shrink-0">
+          {props.logo && (
+            <img 
+              src={props.logo} 
+              alt={`${props.name} logo`} 
+              className="w-10 h-10 md:w-14 md:h-14 rounded-full border-2 border-white object-cover bg-gray-200"
+              onError={(e) => (e.currentTarget.style.display = 'none')} // Hide if link is broken
+            />
+          )}
+          {props.secondLogo && (
+            <img 
+              src={props.secondLogo} 
+              alt={`${props.name} logo 2`} 
+              className="w-10 h-10 md:w-14 md:h-14 rounded-full border-2 border-white object-cover bg-gray-200"
+            />
+          )}
+        </div>
+      )}
       <div>
         <div className="font-coolvetica text-lg leading-none md:text-3xl px-4 py-2 md:py-0 text-wrap align-center">
           {props.name}

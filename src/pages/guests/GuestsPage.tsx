@@ -10,8 +10,9 @@ export const GuestsPage = (): JSX.Element => {
   });
   return (
     <BasePage
-      selectedItem={NavBarItemEnum.GUESTS}
+      selectedItem={NavBarItemEnum.EVENT_INFO}
       mobileSelectedItem={NavBarItemEnum.GUESTS}
+      dropdownSelect="guests"
     >
       <div className="flex flex-col justify-center items-center mb-[3vw]">
         <div className="h-[10vw] md:h-[6vw] font-coolvetica text-white text-[6vw] md:text-[4vw]">
