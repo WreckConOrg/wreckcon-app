@@ -1,277 +1,443 @@
 [
   {
-    "name": "TruGraham Art",
+    "name": "Sarah-Nicole Robles",
     "table": "A1",
-    "website": "https://trugraham.weebly.com/festivalconvention.html"
+    "socialLink": "",
+    "logo": "",
+    "secondLogo": ""
   },
   {
-    "name": "Kinasune",
+    "name": "Zach Pokres",
     "table": "A2",
-    "website": "https://kinasune.square.site/"
-  },
-  {
-    "name": "Beeyomi",
-    "table": "A3",
-    "website": "https://beeyomi.myportfolio.com/"
-  },
-  {
-    "name": "Invention Studio",
-    "table": "A4",
-    "website": "https://inventionstudio.gatech.edu/"
-  },
-  {
-    "name": "M Morgan Glass",
-    "table": "A5",
-    "website": "https://mmorganglass.com/"
-  },
-  {
-    "name": "Nadia Marshall",
-    "table": "A6",
-    "website": ""
+    "socialLink": "",
+    "logo": "",
+    "secondLogo": ""
   },
   {
     "name": "Tiffany Grant",
-    "table": "A7",
-    "website": ""
+    "table": "A3",
+    "socialLink": "",
+    "logo": "",
+    "secondLogo": ""
   },
   {
-    "name": "Corey Wilder",
-    "table": "A8",
-    "website": ""
+    "name": "Morgan Berry",
+    "table": "A4",
+    "socialLink": "",
+    "logo": "",
+    "secondLogo": ""
   },
   {
-    "name": "Marble Souda Studio",
+    "name": "Gwinnet Public Library",
+    "table": "A5",
+    "socialLink": "",
+    "logo": "",
+    "secondLogo": ""
+  },
+  {
+    "name": "M. Morgan Glass",
     "table": "B1",
-    "website": "https://marblesoudastudio.etsy.com/"
-  },
-  {
-    "name": "miseneko",
-    "table": "B2",
-    "website": "https://msnk-portfolio.carrd.co/"
-  },
-  {
-    "name": "Jon Elliott Art",
-    "table": "B3",
-    "website": "https://www.jonelliottart.com/convention-submission"
-  },
-  {
-    "name": "Amuimui Shop",
-    "table": "B4",
-    "website": "https://instagram.com/amuimuiii"
-  },
-  {
-    "name": "Dango Ploof",
-    "table": "B5",
-    "website": "https://dangoploof.com"
-  },
-  {
-    "name": "Potatostirfry",
-    "table": "B5",
-    "website": "https://instagram.com/potato.stirfry"
-  },
-  {
-    "name": "Gummmydragon",
-    "table": "C1",
-    "website": "https://www.gummmydragon.com/vending-portfolio"
-  },
-  {
-    "name": "Doormatsu",
-    "table": "C2",
-    "website": "https://instagram.com/doormatsuu"
-  },
-  {
-    "name": "Definitely Not a Pigeon",
-    "table": "C3",
-    "website": "https://sites.google.com/view/defnotapigeon/home"
-  },
-  {
-    "name": "Mussyhead",
-    "table": "C4",
-    "website": "https://mussyheadart.weebly.com/"
-  },
-  {
-    "name": "RPX Media Production",
-    "table": "C5",
-    "website": "https://www.instagram.com/the_7th_kingdom/"
-  },
-  {
-    "name": "so_mikyuu",
-    "table": "D1",
-    "website": "https://somikyuu.carrd.co/?fbclid=PAZXh0bgNhZW0CMTEAAaYAy1YpD-DxsRKyb133geflsLVjlCXl5IyDaG3NhkAvgTURcK2ZDjQQRzU_aem_qDcPfdBNp35s5i_9UlTpMA"
-  },
-  {
-    "name": "Magical Girl Mortuary",
-    "table": "D2",
-    "website": "https://magicalgirlmortuary.bigcartel.com/gallery"
-  },
-  {
-    "name": "Madi Sketch",
-    "table": "D2",
-    "website": "https://www.instagram.com/madi.sketch/"
-  },
-  {
-    "name": "sunramics",
-    "table": "D3",
-    "website": "https://www.instagram.com/sunramics/"
-  },
-  {
-    "name": "Tifffnay!",
-    "table": "D4",
-    "website": "https://www.tifffnay.com/"
-  },
-  {
-    "name": "JenQuanZen",
-    "table": "D5",
-    "website": "https://www.jenquanzen.com/markets-and-galleries"
-  },
-  {
-    "name": "tiffblot",
-    "table": "E1",
-    "website": "https://www.instagram.com/tiffblot"
-  },
-  {
-    "name": "HolisticHiatus Art",
-    "table": "E2",
-    "website": "https://holistichiatus-artistalley.carrd.co/"
-  },
-  {
-    "name": "EmiSharks",
-    "table": "E3",
-    "website": "https://www.emiliarittenbach.com/convention-portfolio"
-  },
-  {
-    "name": "NextJen Stitches",
-    "table": "E4",
-    "website": "https://www.instagram.com/originalart_by_jenna/"
-  },
-  {
-    "name": "Celchuno",
-    "table": "E5",
-    "website": "https://celchuno.carrd.co/"
-  },
-  {
-    "name": "LYCHEE.SAGO",
-    "table": "F1",
-    "website": "https://lycheesago.com/"
-  },
-  {
-    "name": "elswv",
-    "table": "F2",
-    "website": "https://instagram.com/elswv"
+    "socialLink": "https://mmorganglass.com/",
+    "logo": "",
+    "secondLogo": ""
   },
   {
     "name": "NoodleBoiWasTaken",
-    "table": "F3",
-    "website": "https://noodleboiwastaken.carrd.co"
+    "table": "B2",
+    "socialLink": "https://noodleboiwastaken.carrd.co",
+    "logo": "https://drive.google.com/open?id=1ylgMygSQczK8HSkWtsvt5s1Qd2lCPfxk",
+    "secondLogo": ""
   },
   {
-    "name": "tecchen",
-    "table": "F3",
-    "website": "https://tecchen.artstation.com/"
+    "name": "The Weeabooth",
+    "table": "B3",
+    "socialLink": "",
+    "logo": "",
+    "secondLogo": ""
   },
   {
-    "name": "Sad Frog Studios",
-    "table": "F4",
-    "website": "https://instagram.com/sad.frog.studios"
+    "name": "Trugraham Art",
+    "table": "B4",
+    "socialLink": "https://instagram.com/trugrahamart",
+    "logo": "https://drive.google.com/open?id=1jCSnH_XFer_4QgjNf0OFHOmq-JfKO5pm",
+    "secondLogo": ""
   },
   {
-    "name": "keikupon",
-    "table": "F5",
-    "website": "https://keikupon.crd.co/"
+    "name": "Angel of the Axis",
+    "table": "B5",
+    "socialLink": "https://www.instagram.com/angeloftheaxis",
+    "logo": "https://drive.google.com/open?id=1Fj4cdUoYnGzDB-bmOLWBYYj1rUq7YEMP",
+    "secondLogo": ""
   },
   {
-    "name": "Tip's Tiny Workshop",
-    "table": "G1",
-    "website": "https://smonsibais.wixsite.com/tipstinyworkshop"
+    "name": "Galacto",
+    "table": "B5",
+    "socialLink": "https://www.instagram.com/euphoric.pooping",
+    "logo": "https://drive.google.com/open?id=10Dmxwwd1hXVhnVYFniGqL5knUjoo5KNu",
+    "secondLogo": ""
   },
   {
-    "name": "XiaoOnsa",
-    "table": "G2",
-    "website": "https://kinaurg.wixsite.com/xiaoonsa/artist-alley"
+    "name": "Gummmydragon",
+    "table": "B6",
+    "socialLink": "https://gummmydragon.com",
+    "logo": "https://drive.google.com/open?id=1w_ryCA6UhPCA9tqaD4byWCyzZj2a--tV",
+    "secondLogo": ""
   },
   {
-    "name": "Attic Elves",
-    "table": "G3",
-    "website": "https://instagram.com/atticelves"
-  },
-  {
-    "name": "Isabella's Cozy Creations",
-    "table": "G4",
-    "website": "https://www.instagram.com/isabellascozycreations?igsh=cjByZno4enJndWU4"
-  },
-  {
-    "name": "Nolvini",
-    "table": "G5",
-    "website": "https://nolviniportfolio.carrd.co/"
-  },
-  {
-    "name": "AmuLink",
-    "table": "H1",
-    "website": "https://www.instagram.com/crest.vo"
-  },
-  {
-    "name": "tifftac",
-    "table": "H2",
-    "website": "https://tifftac.tumblr.com/"
+    "name": "Lychee Sago",
+    "table": "C1",
+    "socialLink": "https://instagram.com/lychee.sago",
+    "logo": "https://drive.google.com/open?id=11TmRnkvr4z_13RiwSz0_JS51bSrkzyKy",
+    "secondLogo": ""
   },
   {
     "name": "Smithi",
-    "table": "H3",
-    "website": "https://smithi.carrd.co/"
-  },
-  {
-    "name": "HeyitsMojo",
-    "table": "H4",
-    "website": "https://jmjones5200.wixsite.com/mysite/animation"
-  },
-  {
-    "name": "Jaeundesigns",
-    "table": "H5",
-    "website": "https://jaeundesigns.carrd.co/"
-  },
-  {
-    "name": "HoneyCarrot",
-    "table": "H6",
-    "website": "https://honeycarrot.co/"
-  },
-  {
-    "name": "Kittygorian",
-    "table": "H7",
-    "website": "https://kittygorian.com/"
+    "table": "C2",
+    "socialLink": "https://x.com/Eversmithi",
+    "logo": "https://drive.google.com/open?id=1lBlrf2VgdVF7cMGv7rhfu6FgFJEx38Z2",
+    "secondLogo": ""
   },
   {
     "name": "SleepyJoArt",
+    "table": "C3",
+    "socialLink": "https://SleepyJoArt.com",
+    "logo": "https://drive.google.com/open?id=1sqsH91n1FJHtkELabLWqcogS1ItpaD4k",
+    "secondLogo": ""
+  },
+  {
+    "name": "Bonbon",
+    "table": "C4",
+    "socialLink": "https://bonbonarts.carrd.co/",
+    "logo": "https://drive.google.com/open?id=1KyPLF7bDtC-uezUBytLVtdZBvCug4XVC",
+    "secondLogo": ""
+  },
+  {
+    "name": "eonduos",
+    "table": "C4",
+    "socialLink": "https://www.instagram.com/eonduos/",
+    "logo": "https://drive.google.com/open?id=1h9SvdsPEshlAf4rDzbMVRImRC4xuPHUc",
+    "secondLogo": ""
+  },
+  {
+    "name": "kedimedi",
+    "table": "C5",
+    "socialLink": "https://www.instagram.com/kedimedi_i/",
+    "logo": "https://drive.google.com/open?id=1tACciztM0nul4yqzR72_Y8A5Y9UFJYGK",
+    "secondLogo": ""
+  },
+  {
+    "name": "SteezyArts",
+    "table": "D1",
+    "socialLink": "https://www.instagram.com/_steezy.art_/",
+    "logo": "https://drive.google.com/open?id=1eO2HnL7zJHDCNhizkQFXvnBvtOCIFnm8",
+    "secondLogo": ""
+  },
+  {
+    "name": "Hua Hollow by JenQuanZen",
+    "table": "D2",
+    "socialLink": "https://www.instagram.com/jenquanzen/",
+    "logo": "https://drive.google.com/open?id=1BkjYcieoP_EQgW-nO0d7q77pRGHnVgxn",
+    "secondLogo": ""
+  },
+  {
+    "name": "elswv",
+    "table": "D3",
+    "socialLink": "https://www.instagram.com/elswv/",
+    "logo": "https://drive.google.com/open?id=1MfM_S3AfzZ2lEdq-tKWeAI5JQB0SKVkS",
+    "secondLogo": ""
+  },
+  {
+    "name": "Jupismoons",
+    "table": "D4",
+    "socialLink": "https://www.instagram.com/jupismoons?igsh=cjByZno4enJndWU4",
+    "logo": "https://drive.google.com/open?id=1NMsuJMPxsSn91a4N32QPGG2I9n-gwxuN",
+    "secondLogo": ""
+  },
+  {
+    "name": "Attic Elves",
+    "table": "D5",
+    "socialLink": "https://www.instagram.com/atticelves",
+    "logo": "https://drive.google.com/open?id=12t00rsBzhNn-4Npj1tJxFDDXrqCydU4i",
+    "secondLogo": ""
+  },
+  {
+    "name": "keikupon",
+    "table": "E1",
+    "socialLink": "https://keikupon.crd.co/",
+    "logo": "https://drive.google.com/open?id=1okFEqpf11OfBqz0WWYV3axXiDQO6sB9S",
+    "secondLogo": ""
+  },
+  {
+    "name": "ayilings",
+    "table": "E2",
+    "socialLink": "https://www.instagram.com/ayilings/",
+    "logo": "https://drive.google.com/open?id=1brnBP_sI4IwaL1kdicv1A4GqXEO0tFPN",
+    "secondLogo": ""
+  },
+  {
+    "name": "Nolvini",
+    "table": "E3",
+    "socialLink": "https://nolvini.carrd.co/",
+    "logo": "https://drive.google.com/open?id=13Pqz5Q0c-O40o8kG3eiZcEpWFVGb9Ohi",
+    "secondLogo": ""
+  },
+  {
+    "name": "Tifffnay!",
+    "table": "E4",
+    "socialLink": "https://m.youtube.com/@TiffanyWeng",
+    "logo": "https://drive.google.com/open?id=1eU6MKFCyDrBmokeobRuh-ozrY8qP1E9c",
+    "secondLogo": ""
+  },
+  {
+    "name": "slepyborb",
+    "table": "E5",
+    "socialLink": "https://www.instagram.com/slepyborb",
+    "logo": "https://drive.google.com/open?id=1HLrGl8obKINUMOx-3cwZ6kjQ7-k0DsP-",
+    "secondLogo": ""
+  },
+  {
+    "name": "tiffblot",
+    "table": "F1",
+    "socialLink": "https://www.instagram.com/tiffblot?igsh=bmNyNTIzNXBncXFo&utm_source=qr",
+    "logo": "https://drive.google.com/open?id=1Z5b9gjgLcsAwazx3qwyZUOhn2gvHmQrW",
+    "secondLogo": ""
+  },
+  {
+    "name": "Leechyee",
+    "table": "F2",
+    "socialLink": "https://leechyee.square.site/portfolio",
+    "logo": "https://drive.google.com/open?id=13CyQXHJyRL0NYapCcn7XLGc5RXDPZDiI",
+    "secondLogo": ""
+  },
+  {
+    "name": "EmiSharks",
+    "table": "F3",
+    "socialLink": "https://www.instagram.com/emisharks",
+    "logo": "https://drive.google.com/open?id=1tigKCwCqXnpCtiYzi3qnnblfaZta6chw",
+    "secondLogo": ""
+  },
+  {
+    "name": "Sam's Scribbles",
+    "table": "F4",
+    "socialLink": "https://www.instagram.com/samsscribbles.co/",
+    "logo": "https://drive.google.com/open?id=1_2bh6Vs9KLfjhpP-T1n33tVee1dKV8az",
+    "secondLogo": ""
+  },
+  {
+    "name": "Vikachiu",
+    "table": "F5",
+    "socialLink": "https://www.instagram.com/vikachiu?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "logo": "https://drive.google.com/open?id=1BSSsNUlpNntjFrMZVUCexdsGwYy6xrEj",
+    "secondLogo": ""
+  },
+  {
+    "name": "t360e",
+    "table": "G1",
+    "socialLink": "https://www.instagram.com/t360e_/",
+    "logo": "https://drive.google.com/open?id=1kYXXMfsQmZHektb0Yg5lc9ppUzB7uuJz",
+    "secondLogo": ""
+  },
+  {
+    "name": "Doormatsu",
+    "table": "G2",
+    "socialLink": "https://x.com/doormatsu?s=21&t=yISfM7kX3MUF6RaV2XSANg",
+    "logo": "https://drive.google.com/open?id=1BsnvvVdSKjQ8B8MkOlzQETUuOiUB3OyX",
+    "secondLogo": ""
+  },
+  {
+    "name": "Rihi",
+    "table": "G2",
+    "socialLink": "",
+    "logo": "https://drive.google.com/open?id=1m0sbjPm9qD4Q7_iL-DxeWjin2JCke4Uj",
+    "secondLogo": ""
+  },
+  {
+    "name": "Definitely Not a Pigeon",
+    "table": "G3",
+    "socialLink": "https://www.instagram.com/definitelynotthepigeon/",
+    "logo": "https://drive.google.com/open?id=1gyxPsHL4LngPbA4FtTZqqyTtpj1RwO84",
+    "secondLogo": ""
+  },
+  {
+    "name": "Flying T-Rex",
+    "table": "G3",
+    "socialLink": "",
+    "logo": "https://drive.google.com/open?id=1Ipt9t1UQUdN5d1dMBJG3vkO9_iDsy4L7",
+    "secondLogo": ""
+  },
+  {
+    "name": "mirupuffs",
+    "table": "G4",
+    "socialLink": "https://mirupuffs.carrd.co/",
+    "logo": "https://drive.google.com/open?id=1SYKN2u_FhQeCbbneBcdOtoBZ5PTnKDHE",
+    "secondLogo": ""
+  },
+  {
+    "name": "chuteki",
+    "table": "G5",
+    "socialLink": "https://chuteki.com",
+    "logo": "https://drive.google.com/open?id=1dHNPoxQWD2R5Bo7d2gAbBHDcB4ZZI-_B",
+    "secondLogo": ""
+  },
+  {
+    "name": "Mussyhead",
+    "table": "H1",
+    "socialLink": "https://mussyhead.com",
+    "logo": "https://drive.google.com/open?id=1BVXvbGESekg_Opme5e1sJM72TQLdW4-F",
+    "secondLogo": ""
+  },
+  {
+    "name": "Sinister Cereal",
+    "table": "H2",
+    "socialLink": "https://www.instagram.com/sinister.cereal",
+    "logo": "https://drive.google.com/open?id=1MK3ayRbV7T7nqAiGpfvPs123p_I56DR7",
+    "secondLogo": ""
+  },
+  {
+    "name": "Dango Ploof",
+    "table": "H3",
+    "socialLink": "https://dangoploof.com",
+    "logo": "https://drive.google.com/open?id=1t4ILSzZFxgjnOKsykWA9TrFkV15nMu4j",
+    "secondLogo": ""
+  },
+  {
+    "name": "Potato Stirfry",
+    "table": "H3",
+    "socialLink": "https://instagram.com/potato.stirfry",
+    "logo": "https://drive.google.com/open?id=1t4ILSzZFxgjnOKsykWA9TrFkV15nMu4j",
+    "secondLogo": ""
+  },
+  {
+    "name": "acefool",
+    "table": "H4",
+    "socialLink": "https://www.instagram.com/acefool_/",
+    "logo": "https://drive.google.com/open?id=1ycGDbCrEAEH-aW_-pRapI2xLRsBpCKjf",
+    "secondLogo": ""
+  },
+  {
+    "name": "emeraldradiate",
+    "table": "H5",
+    "socialLink": "https://www.etsy.com/shop/emeraldradiate",
+    "logo": "https://drive.google.com/open?id=1jajVZimlwpdvUAxingwTN163jqL0Fna3",
+    "secondLogo": ""
+  },
+  {
+    "name": "Jon Elliott Art",
     "table": "J1",
-    "website": "https://www.instagram.com/sleepyjo.art"
+    "socialLink": "https://www.jonelliottart.com",
+    "logo": "https://drive.google.com/open?id=1iUEmNo7RrulMoKI1vBQu7NZ-IIL_DSRu",
+    "secondLogo": ""
   },
   {
-    "name": "BunnyBoy Charms",
+    "name": "Boxsmith Workshop",
     "table": "J2",
-    "website": "https://www.instagram.com/bunnyboycharms/"
+    "socialLink": "https://www.tiktok.com/@jebtheboxsmith?_r=1&_t=ZP-91A48OX0kgg",
+    "logo": "https://drive.google.com/open?id=1tg0To3ElfXTJCIwtsVOgLQq-mDzjgGvX",
+    "secondLogo": ""
   },
   {
-    "name": "Bridoof",
+    "name": "HoneyCarrot",
     "table": "J3",
-    "website": "https://instagram.com/bridoof"
+    "socialLink": "https://honeycarrot.co/",
+    "logo": "https://drive.google.com/open?id=1K6cobA1T89WjltafL5E0EvXxJ84Bm3dw",
+    "secondLogo": ""
   },
   {
-    "name": "Ginkgocrown",
-    "table": "J3",
-    "website": "https://instagram.com/ginkgocrown"
-  },
-  {
-    "name": "Petite Grandpa",
+    "name": "Tiny Apricot Workshop",
     "table": "J4",
-    "website": "https://instagram.com/petite.grandpa"
+    "socialLink": "https://smonsibais.wixsite.com/website",
+    "logo": "https://drive.google.com/open?id=1RPfdhMMmdGl0ZM1DQgb4FEfe2-3F9fFw",
+    "secondLogo": ""
   },
   {
-    "name": "Fox Arcada",
-    "table": "J4",
-    "website": "https://instagram.com/foxarcada"
+    "name": "Jaeundesigns",
+    "table": "J5",
+    "socialLink": "https://jaeundesigns.carrd.co/",
+    "logo": "https://drive.google.com/open?id=1W2rccgBBDTk3VvTnh18KKLXX1nOJgkf4",
+    "secondLogo": ""
+  },
+  {
+    "name": "Kittygorian",
+    "table": "J6",
+    "socialLink": "https://kittygorian.com/",
+    "logo": "https://drive.google.com/open?id=1ge-vXNeJrzoR_f7ZsWsdmjJPNazwBLjM",
+    "secondLogo": ""
+  },
+  {
+    "name": "Photography @ GT",
+    "table": "J7",
+    "socialLink": "https://www.instagram.com/gtphotography.atl/",
+    "logo": "https://drive.google.com/open?id=17JrENYJSLDaY-hODEd4D5n1_EGcPomst",
+    "secondLogo": ""
+  },
+  {
+    "name": "RPX Media Production",
+    "table": "K1",
+    "socialLink": "https://www.rpxmediaproduction.com/the7thkingdom",
+    "logo": "https://drive.google.com/open?id=1vbNlLVUAiq1zNmWi63ZKFMLF3ToQK-oL",
+    "secondLogo": ""
+  },
+  {
+    "name": "ariamisu",
+    "table": "K2",
+    "socialLink": "https://www.instagram.com/ariamisu/",
+    "logo": "https://drive.google.com/open?id=1DxQ9e1dbkUg5nbvxKpqHyEvZ5MCrxZal",
+    "secondLogo": ""
   },
   {
     "name": "Sorensen's Precision Diceworks",
-    "table": "K1",
-    "website": "https://www.sorensensdice.com/"
+    "table": "K3",
+    "socialLink": "https://www.sorensensdice.com/",
+    "logo": "",
+    "secondLogo": ""
+  },
+  {
+    "name": "Skippercosplay",
+    "table": "L1",
+    "socialLink": "https://www.instagram.com/skippercosplay/",
+    "logo": "",
+    "secondLogo": ""
+  },
+  {
+    "name": "Justyn",
+    "table": "L2",
+    "socialLink": "https://www.instagram.com/jc_cosmix/",
+    "logo": "",
+    "secondLogo": ""
+  },
+  {
+    "name": "Kumalatte Cosplay",
+    "table": "L3",
+    "socialLink": "https://www.instagram.com/kumalatte.cosplay/",
+    "logo": "",
+    "secondLogo": ""
+  },
+  {
+    "name": "Chimmi Mart",
+    "table": "L4",
+    "socialLink": "https://www.instagram.com/chikuseren/",
+    "logo": "https://drive.google.com/open?id=1bX6OlO_OCz3GKWcmsy_7MPKIRV9kn-8e",
+    "secondLogo": ""
+  },
+  {
+    "name": "so_mikyuu",
+    "table": "L5",
+    "socialLink": "https://somikyuu.carrd.co/",
+    "logo": "https://drive.google.com/open?id=1JGpiZJAAD78Q4Qp9eKx1W8eblU6FkWVC",
+    "secondLogo": ""
+  },
+  {
+    "name": "BunnyBoy Charms",
+    "table": "L6",
+    "socialLink": "https://www.instagram.com/bunnyboycharms/",
+    "logo": "https://drive.google.com/open?id=1tirvmo1KeRMWdtVw2oky21fLFcDiodSL",
+    "secondLogo": ""
+  },
+  {
+    "name": "PASTRY PLUG",
+    "table": "L7",
+    "socialLink": "https://www.pastryplug.com",
+    "logo": "https://drive.google.com/open?id=1S1r90ZAcWBaz8px4gYSabV1GRfP6jqsJ",
+    "secondLogo": ""
   }
 ]
