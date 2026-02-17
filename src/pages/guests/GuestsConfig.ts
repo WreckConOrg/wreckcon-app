@@ -6,6 +6,7 @@ import ginkgocrown from "./../../assets/guest_pictures/Ginkgocrown.png";
 import petitegrandpa from "./../../assets/guest_pictures/petiteGrandpa.png";
 import NadiaMarshall from "./../../assets/guest_pictures/NadiaMarshall.jpeg";
 import TomBloom from "./../../assets/guest_pictures/TomBloom.png";
+import MorganBerry from "./../../assets/guest_pictures/MorganBerry.jpg";
 import CoreyWilder from "./../../assets/guest_pictures/CoreyWilder.png";
 import ZachPokres from "./../../assets/guest_pictures/ZachPokres.jpg";
 
@@ -67,6 +68,15 @@ Catch him alongside Sarah-Nicole Robles and Tiffany Grant, along with other TBA 
 
 If you've ever struggled with worldbuilding, whether it be for story writing or TTRPG game creation, check out Tom's Worldbuilding panel on the main stage!`,
     picture: TomBloom,
+  },
+
+  {
+    name: "Morgan Berry",
+    role: "Voice Actress",
+    bodyText: `Morgan Berry is a professional voice actor, singer, and YouTuber; best known for her voice roles in various anime television series, films, video games, and web series. Some of the many franchises Morgan has voiced for include: "Pokemon", "Dragon Ball", "Beyblade", "Frieren", "My Hero Academia", "Final Fantasy", "Inuyasha", "Fire Emblem", “Borderlands”, "Miraculous Ladybug", "Sword Art Online", "One Piece", "Fruits Basket", "Food Wars", "Love Live!", "The Rising of the Shield Hero", "Cells at Work", “Clevatess", and more! In addition to acting, Morgan is a professional recording artist and YouTube Personality under the name "The Unknown Songbird" with over 10 million views in total.
+
+Catch her alongside Tiffany Grant, Sarah-Nicole Robles, and Zach Pokres at our voice actor's panel on the main stage! She will also be signing autographs and prints. `,
+    picture: MorganBerry,
   },
 //   {
 //     name: "Bridoof",

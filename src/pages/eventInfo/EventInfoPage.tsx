@@ -27,64 +27,68 @@ export const EventInfoPage = (): JSX.Element => {
     <BasePage
       selectedItem={NavBarItemEnum.EVENT_INFO}
       mobileSelectedItem={NavBarItemEnum.EVENT_INFO}
+      dropdownSelect="overview"
     >
       <div className="flex flex-col justify-center items-center px-8">
-        <div className="font-coolvetica text-white text-4xl md:text-6xl mb-4">
+        <div className="font-coolvetica text-white text-4xl md:text-6xl mb-[3rem]">
           Event Info
         </div>
         <div className="w-full flex flex-col gap-3">
           <div
             className={
-              "font-inter text-white  text-xl md:text-4xl text-left w-full"
+              "font-inter text-white text-xl md:text-4xl text-left w-full mb-[1rem] grid grid-cols-[1fr_2fr] items-center gap-4"
             }
           >
-            <span className="font-bold underline">Venues</span>
+            <span className="font-bold bg-[#FFC42D] text-black p-[0.5rem] justify-self-end">Venues</span>
             <span> Exhibition Hall, Instructional Center</span>
           </div>
           <div
             className={
-              "font-inter text-white  text-xl md:text-4xl text-left w-full"
+              "font-inter text-white  text-xl md:text-4xl text-left w-full mb-[1rem] grid grid-cols-[1fr_2fr] items-center gap-4"
             }
           >
-            <span className="font-bold underline">Date and Time</span>
-            <span> March 1, 2025: 10am - 8pm</span>
+            <span className="font-bold bg-[#FFC42D] text-black p-[0.5rem] justify-self-end">Date and Time</span>
+            <span> February 28, 2026: 10am - 8pm</span>
           </div>
           <div
             className={
-              "font-inter text-white  text-xl md:text-4xl text-left w-full"
+              "font-inter text-white  text-xl md:text-4xl text-left w-full mb-[1rem] grid grid-cols-[1fr_2fr] items-center gap-4"
             }
           >
-            <span className="font-bold underline">Address</span>
+            <span className="font-bold bg-[#FFC42D] text-black p-[0.5rem] justify-self-end">Address</span>
             <span> 460 Fourth Street NW, Atlanta, GA 30318</span>
           </div>
           <div
             className={
-              "font-inter text-white  text-xl md:text-4xl text-left w-full"
+              "font-inter text-white  text-xl md:text-4xl text-left w-full mb-[2rem] grid grid-cols-[1fr_2fr] items-center gap-4"
             }
           >
-            <span className="font-bold underline">Recommended Parking</span>
-            <span> 355 Ferst Drive NW, Atlanta, GA 30318 - $15/day</span>
+            <span className="font-bold bg-[#FFC42D] text-black p-[0.5rem] justify-self-end">Recommended Parking</span>
+            <span> 355 Ferst Drive NW, Atlanta, GA 30318 - $3/hr, $15/day</span>
           </div>
           <div
             className={
-              "font-inter text-white text-lg md:text-2xl text-left w-full"
+              "w-[85%] mx-auto font-inter text-white text-lg md:text-2xl text-left"
             }
           >
             <span>
-              You can view more parking info and options, from as low as $5/day,
-              on{" "}
+              More parking info and options, from as low as $5/day, can be viewed
+              on the {" "}
             </span>
             <a
               href="https://www.pts.gatech.edu/parking/visitor-parking/"
               target="_blank"
               className="underline"
             >
-              The Georgia Tech PTS Website
+            Georgia Tech PTS Website
             </a>
+            <span>
+              .
+            </span>
           </div>
           <div
             className={
-              "font-inter text-white text-lg md:text-2xl text-left w-full"
+              "w-[85%] mx-auto font-inter text-white text-lg md:text-2xl text-left"
             }
           >
             <span>
@@ -93,16 +97,24 @@ export const EventInfoPage = (): JSX.Element => {
               also offer stops within walking distance.
             </span>
           </div>
+          <div
+            className={
+              "w-[85%] mx-auto font-inter text-white text-lg md:text-2xl text-left mb-[2rem]"
+            }
+          >
+            <span>
+              Regarding cosplays, no NSFW (18+) cosplays are allowed. In addition, regarding prop weapons, 
+              live steel and orange tips on guns are both not allowed. 
+            </span>
+          </div>
         </div>
-        <div className="font-coolvetica text-white text-4xl md:text-6xl mt-2 mb-4">
+        <div className="font-coolvetica text-white text-4xl md:text-6xl mb-[4rem]">
           Maps
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6">
-          <img src={campusMap} />
-          <img src={EH1} />
-          <img src={EH2} />
-          <img src={IC1} />
-          <img src={IC2} />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6 justify-center">
+          <div className="col-span-3 flex justify-center">
+            <img src={EH1} className="max-w-[30%] object-contain"/>
+          </div>
         </div>
       </div>
     </BasePage>
