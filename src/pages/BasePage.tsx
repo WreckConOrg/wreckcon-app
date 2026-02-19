@@ -12,7 +12,7 @@ export interface BasePageProps {
 }
 export const BasePage = (props: BasePageProps): JSX.Element => {
   return (
-    <div className="bg-[#2e2f31] min-h-screen w-full flex flex-col">
+    <div className="bg-[#2e2f31] min-h-[100dvh] w-full flex flex-col">
       <header className="sticky top-0 z-[100] w-full">
         <div className="hidden md:block">
           <Navbar
