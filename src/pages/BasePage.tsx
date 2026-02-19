@@ -12,22 +12,24 @@ export interface BasePageProps {
 }
 export const BasePage = (props: BasePageProps): JSX.Element => {
   return (
-    <div className="bg-[#2e2f31] h-screen">
-      <div className="h-fit overflow-hidden bg-[#2e2f31]">
-        <BrowserView>
+    <div className="bg-[#2e2f31] min-h-screen w-full flex flex-col">
+      <header className="sticky top-0 z-[100] w-full">
+        <div className="hidden md:block">
           <Navbar
             items={NAVBARCONFIG}
             selectedItem={props.selectedItem}
             dropdownSelect={props.dropdownSelect}
           />
-        </BrowserView>
-        <MobileView>
-          <Hamburger
-            selectedItem={props.mobileSelectedItem ?? props.selectedItem}
-          />
-        </MobileView>
-        {props.children}
+        </div>
+      </header>
+      <div className="md:hidden">
+        <Hamburger
+          selectedItem={props.mobileSelectedItem ?? props.selectedItem}
+        />
       </div>
+      <main className="flex-1 w-full max-w-10xl relative z-0">
+        {props.children}
+      </main>
     </div>
   );
 };

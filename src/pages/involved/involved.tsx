@@ -52,8 +52,7 @@ export const Involved = (): JSX.Element => {
         // "w-[75vw] font-inter text-[2.5vw] md:text-[1.7vw] mt-[2vw] text-white text-center"
         >
           WreckCon wouldn't be possible without the involvement of countless 
-          people, and we're currently looking for <b>panelists</b> and <b>volunteers</b> to make WreckCon 2026 the best it can be. In addition, we're looking 
-          for prospective or current students to join our Registered Student Organization to help 
+          people, and we're always looking for prospective or current students to join our Registered Student Organization to help 
           organize future installments of WreckCon. If you're interested, check out the links below!
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-x-[4vw] md:gap-x-[2vw] gap-y-[3vw] md:gap-y-[1.5vw] mt-[4vw]">

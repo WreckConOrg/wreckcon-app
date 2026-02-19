@@ -54,7 +54,8 @@ export const NAVBARCONFIG: NavBarItemProps[] = [
     dropdownLinks: [
       { href: "/info", label: "overview", gray: true },
       { href: "/guests", label: "guests", gray: false },
-      { href: "/events", label: "events", gray: false },
+      { href: "/events", label: "events", gray: true },
+      { href: "/artists", label: "artists", gray: false },
     ],
   },
   {

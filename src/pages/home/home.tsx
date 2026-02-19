@@ -94,12 +94,20 @@ export const Home = (props: HomeProps): JSX.Element => {
               About
               </div>
             </Link>
-            <Link
+            {/* <Link
               className="bg-[#D9D9D9] w-fit h-[4vw] flex items-center justify-center z-10 rounded-lg"
               to={"/involved"}
             >
               <div className="font-inter font-bold text-[#2e2f31] text-[2vw] mx-[3vw] ">
               Get Involved
+              </div>
+            </Link> */}
+            <Link
+              className="bg-[#D9D9D9] w-fit h-[4vw] flex items-center justify-center z-10 rounded-lg"
+              to={"/info"}
+            >
+              <div className="font-inter font-bold text-[#2e2f31] text-[2vw] mx-[3vw] ">
+                Event Info
               </div>
             </Link>
             <Link
@@ -110,14 +118,6 @@ export const Home = (props: HomeProps): JSX.Element => {
                 Tickets
               </div>
             </Link>
-            {/* <Link
-              className="bg-[#D9D9D9] w-fit h-[4vw] flex items-center justify-center z-10 rounded-lg"
-              to={"/info"}
-            >
-              <div className="font-inter font-bold text-[#2e2f31] text-[2vw] mx-[3vw] ">
-                Event Info
-              </div>
-            </Link> */}
             {/* <Link
               className="bg-[#D9D9D9] w-fit h-[4vw] flex items-center justify-center z-10 rounded-lg"
               to={"/events"}
@@ -153,12 +153,20 @@ export const Home = (props: HomeProps): JSX.Element => {
               About WreckCon
             </div>
           </Link>
-          <Link
+          {/* <Link
             className="bg-[#D9D9D9] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md"
             to={"/involved"}
           >
             <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw] ">
               Get Involved
+            </div>
+          </Link> */}
+          <Link
+            className="bg-[#D9D9D9] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md"
+            to={"/info"}
+          >
+            <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw]">
+              Event Info
             </div>
           </Link>
           <Link
@@ -169,14 +177,6 @@ export const Home = (props: HomeProps): JSX.Element => {
               Tickets
             </div>
           </Link>
-          {/* <Link
-            className="bg-[#D9D9D9] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md"
-            to={"/info"}
-          >
-            <div className="font-inter font-bold text-[#2e2f31] text-[4vw] mx-[3vw]">
-              Event Info
-            </div>
-          </Link> */}
           {/* <Link
             className="bg-[#D9D9D9] w-[45vw] h-[4vh] mb-[3vh] flex items-center justify-center rounded-md"
             to={"/events"}
