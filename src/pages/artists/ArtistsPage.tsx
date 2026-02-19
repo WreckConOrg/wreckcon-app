@@ -11,8 +11,9 @@ export const ArtistsPage = (): JSX.Element => {
 
   return (
     <BasePage
-      selectedItem={NavBarItemEnum.EVENTS}
-      mobileSelectedItem={NavBarItemEnum.EVENTS}
+      selectedItem={NavBarItemEnum.EVENT_INFO}
+      mobileSelectedItem={NavBarItemEnum.ARTISTS}
+      dropdownSelect="artists"
     >
       <div className="flex flex-col justify-center items-center mb-[3vw] ">
         <div className="h-[10vw] md:h-[6vw] font-coolvetica text-white text-[6vw] md:text-[4vw]">
