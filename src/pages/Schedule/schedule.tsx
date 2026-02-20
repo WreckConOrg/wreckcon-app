@@ -55,9 +55,23 @@ export const Schedule = (props: ScheduleProps) => {
     setSelectedTags(selectedTags.filter((t) => t !== tag));
   };
 
+  // const ToggleTag = (tag: ScheduleTag) => {
+  //   if (selectedTags.includes(tag)) {
+  //     RemoveTag(tag);
+  //   } else {
+  //     AddTag(tag);
+  //   }
+  // };
+
   const ToggleTag = (tag: ScheduleTag) => {
-    if (selectedTags.includes(tag)) {
-      RemoveTag(tag);
+    if (selectedTags.length === tags.length) {
+      setSelectedTags([tag]);
+    } else if (selectedTags.includes(tag)) {
+        if (selectedTags.length > 1) {
+          RemoveTag(tag);
+        } else {
+          ResetTags();
+        }
     } else {
       AddTag(tag);
     }
@@ -79,7 +93,16 @@ export const Schedule = (props: ScheduleProps) => {
     return item.startTime < selectedEndTime && item.endTime > selectedStartTime;
   };
 
-  const itemsList = props.items.map(
+  const sortedItems = [...props.items].sort((a, b) => {
+    if (a.startTime !== b.startTime) {
+      return a.startTime - b.startTime;
+    }
+    if (a.endTime !== b.endTime) {
+      return a.endTime - b.endTime;
+    }
+    return a.name.localeCompare(b.name);
+  });
+  const itemsList = sortedItems.map(
     (item: ScheduleItemProps, index: number) => {
       return TimeIsInRange(item) && TagIsIncluded(item)
         ? ScheduleItem({
@@ -113,15 +136,12 @@ export const Schedule = (props: ScheduleProps) => {
           />
         </div>
       </div>
-      <MobileView className="w-full">
-        <hr className="w-full" />
-      </MobileView>
-      <BrowserView className="flex flex-row w-full items-end h-[3vh] relative">
-        <div className="w-[40%] text-right font-inter font-thin text-md md:text-[1.7vw] text-white md:translate-x-[-1.5vw]">
-          Saturday, March 1, 2025
+      <div className="flex flex-row w-full items-end mt-8 mb-4 relative overflow-hidden">
+        <div className="shrink-0 pr-4 font-inter font-thin text-xl md:text-3xl text-white">
+          Saturday, February 28, 2026
         </div>
-        <hr className="w-[120%]" />
-      </BrowserView>
+        <div className="flex-grow h-px bg-white mb-2 md:mb-3"></div>
+      </div>
       {scheduleContent}
     </div>
   );
@@ -175,7 +195,7 @@ function FilterPopover(props: FilterProps) {
               size={24}
               onClick={() => {
                 props.OnSelectStartTime(1000);
-                props.OnSelectEndTime(2100);
+                props.OnSelectEndTime(2000);
               }}
             />
           </div>

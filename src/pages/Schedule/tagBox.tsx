@@ -55,46 +55,40 @@ export const TagBox = (props: TagBoxProps) => {
 
   const iconDict: Record<ScheduleTag, JSX.Element> = {
     [ScheduleTag.ALL]: (
-      <Dog size={isScreenSizeMedium ? 20 : 14} className="shrink-0" />
+      <Dog className="w-3.5 h-3.5 md:w-5 md:h-5 shrink-0" />
     ),
     [ScheduleTag.EVENT]: (
-      <Star size={isScreenSizeMedium ? 20 : 14} className="shrink-0" />
+      <Star className="w-3.5 h-3.5 md:w-5 md:h-5 shrink-0" />
     ),
     [ScheduleTag.FREE_PLAY]: (
-      <DoorOpen size={isScreenSizeMedium ? 20 : 14} className="shrink-0" />
+      <DoorOpen className="w-3.5 h-3.5 md:w-5 md:h-5 shrink-0" />
     ),
     [ScheduleTag.PANEL]: (
-      <Microphone size={isScreenSizeMedium ? 20 : 14} className="shrink-0" />
+      <Microphone className="w-3.5 h-3.5 md:w-5 md:h-5 shrink-0" />
     ),
     [ScheduleTag.ANIME]: (
-      <FilmStrip size={isScreenSizeMedium ? 20 : 14} className="shrink-0" />
+      <FilmStrip className="w-3.5 h-3.5 md:w-5 md:h-5 shrink-0" />
     ),
     [ScheduleTag.TABLETOP]: (
-      <DiceSix size={isScreenSizeMedium ? 20 : 14} className="shrink-0" />
+      <DiceSix className="w-3.5 h-3.5 md:w-5 md:h-5 shrink-0" />
     ),
     [ScheduleTag.GAMING]: (
-      <GameController
-        size={isScreenSizeMedium ? 20 : 14}
-        className="shrink-0"
-      />
+      <GameController className="w-3.5 h-3.5 md:w-5 md:h-5 shrink-0" />
     ),
     [ScheduleTag.DANCE]: (
-      <Sparkle size={isScreenSizeMedium ? 20 : 14} className="shrink-0" />
+      <Sparkle className="w-3.5 h-3.5 md:w-5 md:h-5 shrink-0" />
     ),
     [ScheduleTag.ARTS_AND_CRAFTS]: (
-      <Palette size={isScreenSizeMedium ? 20 : 14} className="shrink-0" />
+      <Palette className="w-3.5 h-3.5 md:w-5 md:h-5 shrink-0" />
     ),
     [ScheduleTag.MUSIC]: (
-      <MusicNoteSimple
-        size={isScreenSizeMedium ? 20 : 14}
-        className="shrink-0"
-      />
+      <MusicNoteSimple className="w-3.5 h-3.5 md:w-5 md:h-5 shrink-0" />
     ),
     [ScheduleTag.TRIVIA]: (
-      <QuestionMark size={isScreenSizeMedium ? 20 : 14} className="shrink-0" />
+      <QuestionMark className="w-3.5 h-3.5 md:w-5 md:h-5 shrink-0" />
     ),
     [ScheduleTag.TOURNAMENT]: (
-      <Trophy size={isScreenSizeMedium ? 20 : 14} className="shrink-0" />
+      <Trophy className="w-3.5 h-3.5 md:w-5 md:h-5 shrink-0" />
     ),
   };
 
@@ -108,7 +102,7 @@ export const TagBox = (props: TagBoxProps) => {
   return (
     <div
       className={classNames(
-        `p-1 md:p-2 rounded-md place-items-center m-auto flex text-black text-xs md:text-sm justify-center shrink-1 w-auto text-center gap-1`,
+        `p-1 md:p-2 rounded-md place-items-center flex text-black text-xs md:text-sm whitespace-nowrap shrink-0 inline-flex w-auto text-center gap-1`,
         { "opacity-50": props.deselected },
         bgColorDict[props.tag],
         props.classNames

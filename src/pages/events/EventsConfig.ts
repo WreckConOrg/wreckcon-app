@@ -156,39 +156,47 @@ Signups will be open on the day of WreckCon 2026 at the link given here!`,
   },
   {
     name: "Panels",
-    bodyText: `On the main stage, get ready for a voice acting panel featuring Tiffany Grant, Sarah-Nicole Robles, and Zach Pokres, among other TBA voice actors! In addition, get ready for a worldbuilding panel from comic author and game designer Tom Bloom! More main stage panels will be announced soon.
+    bodyText: `On the main stage, get ready for Tiffany Grant, Morgan Berry, Sarah-Nicole Robles, and Zach Pokres: Behind the Voices! In addition, get ready for a worldbuilding panel from comic author and game designer Tom Bloom! More main stage panels will be announced soon.
     
 In the panel rooms, have a topic you'd like to hear about? Want to hear some live music, or maybe see a dance? Check out our panels in the Instructional Center and on the second floor of the Exhibition Hall!`,
     picture: panels,
-    // location: "Exhibition Hall Floor 2: Home Park, IC 111, IC 109",
+    location: "Exhibition Hall Floor 2: Home Park, IC 111, IC 103",
   },
+  // {
+  //   name: "Super Smash Bros Ultimate Tournament",
+  //   bodyText: `Interested in participating in a `,
+  //   picture: tabletop,
+  //   location: "Exhibition Hall Floor 2: Kirkwood",
+  //   link: "/schedule",
+  //   buttonText: "View Games",
+  // },
   {
     name: "VGDev Arcade",
     bodyText: `Play a selection of student-made games from VGDev, Georgia Tech's student game development club. Complete quests in order to earn tickets, and trade them in for a variety of free prizes!`,
     picture: vgdev,
-    // location: "Exhibition Hall Floor 2: Buckhead",
+    location: "Exhibition Hall Floor 2: Buckhead",
   },
   {
     name: "Board Game Freeplay",
     bodyText: `Want to unwind with a board game? This is the place to do it! Enjoy Catan, 7 Wonders, Wingspan, and dozens more games with friends old and new.`,
     picture: boardgames,
-    // location: "Exhibition Hall Floor 2: Old Forth Ward + Sweet Auburn",
+    location: "Exhibition Hall Floor 2: Old Forth Ward + Sweet Auburn",
   },
   {
     name: "TCG Freeplay",
     bodyText: `Like trading card games? Check out our TCG free play, featuring Pokemon TCG, Magic The Gathering, and Yu-Gi-Oh! Stop by for a quick game or stay for a mini-tourney.`,
     picture: tcg,
-    // location: "Main Stage",
+    location: "Main Stage",
   },
   {
     name: "TTRPG Freeplay",
     bodyText: `Have you heard of Dungeons & Dragons, Pathfinder, or another TableTop Roleplaying Game and want to give it a go? Take a look at our open games and contact a GM, or just show up if it's a walk-up!
   
-Game listings will be posted closer to the day of the convention. `,
+Game listings are posted and can be viewed on the schedule page! `,
     picture: tabletop,
-    // location: "Exhibition Hall Floor 2: Kirkwood, Inman Park, Cabbagetown",
-    // link: "/schedule",
-    // buttonText: "View Games",
+    location: "Exhibition Hall Floor 2: Kirkwood",
+    link: "/schedule",
+    buttonText: "View Games",
   },
 //   {
 //     name: "Warhammer Freeplay",

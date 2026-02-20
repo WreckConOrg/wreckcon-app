@@ -30,7 +30,7 @@ function ScheduleItem(props: ScheduleItemProps) {
 
   return (
     <div className="flex flex-row w-full">
-      <div className="p-2 md:p-8 w-[25%] text-right font-inter font-thin text-m md:text-xl text-white">
+      <div className="p-2 md:p-8 w-[30%] md:w-[20%] text-right font-inter font-thin text-sm md:text-xl text-white">
         <text>
           {`${TimeToString(props.startTime)}-${TimeToString(props.endTime)}`}
         </text>
@@ -48,12 +48,12 @@ function ScheduleItem(props: ScheduleItemProps) {
                 >
                   <div className="w-full flex justify-between flex-row text-lg md:text-2xl text-left text-wrap">
                     <div className="flex flex-row gap-6">
-                      {props.name}
-                      {isScreenSizeMedium && (
-                        <div className="flex flex-row gap-2">{TagList}</div>
-                      )}
+                      <span>{props.name}</span>
+                      <div className="hidden md:flex justify-start items-center flex-row gap-2">
+                        {TagList}
+                      </div>
                     </div>
-                    <div className="pl-4">
+                    <div className="pl-4 flex items-center">
                       <CaretDown
                         className={`${
                           open ? "rotate-180 transform" : ""
@@ -61,12 +61,10 @@ function ScheduleItem(props: ScheduleItemProps) {
                       />
                     </div>
                   </div>
-                  {!isScreenSizeMedium && (
-                    <div className="grid grid-cols-2 gap-2 items-left">
-                      {TagList}
-                    </div>
-                  )}
-                  <div className="flex flex-row items-center pl-2 md:pl-4 gap-1 md:gap-2 font-inter font-thin text-m md:text-lg text-left text-wrap text-white">
+                  <div className="flex flex-wrap justify-start gap-2 md:hidden w-full mt-1">
+                    {TagList}
+                  </div>
+                  <div className="flex flex-row items-center pl-2 md:pl-4 gap-1 md:gap-2 font-inter font-thin text-sm md:text-lg text-left text-wrap text-white">
                     <MapPinLine className="color-white" size={24} />
                     {props.location}
                   </div>
