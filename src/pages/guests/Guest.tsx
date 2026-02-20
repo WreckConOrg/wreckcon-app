@@ -1,5 +1,4 @@
 import React from "react";
-import { isScreenSizeMedium } from "../../utils/BrowserUtils";
 
 export interface GuestProps {
   name: string;
@@ -11,41 +10,31 @@ export interface GuestProps {
 
 export const Guest = (props: GuestProps) => {
   return (
-    <div className="flex flex-col gap-[0.5vw] w-full">
-      <div className="flex flex-row gap-[4vw] items-center md:justify-between">
-        {!isScreenSizeMedium && (
+    <div className="flex flex-col w-full group">
+      <div className="flex flex-col gap-6 md:gap-10 items-center md:flex-row">
+        <div className="w-full md:w-[30%] shrink-0">
           <img
             src={props.picture}
-            className={`min-w-[35vw] h-[35vw] rounded object-cover ${props.pictureClasses}`}
+            className={`w-full aspect-square rounded-lg object-cover shadow-lg border border-white/10 ${props.pictureClasses}`}
             alt={props.name}
           />
-        )}
-        <div className="flex flex-col md:flex-row justify-between w-full">
+        </div>
+        <div className="flex flex-col flex-grow space-y-2 md:space-y-4">
           <div className="flex flex-col h-full">
-            <span className=" font-coolvetica text-[7vw] md:text-[4vw] text-white">
+            <span className=" font-coolvetica text-4xl md:text-6xl text-white tracking-tight">
               {props.name}
             </span>
-            <span className="text-[#FFC42D] font-coolvetica text-[5svw] md:text-[2.5vw] text-[#]">
+            <span className="text-[#FFC42D] font-coolvetica text-xl md:text-3xl tracking-wider">
               {props.role}
             </span>
           </div>
-        </div>
-      </div>
-      <div className="flex flex-row gap-[1.5vw] md:min-h-[10vw]">
-        {isScreenSizeMedium && (
-          <img
-            src={props.picture}
-            className={`w-[24vw] h-[24vw] min-w-[24vw] rounded object-cover ${props.pictureClasses}`}
-            alt={props.name}
-          />
-        )}
-        <div className="flex flex-col justify-between gap-[2vw] md:gap-[1vw]">
-          <div className="font-inter text-white text-[3vw] md:text-[1.5vw] grow mt-[1vw] md:mt-0 whitespace-pre-wrap">
+          <div className="font-inter text-white text-base md:text-lg leading-relaxed whitespace-pre-wrap">
             {props.bodyText}
           </div>
         </div>
       </div>
-      <hr className="w-full mt-[3vw] md:mt-[1vw] mb-[2vw] md:mb-0 bg-[#FFC42D] border-0 h-px" />
+      
+      <hr className="w-full mt-8 mb-8 border-0 h-px md:mb-0 bg-[#FFC42D] border-0 h-px" />
     </div>
   );
 };

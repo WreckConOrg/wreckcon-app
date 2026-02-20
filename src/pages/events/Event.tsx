@@ -1,7 +1,6 @@
 import { MapPinLine } from "@phosphor-icons/react";
-import React, { RefObject } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { isMobile, isScreenSizeMedium } from "../../utils/BrowserUtils";
 
 export interface EventProps extends React.ComponentPropsWithoutRef<"div"> {
   name: string;
@@ -14,64 +13,65 @@ export interface EventProps extends React.ComponentPropsWithoutRef<"div"> {
 
 export const Event = React.forwardRef<HTMLDivElement, EventProps>(
   (props: EventProps, ref) => {
+    
     const button = props.link ? (
       <Link
         to={props.link}
-        className={`flex flex-col justify-center w-fit h-[6vw] md:h-[3vw] rounded bg-[#FFC42D] mb-[0.25vw] mt-[2vw] md:mt-0`}
+        className="inline-flex items-center justify-center px-5 py-2 rounded bg-[#FFC42D] w-fit mt-4 md:mt-0"
       >
-        <p className="font-inter w-fit p-[2vw] md:p-[1vw] items-center text-[4vw] md:text-[1.5vw]">
-          {` ${props.buttonText} `}
-        </p>
+        <span className="font-inter font-bold text-sm md:text-base">
+          {props.buttonText}
+        </span>
       </Link>
     ) : null;
+
     return (
-      <div className="flex flex-col gap-[0.5vw] w-full">
-        <div className="flex flex-row gap-[4vw] items-center md:justify-between">
-          {!isScreenSizeMedium && (
-            <img
-              src={props.picture}
-              className="w-[35vw] rounded object-cover"
-            />
-          )}
-          <div className="flex flex-col md:flex-row justify-between w-full">
-            <div
-              className="flex flex flex-row h-full font-coolvetica text-[6vw] md:text-[2.5vw] text-white"
-              ref={ref}
+      <div className="flex flex-col w-full mb-10 last:mb-0">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-2 mb-4">
+          <div className="flex flex-col gap-1">
+            <h2 
+              ref={ref} 
+              className="font-coolvetica text-3xl md:text-5xl text-white"
             >
               {props.name}
-            </div>
+            </h2>
+            
             {props.location && (
-              <div className="flex flex-row gap-[0.5vw] items-center mb-[1vw] md:mb-0">
-                <MapPinLine
-                  className="text-white"
-                  style={{
-                    width: isMobile ? "3vw" : "1.5vw",
-                    height: isMobile ? "3vw" : "1.5vw",
-                  }}
-                />
-                <span className="text-[3vw] md:text-[1.5vw] text-white font-inter">
+              <div className="flex items-center gap-2">
+                <MapPinLine size={20} className="text-[#FFC42D]" weight="bold" />
+                <span className="text-sm md:text-lg font-inter text-white opacity-90">
                   {props.location}
                 </span>
               </div>
             )}
-            {!isScreenSizeMedium && button}
+          </div>
+
+          <div className="hidden md:block">
+            {button}
           </div>
         </div>
-        <div className="flex flex-row gap-[1.5vw] md:min-h-[10vw]">
-          {isScreenSizeMedium && (
+
+        <div className="flex flex-col md:flex-row gap-5 md:gap-8">
+          <div className="w-full md:w-[30%] lg:w-[25%] shrink-0">
             <img
               src={props.picture}
-              className="w-[24vw] rounded object-cover"
+              alt={props.name}
+              className="w-full aspect-[16/9] md:aspect-[4/3] rounded-lg object-cover shadow-md"
             />
-          )}
-          <div className="flex flex-col justify-between gap-[2vw] md:gap-[1vw]">
-            <div className="font-inter text-white text-[3vw] md:text-[1.5vw] grow mt-[1vw] md:mt-0 whitespace-pre-wrap">
+          </div>
+
+          <div className="flex flex-col justify-between flex-1">
+            <p className="font-inter text-white text-base md:text-lg whitespace-pre-line">
               {props.bodyText}
+            </p>
+            
+            <div className="md:hidden">
+              {button}
             </div>
-            {isScreenSizeMedium && button}
           </div>
         </div>
-        <hr className="w-full mt-[3vw] md:mt-[1vw] mb-[2vw] md:mb-0 bg-[#FFC42D] border-0 h-px" />
+
+        <hr className="w-full mt-10 border-0 h-px bg-[#FFC42D] " />
       </div>
     );
   }

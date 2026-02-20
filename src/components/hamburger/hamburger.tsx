@@ -23,6 +23,7 @@ const NAV_LINKS: NavConfig[] = [
   { item: NavBarItemEnum.DISCORD, label: "discord", url: "https://discord.gg/BY2hTWjz4s" },
   { item: NavBarItemEnum.SHOP, label: "shop", url: "https://wreckcon.bigcartel.com/", hasDivider: true },
   { item: NavBarItemEnum.EVENT_INFO, label: "event info", url: "/info" },
+  { item: NavBarItemEnum.SCHEDULE, label: "schedule", url: "/schedule" },
   { item: NavBarItemEnum.EVENTS, label: "events", url: "/events" },
   { item: NavBarItemEnum.GUESTS, label: "guests", url: "/guests" },
   { item: NavBarItemEnum.ARTISTS, label: "artists", url: "/artists", hasDivider: true },

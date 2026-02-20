@@ -14,11 +14,11 @@ export const GuestsPage = (): JSX.Element => {
       mobileSelectedItem={NavBarItemEnum.GUESTS}
       dropdownSelect="guests"
     >
-      <div className="flex flex-col justify-center items-center mb-[3vw]">
-        <div className="h-[10vw] md:h-[6vw] font-coolvetica text-white text-[6vw] md:text-[4vw]">
+      <div className="flex flex-col justify-center items-center mb-10">
+        <div className="font-coolvetica text-white text-5xl md:text-7xl mt-10 mb-8">
           Guests
         </div>
-        <div className="flex flex-col gap-[3vw] md:gap-[1.5vw] pt-[3vw] md:pt-[1.5vw] pb-[1.5vw] items-start w-full px-[6vw]">
+        <div className="flex flex-col gap-8 md:gap-16 px-6 md:px-[10vw] items-start w-full">
           {guests}
         </div>
       </div>

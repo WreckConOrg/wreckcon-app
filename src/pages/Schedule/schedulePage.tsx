@@ -3,31 +3,22 @@ import { isMobile } from "react-device-detect";
 import { NavBarItemEnum } from "../../components/navbar/NavBarItem";
 import { BasePage } from "../BasePage";
 import Schedule from "./schedule";
-import { SCHEDULECONFIG } from "./scheduleConfig2025";
+import { SCHEDULECONFIG } from "./scheduleConfig2026";
 
 export const SchedulePage = (): JSX.Element => {
   return (
-    <BasePage selectedItem={NavBarItemEnum.SCHEDULE}>
+    <BasePage selectedItem={NavBarItemEnum.EVENT_INFO}
+      mobileSelectedItem={NavBarItemEnum.SCHEDULE}
+      dropdownSelect="schedule"
+    >
       <>
         <div
-          className={classNames(
-            "flex flex-row items-center justify-center font-coolvetica text-white",
-            { "h-[6vw] text-[4vw]": !isMobile },
-            { "mt-[4vh] text-[9vw] mb-[-6vh]": isMobile }
-          )}
+          className="flex flex-row items-center justify-center font-coolvetica text-white text-5xl mt-10 mb-4 md:text-7xl md:mt-0 md:mb-0 md:h-[120px]"
         >
           Schedule
         </div>
-        <div
-          className={classNames(
-            "flex flex-row items-center justify-center font-inter text-white text-center",
-            { "h-[3vw] text-[1.7vw]": !isMobile },
-            { "mt-[-6vh] text-[3vw] mb-[6vh]": isMobile }
-          )}
-        ></div>
         <div className="flex flex-row">
-          <div className="min-h-[600px]"></div>
-          <div className="p-6 md:mb-10 md:px-40 flex flex-col flex-grow self-stretch h-full items-center">
+          <div className="px-4 py-2 md:px-20 lg:px-40 w-full flex flex-col items-center">
             <Schedule items={SCHEDULECONFIG} />
           </div>
         </div>
