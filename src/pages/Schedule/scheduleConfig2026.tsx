@@ -133,7 +133,7 @@ This campaign will be primarily puzzle and roleplay driven. Expect little to no 
     name: "Panel - Breaking in to Game Development",
     location: "Main Stage",
     description:
-      "Owl House changed the way animators saw their work was executed by big businesses, and creator Dana Terrace took her talents to join with Glitch on her new show Knights Of Guinevere. It's Indie vs. Industry, and we'll see how this worked out from the fans perspective.",
+      "",
     tags: [ScheduleTag.EVENT, ScheduleTag.GAMING, ScheduleTag.PANEL],
     startTime: 1200,
     endTime: 1300,
