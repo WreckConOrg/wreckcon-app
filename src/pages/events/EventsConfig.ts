@@ -125,6 +125,8 @@ export const EVENTCONFIG: EventProps[] = [
     bodyText: `We have an incredible lineup of local and GT artists this year! Browse our Artist Alley in the Exhibition Hall and grab a slew of merchandise. With designs both original and inspired by your favorite media franchises, there's something for everyone. They don't call it “disposable income” for nothing, after all.`,
     picture: artistsalley,
     location: "Exhibition Hall Midtown Ballroom",
+    buttonText: "View Artists",
+    link: "/artists",
   },
   {
     name: "Cosplay Craftsmanship Competition",

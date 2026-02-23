@@ -65,7 +65,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
     name: "Panel - How to Become a Master Builder: Tips and Tricks for Designing Lego Models",
     location: "Ex Hall Floor 2: Home Park",
     description:
-      "Do YOU want to design a Lego Rivet? Yes you do. Learn how. Right here, right now.",
+      "Have you ever wanted to design your own Lego model? We'll walk through the entire design process from brainstorming to building with tips, tricks and insights from an experienced builder. We'll even break down the design of the Lego Rivet set!",
     tags: [ScheduleTag.PANEL, ScheduleTag.ARTS_AND_CRAFTS],
     startTime: 1130,
     endTime: 1200,

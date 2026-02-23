@@ -61,7 +61,7 @@ export const Event = React.forwardRef<HTMLDivElement, EventProps>(
           </div>
 
           <div className="flex flex-col justify-between flex-1">
-            <p className="font-inter text-white text-base md:text-lg whitespace-pre-line">
+            <p className="font-inter text-white text-base md:text-2xl whitespace-pre-line">
               {props.bodyText}
             </p>
             

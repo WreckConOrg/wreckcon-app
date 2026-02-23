@@ -1,8 +1,4 @@
-import { useRef, useState } from "react";
-import { Link } from "react-router-dom";
-import instagram from "../../assets/contact_logos/instagramlogo.png";
-import mail from "../../assets/contact_logos/maillogo.png";
-import twitter from "../../assets/contact_logos/twitterlogo.png";
+
 import campusMap from "../../assets/maps/CampusMap.png";
 import EH1 from "../../assets/maps/ExhallFloor1Map.png";
 import EH2 from "../../assets/maps/ExhallFloor2Map.png";
@@ -95,18 +91,20 @@ export const EventInfoPage = (): JSX.Element => {
             }
           >
             <span>
-              No NSFW (18+) cosplays are allowed. For prop weapons, 
-              live steel is not allowed and prop guns are required to have orange tips. 
+              No NSFW (18+) cosplays are allowed. Shoes must be worn at all times. For prop weapons, 
+              live steel is not allowed, and prop guns are required to have orange tips. 
             </span>
           </div>
         </div>
         <div className="font-coolvetica text-white text-4xl md:text-6xl mb-[4rem]">
           Maps
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6 justify-center">
-          <div className="col-span-3 flex justify-center">
-            <img src={EH1} className="w-[80%] md:max-w-[30%] object-contain"/>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6 justify-center pb-6">
+            <img src={EH1} className="object-contain"/>
+            <img src={EH2} className="object-contain"/>
+            <img src={IC1} className="object-contain"/>
+            <img src={IC2} className="object-contain"/>
+            <img src={campusMap} className="object-contain"/>
         </div>
       </div>
     </BasePage>
