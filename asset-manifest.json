@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.7ddd9cfe.css",
-    "main.js": "/static/js/main.6da6acce.js",
-    "static/js/787.28692217.chunk.js": "/static/js/787.28692217.chunk.js",
+    "main.css": "/static/css/main.6f07ef8e.css",
+    "main.js": "/static/js/main.26562c33.js",
+    "static/js/453.c2473fe9.chunk.js": "/static/js/453.c2473fe9.chunk.js",
     "static/media/cosplay.png": "/static/media/cosplay.61fe403e9afe25ebbe3d.png",
     "static/media/idolfest.png": "/static/media/idolfest.3b5a5299246194b02fbf.png",
     "static/media/boardgames.png": "/static/media/boardgames.14d8838c576327c870b8.png",
@@ -49,12 +49,12 @@
     "static/media/twitterlogo.png": "/static/media/twitterlogo.7b5bdc5995fa40bcea79.png",
     "static/media/youtubelogo.png": "/static/media/youtubelogo.abfd36b30dfc5ba1a3db.png",
     "index.html": "/index.html",
-    "main.7ddd9cfe.css.map": "/static/css/main.7ddd9cfe.css.map",
-    "main.6da6acce.js.map": "/static/js/main.6da6acce.js.map",
-    "787.28692217.chunk.js.map": "/static/js/787.28692217.chunk.js.map"
+    "main.6f07ef8e.css.map": "/static/css/main.6f07ef8e.css.map",
+    "main.26562c33.js.map": "/static/js/main.26562c33.js.map",
+    "453.c2473fe9.chunk.js.map": "/static/js/453.c2473fe9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7ddd9cfe.css",
-    "static/js/main.6da6acce.js"
+    "static/css/main.6f07ef8e.css",
+    "static/js/main.26562c33.js"
   ]
 }
