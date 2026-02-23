@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.627fef97.css",
-    "main.js": "/static/js/main.6b1f17c6.js",
-    "static/js/787.28692217.chunk.js": "/static/js/787.28692217.chunk.js",
+    "main.css": "/static/css/main.6f07ef8e.css",
+    "main.js": "/static/js/main.26562c33.js",
+    "static/js/453.c2473fe9.chunk.js": "/static/js/453.c2473fe9.chunk.js",
     "static/media/cosplay.png": "/static/media/cosplay.61fe403e9afe25ebbe3d.png",
     "static/media/idolfest.png": "/static/media/idolfest.3b5a5299246194b02fbf.png",
     "static/media/boardgames.png": "/static/media/boardgames.14d8838c576327c870b8.png",
@@ -13,19 +13,23 @@
     "static/media/nerdi-gras-logo.png": "/static/media/nerdi-gras-logo.b6163793d48a7a42e42b.png",
     "static/media/TomBloom.png": "/static/media/TomBloom.3c3a94f1194089e48e5d.png",
     "static/media/TiffanyGrant.png": "/static/media/TiffanyGrant.c5e03e40ef716455d954.png",
+    "static/media/ExhallFloor1Map.png": "/static/media/ExhallFloor1Map.5a5e62b6c9634a059d86.png",
     "static/media/tabletop.jpg": "/static/media/tabletop.f02454d3b594b1062cf7.jpg",
     "static/media/MorganBerry.jpg": "/static/media/MorganBerry.3373da8825aa511a6883.jpg",
-    "static/media/ExhallFloor1Map.png": "/static/media/ExhallFloor1Map.5f2a253153cb2b137860.png",
     "static/media/cosplayshowcase.jpg": "/static/media/cosplayshowcase.636dccf1a98935dca59b.jpg",
+    "static/media/CampusMap.png": "/static/media/CampusMap.ff5b79f56db38e55f24f.png",
     "static/media/tcg.jpg": "/static/media/tcg.144a083a050b8e915cd2.jpg",
     "static/media/artistsalley.jpg": "/static/media/artistsalley.dc63bee33d373aba6544.jpg",
     "static/media/Inter-Bold.ttf": "/static/media/Inter-Bold.88fa7ae373b07b41ecce.ttf",
     "static/media/ZachPokres.jpg": "/static/media/ZachPokres.eeaf6806fb9969b32716.jpg",
     "static/media/Inter-Regular.ttf": "/static/media/Inter-Regular.e89cb19905e7db5591b0.ttf",
     "static/media/vgdevarcade.jpg": "/static/media/vgdevarcade.8bea01e2bbc8c623edcc.jpg",
+    "static/media/ICFloor2Map.png": "/static/media/ICFloor2Map.2e544ddef552515db9dd.png",
     "static/media/panels.jpg": "/static/media/panels.d53948b541676a4b8d9d.jpg",
+    "static/media/ICFloor1Map.png": "/static/media/ICFloor1Map.d8dafdeddba44a5a073c.png",
     "static/media/SarahNicoleRobles.jpg": "/static/media/SarahNicoleRobles.4c3b23f0dc43c7401026.jpg",
     "static/media/anime logo.png": "/static/media/anime logo.53a2ad7dedf1f091c7e9.png",
+    "static/media/ExhallFloor2Map.png": "/static/media/ExhallFloor2Map.60fd79e6a924055e058b.png",
     "static/media/sga logo.png": "/static/media/sga logo.19620709688b3c370665.png",
     "static/media/dnd logo.png": "/static/media/dnd logo.a09fd53c16efe1deb7fa.png",
     "static/media/mtg logo.png": "/static/media/mtg logo.2a52565aa47a7d0b9698.png",
@@ -45,12 +49,12 @@
     "static/media/twitterlogo.png": "/static/media/twitterlogo.7b5bdc5995fa40bcea79.png",
     "static/media/youtubelogo.png": "/static/media/youtubelogo.abfd36b30dfc5ba1a3db.png",
     "index.html": "/index.html",
-    "main.627fef97.css.map": "/static/css/main.627fef97.css.map",
-    "main.6b1f17c6.js.map": "/static/js/main.6b1f17c6.js.map",
-    "787.28692217.chunk.js.map": "/static/js/787.28692217.chunk.js.map"
+    "main.6f07ef8e.css.map": "/static/css/main.6f07ef8e.css.map",
+    "main.26562c33.js.map": "/static/js/main.26562c33.js.map",
+    "453.c2473fe9.chunk.js.map": "/static/js/453.c2473fe9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.627fef97.css",
-    "static/js/main.6b1f17c6.js"
+    "static/css/main.6f07ef8e.css",
+    "static/js/main.26562c33.js"
   ]
 }
