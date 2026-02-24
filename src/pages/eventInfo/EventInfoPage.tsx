@@ -29,7 +29,31 @@ export const EventInfoPage = (): JSX.Element => {
         <div className="font-coolvetica text-white text-5xl md:text-6xl mb-6 mt-8 md:mt-[2rem] md:mb-[1.5rem]">
           Event Info
         </div>
-        <div className="w-full md:w-[90%] self-center h-1 bg-[#FFC42D] mb-6 md:mb-[1.5rem]" />
+        <div className="flex flex-wrap justify-center gap-2 md:gap-0 mt-8 mb-4 px-4">
+          {[
+            { name: "schedule", path: "/schedule" },
+            { name: "events", path: "/events" },
+            { name: "guests", path: "/guests" },
+            { name: "artists", path: "/artists" },
+          ].map((btn, i, arr) => (
+            <a
+              key={btn.name}
+              href={btn.path}
+              className={`
+                px-6 py-2 font-coolvetica tracking-wider text-xl md:text-2xl transition-all duration-200
+                text-black bg-[#FFC42D] border-4 border-[#2e2f31]
+                hover:bg-[#FFC42D] hover:text-black
+                w-[45%] md:w-auto text-center
+                ${i === 0 ? "md:rounded-l-lg" : ""}
+                ${i === arr.length - 1 ? "md:rounded-r-lg" : "md:border-r-0"}
+                rounded-lg md:rounded-none
+              `}
+            >
+              {btn.name}
+            </a>
+          ))}
+        </div>
+        <div className="w-full mt-8 md:w-[90%] self-center h-1 bg-[#FFC42D] mb-6 md:mb-[1.5rem]" />
         <div className="w-full flex flex-col gap-8 md:gap-5">
           {[
             { label: "Venues", value: "Exhibition Hall, Instructional Center" },
@@ -39,7 +63,7 @@ export const EventInfoPage = (): JSX.Element => {
           ].map((item, index) => (
             <div
               key={index}
-              className="group transition-all hover:bg-white/5 font-inter text-white text-lg md:text-3xl w-full flex flex-col md:grid md:grid-cols-[1fr_1.5fr] gap-2 md:gap-8 border-l-4 md:border-r-4 border-[#FFC42D] md:border-none pl-4 md:pl-0"
+              className="group transition-all font-inter text-white text-lg md:text-3xl w-full flex flex-col md:grid md:grid-cols-[1fr_1.5fr] gap-2 md:gap-8 border-l-4 md:border-r-4 border-[#FFC42D] md:border-none pl-4 md:pl-0"
             >
               <div className="flex items-center md:justify-end md:border-r-4 md:border-[#FFC42D] md:pr-8">
                 <span className="font-bold bg-[#FFC42D] tracking-widest text-black px-3 py-1 md:py-2 text-center w-fit">

@@ -43,7 +43,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
 
   {
     name: "Origami Free Play",
-    location: "Instructional Center 111",
+    location: "Instructional Center 103",
     description:
       "Interested in origami? Stop by to fold something cool with the Origami Club! No experience needed.",
     tags: [ScheduleTag.ARTS_AND_CRAFTS, ScheduleTag.FREE_PLAY],
@@ -53,7 +53,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
 
   {
     name: "Panel - From Owl House to Knights Of Guinevere",
-    location: "Instructional Center 103",
+    location: "Instructional Center 111",
     description:
       "Owl House changed the way animators saw their work was executed by big businesses, and creator Dana Terrace took her talents to join with Glitch on her new show Knights Of Guinevere. It's Indie vs. Industry, and we'll see how this worked out from the fans perspective.",
     tags: [ScheduleTag.PANEL, ScheduleTag.ARTS_AND_CRAFTS],
