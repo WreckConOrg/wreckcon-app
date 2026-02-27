@@ -47,7 +47,7 @@ export const SCHEDULECONFIG: ScheduleItemProps[] = [
     description:
       "Interested in origami? Stop by to fold something cool with the Origami Club! No experience needed.",
     tags: [ScheduleTag.ARTS_AND_CRAFTS, ScheduleTag.FREE_PLAY],
-    startTime: 1030,
+    startTime: 1000,
     endTime: 1200,
   },
 
@@ -131,7 +131,7 @@ This campaign will be primarily puzzle and roleplay driven. Expect little to no 
 
   {
     name: "Panel - Breaking in to Game Development",
-    location: "Main Stage",
+    location: "Come learn about game design, production, programming, tech art, indie & AAA games, and more at this panel with ATL Game Devs! Developers can learn more about game development as well as ask your own questions!",
     description:
       "",
     tags: [ScheduleTag.EVENT, ScheduleTag.GAMING, ScheduleTag.PANEL],
@@ -143,7 +143,7 @@ This campaign will be primarily puzzle and roleplay driven. Expect little to no 
     name: "Panel - Create Cosplays You Love: Redesigning characters with intention & attention to details!",
     location: "Ex Hall Floor 2: Home Park",
     description:
-      "Let's spice up our cosplay game by learning the first step to bringing your visions to life, BRAINSTORMING! In this panel you’ll learn a costume designer's beginning chaos realm to recreating and birthing cosplays you'll love for a lifetime while also doodling up your next grand cosplay adventure!",
+      "Let's spice up our cosplay game by learning the first step to bringing your visions to life, BRAINSTORMING! In this panel you'll learn a costume designer's beginning chaos realm to recreating and birthing cosplays you'll love for a lifetime while also doodling up your next grand cosplay adventure!",
     tags: [ScheduleTag.PANEL, ScheduleTag.ARTS_AND_CRAFTS],
     startTime: 1200,
     endTime: 1300,
@@ -486,10 +486,19 @@ Our featured vendor this year is Sorensen's Precision Diceworks.`,
     endTime: 2000,
   },
   {
-    name: "Magic: The Gathering, YuGiOh, Pokemon Free Play",
+    name: "Pokemon Free Play",
     location: "Instructional Center 109",
     description:
-      "Come on over for all day Magic: The Gathering, YuGiOh, and Pokemon free play!",
+      "Come on over for all day Pokemon TCG free play!",
+    tags: [ScheduleTag.FREE_PLAY, ScheduleTag.GAMING, ScheduleTag.TABLETOP],
+    startTime: 1000,
+    endTime: 2000,
+  },
+  {
+    name: "Magic: The Gathering, YuGiOh Free Play",
+    location: "Ex Hall Floor 2: Centennial",
+    description:
+      "Come on over for all day Magic: The Gathering and YuGiOh free play!",
     tags: [ScheduleTag.FREE_PLAY, ScheduleTag.GAMING, ScheduleTag.TABLETOP],
     startTime: 1000,
     endTime: 2000,

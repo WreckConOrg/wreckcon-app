@@ -32,6 +32,7 @@ export const EventInfoPage = (): JSX.Element => {
         <div className="flex flex-wrap justify-center gap-2 md:gap-0 mt-8 mb-4 px-4">
           {[
             { name: "schedule", path: "/schedule" },
+            { name: "brochure", path: "/brochure" },
             { name: "events", path: "/events" },
             { name: "guests", path: "/guests" },
             { name: "artists", path: "/artists" },

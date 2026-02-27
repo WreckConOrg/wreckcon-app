@@ -97,6 +97,11 @@ export const Schedule = (props: ScheduleProps) => {
     if (a.startTime !== b.startTime) {
       return a.startTime - b.startTime;
     }
+    if (a.startTime === 1000) {
+      if (a.endTime !== b.endTime) {
+        return b.endTime - a.endTime;
+      }
+    }
     if (a.endTime !== b.endTime) {
       return a.endTime - b.endTime;
     }

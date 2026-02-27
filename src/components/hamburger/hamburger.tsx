@@ -24,6 +24,7 @@ const NAV_LINKS: NavConfig[] = [
   { item: NavBarItemEnum.SHOP, label: "shop", url: "https://wreckcon.bigcartel.com/", hasDivider: true },
   { item: NavBarItemEnum.EVENT_INFO, label: "event info", url: "/info" },
   { item: NavBarItemEnum.SCHEDULE, label: "schedule", url: "/schedule" },
+  { item: NavBarItemEnum.BROCHURE, label: "brochure", url: "/brochure" },
   { item: NavBarItemEnum.EVENTS, label: "events", url: "/events" },
   { item: NavBarItemEnum.GUESTS, label: "guests", url: "/guests" },
   { item: NavBarItemEnum.ARTISTS, label: "artists", url: "/artists", hasDivider: true },

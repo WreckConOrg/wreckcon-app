@@ -4,6 +4,7 @@ import { Home } from "./pages/home/home";
 import { About } from "./pages/about/about";
 import { Sponsor } from "./pages/sponsor/sponsor";
 import { Involved } from "./pages/involved/involved";
+import { BrochurePage } from "./pages/brochure/brochure"
 import { Contact } from "./pages/contact/contact";
 import { SchedulePage } from "./pages/Schedule/schedulePage";
 import { Routes, Route, useNavigate } from "react-router-dom";
@@ -43,6 +44,7 @@ function App() {
       <Route path="/guests" element={<GuestsPage />} />
       <Route path="/artists" element={<ArtistsPage />} />
       <Route path="/info" element={<EventInfoPage />} />
+      <Route path="/brochure" element={<BrochurePage />} />
 
       <Route
         path="/tickets"

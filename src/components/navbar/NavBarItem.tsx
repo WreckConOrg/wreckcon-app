@@ -20,7 +20,8 @@ export enum NavBarItemEnum {
   GUESTS,
   ARTISTS,
   EVENT_INFO,
-  PRETTY_DERBY
+  PRETTY_DERBY,
+  BROCHURE
 }
 
 export interface NavBarItemProps {
