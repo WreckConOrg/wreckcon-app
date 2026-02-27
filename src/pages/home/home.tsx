@@ -16,6 +16,7 @@ export const Home = (props: HomeProps): JSX.Element => {
   const [days, hours, minutes, seconds] = useCountdown(CONDATE);
 
   const ZeroPad = (n: number) => n.toString().padStart(2, '0');
+  const isExpired = days + hours + minutes + seconds <= 0;
 
   return (
     <div className="min-h-screen bg-[#2e2f31] overflow-x-hidden flex flex-col justify-center relative selection:bg-[#ffc42d] selection:text-black">
@@ -30,13 +31,29 @@ export const Home = (props: HomeProps): JSX.Element => {
           <span className="text-white text-[18vw] md:text-[8vw]">Con</span>
         </h1>
 
-        <div className="font-interbold font-bold text-white text-[7vw] md:text-[3vw] mt-4 md:mt-0">
-          {ZeroPad(days)}:{ZeroPad(hours)}:{ZeroPad(minutes)}:{ZeroPad(seconds)} 
-          <span className="ml-4 opacity-80 whitespace-nowrap">• 2/28/26</span>
-        </div>
+      <div className="font-interbold font-bold text-white text-[7vw] md:text-[3vw]">
+        {isExpired ? (
+          "WreckCon 2026 has begun!" 
+        ) : (
+          `${ZeroPad(days)}:${ZeroPad(hours)}:${ZeroPad(minutes)}:${ZeroPad(seconds)}`
+        )}
+         <span className="ml-4 opacity-80 whitespace-nowrap">
+        {isExpired ? (
+          ``
+        ) : (
+          `• 2/28/26`
+        )}
+        </span>
+      </div>
 
         <p className="font-inter text-white text-[5vw] md:text-[2.3vw] mt-6 md:mt-2 max-w-[90vw] md:max-w-[45vw] leading-snug">
-          WreckCon is {props.phraseUsed}.
+          {isExpired ? (
+            <span>
+              Check the links below for information about today's events!
+            </span>
+          ) : (
+            `WreckCon is ${props.phraseUsed}.`
+          )}
         </p>
         <nav className="flex flex-col md:flex-row gap-4 mt-12 w-full md:w-auto items-center">
           {NAV_LINKS.map((link) => (
