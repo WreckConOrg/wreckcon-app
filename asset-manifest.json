@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d10c702c.css",
-    "main.js": "/static/js/main.53a67fd4.js",
+    "main.css": "/static/css/main.582174c8.css",
+    "main.js": "/static/js/main.252e89fd.js",
     "static/js/787.28692217.chunk.js": "/static/js/787.28692217.chunk.js",
     "static/media/cosplay.png": "/static/media/cosplay.61fe403e9afe25ebbe3d.png",
     "static/media/idolfest.png": "/static/media/idolfest.3b5a5299246194b02fbf.png",
@@ -11,6 +11,8 @@
     "static/media/6.jpg": "/static/media/6.d21432f3724f89f484b0.jpg",
     "static/media/1.jpg": "/static/media/1.6c286ed7da8125f76e61.jpg",
     "static/media/nerdi-gras-logo.png": "/static/media/nerdi-gras-logo.b6163793d48a7a42e42b.png",
+    "static/media/BrochurePageTwo.png": "/static/media/BrochurePageTwo.5faa87db773bcfd966ee.png",
+    "static/media/BrochurePageOne.png": "/static/media/BrochurePageOne.1245b9da9b9ea1e0d403.png",
     "static/media/TomBloom.png": "/static/media/TomBloom.3c3a94f1194089e48e5d.png",
     "static/media/TiffanyGrant.png": "/static/media/TiffanyGrant.c5e03e40ef716455d954.png",
     "static/media/ExhallFloor1Map.png": "/static/media/ExhallFloor1Map.5a5e62b6c9634a059d86.png",
@@ -49,12 +51,12 @@
     "static/media/twitterlogo.png": "/static/media/twitterlogo.7b5bdc5995fa40bcea79.png",
     "static/media/youtubelogo.png": "/static/media/youtubelogo.abfd36b30dfc5ba1a3db.png",
     "index.html": "/index.html",
-    "main.d10c702c.css.map": "/static/css/main.d10c702c.css.map",
-    "main.53a67fd4.js.map": "/static/js/main.53a67fd4.js.map",
+    "main.582174c8.css.map": "/static/css/main.582174c8.css.map",
+    "main.252e89fd.js.map": "/static/js/main.252e89fd.js.map",
     "787.28692217.chunk.js.map": "/static/js/787.28692217.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d10c702c.css",
-    "static/js/main.53a67fd4.js"
+    "static/css/main.582174c8.css",
+    "static/js/main.252e89fd.js"
   ]
 }
