@@ -131,9 +131,9 @@ This campaign will be primarily puzzle and roleplay driven. Expect little to no 
 
   {
     name: "Panel - Breaking in to Game Development",
-    location: "Come learn about game design, production, programming, tech art, indie & AAA games, and more at this panel with ATL Game Devs! Developers can learn more about game development as well as ask your own questions!",
+    location: "Main Stage",
     description:
-      "",
+      "Come learn about game design, production, programming, tech art, indie & AAA games, and more at this panel with ATL Game Devs! Developers can learn more about game development as well as ask your own questions!",
     tags: [ScheduleTag.EVENT, ScheduleTag.GAMING, ScheduleTag.PANEL],
     startTime: 1200,
     endTime: 1300,
