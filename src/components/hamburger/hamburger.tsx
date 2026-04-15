@@ -21,7 +21,6 @@ const NAV_LINKS: NavConfig[] = [
   { item: NavBarItemEnum.ABOUT, label: "about", url: "/about", hasDivider: true },
   { item: NavBarItemEnum.TICKETS, label: "tickets", url: "https://gatech.universitytickets.com/w/event.aspx?id=2196" },
   { item: NavBarItemEnum.DISCORD, label: "discord", url: "https://discord.gg/BY2hTWjz4s" },
-  { item: NavBarItemEnum.SHOP, label: "shop", url: "https://wreckcon.bigcartel.com/", hasDivider: true },
   { item: NavBarItemEnum.EVENT_INFO, label: "event info", url: "/info" },
   { item: NavBarItemEnum.SCHEDULE, label: "schedule", url: "/schedule" },
   { item: NavBarItemEnum.BROCHURE, label: "brochure", url: "/brochure" },
