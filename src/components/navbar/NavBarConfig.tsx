@@ -42,11 +42,6 @@ export const NAVBARCONFIG: NavBarItemProps[] = [
     displayText: "discord",
   },
   {
-    itemEnum: NavBarItemEnum.SHOP,
-    url: "https://wreckcon.bigcartel.com/",
-    displayText: "shop",
-  },
-  {
     itemEnum: NavBarItemEnum.EVENT_INFO,
     url: "/info",
     displayText: "event info",
