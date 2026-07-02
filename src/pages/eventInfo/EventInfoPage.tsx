@@ -58,7 +58,7 @@ export const EventInfoPage = (): JSX.Element => {
         <div className="w-full flex flex-col gap-8 md:gap-5">
           {[
             { label: "Venues", value: "Exhibition Hall, Instructional Center" },
-            { label: "Date and Time", value: "February 28, 2026: 10am - 8pm" },
+            { label: "Date and Time", value: "To Be Announced" },
             { label: "Address", value: "460 Fourth Street NW, Atlanta, GA 30318" },
             { label: "Recommended Parking", value: "355 Ferst Drive NW, Atlanta, GA 30318 - $3/hr, $15/day" },
           ].map((item, index) => (

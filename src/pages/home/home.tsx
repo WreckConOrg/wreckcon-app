@@ -16,7 +16,7 @@ export const Home = (props: HomeProps): JSX.Element => {
   const [days, hours, minutes, seconds] = useCountdown(CONDATE);
 
   const ZeroPad = (n: number) => n.toString().padStart(2, '0');
-  const isExpired = days + hours + minutes + seconds <= 0;
+  const isExpired = false; //days + hours + minutes + seconds <= 0;
 
   return (
     <div className="min-h-screen bg-[#2e2f31] overflow-x-hidden flex flex-col justify-center relative selection:bg-[#ffc42d] selection:text-black">
@@ -35,13 +35,14 @@ export const Home = (props: HomeProps): JSX.Element => {
         {isExpired ? (
           "WreckCon 2026 has begun!" 
         ) : (
-          `${ZeroPad(days)}:${ZeroPad(hours)}:${ZeroPad(minutes)}:${ZeroPad(seconds)}`
+          //`${ZeroPad(days)}:${ZeroPad(hours)}:${ZeroPad(minutes)}:${ZeroPad(seconds)}`
+          "Stay Tuned for 2027!"
         )}
          <span className="ml-4 opacity-80 whitespace-nowrap">
         {isExpired ? (
           ``
         ) : (
-          `• 2/28/26`
+          ``
         )}
         </span>
       </div>
