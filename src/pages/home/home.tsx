@@ -8,7 +8,9 @@ interface HomeProps {
 const NAV_LINKS = [
   { name: "Event Info", path: "/info", color: "bg-[#D9D9D9]" },
   { name: "Schedule", path: "/schedule", color: "bg-[#D9D9D9]" },
-  { name: "Tickets", path: "https://gatech.universitytickets.com/...", color: "bg-[#FFC42D]" },
+  { name: "Tickets", path: "https://gatech.universitytickets.com/w/event.aspx?id=2287&p=1", color: "bg-[#FFC42D]" },
+  
+  //{ name: "Tickets", path: "https://gatech.universitytickets.com/...", color: "bg-[#FFC42D]" },
 ];
 
 export const Home = (props: HomeProps): JSX.Element => {
@@ -36,15 +38,11 @@ export const Home = (props: HomeProps): JSX.Element => {
           "WreckCon 2026 has begun!" 
         ) : (
           //`${ZeroPad(days)}:${ZeroPad(hours)}:${ZeroPad(minutes)}:${ZeroPad(seconds)}`
-          "Stay Tuned for 2027!"
+          <>
+            <div>Casino Night on October 25th, 2026!</div>
+            <div></div>
+          </>
         )}
-         <span className="ml-4 opacity-80 whitespace-nowrap">
-        {isExpired ? (
-          ``
-        ) : (
-          ``
-        )}
-        </span>
       </div>
 
         <p className="font-inter text-white text-[5vw] md:text-[2.3vw] mt-6 md:mt-2 max-w-[90vw] md:max-w-[45vw] leading-snug">
@@ -53,7 +51,8 @@ export const Home = (props: HomeProps): JSX.Element => {
               Check the links below for information about today's events!
             </span>
           ) : (
-            `WreckCon is ${props.phraseUsed}.`
+              `Get Tickets Now!`
+            //`WreckCon is ${props.phraseUsed}.`
           )}
         </p>
         <nav className="flex flex-col md:flex-row gap-4 mt-12 w-full md:w-auto items-center">
