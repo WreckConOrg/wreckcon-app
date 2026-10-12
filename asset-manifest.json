@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b0e282b6.css",
-    "main.js": "/static/js/main.9f048a78.js",
+    "main.css": "/static/css/main.d65724d2.css",
+    "main.js": "/static/js/main.5ba0ae99.js",
     "static/js/453.c2473fe9.chunk.js": "/static/js/453.c2473fe9.chunk.js",
     "static/media/cosplay.png": "/static/media/cosplay.61fe403e9afe25ebbe3d.png",
     "static/media/idolfest.png": "/static/media/idolfest.3b5a5299246194b02fbf.png",
@@ -51,12 +51,12 @@
     "static/media/twitterlogo.png": "/static/media/twitterlogo.7b5bdc5995fa40bcea79.png",
     "static/media/youtubelogo.png": "/static/media/youtubelogo.abfd36b30dfc5ba1a3db.png",
     "index.html": "/index.html",
-    "main.b0e282b6.css.map": "/static/css/main.b0e282b6.css.map",
-    "main.9f048a78.js.map": "/static/js/main.9f048a78.js.map",
+    "main.d65724d2.css.map": "/static/css/main.d65724d2.css.map",
+    "main.5ba0ae99.js.map": "/static/js/main.5ba0ae99.js.map",
     "453.c2473fe9.chunk.js.map": "/static/js/453.c2473fe9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b0e282b6.css",
-    "static/js/main.9f048a78.js"
+    "static/css/main.d65724d2.css",
+    "static/js/main.5ba0ae99.js"
   ]
 }
