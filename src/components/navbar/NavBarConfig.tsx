@@ -13,7 +13,9 @@ export const NAVBARCONFIG: NavBarItemProps[] = [
   },
   {
     itemEnum: NavBarItemEnum.TICKETS,
+    
     url: "https://gatech.universitytickets.com/w/event.aspx?id=2301&p=1",
+
     displayText: "tickets",
   },
   // {

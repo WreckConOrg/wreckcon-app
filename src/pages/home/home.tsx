@@ -9,6 +9,7 @@ const NAV_LINKS = [
   { name: "Event Info", path: "/info", color: "bg-[#D9D9D9]" },
   { name: "Schedule", path: "/schedule", color: "bg-[#D9D9D9]" },
   { name: "Tickets", path: "https://gatech.universitytickets.com/w/event.aspx?id=2301&p=1", color: "bg-[#FFC42D]" },
+
 ];
 
 export const Home = (props: HomeProps): JSX.Element => {
@@ -52,7 +53,7 @@ export const Home = (props: HomeProps): JSX.Element => {
               Check the links below for information about today's events!
             </span>
           ) : (
-            `WreckCon is ${props.phraseUsed}.`
+              `WreckCon is ${props.phraseUsed}.`
           )}
         </p>
         <nav className="flex flex-col md:flex-row gap-4 mt-12 w-full md:w-auto items-center">
