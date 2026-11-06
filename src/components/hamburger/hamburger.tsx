@@ -19,14 +19,16 @@ interface NavConfig {
 
 const NAV_LINKS: NavConfig[] = [
   { item: NavBarItemEnum.ABOUT, label: "about", url: "/about", hasDivider: true },
-  { item: NavBarItemEnum.TICKETS, label: "tickets", url: "https://gatech.universitytickets.com/w/event.aspx?id=2287&p=1" },
+
+  { item: NavBarItemEnum.TICKETS, label: "tickets", url: "https://gatech.universitytickets.com/w/event.aspx?id=2301&p=1" },
+
   { item: NavBarItemEnum.DISCORD, label: "discord", url: "https://discord.gg/BY2hTWjz4s", hasDivider: true },
   { item: NavBarItemEnum.EVENT_INFO, label: "event info", url: "/info" },
   { item: NavBarItemEnum.SCHEDULE, label: "schedule", url: "/schedule" },
-  { item: NavBarItemEnum.BROCHURE, label: "brochure", url: "/brochure" },
+  //{ item: NavBarItemEnum.BROCHURE, label: "brochure", url: "/brochure" },
   { item: NavBarItemEnum.EVENTS, label: "events", url: "/events" },
   { item: NavBarItemEnum.GUESTS, label: "guests", url: "/guests" },
-  { item: NavBarItemEnum.ARTISTS, label: "artists", url: "/artists", hasDivider: true },
+  //{ item: NavBarItemEnum.ARTISTS, label: "artists", url: "/artists", hasDivider: true },
   { item: NavBarItemEnum.CONTACT, label: "contact us", url: "/contact-us" },
   { item: NavBarItemEnum.PARTICIPATE, label: "participate", url: "/involved" },
   { item: NavBarItemEnum.SPONSOR, label: "sponsors", url: "/sponsors" },

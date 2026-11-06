@@ -143,11 +143,16 @@ export const Schedule = (props: ScheduleProps) => {
       </div>
       <div className="flex flex-row w-full items-end mt-8 mb-4 relative overflow-hidden">
         <div className="shrink-0 pr-4 font-inter font-thin text-xl md:text-3xl text-white">
-          Saturday, February 28, 2026
+          Saturday, February 27, 2027
         </div>
         <div className="flex-grow h-px bg-white mb-2 md:mb-3"></div>
       </div>
-      {scheduleContent}
+
+      <div className="shrink-0 pr-4 py-100 font-inter font-thin text-xl md:text-5xl text-white content-center h-dvh">
+        To Be Announced
+      </div>
+      
+      {/*scheduleContent*/}
     </div>
   );
 };

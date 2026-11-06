@@ -32,10 +32,10 @@ export const EventInfoPage = (): JSX.Element => {
         <div className="flex flex-wrap justify-center gap-2 md:gap-0 mt-8 mb-4 px-4">
           {[
             { name: "schedule", path: "/schedule" },
-            { name: "brochure", path: "/brochure" },
+            //{ name: "brochure", path: "/brochure" },
             { name: "events", path: "/events" },
-            { name: "guests", path: "/guests" },
-            { name: "artists", path: "/artists" },
+            //{ name: "guests", path: "/guests" },
+            //{ name: "artists", path: "/artists" },
           ].map((btn, i, arr) => (
             <a
               key={btn.name}
@@ -58,7 +58,7 @@ export const EventInfoPage = (): JSX.Element => {
         <div className="w-full flex flex-col gap-8 md:gap-5">
           {[
             { label: "Venues", value: "Exhibition Hall, Instructional Center" },
-            { label: "Date and Time", value: "To Be Announced" },
+            { label: "Date and Time", value: "February 27th, 2027, 10 AM - 8 PM (EST)" },
             { label: "Address", value: "460 Fourth Street NW, Atlanta, GA 30318" },
             { label: "Recommended Parking", value: "355 Ferst Drive NW, Atlanta, GA 30318 - $3/hr, $15/day" },
           ].map((item, index) => (

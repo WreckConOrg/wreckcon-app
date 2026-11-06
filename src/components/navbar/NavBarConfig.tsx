@@ -13,7 +13,9 @@ export const NAVBARCONFIG: NavBarItemProps[] = [
   },
   {
     itemEnum: NavBarItemEnum.TICKETS,
-    url: "https://gatech.universitytickets.com/w/event.aspx?id=2287&p=1",
+    
+    url: "https://gatech.universitytickets.com/w/event.aspx?id=2301&p=1",
+
     displayText: "tickets",
   },
   // {
@@ -49,10 +51,10 @@ export const NAVBARCONFIG: NavBarItemProps[] = [
     dropdownLinks: [
       { href: "/info", label: "overview", gray: true },
       { href: "/schedule", label: "schedule", gray: false },
-      { href: "/brochure", label: "brochure", gray: true },
-      { href: "/events", label: "events", gray: false },
-      { href: "/guests", label: "guests", gray: true },
-      { href: "/artists", label: "artists", gray: false },
+      //{ href: "/brochure", label: "brochure", gray: true },
+      { href: "/events", label: "events", gray: true },
+      { href: "/guests", label: "guests", gray: false },
+      //{ href: "/artists", label: "artists", gray: true },
     ],
   },
   {
