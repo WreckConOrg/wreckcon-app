@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import "./App.css";
 import { Home } from "./pages/home/home";
 import { About } from "./pages/about/about";
 import { Sponsor } from "./pages/sponsor/sponsor";
@@ -50,7 +49,7 @@ function App() {
         path="/tickets"
         Component={() => {
           window.location.href =
-            "https://gatech.universitytickets.com/w/event.aspx?id=2196";
+            "https://gatech.universitytickets.com/w/event.aspx?id=2301&p=1";
           return null;
         }}
       />

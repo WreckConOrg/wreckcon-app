@@ -8,15 +8,15 @@ interface HomeProps {
 const NAV_LINKS = [
   { name: "Event Info", path: "/info", color: "bg-[#D9D9D9]" },
   { name: "Schedule", path: "/schedule", color: "bg-[#D9D9D9]" },
-  { name: "Tickets", path: "https://gatech.universitytickets.com/...", color: "bg-[#FFC42D]" },
+  { name: "Tickets", path: "https://gatech.universitytickets.com/w/event.aspx?id=2301&p=1", color: "bg-[#FFC42D]" },
 ];
 
 export const Home = (props: HomeProps): JSX.Element => {
-  const CONDATE = new Date("February 28, 2026 10:00:00").getTime();
+  const CONDATE = new Date("February 28, 2027 10:00:00").getTime();
   const [days, hours, minutes, seconds] = useCountdown(CONDATE);
 
   const ZeroPad = (n: number) => n.toString().padStart(2, '0');
-  const isExpired = false; //days + hours + minutes + seconds <= 0;
+  const isExpired = days + hours + minutes + seconds <= 0;
 
   return (
     <div className="min-h-screen bg-[#2e2f31] overflow-x-hidden flex flex-col justify-center relative selection:bg-[#ffc42d] selection:text-black">
@@ -33,16 +33,15 @@ export const Home = (props: HomeProps): JSX.Element => {
 
       <div className="font-interbold font-bold text-white text-[7vw] md:text-[3vw]">
         {isExpired ? (
-          "WreckCon 2026 has begun!" 
+          "WreckCon 2027 has begun!" 
         ) : (
-          //`${ZeroPad(days)}:${ZeroPad(hours)}:${ZeroPad(minutes)}:${ZeroPad(seconds)}`
-          "Stay Tuned for 2027!"
+          `${ZeroPad(days)}:${ZeroPad(hours)}:${ZeroPad(minutes)}:${ZeroPad(seconds)}`
         )}
          <span className="ml-4 opacity-80 whitespace-nowrap">
         {isExpired ? (
           ``
         ) : (
-          ``
+          `• 2/27/27`
         )}
         </span>
       </div>
