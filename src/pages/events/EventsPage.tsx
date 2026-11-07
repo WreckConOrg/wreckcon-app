@@ -69,8 +69,11 @@ export const EventsPage = (): JSX.Element => {
       dropdownSelect="events"
     >
       <div className="flex flex-col items-center mb-10">
-        <div className="font-coolvetica text-white text-5xl md:text-7xl mt-10 mb-6">
+        <div className="font-coolvetica text-white text-5xl md:text-7xl mt-10 mb-6 text-center">
           Events
+          <div className="flex pr-4 py-100 font-inter font-thin text-xl md:text-2xl text-white content-center h-dvh">
+           Check out our Events from 2026!
+          </div>
         </div>
         <div className="flex flex-row flex-wrap justify-center gap-2 px-4 md:gap-6 max-w-6xl">
           {EVENTCONFIG.map((event, index) => (
