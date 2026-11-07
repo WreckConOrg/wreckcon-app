@@ -34,7 +34,7 @@ export const EventInfoPage = (): JSX.Element => {
             { name: "schedule", path: "/schedule" },
             //{ name: "brochure", path: "/brochure" },
             { name: "events", path: "/events" },
-            //{ name: "guests", path: "/guests" },
+            { name: "guests", path: "/guests" },
             //{ name: "artists", path: "/artists" },
           ].map((btn, i, arr) => (
             <a
@@ -121,8 +121,11 @@ export const EventInfoPage = (): JSX.Element => {
             </span>
           </div>
         </div>
-        <div className="font-coolvetica text-white text-4xl md:text-6xl mb-[4rem]">
+        <div className="font-coolvetica text-white text-4xl md:text-6xl mb-[4rem] text-center">
           Maps
+          <div className="flex font-inter font-thin text-xl md:text-2xl text-white text-center justify-center w-full">
+            {"(2026)"}
+          </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6 justify-center pb-6">
             <img src={EH1} className="object-contain"/>

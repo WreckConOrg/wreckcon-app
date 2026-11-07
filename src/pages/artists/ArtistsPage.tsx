@@ -16,11 +16,15 @@ export const ArtistsPage = (): JSX.Element => {
       dropdownSelect="artists"
     >
       <div className="flex flex-col justify-center items-center mb-[3vw] ">
-        <div className="h-[10vw] md:h-[6vw] font-coolvetica text-white text-[6vw] md:text-[4vw]">
+        <div className="h-[10vw] md:h-[6vw] font-coolvetica text-white text-[6vw] md:text-[4vw] text-center">
           Artists Alley
+
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6">
-          {artists}
+        <div className="flex pr-4 py-100 font-inter font-thin text-xl md:text-2xl text-white content-center h-dvh">
+          Check out our Artists from 2026!
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6 pt-2">
+          { artists }
         </div>
       </div>
     </BasePage>
