@@ -34,7 +34,7 @@ export const INVOLVEDCONFIG: ParticipateBoxProps[] = [
     name: "RSO Intake",
     bodyText:
       "If you are interested in applying for membership in the WreckCon RSO, please fill out the form below.",
-    link: "https://docs.google.com/forms/d/e/1FAIpQLScfVxvDfGG828S1f7wFYvsRQf1TXACiIqHUTBpIduh8U3bFww/viewform?usp=sharing",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSepAIcqizleV574Xh8oG_AlGrupP5NfKYGJOrQvmr6CDHsZQw/viewform?usp=sharing&ouid=107798361144867873835",
     buttonText: "RSO Intake",
     color: "#FFC42D",
         isOpen: true
