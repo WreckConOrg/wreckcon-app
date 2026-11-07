@@ -26,7 +26,7 @@ export const Involved = (): JSX.Element => {
           }
         )}
         >
-          Participate in WreckCon 2026!
+          Participate in WreckCon 2027!
         </div>
         {/* <div className="w-[75vw] font-inter text-[1.7vw] mb-[4vw] mt-[2vw] text-white text-center">
                         WreckCon wouldn't be possible without the involvement of countless people, and we're currently looking
