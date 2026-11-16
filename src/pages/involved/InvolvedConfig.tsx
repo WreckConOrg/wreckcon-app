@@ -43,7 +43,7 @@ export const INVOLVEDCONFIG: ParticipateBoxProps[] = [
   {
     name: "Volunteers",
     bodyText:
-      "We're always looking for help managing WreckCon. If you would like to help out and volunteer on the day of the of the convention, you can sign up here!",
+      "We're always looking for help managing WreckCon. If you would like to help out and volunteer on the day of the convention, you can sign up here!",
     link: "https://docs.google.com/forms/d/e/1FAIpQLSeDyRkUxglJAKb5h_9RqE8P-1nA8f7aIC83OwOLeM9U9NtsBw/viewform",
     buttonText: "Volunteer Intake",
     color: "#64A2FF",
