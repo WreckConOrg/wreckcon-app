@@ -50,24 +50,24 @@ export const INVOLVEDCONFIG: ParticipateBoxProps[] = [
         isOpen: true
 
   },
-  // {
-  //   name: "Panelists",
-  //   bodyText:
-  //     "Have an idea or topic you're dying to share at WreckCon? Paneling space is completely free, but highly in-demand, so sign up as soon as you can!",
-  //   link: "https://forms.gle/6rQ7WYve3vKbXWG47",
-  //   buttonText: "Panelist Intake",
-  //   color: "#A880FF",
-  //       isOpen: false
+  {
+    name: "Panelists",
+    bodyText:
+      "Have an idea or topic you're dying to share at WreckCon? Paneling space is completely free, but highly in-demand, so sign up as soon as you can!",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSd73mJxpUGupAVc8NVMkX9Iz63OPwu82NL0M7sukvot2JFX-w/viewform",
+    buttonText: "Panelist Intake",
+    color: "#A880FF",
+        isOpen: true
 
-  // },
-  // {
-  //   name: "Indie Games",
-  //   bodyText:
-  //     "If you would like to demo a video game or other interactive media at WreckCon, sign up below! Tabling space will be free, but is not guaranteed.",
-  //   link: "https://forms.gle/vkA8NxT2YZVoWjFS8",
-  //   buttonText: "Indie Games Intake",
-  //   color: "#F04924",
-  //       isOpen: false
+  },
+  {
+    name: "Indie Games",
+    bodyText:
+      "If you would like to demo a video game or other interactive media at WreckCon, sign up below! Tabling space will be free, but is not guaranteed.",
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSeXOgUR6LE7d7Tih4UUbfL-OOk-chFCmoIHr_oXx5plXbxONQ/viewform",
+    buttonText: "Indie Games Intake",
+    color: "#F04924",
+        isOpen: true
 
-  // },
+  },
 ];
