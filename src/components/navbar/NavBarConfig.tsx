@@ -7,11 +7,6 @@ export const NAVBARCONFIG: NavBarItemProps[] = [
   //   displayText: "pretty derby",
   // },
   {
-    itemEnum: NavBarItemEnum.ABOUT,
-    url: "/about",
-    displayText: "about",
-  },
-  {
     itemEnum: NavBarItemEnum.TICKETS,
     
     url: "https://gatech.universitytickets.com/w/event.aspx?id=2301&p=1",

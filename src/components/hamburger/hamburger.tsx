@@ -18,7 +18,6 @@ interface NavConfig {
 }
 
 const NAV_LINKS: NavConfig[] = [
-  { item: NavBarItemEnum.ABOUT, label: "about", url: "/about", hasDivider: true },
 
   { item: NavBarItemEnum.TICKETS, label: "tickets", url: "https://gatech.universitytickets.com/w/event.aspx?id=2301&p=1" },
 

@@ -7,7 +7,6 @@ import { DiscordLogo } from "@phosphor-icons/react";
 
 export enum NavBarItemEnum {
   HOME,
-  ABOUT,
   DISCORD,
   TICKETS,
   GET_INVOLVED,

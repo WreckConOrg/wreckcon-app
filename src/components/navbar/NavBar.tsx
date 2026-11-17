@@ -18,7 +18,7 @@ export const Navbar = (props: NavBarProps) => {
   });
 
   return (
-    <div className="bg-[#2e2f31] flex flex-nowrap items-center no-scrollbar py-4">
+    <div id="nav-bar" className=" flex flex-nowrap items-center no-scrollbar py-4">
       <Link
         to={"/"}
         className="font-coolvetica text-white font-thin text-[3vw] ml-[6vw]"
