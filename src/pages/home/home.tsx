@@ -9,7 +9,7 @@ import mtg from "./../../assets/club_logos/mtg logo.png";
 import pokemon from "./../../assets/club_logos/pokejackets logo.png";
 import sga from "./../../assets/club_logos/sga logo.png";
 import vgdev from "./../../assets/club_logos/vgdev logo.png";
-import { useCarousel } from "./../../hooks/aboutCarousel";
+import { AboutCarousel } from "./../../hooks/aboutCarousel";
 import ClubLogo from "../home/clublogo";
 import { isMobile } from "../../utils/BrowserUtils";
 import { NavBarItemEnum } from "../../components/navbar/NavBarItem";
@@ -123,7 +123,7 @@ export const Home = (props: HomeProps): JSX.Element => {
                 "w-[80%] max-w-full md:w-full md:max-w-[400px] lg:max-w-[500px] h-fill bg-[#2e2f31]",
               )}
             >
-              {useCarousel()}
+              <AboutCarousel/>
             </div>
             <div
               className={classNames(
