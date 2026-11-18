@@ -7,7 +7,7 @@ import classNames from "classnames";
 import { NavBarItemEnum } from "../navbar/NavBarItem";
 
 export interface HamburgerProps {
-  selectedItem: NavBarItemEnum;
+  selectedItem: NavBarItemEnum | null;
 }
 
 interface NavConfig {

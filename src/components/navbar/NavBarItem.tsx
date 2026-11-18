@@ -46,7 +46,7 @@ export const NavBarItem = (props: NavBarItemProps) => {
       <div>
         <Link
           to={props.url}
-          className={`font-inter font-thin text-xl md:text-[2vw] ml-4 md:ml-[3vw] whitespace-nowrap ${
+          className={`font-inter font-thin text-xl md:text-[3rem] ml-4 md:ml-[3vw] whitespace-nowrap ${
             props.selected ? "text-[#FFC42D]" : "text-white hover:text-gray-300"
           }`}
         >
@@ -58,7 +58,7 @@ export const NavBarItem = (props: NavBarItemProps) => {
     return (
       <Menu as="div" className="relative inline-block text-left ml-4 md:ml-[3vw]">
         <Menu.Button
-          className={`bg-opacity-90 z-20 flex items-center space-x-2 md:space-x-4 font-inter font-thin text-xl md:text-[2vw] h-auto md:h-[3vw] my-2 md:my-[0.3vw] whitespace-nowrap transition-colors ${
+          className={`bg-opacity-90 z-20 flex items-center space-x-2 md:space-x-4 font-inter font-thin text-xl md:text-[3rem] h-auto md:h-[3vw] my-2 md:my-[0.3vw] whitespace-nowrap transition-colors ${
             props.selected ? "text-[#FFC42D]" : "text-white hover:text-gray-300"
           }`}
         >

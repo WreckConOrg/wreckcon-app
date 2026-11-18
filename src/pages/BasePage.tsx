@@ -5,8 +5,8 @@ import { NavBarItemEnum } from "../components/navbar/NavBarItem";
 import { BrowserView, MobileView } from "../utils/BrowserUtils";
 
 export interface BasePageProps {
-  selectedItem: NavBarItemEnum;
-  mobileSelectedItem?: NavBarItemEnum;
+  selectedItem: NavBarItemEnum | null;
+  mobileSelectedItem?: NavBarItemEnum | null;
   children: JSX.Element;
   dropdownSelect?: string;
 }
@@ -31,8 +31,8 @@ window.onscroll = function(){
 
 export const BasePage = (props: BasePageProps): JSX.Element => {
   return (
-    <div className="bg-[#2e2f31] min-h-[100dvh] w-full flex flex-col">
-      <header className="sticky top-0 z-[100] w-full transition delay-10 duration-300 ease-in-out" style={{background: "rgb(50, 50, 50)"}} id="nav-bar" >
+    <div className="bg-[#2e2f31] selection:bg-[#ffc42d] selection:text-black min-h-[100dvh] w-full flex flex-col">
+      <header className="sticky top-0 z-[100] w-full transition delay-10 duration-300 ease-in-out" style={{background: "#28282A"}} id="nav-bar" >
         <div className="hidden md:block">
           <Navbar
             items={NAVBARCONFIG}
@@ -41,7 +41,7 @@ export const BasePage = (props: BasePageProps): JSX.Element => {
           />
         </div>
       </header>
-      <div className="md:hidden">
+      <div className="sticky top-0 z-[100] md:hidden bg-[#28282A]">
         <Hamburger
           selectedItem={props.mobileSelectedItem ?? props.selectedItem}
         />

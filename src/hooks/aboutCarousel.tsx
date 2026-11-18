@@ -9,8 +9,6 @@ import carousel7 from './../assets/about_carousel/4.jpg'
 import carousel8 from './../assets/about_carousel/5.jpg'
 import carousel9 from './../assets/about_carousel/6.jpg'
 import carousel10 from './../assets/about_carousel/6.jpg'
-import classNames from 'classnames';
-import { isMobile } from 'react-device-detect';
 
 const useCarousel = () => {
     const images = [carousel1, carousel4, carousel5, carousel6, carousel7, carousel8, carousel9, carousel10]
@@ -36,10 +34,7 @@ const useCarousel = () => {
     };
 
     return <>
-        <img src={currentImage} alt='image could not load' className={classNames(`translate-y-[15%]`,
-            { "w-[40vw]" : !isMobile},
-            { "h-[30vh]" : isMobile}
-        )} style={imageStyle}/>
+        <img src={currentImage} alt='image could not load' style={imageStyle}/>
     </>
 };
 
