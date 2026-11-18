@@ -32,6 +32,7 @@ export const Home = (props: HomeProps): JSX.Element => {
 
   const ZeroPad = (n: number) => n.toString().padStart(2, '0');
   const isExpired = days + hours + minutes + seconds <= 0;
+  //const isExpired = true; // For Testing
 
   return (
     <BasePage
@@ -56,13 +57,17 @@ export const Home = (props: HomeProps): JSX.Element => {
             </h1>
 
             {/* COUNTDOWN */}
-            <div className="font-interbold font-bold text-white text-[2.25rem] md:text-[3rem] lg:text-[4rem]">
+            <div className={`flex font-interbold font-bold text-white justify-between text-[2.25rem] md:text-[3rem] lg:text-[4rem]  ${
+            isExpired ? "" : "w-[400px] md:w-[530px] lg:w-[705px]" 
+          }`}>
+              <span>
               {isExpired ? (
                 "WreckCon 2027 has begun!"
               ) : (
                 `${ZeroPad(days)}:${ZeroPad(hours)}:${ZeroPad(minutes)}:${ZeroPad(seconds)}`
               )}
-              <span className="ml-4 opacity-80 whitespace-nowrap">
+              </span>
+              <span className="opacity-80 whitespace-nowrap text-right">
                 {isExpired ? (
                   ``
                 ) : (
