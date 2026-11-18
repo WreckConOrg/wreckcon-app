@@ -44,7 +44,7 @@ export const Home = (props: HomeProps): JSX.Element => {
         <div className="min-h-[50vh] md:min-h-[90vh] bg-[#2e2f31] overflow-x-hidden flex flex-col justify-center relative selection:bg-[#ffc42d] selection:text-black py-[3rem]">
           <div className="hidden md:block absolute inset-0 pointer-events-none overflow-hidden">
             {/* CAUTION TAPE BG */}
-            <div className="bg-darktape bg-contain bg-repeat-x rotate-[-45deg] w-[300vw] absolute -translate-x-[36vw] h-32 top-[-15%]" /> {/* BACK TAPE */}
+            <div className="bg-darktape bg-contain bg-repeat-x rotate-[-45deg] w-[300vw] absolute -translate-x-[36vw] h-32 md:top-[15%] lg:top-[-15%]" /> {/* BACK TAPE */}
             <div className="bg-tape bg-contain bg-repeat-x rotate-[19deg] w-[300vw] absolute left-1/2 -translate-x-[65vw] h-32 bottom-[30%]" /> {/* FRONT TAPE */}
           </div>
 
@@ -98,13 +98,11 @@ export const Home = (props: HomeProps): JSX.Element => {
 
         <div
           className={classNames(
-            "flex flex-row items-center justify-center font-coolvetica",
-            { "h-[7vw] text-[4vw] bg-[#FFC42D] text-black": !isMobile },
-            { "h-[fit] text-[9vw] bg-[#FFC42D] text-black mt-[-1vh]": isMobile }
+            "flex flex-row items-center justify-center font-coolvetica bg-[#FFC42D] h-[35px] md:h-[50px] lg:h-[75px] w-full"
           )} />
         {/* ==== ABOUT SECTION ==== */}
         <div className={classNames(
-          "flex flex-col items-center justify-center font-coolvetica text-white my-[1rem] mx-[1rem] mx",
+          "flex flex-col items-center justify-center font-coolvetica text-white my-[1rem] mx-[1rem]",
         )}>
           <div
             className={classNames(
@@ -147,7 +145,7 @@ export const Home = (props: HomeProps): JSX.Element => {
 
         <div
           className={classNames(
-            "flex flex-row items-center justify-center font-coolvetica h-[7vw] text-[4vw] bg-[#FFC42D] text-black",
+            "flex flex-row items-center justify-center font-coolvetica bg-[#FFC42D] h-[35px] md:h-[50px] lg:h-[75px] w-full"
           )} />
 
         {/* ==== PARTNER CLUB SECTION ==== */}
@@ -227,7 +225,7 @@ export const Home = (props: HomeProps): JSX.Element => {
 
         <div
           className={classNames(
-            "flex flex-row items-center justify-center font-coolvetica h-[7vw] text-[4vw] bg-[#FFC42D] text-black",
+            "flex flex-row items-center justify-center font-coolvetica bg-[#FFC42D] h-[35px] md:h-[50px] lg:h-[75px] w-full"
           )} />
 
         {/* ==== GET INVOLVED SECTION ==== */}
@@ -263,7 +261,7 @@ export const Home = (props: HomeProps): JSX.Element => {
         </div>
         <div
           className={classNames(
-            "flex flex-row items-center justify-center font-coolvetica h-[7vw] text-[4vw] bg-[#FFC42D] text-black",
+            "flex flex-row items-center justify-center font-coolvetica bg-[#FFC42D] h-[35px] md:h-[50px] lg:h-[75px] w-full"
           )} />
       </>
     </BasePage>

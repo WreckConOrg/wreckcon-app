@@ -5,15 +5,11 @@ import carousel3 from './../assets/about_carousel/3.jpg'
 import carousel4 from './../assets/about_carousel/4.jpg'
 import carousel5 from './../assets/about_carousel/5.jpg'
 import carousel6 from './../assets/about_carousel/6.jpg'
-import carousel7 from './../assets/about_carousel/4.jpg'
-import carousel8 from './../assets/about_carousel/5.jpg'
-import carousel9 from './../assets/about_carousel/6.jpg'
-import carousel10 from './../assets/about_carousel/6.jpg'
 
 
 
-const AboutCarousel = memo(function useCarousel(  ) {
-    const images = [carousel1, carousel4, carousel5, carousel6, carousel7, carousel8, carousel9, carousel10]
+const AboutCarousel = memo(function useCarousel( ) {
+    const images = [carousel4, carousel5, carousel6]
     let [currentIndex, setCurrentIndex] = useState(0);
     let [currentImage, setCurrentImage] = useState(images[currentIndex]);
     useEffect(() => {
