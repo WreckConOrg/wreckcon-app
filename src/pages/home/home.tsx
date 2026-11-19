@@ -219,12 +219,6 @@ export const Home = (props: HomeProps): JSX.Element => {
               clubTitle="PokéJackets"
               clubText="PokéJackets provides a place to celebrate the interest of Pokemon through the video games and trading card games. Activities include championships, card trades, and much more!"
             />
-            <ClubLogo
-              logo={gtmn}
-              clubLink="https://gatech.campuslabs.com/engage/organization/musician-s-network"
-              clubTitle="GTMN"
-              clubText="GT Musician's Network offers a number of services to musicians and music-lovers, such as practice room access, a professional recording studio, and great place to form a band."
-            />
           </div>
         </div>
 
