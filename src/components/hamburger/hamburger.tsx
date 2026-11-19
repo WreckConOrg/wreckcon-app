@@ -7,7 +7,7 @@ import classNames from "classnames";
 import { NavBarItemEnum } from "../navbar/NavBarItem";
 
 export interface HamburgerProps {
-  selectedItem: NavBarItemEnum;
+  selectedItem: NavBarItemEnum | null;
 }
 
 interface NavConfig {
@@ -18,7 +18,6 @@ interface NavConfig {
 }
 
 const NAV_LINKS: NavConfig[] = [
-  { item: NavBarItemEnum.ABOUT, label: "about", url: "/about", hasDivider: true },
 
   { item: NavBarItemEnum.TICKETS, label: "tickets", url: "https://gatech.universitytickets.com/w/event.aspx?id=2301&p=1" },
 
@@ -27,7 +26,7 @@ const NAV_LINKS: NavConfig[] = [
   { item: NavBarItemEnum.SCHEDULE, label: "schedule", url: "/schedule" },
   //{ item: NavBarItemEnum.BROCHURE, label: "brochure", url: "/brochure" },
   { item: NavBarItemEnum.EVENTS, label: "events", url: "/events" },
-  { item: NavBarItemEnum.GUESTS, label: "guests", url: "/guests" },
+  { item: NavBarItemEnum.GUESTS, label: "guests", url: "/guests", hasDivider: true },
   //{ item: NavBarItemEnum.ARTISTS, label: "artists", url: "/artists", hasDivider: true },
   { item: NavBarItemEnum.CONTACT, label: "contact us", url: "/contact-us" },
   { item: NavBarItemEnum.PARTICIPATE, label: "participate", url: "/involved" },
