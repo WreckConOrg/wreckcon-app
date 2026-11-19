@@ -57,8 +57,8 @@ export const Home = (props: HomeProps): JSX.Element => {
             </h1>
 
             {/* COUNTDOWN */}
-            <div className={`flex font-interbold font-bold text-white justify-between text-[2rem] md:text-[3rem] lg:text-[4rem]  ${
-            isExpired ? "" : "w-[360px] md:w-[530px] lg:w-[705px]" 
+            <div className={`flex font-interbold font-bold text-white justify-between text-[1.75rem] md:text-[3rem] lg:text-[4rem]  ${
+            isExpired ? "" : "w-[320px] md:w-[530px] lg:w-[705px]" 
           }`}>
               <span>
               {isExpired ? (
