@@ -27,7 +27,7 @@ const NAV_LINKS = [
 ];
 
 export const Home = (props: HomeProps): JSX.Element => {
-  const CONDATE = new Date("February 28, 2027 10:00:00").getTime();
+  const CONDATE = new Date("February 27, 2027 10:00:00").getTime();
   const [days, hours, minutes, seconds] = useCountdown(CONDATE);
 
   const ZeroPad = (n: number) => n.toString().padStart(2, '0');
