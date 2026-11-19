@@ -52,13 +52,13 @@ export const Home = (props: HomeProps): JSX.Element => {
           {/* MAIN LANDING PAGE TEXT */}
           <div className="z-10 flex flex-col items-center text-center px-6 md:items-start md:text-left md:pl-24 md:pt-32">
             <h1 className="font-coolvetica leading-none">
-              <span className="text-[#ffc42d] text-[6rem] md:text-[8rem] lg:text-[12rem]">Wreck<span className="text-white">Con</span></span>
+              <span className="text-[#ffc42d] text-[5rem] md:text-[8rem] lg:text-[12rem]">Wreck<span className="text-white">Con</span></span>
 
             </h1>
 
             {/* COUNTDOWN */}
-            <div className={`flex font-interbold font-bold text-white justify-between text-[2.25rem] md:text-[3rem] lg:text-[4rem]  ${
-            isExpired ? "" : "w-[400px] md:w-[530px] lg:w-[705px]" 
+            <div className={`flex font-interbold font-bold text-white justify-between text-[2rem] md:text-[3rem] lg:text-[4rem]  ${
+            isExpired ? "" : "w-[360px] md:w-[530px] lg:w-[705px]" 
           }`}>
               <span>
               {isExpired ? (
@@ -111,7 +111,7 @@ export const Home = (props: HomeProps): JSX.Element => {
         )}>
           <div
             className={classNames(
-              "flex flex-row items-center justify-center h-fit text-[3rem] md:text-[3rem] lg:text-[5rem]",
+              "flex flex-row items-center justify-center h-fit text-[2rem] md:text-[3rem] lg:text-[5rem]",
             )}
           >
             About WreckCon
@@ -160,7 +160,7 @@ export const Home = (props: HomeProps): JSX.Element => {
 
           <div
             className={classNames(
-              "flex flex-row items-center justify-center h-fit text-[3rem] md:text-[3rem] lg:text-[5rem] text-white"
+              "flex flex-row items-center justify-center h-fit text-[2rem] md:text-[3rem] lg:text-[5rem] text-white"
             )}
           >
             Partnering Orgs
@@ -233,7 +233,7 @@ export const Home = (props: HomeProps): JSX.Element => {
         )}>
           <div
             className={classNames(
-              "flex flex-row items-center justify-center h-fit text-[3rem] md:text-[3rem] lg:text-[5rem]",
+              "flex flex-row items-center justify-center h-fit text-[2rem] md:text-[3rem] lg:text-[5rem]",
             )}
           >
             Want to Get Involved?
